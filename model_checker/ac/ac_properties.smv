@@ -1,0 +1,1006 @@
+-- AC Protocol Properties
+-- Total: 260 properties
+
+-- ═══ SAFETY (10) ═══
+
+-- After a FAILED response, the session must eventually stop
+CTLSPEC AG (ResponseCode = FAILED -> AX (proto_state = SessionStop | proto_state = proto_state))
+
+-- ChargeProgress=Stop from charge loop must go to PowerDelivery
+CTLSPEC AG (proto_state = AC_ChargeLoop & ChargeProgress = Stop -> AX (proto_state = PowerDelivery | proto_state = AC_ChargeLoop))
+
+-- No backward transition from SessionSetup to SupportedAppProtocol
+CTLSPEC AG (proto_state = SessionSetup -> AX proto_state != SupportedAppProtocol)
+
+-- No deadlock: every non-terminal state has a successor
+CTLSPEC AG (proto_state != SessionStop -> EX TRUE)
+
+-- Retry count bounded at ServiceDetail
+CTLSPEC AG (proto_state = ServiceDetail -> retry_count <= 3)
+
+-- Retry count bounded at ScheduleExchange
+CTLSPEC AG (proto_state = ScheduleExchange -> retry_count <= 3)
+
+-- Retry count bounded at CertificateInstallation
+CTLSPEC AG (proto_state = CertificateInstallation -> retry_count <= 3)
+
+-- Retry count bounded at Authorization
+CTLSPEC AG (proto_state = Authorization -> retry_count <= 3)
+
+-- Retry count bounded at PowerDelivery
+CTLSPEC AG (proto_state = PowerDelivery -> retry_count <= 3)
+
+-- Retry count bounded at AC_ChargeLoop
+CTLSPEC AG (proto_state = AC_ChargeLoop -> retry_count <= 3)
+
+-- ═══ LIVENESS (14) ═══
+
+-- Every session eventually reaches SessionStop
+CTLSPEC AG (proto_state = SupportedAppProtocol -> AF proto_state = SessionStop)
+
+-- Eventually leave state SupportedAppProtocol
+CTLSPEC AG (proto_state = SupportedAppProtocol -> AF proto_state != SupportedAppProtocol)
+
+-- Eventually leave state SessionSetup
+CTLSPEC AG (proto_state = SessionSetup -> AF proto_state != SessionSetup)
+
+-- Eventually leave state AuthorizationSetup
+CTLSPEC AG (proto_state = AuthorizationSetup -> AF proto_state != AuthorizationSetup)
+
+-- Eventually leave state Authorization
+CTLSPEC AG (proto_state = Authorization -> AF proto_state != Authorization)
+
+-- Eventually leave state CertificateInstallation
+CTLSPEC AG (proto_state = CertificateInstallation -> AF proto_state != CertificateInstallation)
+
+-- Eventually leave state ServiceDiscovery
+CTLSPEC AG (proto_state = ServiceDiscovery -> AF proto_state != ServiceDiscovery)
+
+-- Eventually leave state ServiceDetail
+CTLSPEC AG (proto_state = ServiceDetail -> AF proto_state != ServiceDetail)
+
+-- Eventually leave state ServiceSelection
+CTLSPEC AG (proto_state = ServiceSelection -> AF proto_state != ServiceSelection)
+
+-- Eventually leave state AC_ChargeParameterDiscovery
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AF proto_state != AC_ChargeParameterDiscovery)
+
+-- Eventually leave state ScheduleExchange
+CTLSPEC AG (proto_state = ScheduleExchange -> AF proto_state != ScheduleExchange)
+
+-- Eventually leave state PowerDelivery
+CTLSPEC AG (proto_state = PowerDelivery -> AF proto_state != PowerDelivery)
+
+-- Eventually leave state AC_ChargeLoop
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF proto_state != AC_ChargeLoop)
+
+-- EVSE processing eventually finishes
+CTLSPEC AG (EVSEProcessing = Ongoing -> AF EVSEProcessing = Finished)
+
+-- ═══ COMPLIANCE (45) ═══
+
+-- T1: When guards hold at SupportedAppProtocol, transition to SessionSetup
+-- Source: V2G20-1747, V2G20-1484
+CTLSPEC AG (proto_state = SupportedAppProtocol & ResponseCode = OK_SuccessfulNegotiation -> AX proto_state = SessionSetup)
+
+-- T2: When guards hold at SessionSetup, transition to AuthorizationSetup
+-- Source: V2G20-1749, V2G20-1486
+CTLSPEC AG (proto_state = SessionSetup & TimeStamp = e_0 & ResponseCode = OK -> AX proto_state = AuthorizationSetup)
+
+-- T3: When guards hold at SessionSetup, transition to AC_ChargeParameterDiscovery
+-- Source: V2G20-2097
+CTLSPEC AG (proto_state = SessionSetup & TimeStamp = e_0 & ResponseCode = OK -> AX proto_state = AC_ChargeParameterDiscovery)
+
+-- T4: When guards hold at AuthorizationSetup, transition to Authorization
+-- Source: V2G20-1577, V2G20-1971, V2G20-1970
+CTLSPEC AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = Authorization)
+
+-- T5: When guards hold at AuthorizationSetup, transition to CertificateInstallation
+-- Source: V2G20-1576, V2G20-1970
+CTLSPEC AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = CertificateInstallation)
+
+-- T6: When guards hold at CertificateInstallation, transition to CertificateInstallation
+-- Source: V2G20-1578, V2G20-1972, V2G20-1973
+CTLSPEC AG (proto_state = CertificateInstallation & ReceivedMessage = CertificateInstallationReq & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = CertificateInstallation)
+
+-- T7: When guards hold at CertificateInstallation, transition to Authorization
+-- Source: V2G20-2223, V2G20-1579, V2G20-2225
+CTLSPEC AG (proto_state = CertificateInstallation & ReceivedMessage = CertificateInstallationReq & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = Authorization)
+
+-- T8: When guards hold at Authorization, transition to CertificateInstallation
+-- Source: V2G20-2221, V2G20-2226, V2G20-1978
+CTLSPEC AG (proto_state = Authorization & ReceivedMessage = AC_ChargeLoopRes & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = CertificateInstallation)
+
+-- T9: When guards hold at Authorization, transition to Authorization
+-- Source: V2G20-2229, V2G20-1583, V2G20-2227
+CTLSPEC AG (proto_state = Authorization & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = Authorization)
+
+-- T10: When guards hold at Authorization, transition to ServiceDiscovery
+-- Source: V2G20-2221, V2G20-1979, V2G20-2234
+CTLSPEC AG (proto_state = Authorization & ReceivedMessage = AC_ChargeLoopRes & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = ServiceDiscovery)
+
+-- T11: When guards hold at ServiceDiscovery, transition to SessionStop
+-- Source: V2G20-1957, V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = SessionStop)
+
+-- T12: When guards hold at ServiceDiscovery, transition to ServiceDetail
+-- Source: V2G20-1585, V2G20-1980
+CTLSPEC AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = ServiceDetail)
+
+-- T13: When guards hold at ServiceDetail, transition to ServiceDetail
+-- Source: V2G20-1981, V2G20-1586
+CTLSPEC AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = ServiceDetail)
+
+-- T14: When guards hold at ServiceDetail, transition to ServiceSelection
+-- Source: V2G20-1981, V2G20-1587
+CTLSPEC AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = ServiceSelection)
+
+-- T15: When guards hold at ServiceSelection, transition to AC_ChargeParameterDiscovery
+-- Source: V2G20-1983, V2G20-1590
+CTLSPEC AG (proto_state = ServiceSelection & ResponseCode = OK -> AX proto_state = AC_ChargeParameterDiscovery)
+
+-- T16: When guards hold at AC_ChargeParameterDiscovery, transition to ScheduleExchange
+-- Source: V2G20-2659, V2G20-2658
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery & EnergyTransferMode = AC -> AX proto_state = ScheduleExchange)
+
+-- T17: When guards hold at ScheduleExchange, transition to ScheduleExchange
+-- Source: V2G20-1593, V2G20-1986, V2G20-1987
+CTLSPEC AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = ScheduleExchange)
+
+-- T18: When guards hold at ScheduleExchange, transition to PowerDelivery
+-- Source: V2G20-2122, V2G20-2123, V2G20-1989
+CTLSPEC AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = PowerDelivery)
+
+-- T19: When guards hold at PowerDelivery, transition to PowerDelivery
+-- Source: V2G20-2008, V2G20-2018, V2G20-1436
+CTLSPEC AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = PowerDelivery)
+
+-- T20: When guards hold at PowerDelivery, transition to AC_ChargeLoop
+-- Source: V2G20-2193, V2G20-1969, V2G20-2192
+CTLSPEC AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = AC_ChargeLoop)
+
+-- T21: When guards hold at AC_ChargeLoop, transition to PowerDelivery
+-- Source: V2G20-2193, V2G20-1969, V2G20-2192
+CTLSPEC AG (proto_state = AC_ChargeLoop & ReceivedMessage = AC_ChargeLoopRes & MobilityNeedsMode = e_2 -> AX proto_state = PowerDelivery)
+
+-- T22: When guards hold at AC_ChargeLoop, transition to AC_ChargeLoop
+-- Source: V2G20-2012, V2G20-1440
+CTLSPEC AG (proto_state = AC_ChargeLoop & ReceivedMessage = AC_ChargeLoopRes & MobilityNeedsMode = e_2 -> AX proto_state = AC_ChargeLoop)
+
+-- T23: When guards hold at PowerDelivery, transition to SessionStop
+-- Source: V2G20-1623
+CTLSPEC AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = SessionStop)
+
+-- T24: When guards hold at SessionStop, transition to ServiceDiscovery
+-- Source: V2G20-1643, V2G20-1477
+CTLSPEC AG (proto_state = SessionStop & EVPowerProfileEntry = e_0kW & ResponseCode = OK & EVSENotification = Terminate & ServiceRenegotiationSupported = TRUE -> AX proto_state = ServiceDiscovery)
+
+-- T25: When guards hold at Authorization, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = Authorization & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = SessionStop)
+
+-- T26: When guards hold at AuthorizationSetup, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = SessionStop)
+
+-- T27: When guards hold at CertificateInstallation, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = CertificateInstallation & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = SessionStop)
+
+-- T28: When guards hold at ServiceDiscovery, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = SessionStop)
+
+-- T29: When guards hold at ServiceDetail, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = SessionStop)
+
+-- T30: When guards hold at ServiceSelection, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = ServiceSelection & ResponseCode = OK -> AX proto_state = SessionStop)
+
+-- T31: When guards hold at AC_ChargeParameterDiscovery, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery & EnergyTransferMode = AC -> AX proto_state = SessionStop)
+
+-- T32: When guards hold at ScheduleExchange, transition to SessionStop
+-- Source: V2G20-2644, V2G20-2645
+CTLSPEC AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = SessionStop)
+
+-- In SupportedAppProtocol, ResponseCode must be one of: OK_SuccessfulNegotiation, OK_SuccessfulNegotiationWithMinorDeviation
+CTLSPEC AG (proto_state = SupportedAppProtocol -> (ResponseCode = OK_SuccessfulNegotiation | ResponseCode = OK_SuccessfulNegotiationWithMinorDeviation))
+
+-- In SessionSetup, ResponseCode must be one of: OK_NewSessionEstablished
+CTLSPEC AG (proto_state = SessionSetup -> (ResponseCode = OK_NewSessionEstablished))
+
+-- In AuthorizationSetup, ResponseCode must be one of: OK
+CTLSPEC AG (proto_state = AuthorizationSetup -> (ResponseCode = OK))
+
+-- In Authorization, ResponseCode must be one of: OK
+CTLSPEC AG (proto_state = Authorization -> (ResponseCode = OK))
+
+-- In CertificateInstallation, ResponseCode must be one of: OK, WARNING_CertificateValidationError
+CTLSPEC AG (proto_state = CertificateInstallation -> (ResponseCode = OK | ResponseCode = WARNING_CertificateValidationError))
+
+-- In ServiceDiscovery, ResponseCode must be one of: OK
+CTLSPEC AG (proto_state = ServiceDiscovery -> (ResponseCode = OK))
+
+-- In ServiceDetail, ResponseCode must be one of: OK, FAILED_ServiceIDInvalid
+CTLSPEC AG (proto_state = ServiceDetail -> (ResponseCode = OK | ResponseCode = FAILED_ServiceIDInvalid))
+
+-- In ServiceSelection, ResponseCode must be one of: OK, FAILED_ServiceSelectionInvalid
+CTLSPEC AG (proto_state = ServiceSelection -> (ResponseCode = OK | ResponseCode = FAILED_ServiceSelectionInvalid))
+
+-- In AC_ChargeParameterDiscovery, ResponseCode must be one of: FAILED_WrongChargeParameter
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> (ResponseCode = FAILED_WrongChargeParameter))
+
+-- In ScheduleExchange, ResponseCode must be one of: OK, WARNING_EVPowerProfileViolation, FAILED_EVPowerProfileViolation
+CTLSPEC AG (proto_state = ScheduleExchange -> (ResponseCode = OK | ResponseCode = WARNING_EVPowerProfileViolation | ResponseCode = FAILED_EVPowerProfileViolation))
+
+-- In PowerDelivery, ResponseCode must be one of: OK, WARNING_StandbyNotAllowed
+CTLSPEC AG (proto_state = PowerDelivery -> (ResponseCode = OK | ResponseCode = WARNING_StandbyNotAllowed))
+
+-- In AC_ChargeLoop, ResponseCode must be one of: WARNING_EVPowerProfileViolation, FAILED_EVPowerProfileViolation
+CTLSPEC AG (proto_state = AC_ChargeLoop -> (ResponseCode = WARNING_EVPowerProfileViolation | ResponseCode = FAILED_EVPowerProfileViolation))
+
+-- In SessionStop, ResponseCode must be one of: OK, FAILED, WARNING
+CTLSPEC AG (proto_state = SessionStop -> (ResponseCode = OK | ResponseCode = FAILED | ResponseCode = WARNING))
+
+-- ═══ SEQUENCING (93) ═══
+
+-- After reaching SessionSetup, next message must be SessionSetupReq
+-- Source: V2G20-1747
+CTLSPEC AG (proto_state = SessionSetup -> AX (msg_channel = SessionSetupReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be PowerDeliveryReq
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be normal
+-- Source: V2G20-2619
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = normal | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be ChargeParameterDiscoveryReq
+-- Source: V2G20-1032
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be process
+-- Source: V2G20-449
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = process | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be NextMsgReq
+-- Source: V2G20-449
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = NextMsgReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be AuthorizationSetupReq
+-- Source: V2G20-1749
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = AuthorizationSetupReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be AC_ChargeParameterDiscoveryReq
+-- Source: V2G20-2097
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = AC_ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AuthorizationSetup, next message must be DC_ChargeParameterDiscoveryReq
+-- Source: V2G20-2097
+CTLSPEC AG (proto_state = AuthorizationSetup -> AX (msg_channel = DC_ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be PowerDeliveryReq
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be normal
+-- Source: V2G20-2619
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = normal | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be ChargeParameterDiscoveryReq
+-- Source: V2G20-1032
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be process
+-- Source: V2G20-449
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = process | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be NextMsgReq
+-- Source: V2G20-449
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = NextMsgReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be AuthorizationSetupReq
+-- Source: V2G20-1749
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = AuthorizationSetupReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be AC_ChargeParameterDiscoveryReq
+-- Source: V2G20-2097
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = AC_ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be DC_ChargeParameterDiscoveryReq
+-- Source: V2G20-2097
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = DC_ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be CertificateInstallationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be AuthorizationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be CertificateInstallationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be AuthorizationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be NextCertificateInstallationReq
+-- Source: V2G20-2492
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be CertificateInstallationReq
+-- Source: V2G20-1550
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be AuthorizationReq
+-- Source: V2G20-1579
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be NextCertificateInstallationReq
+-- Source: V2G20-2492
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be CertificateInstallationReq
+-- Source: V2G20-1550
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be AuthorizationReq
+-- Source: V2G20-1579
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be AuthorizationReq
+-- Source: V2G20-1582
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be CertificateInstallationReq
+-- Source: V2G20-1583
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching CertificateInstallation, next message must be ServiceDiscoveryReq
+-- Source: V2G20-2221
+CTLSPEC AG (proto_state = CertificateInstallation -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be AuthorizationReq
+-- Source: V2G20-1582
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be CertificateInstallationReq
+-- Source: V2G20-1583
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching Authorization, next message must be ServiceDiscoveryReq
+-- Source: V2G20-2221
+CTLSPEC AG (proto_state = Authorization -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be AuthorizationReq
+-- Source: V2G20-1582
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be CertificateInstallationReq
+-- Source: V2G20-1583
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be ServiceDiscoveryReq
+-- Source: V2G20-2221
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceDetailReq
+-- Source: V2G20-1585
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching ServiceDetail, next message must be ServiceDetailReq
+-- Source: V2G20-1585
+CTLSPEC AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching ServiceDetail, next message must be ServiceDetailReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching ServiceDetail, next message must be ServiceSelectionReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))
+
+-- After reaching ServiceSelection, next message must be ServiceDetailReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = ServiceSelection -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching ServiceSelection, next message must be ServiceSelectionReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = ServiceSelection -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be ChargeParameterDiscoveryReq
+-- Source: V2G20-1590
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be ServiceDetailReq
+-- Source: V2G20-1984
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching AC_ChargeParameterDiscovery, next message must be ServiceSelectionReq
+-- Source: V2G20-1984
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))
+
+-- After reaching ScheduleExchange, next message must be ScheduleExchangeReq
+-- Source: V2G20-1593
+CTLSPEC AG (proto_state = ScheduleExchange -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))
+
+-- After reaching ScheduleExchange, next message must be PowerDeliveryReq
+-- Source: V2G20-1596
+CTLSPEC AG (proto_state = ScheduleExchange -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be ScheduleExchangeReq
+-- Source: V2G20-1593
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be PowerDeliveryReq
+-- Source: V2G20-1596
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be PowerDeliveryReq
+-- Source: V2G20-xxxx
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be PowerDeliveryReq
+-- Source: V2G20-1401
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be ChargeLoopReq
+-- Source: V2G20-2113
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = ChargeLoopReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be PowerDeliveryReq
+-- Source: V2G20-2117
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be measure
+-- Source: V2G20-919
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = measure | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be AC_ChargeLoopReq
+-- Source: V2G20-1437
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be SessionStopReq
+-- Source: V2G20-1623
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = SessionStopReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be PowerDeliveryReq
+-- Source: V2G20-xxxx
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be PowerDeliveryReq
+-- Source: V2G20-1401
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be ChargeLoopReq
+-- Source: V2G20-2113
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = ChargeLoopReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be PowerDeliveryReq
+-- Source: V2G20-2117
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be measure
+-- Source: V2G20-919
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = measure | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be AC_ChargeLoopReq
+-- Source: V2G20-1437
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be SessionStopReq
+-- Source: V2G20-1623
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = SessionStopReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be AC_ChargeLoopReq
+-- Source: V2G20-1440
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))
+
+-- After reaching PowerDelivery, next message must be PowerDeliveryReq
+-- Source: V2G20-1440
+CTLSPEC AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be AC_ChargeLoopReq
+-- Source: V2G20-1440
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))
+
+-- After reaching AC_ChargeLoop, next message must be PowerDeliveryReq
+-- Source: V2G20-1440
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be PowerDeliveryReq
+-- Source: V2G20-xxxx
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be PowerDeliveryReq
+-- Source: V2G20-1401
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ChargeLoopReq
+-- Source: V2G20-2113
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ChargeLoopReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be PowerDeliveryReq
+-- Source: V2G20-2117
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be measure
+-- Source: V2G20-919
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = measure | msg_channel = none))
+
+-- After reaching SessionStop, next message must be AC_ChargeLoopReq
+-- Source: V2G20-1437
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be SessionStopReq
+-- Source: V2G20-1623
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = SessionStopReq | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be Follow
+-- Source: V2G20-1227
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = Follow | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be D
+-- Source: V2G20-1227
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = D | msg_channel = none))
+
+-- After reaching ServiceDiscovery, next message must be ServiceDiscoveryReq
+-- Source: V2G20-1477
+CTLSPEC AG (proto_state = ServiceDiscovery -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be AuthorizationReq
+-- Source: V2G20-1582
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be CertificateInstallationReq
+-- Source: V2G20-1583
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceDiscoveryReq
+-- Source: V2G20-2221
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be CertificateInstallationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be AuthorizationReq
+-- Source: V2G20-1576,V2G20-1577
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be NextCertificateInstallationReq
+-- Source: V2G20-2492
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be CertificateInstallationReq
+-- Source: V2G20-1550
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be AuthorizationReq
+-- Source: V2G20-1579
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceDetailReq
+-- Source: V2G20-1585
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceDetailReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceSelectionReq
+-- Source: V2G20-1586
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ChargeParameterDiscoveryReq
+-- Source: V2G20-1590
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceDetailReq
+-- Source: V2G20-1984
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ServiceSelectionReq
+-- Source: V2G20-1984
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be ScheduleExchangeReq
+-- Source: V2G20-1593
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))
+
+-- After reaching SessionStop, next message must be PowerDeliveryReq
+-- Source: V2G20-1596
+CTLSPEC AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))
+
+-- ═══ INVARIANT (12) ═══
+
+-- Global invariant: certificateValidationConformance = IETF_RFC_5280
+-- Source: V2G20-1001
+CTLSPEC AG (certificateValidationConformance = IETF_RFC_5280)
+
+-- Global invariant: WLAN_STA_MAC_Address_Randomization = true
+-- Source: V2G20-2253
+CTLSPEC AG (WLAN_STA_MAC_Address_Randomization = TRUE)
+
+-- In Authorization, EVSEProcessing constrained to: Finished, Ongoing
+CTLSPEC AG (proto_state = Authorization -> (EVSEProcessing = Finished | EVSEProcessing = Ongoing))
+
+-- In CertificateInstallation, EVSEProcessing constrained to: Finished, ONGOING, Ongoing
+CTLSPEC AG (proto_state = CertificateInstallation -> (EVSEProcessing = Finished | EVSEProcessing = ONGOING | EVSEProcessing = Ongoing))
+
+-- In ServiceDiscovery, ServiceRenegotiationSupported constrained to: True
+CTLSPEC AG (proto_state = ServiceDiscovery -> (ServiceRenegotiationSupported = e_True))
+
+-- In ScheduleExchange, EVSEProcessing constrained to: Finished, Ongoing
+CTLSPEC AG (proto_state = ScheduleExchange -> (EVSEProcessing = Finished | EVSEProcessing = Ongoing))
+
+-- In PowerDelivery, EVSEProcessing constrained to: NOT_APPLICABLE
+CTLSPEC AG (proto_state = PowerDelivery -> (EVSEProcessing = NOT_APPLICABLE))
+
+-- In PowerDelivery, EVProcessing constrained to: Ongoing
+CTLSPEC AG (proto_state = PowerDelivery -> (EVProcessing = Ongoing))
+
+-- In PowerDelivery, ChargeProgress constrained to: Standby, Stop
+CTLSPEC AG (proto_state = PowerDelivery -> (ChargeProgress = Standby | ChargeProgress = Stop))
+
+-- In SessionStop, EVSENotification constrained to: Terminate
+CTLSPEC AG (proto_state = SessionStop -> (EVSENotification = Terminate))
+
+-- In SessionStop, ServiceRenegotiationSupported constrained to: True
+CTLSPEC AG (proto_state = SessionStop -> (ServiceRenegotiationSupported = e_True))
+
+-- In SessionStop, ChargingSession constrained to: Pause, ServiceRenegotiation, Terminate
+CTLSPEC AG (proto_state = SessionStop -> (ChargingSession = Pause | ChargingSession = ServiceRenegotiation | ChargingSession = Terminate))
+
+-- ═══ TIMING (86) ═══
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout
+-- Source: V2G20-4067
+CTLSPEC AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout
+-- Source: V2G20-5043
+CTLSPEC AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout
+-- Source: V2G20-4067
+CTLSPEC AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout
+-- Source: V2G20-5043
+CTLSPEC AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout
+-- Source: V2G20-1970
+CTLSPEC AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout
+-- Source: V2G20-1970
+CTLSPEC AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1973
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1412
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1975
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1975
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1973
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1412
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_EVCC_SendChargeLoopReqTimeout: transition from Authorization must happen before timeout
+-- Source: V2G20-2232
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1977
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1979
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1977
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1979
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1979
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_EVCC_SendChargeLoopReqTimeout: transition from Authorization must happen before timeout
+-- Source: V2G20-2232
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1977
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout
+-- Source: V2G20-2603
+CTLSPEC AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout
+-- Source: V2G20-2603
+CTLSPEC AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout
+-- Source: V2G20-1981
+CTLSPEC AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout
+-- Source: V2G20-1981
+CTLSPEC AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ServiceSelection must happen before timeout
+-- Source: V2G20-1983
+CTLSPEC AG (proto_state = ServiceSelection -> AF (proto_state != ServiceSelection | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeParameterDiscovery must happen before timeout
+-- Source: V2G20-2658
+CTLSPEC AG (proto_state = AC_ChargeParameterDiscovery -> AF (proto_state != AC_ChargeParameterDiscovery | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1987
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1611
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1611
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1987
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-1385
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timeout: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-2192
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-2012
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_EVCC_Sequence_Performance_Timeout: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-1437
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-1385
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2192
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2012
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_Sequence_Performance_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1437
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1066
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1234
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSEMaxTimeToWaitForChargeLoopReq: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1258
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1313
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSEMaxTimeOut: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1755
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_LongestCommTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1756
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1782
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1875
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_AC_CL_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1900
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1909
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2180
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_ACChargeLoopReqTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2320
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2368
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_Response_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2522
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_Processing_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2613
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2647
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2012
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1066
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1234
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSEMaxTimeToWaitForChargeLoopReq: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1258
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1313
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSEMaxTimeOut: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1755
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_LongestCommTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1756
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1782
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1875
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_AC_CL_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1900
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-1909
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2180
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_ACChargeLoopReqTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2320
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2368
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_Response_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2522
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_Processing_Timeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2613
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout
+-- Source: V2G20-2647
+CTLSPEC AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timeout: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-1623
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout
+-- Source: V2G20-1385
+CTLSPEC AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))
+
+-- Timer V2G_SECC_SessionStopTimeout: transition from SessionStop must happen before timeout
+-- Source: V2G20-1852
+CTLSPEC AG (proto_state = SessionStop -> AF (proto_state != SessionStop | timer_expired))
+
+-- Timer V2G_EVCC_SECC_ComMaxTimeWaitForSessionStopRes: transition from SessionStop must happen before timeout
+-- Source: V2G20-2216
+CTLSPEC AG (proto_state = SessionStop -> AF (proto_state != SessionStop | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1977
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout
+-- Source: V2G20-1979
+CTLSPEC AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout
+-- Source: V2G20-1970
+CTLSPEC AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1412
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1973
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout
+-- Source: V2G20-1975
+CTLSPEC AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))
+
+-- Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout
+-- Source: V2G20-2603
+CTLSPEC AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout
+-- Source: V2G20-1981
+CTLSPEC AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ServiceSelection must happen before timeout
+-- Source: V2G20-1983
+CTLSPEC AG (proto_state = ServiceSelection -> AF (proto_state != ServiceSelection | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1611
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+
+-- Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout
+-- Source: V2G20-1987
+CTLSPEC AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))
+

@@ -1,0 +1,1193 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 142,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "and common issues like hardware clock drift, this document needs to support use cases where the SECC and/or the EVCC do not have a buffered real time clock and the coordination of the entire energy transfer process should also work reliably when there is no internet connection or if the backend networks are temporarily unreachable.",
+            "block_bbox": [
+                134,
+                168,
+                1122,
+                273
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    168.0
+                ],
+                [
+                    1122.0,
+                    168.0
+                ],
+                [
+                    1122.0,
+                    273.0
+                ],
+                [
+                    134.0,
+                    273.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The management of (scheduled) events with a time resolution shorter than 1 s is considered not in scope for ISO 15118 communication and they are typically handled by safety standards, power inverter hardware designs or similar solutions. However, for some purposes a very fine-grained time notation is necessary after all.",
+            "block_bbox": [
+                136,
+                295,
+                1121,
+                400
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    295.0
+                ],
+                [
+                    1121.0,
+                    295.0
+                ],
+                [
+                    1121.0,
+                    400.0
+                ],
+                [
+                    136.0,
+                    400.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "To address all those requirements this document is introducing the concept of \"SECC time\".",
+            "block_bbox": [
+                135,
+                422,
+                1000,
+                448
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    422.0
+                ],
+                [
+                    1000.0,
+                    422.0
+                ],
+                [
+                    1000.0,
+                    448.0
+                ],
+                [
+                    135.0,
+                    448.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.3.3 The definition of SECC time",
+            "block_bbox": [
+                217,
+                470,
+                607,
+                496
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    217.0,
+                    470.0
+                ],
+                [
+                    607.0,
+                    470.0
+                ],
+                [
+                    607.0,
+                    496.0
+                ],
+                [
+                    217.0,
+                    496.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1529] Unless noted otherwise, all time stamps and time anchors (e.g. as used in schedules) are values that shall be interpreted in the context of SECC time.",
+            "block_bbox": [
+                137,
+                519,
+                1119,
+                572
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    519.0
+                ],
+                [
+                    1119.0,
+                    519.0
+                ],
+                [
+                    1119.0,
+                    572.0
+                ],
+                [
+                    137.0,
+                    572.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 SECC time is modeled after UNIX time (also known as POSIX time or epoch time) to simplify its implementation and it therefore shares many, but not all characteristics. This means that if an SECC is based on a system that works with UNIX time and uses some common form of clock synchronization (e.g. via NTP), then the system's time can be used directly to fulfill all possible SECC time requirements. On the EVCC side implementation requirements are slightly different, as is outlined further below.",
+            "block_bbox": [
+                136,
+                595,
+                1121,
+                714
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    595.0
+                ],
+                [
+                    1121.0,
+                    595.0
+                ],
+                [
+                    1121.0,
+                    714.0
+                ],
+                [
+                    136.0,
+                    714.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 SECC time is a system for describing a point in time, defined as the number of seconds that have elapsed since the beginning of the local SECC epoch minus the number of leap seconds that have taken place since then.",
+            "block_bbox": [
+                136,
+                735,
+                1120,
+                785
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    735.0
+                ],
+                [
+                    1120.0,
+                    735.0
+                ],
+                [
+                    1120.0,
+                    785.0
+                ],
+                [
+                    136.0,
+                    785.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 Leap seconds are intentionally omitted in SECC time, just like in UNIX time, so every day has precisely 86 400 s. This makes calculations into the future predictable but has the consequence that SECC time, in the context of UTC, is neither a truly linear measure of time nor a true representation of UTC.",
+            "block_bbox": [
+                136,
+                806,
+                1121,
+                879
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    806.0
+                ],
+                [
+                    1121.0,
+                    806.0
+                ],
+                [
+                    1121.0,
+                    879.0
+                ],
+                [
+                    136.0,
+                    879.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1531] If coordination with external secondary actors is necessary, than SECC time shall use an SECC epoch starting at 00:00:00 (hh:mm:ss) Coordinated Universal Time (UTC), Thursday, 1 January 1970.",
+            "block_bbox": [
+                137,
+                901,
+                1120,
+                980
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    901.0
+                ],
+                [
+                    1120.0,
+                    901.0
+                ],
+                [
+                    1120.0,
+                    980.0
+                ],
+                [
+                    137.0,
+                    980.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 The coordination with external secondary actors implies that some form of backend communication is possible, meaning that the SECC has some technical capability to synchronize with UTC. This automatically places SECC time into the UTC time zone.",
+            "block_bbox": [
+                136,
+                1002,
+                1121,
+                1074
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1002.0
+                ],
+                [
+                    1121.0,
+                    1002.0
+                ],
+                [
+                    1121.0,
+                    1074.0
+                ],
+                [
+                    136.0,
+                    1074.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1532] For situations where UTC synchronization is not necessary or no internet connection is possible any other SECC epoch start time shall be allowed.",
+            "block_bbox": [
+                136,
+                1097,
+                1119,
+                1151
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1097.0
+                ],
+                [
+                    1119.0,
+                    1097.0
+                ],
+                [
+                    1119.0,
+                    1151.0
+                ],
+                [
+                    136.0,
+                    1151.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 5 Typically this is the point in time where the system was powered on.",
+            "block_bbox": [
+                136,
+                1172,
+                825,
+                1198
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1172.0
+                ],
+                [
+                    825.0,
+                    1172.0
+                ],
+                [
+                    825.0,
+                    1198.0
+                ],
+                [
+                    136.0,
+                    1198.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 6 The charging systems, for example, designed as PV-battery buffered power islands or vehicle-to-vehicle charging solutions, with EIM access control can properly work in scheduled or dynamic control modes even without SECC time being in sync with UTC. Refer to 8.4.2 for description of scheduled and dynamic control modes.",
+            "block_bbox": [
+                136,
+                1219,
+                1121,
+                1293
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1219.0
+                ],
+                [
+                    1121.0,
+                    1219.0
+                ],
+                [
+                    1121.0,
+                    1293.0
+                ],
+                [
+                    136.0,
+                    1293.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1533] SECC time shall never be used as the reference time for the purpose of certificate expiration validation.",
+            "block_bbox": [
+                137,
+                1314,
+                1119,
+                1365
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1314.0
+                ],
+                [
+                    1119.0,
+                    1314.0
+                ],
+                [
+                    1119.0,
+                    1365.0
+                ],
+                [
+                    137.0,
+                    1365.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 7 The SECC and EVCC can perform certificate expiration validation with the help of time sources which they individually consider as trustworthy. From the EVCCs perspective SECC time cannot be guaranteed to meet any well-defined security criteria.",
+            "block_bbox": [
+                136,
+                1389,
+                1121,
+                1462
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1389.0
+                ],
+                [
+                    1121.0,
+                    1389.0
+                ],
+                [
+                    1121.0,
+                    1462.0
+                ],
+                [
+                    136.0,
+                    1462.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.3.4 TimeStamp within MessageHeaderType",
+            "block_bbox": [
+                218,
+                1482,
+                737,
+                1510
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    218.0,
+                    1482.0
+                ],
+                [
+                    737.0,
+                    1482.0
+                ],
+                [
+                    737.0,
+                    1510.0
+                ],
+                [
+                    218.0,
+                    1510.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1118,
+                1683
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "137",
+            "block_bbox": [
+                1080,
+                1624,
+                1119,
+                1645
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    1080,
+                    1624
+                ],
+                [
+                    1080,
+                    1644
+                ],
+                [
+                    1118,
+                    1644
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8816782832145691,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9463476538658142,
+                "coordinate": [
+                    134,
+                    168,
+                    1122,
+                    273
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        134.0,
+                        168.0
+                    ],
+                    [
+                        1122.0,
+                        168.0
+                    ],
+                    [
+                        1122.0,
+                        273.0
+                    ],
+                    [
+                        134.0,
+                        273.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9459514021873474,
+                "coordinate": [
+                    136,
+                    295,
+                    1121,
+                    400
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        295.0
+                    ],
+                    [
+                        1121.0,
+                        295.0
+                    ],
+                    [
+                        1121.0,
+                        400.0
+                    ],
+                    [
+                        136.0,
+                        400.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8543680310249329,
+                "coordinate": [
+                    135,
+                    422,
+                    1000,
+                    448
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        135.0,
+                        422.0
+                    ],
+                    [
+                        1000.0,
+                        422.0
+                    ],
+                    [
+                        1000.0,
+                        448.0
+                    ],
+                    [
+                        135.0,
+                        448.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8583469986915588,
+                "coordinate": [
+                    217,
+                    470,
+                    607,
+                    496
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        217.0,
+                        470.0
+                    ],
+                    [
+                        607.0,
+                        470.0
+                    ],
+                    [
+                        607.0,
+                        496.0
+                    ],
+                    [
+                        217.0,
+                        496.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8887695670127869,
+                "coordinate": [
+                    137,
+                    519,
+                    1119,
+                    572
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        519.0
+                    ],
+                    [
+                        1119.0,
+                        519.0
+                    ],
+                    [
+                        1119.0,
+                        572.0
+                    ],
+                    [
+                        137.0,
+                        572.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9564927816390991,
+                "coordinate": [
+                    136,
+                    595,
+                    1121,
+                    714
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        136.0,
+                        595.0
+                    ],
+                    [
+                        1121.0,
+                        595.0
+                    ],
+                    [
+                        1121.0,
+                        714.0
+                    ],
+                    [
+                        136.0,
+                        714.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9254572987556458,
+                "coordinate": [
+                    136,
+                    735,
+                    1120,
+                    785
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        735.0
+                    ],
+                    [
+                        1120.0,
+                        735.0
+                    ],
+                    [
+                        1120.0,
+                        785.0
+                    ],
+                    [
+                        136.0,
+                        785.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9357717633247375,
+                "coordinate": [
+                    136,
+                    806,
+                    1121,
+                    879
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        806.0
+                    ],
+                    [
+                        1121.0,
+                        806.0
+                    ],
+                    [
+                        1121.0,
+                        879.0
+                    ],
+                    [
+                        136.0,
+                        879.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9200708270072937,
+                "coordinate": [
+                    137,
+                    901,
+                    1120,
+                    980
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        901.0
+                    ],
+                    [
+                        1120.0,
+                        901.0
+                    ],
+                    [
+                        1120.0,
+                        980.0
+                    ],
+                    [
+                        137.0,
+                        980.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9368857741355896,
+                "coordinate": [
+                    136,
+                    1002,
+                    1121,
+                    1074
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1002.0
+                    ],
+                    [
+                        1121.0,
+                        1002.0
+                    ],
+                    [
+                        1121.0,
+                        1074.0
+                    ],
+                    [
+                        136.0,
+                        1074.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8286045789718628,
+                "coordinate": [
+                    136,
+                    1097,
+                    1119,
+                    1151
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1097.0
+                    ],
+                    [
+                        1119.0,
+                        1097.0
+                    ],
+                    [
+                        1119.0,
+                        1151.0
+                    ],
+                    [
+                        136.0,
+                        1151.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8575316667556763,
+                "coordinate": [
+                    136,
+                    1172,
+                    825,
+                    1198
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1172.0
+                    ],
+                    [
+                        825.0,
+                        1172.0
+                    ],
+                    [
+                        825.0,
+                        1198.0
+                    ],
+                    [
+                        136.0,
+                        1198.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9463742971420288,
+                "coordinate": [
+                    136,
+                    1219,
+                    1121,
+                    1293
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1219.0
+                    ],
+                    [
+                        1121.0,
+                        1219.0
+                    ],
+                    [
+                        1121.0,
+                        1293.0
+                    ],
+                    [
+                        136.0,
+                        1293.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8864957690238953,
+                "coordinate": [
+                    137,
+                    1314,
+                    1119,
+                    1365
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1314.0
+                    ],
+                    [
+                        1119.0,
+                        1314.0
+                    ],
+                    [
+                        1119.0,
+                        1365.0
+                    ],
+                    [
+                        137.0,
+                        1365.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9496884942054749,
+                "coordinate": [
+                    136,
+                    1389,
+                    1121,
+                    1462
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1389.0
+                    ],
+                    [
+                        1121.0,
+                        1389.0
+                    ],
+                    [
+                        1121.0,
+                        1462.0
+                    ],
+                    [
+                        136.0,
+                        1462.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7808881402015686,
+                "coordinate": [
+                    218,
+                    1482,
+                    737,
+                    1510
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        218.0,
+                        1482.0
+                    ],
+                    [
+                        737.0,
+                        1482.0
+                    ],
+                    [
+                        737.0,
+                        1510.0
+                    ],
+                    [
+                        218.0,
+                        1510.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7610839605331421,
+                "coordinate": [
+                    61,
+                    1630,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7526466846466064,
+                "coordinate": [
+                    1080,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        1080,
+                        1624
+                    ],
+                    [
+                        1080,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

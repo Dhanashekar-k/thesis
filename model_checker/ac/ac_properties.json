@@ -1,0 +1,2806 @@
+[
+  {
+    "name": "no_failed_continues_charging",
+    "category": "safety",
+    "formula": "AG (ResponseCode = FAILED -> AX (proto_state = SessionStop | proto_state = proto_state))",
+    "description": "After a FAILED response, the session must eventually stop",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "stop_requires_power_delivery",
+    "category": "safety",
+    "formula": "AG (proto_state = AC_ChargeLoop & ChargeProgress = Stop -> AX (proto_state = PowerDelivery | proto_state = AC_ChargeLoop))",
+    "description": "ChargeProgress=Stop from charge loop must go to PowerDelivery",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "no_backward_SessionSetup_to_SupportedAppProtocol",
+    "category": "safety",
+    "formula": "AG (proto_state = SessionSetup -> AX proto_state != SupportedAppProtocol)",
+    "description": "No backward transition from SessionSetup to SupportedAppProtocol",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_terminates",
+    "category": "liveness",
+    "formula": "AG (proto_state = SupportedAppProtocol -> AF proto_state = SessionStop)",
+    "description": "Every session eventually reaches SessionStop",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_SupportedAppProtocol",
+    "category": "liveness",
+    "formula": "AG (proto_state = SupportedAppProtocol -> AF proto_state != SupportedAppProtocol)",
+    "description": "Eventually leave state SupportedAppProtocol",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_SessionSetup",
+    "category": "liveness",
+    "formula": "AG (proto_state = SessionSetup -> AF proto_state != SessionSetup)",
+    "description": "Eventually leave state SessionSetup",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_AuthorizationSetup",
+    "category": "liveness",
+    "formula": "AG (proto_state = AuthorizationSetup -> AF proto_state != AuthorizationSetup)",
+    "description": "Eventually leave state AuthorizationSetup",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_Authorization",
+    "category": "liveness",
+    "formula": "AG (proto_state = Authorization -> AF proto_state != Authorization)",
+    "description": "Eventually leave state Authorization",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_CertificateInstallation",
+    "category": "liveness",
+    "formula": "AG (proto_state = CertificateInstallation -> AF proto_state != CertificateInstallation)",
+    "description": "Eventually leave state CertificateInstallation",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_ServiceDiscovery",
+    "category": "liveness",
+    "formula": "AG (proto_state = ServiceDiscovery -> AF proto_state != ServiceDiscovery)",
+    "description": "Eventually leave state ServiceDiscovery",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_ServiceDetail",
+    "category": "liveness",
+    "formula": "AG (proto_state = ServiceDetail -> AF proto_state != ServiceDetail)",
+    "description": "Eventually leave state ServiceDetail",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_ServiceSelection",
+    "category": "liveness",
+    "formula": "AG (proto_state = ServiceSelection -> AF proto_state != ServiceSelection)",
+    "description": "Eventually leave state ServiceSelection",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_AC_ChargeParameterDiscovery",
+    "category": "liveness",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AF proto_state != AC_ChargeParameterDiscovery)",
+    "description": "Eventually leave state AC_ChargeParameterDiscovery",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_ScheduleExchange",
+    "category": "liveness",
+    "formula": "AG (proto_state = ScheduleExchange -> AF proto_state != ScheduleExchange)",
+    "description": "Eventually leave state ScheduleExchange",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_PowerDelivery",
+    "category": "liveness",
+    "formula": "AG (proto_state = PowerDelivery -> AF proto_state != PowerDelivery)",
+    "description": "Eventually leave state PowerDelivery",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "eventually_leave_AC_ChargeLoop",
+    "category": "liveness",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF proto_state != AC_ChargeLoop)",
+    "description": "Eventually leave state AC_ChargeLoop",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "evse_processing_completes",
+    "category": "liveness",
+    "formula": "AG (EVSEProcessing = Ongoing -> AF EVSEProcessing = Finished)",
+    "description": "EVSE processing eventually finishes",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T1",
+    "category": "compliance",
+    "formula": "AG (proto_state = SupportedAppProtocol & ResponseCode = OK_SuccessfulNegotiation -> AX proto_state = SessionSetup)",
+    "description": "T1: When guards hold at SupportedAppProtocol, transition to SessionSetup",
+    "source_reqs": [
+      "V2G20-1747",
+      "V2G20-1484"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T2",
+    "category": "compliance",
+    "formula": "AG (proto_state = SessionSetup & TimeStamp = e_0 & ResponseCode = OK -> AX proto_state = AuthorizationSetup)",
+    "description": "T2: When guards hold at SessionSetup, transition to AuthorizationSetup",
+    "source_reqs": [
+      "V2G20-1749",
+      "V2G20-1486"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T3",
+    "category": "compliance",
+    "formula": "AG (proto_state = SessionSetup & TimeStamp = e_0 & ResponseCode = OK -> AX proto_state = AC_ChargeParameterDiscovery)",
+    "description": "T3: When guards hold at SessionSetup, transition to AC_ChargeParameterDiscovery",
+    "source_reqs": [
+      "V2G20-2097"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T4",
+    "category": "compliance",
+    "formula": "AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = Authorization)",
+    "description": "T4: When guards hold at AuthorizationSetup, transition to Authorization",
+    "source_reqs": [
+      "V2G20-1577",
+      "V2G20-1971",
+      "V2G20-1970"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T5",
+    "category": "compliance",
+    "formula": "AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = CertificateInstallation)",
+    "description": "T5: When guards hold at AuthorizationSetup, transition to CertificateInstallation",
+    "source_reqs": [
+      "V2G20-1576",
+      "V2G20-1970"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T6",
+    "category": "compliance",
+    "formula": "AG (proto_state = CertificateInstallation & ReceivedMessage = CertificateInstallationReq & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = CertificateInstallation)",
+    "description": "T6: When guards hold at CertificateInstallation, transition to CertificateInstallation",
+    "source_reqs": [
+      "V2G20-1578",
+      "V2G20-1972",
+      "V2G20-1973"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T7",
+    "category": "compliance",
+    "formula": "AG (proto_state = CertificateInstallation & ReceivedMessage = CertificateInstallationReq & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = Authorization)",
+    "description": "T7: When guards hold at CertificateInstallation, transition to Authorization",
+    "source_reqs": [
+      "V2G20-2223",
+      "V2G20-1579",
+      "V2G20-2225"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T8",
+    "category": "compliance",
+    "formula": "AG (proto_state = Authorization & ReceivedMessage = AC_ChargeLoopRes & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = CertificateInstallation)",
+    "description": "T8: When guards hold at Authorization, transition to CertificateInstallation",
+    "source_reqs": [
+      "V2G20-2221",
+      "V2G20-2226",
+      "V2G20-1978"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T9",
+    "category": "compliance",
+    "formula": "AG (proto_state = Authorization & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = Authorization)",
+    "description": "T9: When guards hold at Authorization, transition to Authorization",
+    "source_reqs": [
+      "V2G20-2229",
+      "V2G20-1583",
+      "V2G20-2227"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T10",
+    "category": "compliance",
+    "formula": "AG (proto_state = Authorization & ReceivedMessage = AC_ChargeLoopRes & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = ServiceDiscovery)",
+    "description": "T10: When guards hold at Authorization, transition to ServiceDiscovery",
+    "source_reqs": [
+      "V2G20-2221",
+      "V2G20-1979",
+      "V2G20-2234"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T11",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = SessionStop)",
+    "description": "T11: When guards hold at ServiceDiscovery, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-1957",
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T12",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = ServiceDetail)",
+    "description": "T12: When guards hold at ServiceDiscovery, transition to ServiceDetail",
+    "source_reqs": [
+      "V2G20-1585",
+      "V2G20-1980"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T13",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = ServiceDetail)",
+    "description": "T13: When guards hold at ServiceDetail, transition to ServiceDetail",
+    "source_reqs": [
+      "V2G20-1981",
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T14",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = ServiceSelection)",
+    "description": "T14: When guards hold at ServiceDetail, transition to ServiceSelection",
+    "source_reqs": [
+      "V2G20-1981",
+      "V2G20-1587"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T15",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceSelection & ResponseCode = OK -> AX proto_state = AC_ChargeParameterDiscovery)",
+    "description": "T15: When guards hold at ServiceSelection, transition to AC_ChargeParameterDiscovery",
+    "source_reqs": [
+      "V2G20-1983",
+      "V2G20-1590"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T16",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery & EnergyTransferMode = AC -> AX proto_state = ScheduleExchange)",
+    "description": "T16: When guards hold at AC_ChargeParameterDiscovery, transition to ScheduleExchange",
+    "source_reqs": [
+      "V2G20-2659",
+      "V2G20-2658"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T17",
+    "category": "compliance",
+    "formula": "AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = ScheduleExchange)",
+    "description": "T17: When guards hold at ScheduleExchange, transition to ScheduleExchange",
+    "source_reqs": [
+      "V2G20-1593",
+      "V2G20-1986",
+      "V2G20-1987"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T18",
+    "category": "compliance",
+    "formula": "AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = PowerDelivery)",
+    "description": "T18: When guards hold at ScheduleExchange, transition to PowerDelivery",
+    "source_reqs": [
+      "V2G20-2122",
+      "V2G20-2123",
+      "V2G20-1989"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T19",
+    "category": "compliance",
+    "formula": "AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = PowerDelivery)",
+    "description": "T19: When guards hold at PowerDelivery, transition to PowerDelivery",
+    "source_reqs": [
+      "V2G20-2008",
+      "V2G20-2018",
+      "V2G20-1436"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T20",
+    "category": "compliance",
+    "formula": "AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = AC_ChargeLoop)",
+    "description": "T20: When guards hold at PowerDelivery, transition to AC_ChargeLoop",
+    "source_reqs": [
+      "V2G20-2193",
+      "V2G20-1969",
+      "V2G20-2192"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T21",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeLoop & ReceivedMessage = AC_ChargeLoopRes & MobilityNeedsMode = e_2 -> AX proto_state = PowerDelivery)",
+    "description": "T21: When guards hold at AC_ChargeLoop, transition to PowerDelivery",
+    "source_reqs": [
+      "V2G20-2193",
+      "V2G20-1969",
+      "V2G20-2192"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T22",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeLoop & ReceivedMessage = AC_ChargeLoopRes & MobilityNeedsMode = e_2 -> AX proto_state = AC_ChargeLoop)",
+    "description": "T22: When guards hold at AC_ChargeLoop, transition to AC_ChargeLoop",
+    "source_reqs": [
+      "V2G20-2012",
+      "V2G20-1440"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T23",
+    "category": "compliance",
+    "formula": "AG (proto_state = PowerDelivery & PayloadType = ScheduleRenegotiationPayloadID & EVSEProcessing = NOT_APPLICABLE & ResponseCode = OK & EVProcessing = Ongoing & ChargeProgress = Stop & ChargeProgress = Standby -> AX proto_state = SessionStop)",
+    "description": "T23: When guards hold at PowerDelivery, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-1623"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T24",
+    "category": "compliance",
+    "formula": "AG (proto_state = SessionStop & EVPowerProfileEntry = e_0kW & ResponseCode = OK & EVSENotification = Terminate & ServiceRenegotiationSupported = TRUE -> AX proto_state = ServiceDiscovery)",
+    "description": "T24: When guards hold at SessionStop, transition to ServiceDiscovery",
+    "source_reqs": [
+      "V2G20-1643",
+      "V2G20-1477"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T25",
+    "category": "compliance",
+    "formula": "AG (proto_state = Authorization & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = SessionStop)",
+    "description": "T25: When guards hold at Authorization, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T26",
+    "category": "compliance",
+    "formula": "AG (proto_state = AuthorizationSetup & ResponseCode = OK -> AX proto_state = SessionStop)",
+    "description": "T26: When guards hold at AuthorizationSetup, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T27",
+    "category": "compliance",
+    "formula": "AG (proto_state = CertificateInstallation & EVSEProcessing = ONGOING & ResponseCode = OK & ResponseCode = OK & ResponseCode = OK & EVSEProcessing = Finished -> AX proto_state = SessionStop)",
+    "description": "T27: When guards hold at CertificateInstallation, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T28",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDiscovery & MobilityNeedsMode = e_2 & ServiceRenegotiationSupported = TRUE -> AX proto_state = SessionStop)",
+    "description": "T28: When guards hold at ServiceDiscovery, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T29",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDetail & ServiceID = e_1 & ControlMode = e_2 & ResponseCode = OK -> AX proto_state = SessionStop)",
+    "description": "T29: When guards hold at ServiceDetail, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T30",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceSelection & ResponseCode = OK -> AX proto_state = SessionStop)",
+    "description": "T30: When guards hold at ServiceSelection, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T31",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery & EnergyTransferMode = AC -> AX proto_state = SessionStop)",
+    "description": "T31: When guards hold at AC_ChargeParameterDiscovery, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "compliance_T32",
+    "category": "compliance",
+    "formula": "AG (proto_state = ScheduleExchange & GoToPause = TRUE & EVSEProcessing = Ongoing -> AX proto_state = SessionStop)",
+    "description": "T32: When guards hold at ScheduleExchange, transition to SessionStop",
+    "source_reqs": [
+      "V2G20-2644",
+      "V2G20-2645"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T1_SessionSetupReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionSetup -> AX (msg_channel = SessionSetupReq | msg_channel = none))",
+    "description": "After reaching SessionSetup, next message must be SessionSetupReq",
+    "source_reqs": [
+      "V2G20-1747"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be PowerDeliveryReq",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_normal",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = normal | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be normal",
+    "source_reqs": [
+      "V2G20-2619"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-1032"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_process",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = process | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be process",
+    "source_reqs": [
+      "V2G20-449"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_NextMsgReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = NextMsgReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be NextMsgReq",
+    "source_reqs": [
+      "V2G20-449"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_AuthorizationSetupReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = AuthorizationSetupReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be AuthorizationSetupReq",
+    "source_reqs": [
+      "V2G20-1749"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_AC_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = AC_ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be AC_ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2097"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T2_DC_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AX (msg_channel = DC_ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AuthorizationSetup, next message must be DC_ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2097"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be PowerDeliveryReq",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_normal",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = normal | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be normal",
+    "source_reqs": [
+      "V2G20-2619"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-1032"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_process",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = process | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be process",
+    "source_reqs": [
+      "V2G20-449"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_NextMsgReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = NextMsgReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be NextMsgReq",
+    "source_reqs": [
+      "V2G20-449"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_AuthorizationSetupReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = AuthorizationSetupReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be AuthorizationSetupReq",
+    "source_reqs": [
+      "V2G20-1749"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_AC_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = AC_ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be AC_ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2097"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T3_DC_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = DC_ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be DC_ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2097"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T4_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T4_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T5_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T5_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T6_NextCertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be NextCertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-2492"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T6_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1550"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T6_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1579"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T7_NextCertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be NextCertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-2492"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T7_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1550"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T7_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1579"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T8_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1582"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T8_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1583"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T8_ServiceDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = CertificateInstallation -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))",
+    "description": "After reaching CertificateInstallation, next message must be ServiceDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2221"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T9_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1582"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T9_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1583"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T9_ServiceDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = Authorization -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))",
+    "description": "After reaching Authorization, next message must be ServiceDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2221"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T10_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1582"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T10_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1583"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T10_ServiceDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be ServiceDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2221"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T11_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1585"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T12_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching ServiceDetail, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1585"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T13_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching ServiceDetail, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T13_ServiceSelectionReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDetail -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))",
+    "description": "After reaching ServiceDetail, next message must be ServiceSelectionReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T14_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceSelection -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching ServiceSelection, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T14_ServiceSelectionReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceSelection -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))",
+    "description": "After reaching ServiceSelection, next message must be ServiceSelectionReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T15_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-1590"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T15_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1984"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T15_ServiceSelectionReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeParameterDiscovery, next message must be ServiceSelectionReq",
+    "source_reqs": [
+      "V2G20-1984"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T17_ScheduleExchangeReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ScheduleExchange -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))",
+    "description": "After reaching ScheduleExchange, next message must be ScheduleExchangeReq",
+    "source_reqs": [
+      "V2G20-1593"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T17_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ScheduleExchange -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching ScheduleExchange, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1596"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T18_ScheduleExchangeReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be ScheduleExchangeReq",
+    "source_reqs": [
+      "V2G20-1593"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T18_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1596"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-xxxx"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1401"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-2113"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-2117"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_measure",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = measure | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be measure",
+    "source_reqs": [
+      "V2G20-919"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_AC_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be AC_ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-1437"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T19_SessionStopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = SessionStopReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be SessionStopReq",
+    "source_reqs": [
+      "V2G20-1623"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-xxxx"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1401"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-2113"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-2117"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_measure",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = measure | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be measure",
+    "source_reqs": [
+      "V2G20-919"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_AC_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be AC_ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-1437"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T20_SessionStopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = SessionStopReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be SessionStopReq",
+    "source_reqs": [
+      "V2G20-1623"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T21_AC_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be AC_ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-1440"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T21_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = PowerDelivery -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching PowerDelivery, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1440"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T22_AC_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be AC_ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-1440"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T22_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching AC_ChargeLoop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1440"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-xxxx"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1401"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-2113"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-2117"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_measure",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = measure | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be measure",
+    "source_reqs": [
+      "V2G20-919"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_AC_ChargeLoopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = AC_ChargeLoopReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be AC_ChargeLoopReq",
+    "source_reqs": [
+      "V2G20-1437"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T23_SessionStopReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = SessionStopReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be SessionStopReq",
+    "source_reqs": [
+      "V2G20-1623"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T24_Follow",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = Follow | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be Follow",
+    "source_reqs": [
+      "V2G20-1227"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T24_D",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = D | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be D",
+    "source_reqs": [
+      "V2G20-1227"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T24_ServiceDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))",
+    "description": "After reaching ServiceDiscovery, next message must be ServiceDiscoveryReq",
+    "source_reqs": [
+      "V2G20-1477"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T25_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1582"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T25_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1583"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T25_ServiceDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceDiscoveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceDiscoveryReq",
+    "source_reqs": [
+      "V2G20-2221"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T26_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T26_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1576,V2G20-1577"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T27_NextCertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = NextCertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be NextCertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-2492"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T27_CertificateInstallationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = CertificateInstallationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be CertificateInstallationReq",
+    "source_reqs": [
+      "V2G20-1550"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T27_AuthorizationReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = AuthorizationReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be AuthorizationReq",
+    "source_reqs": [
+      "V2G20-1579"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T28_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1585"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T29_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T29_ServiceSelectionReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceSelectionReq",
+    "source_reqs": [
+      "V2G20-1586"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T30_ChargeParameterDiscoveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ChargeParameterDiscoveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ChargeParameterDiscoveryReq",
+    "source_reqs": [
+      "V2G20-1590"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T30_ServiceDetailReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceDetailReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceDetailReq",
+    "source_reqs": [
+      "V2G20-1984"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T30_ServiceSelectionReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ServiceSelectionReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ServiceSelectionReq",
+    "source_reqs": [
+      "V2G20-1984"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T32_ScheduleExchangeReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = ScheduleExchangeReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be ScheduleExchangeReq",
+    "source_reqs": [
+      "V2G20-1593"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "seq_T32_PowerDeliveryReq",
+    "category": "sequencing",
+    "formula": "AG (proto_state = SessionStop -> AX (msg_channel = PowerDeliveryReq | msg_channel = none))",
+    "description": "After reaching SessionStop, next message must be PowerDeliveryReq",
+    "source_reqs": [
+      "V2G20-1596"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "global_invar_certificateValidationConformance",
+    "category": "invariant",
+    "formula": "AG (certificateValidationConformance = IETF_RFC_5280)",
+    "description": "Global invariant: certificateValidationConformance = IETF_RFC_5280",
+    "source_reqs": [
+      "V2G20-1001"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "global_invar_WLAN_STA_MAC_Address_Randomization",
+    "category": "invariant",
+    "formula": "AG (WLAN_STA_MAC_Address_Randomization = TRUE)",
+    "description": "Global invariant: WLAN_STA_MAC_Address_Randomization = true",
+    "source_reqs": [
+      "V2G20-2253"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T2_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-4067"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T2_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-5043"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T3_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-4067"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T3_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionSetup -> AF (proto_state != SessionSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from SessionSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-5043"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T4_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-1970"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T5_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-1970"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T6_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1973"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T6_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1412"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T6_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1975"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T7_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1975"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T7_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1973"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T7_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1412"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T8_V2G_EVCC_SendChargeLoopReqTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_EVCC_SendChargeLoopReqTimeout: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-2232"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T8_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1977"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T8_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1979"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T9_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1977"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T9_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1979"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T10_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1979"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T10_V2G_EVCC_SendChargeLoopReqTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_EVCC_SendChargeLoopReqTimeout: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-2232"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T10_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1977"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T11_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2603"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T12_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2603"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T13_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout",
+    "source_reqs": [
+      "V2G20-1981"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T14_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout",
+    "source_reqs": [
+      "V2G20-1981"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T15_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceSelection -> AF (proto_state != ServiceSelection | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ServiceSelection must happen before timeout",
+    "source_reqs": [
+      "V2G20-1983"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T16_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> AF (proto_state != AC_ChargeParameterDiscovery | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeParameterDiscovery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2658"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T17_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1987"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T17_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1611"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T18_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1611"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T18_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1987"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T19_V2G_SECC_Sequence_Timer",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-1385"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T20_V2G_SECC_Sequence_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timeout: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2192"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T20_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2012"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T20_V2G_EVCC_Sequence_Performance_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_EVCC_Sequence_Performance_Timeout: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-1437"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T20_V2G_SECC_Sequence_Timer",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-1385"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_SECC_Sequence_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2192"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2012"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_Sequence_Performance_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_Sequence_Performance_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1437"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1066"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1234"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSEMaxTimeToWaitForChargeLoopReq",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSEMaxTimeToWaitForChargeLoopReq: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1258"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1313"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSEMaxTimeOut",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSEMaxTimeOut: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1755"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_To_SECC_LongestCommTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_LongestCommTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1756"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1782"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1875"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_AC_CL_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_AC_CL_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1900"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1909"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2180"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_ACChargeLoopReqTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_ACChargeLoopReqTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2320"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2368"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_Response_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_Response_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2522"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_Processing_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_Processing_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2613"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T21_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2647"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2012"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1066"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1234"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSEMaxTimeToWaitForChargeLoopReq",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSEMaxTimeToWaitForChargeLoopReq: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1258"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1313"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSEMaxTimeOut",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSEMaxTimeOut: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1755"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_To_SECC_LongestCommTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_LongestCommTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1756"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1782"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1875"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_AC_CL_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_AC_CL_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1900"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1909"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2180"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_ACChargeLoopReqTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_ACChargeLoopReqTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2320"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2368"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_Response_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_Response_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2522"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_Processing_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_Processing_Timeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2613"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T22_V2G_EVSE_ResponseTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = AC_ChargeLoop -> AF (proto_state != AC_ChargeLoop | timer_expired))",
+    "description": "Timer V2G_EVSE_ResponseTimeout: transition from AC_ChargeLoop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2647"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T23_V2G_SECC_Sequence_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timeout: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-1623"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T23_V2G_SECC_Sequence_Timer",
+    "category": "timing",
+    "formula": "AG (proto_state = PowerDelivery -> AF (proto_state != PowerDelivery | timer_expired))",
+    "description": "Timer V2G_SECC_Sequence_Timer: transition from PowerDelivery must happen before timeout",
+    "source_reqs": [
+      "V2G20-1385"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T24_V2G_SECC_SessionStopTimeout",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionStop -> AF (proto_state != SessionStop | timer_expired))",
+    "description": "Timer V2G_SECC_SessionStopTimeout: transition from SessionStop must happen before timeout",
+    "source_reqs": [
+      "V2G20-1852"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T24_V2G_EVCC_SECC_ComMaxTimeWaitForSessionStopRes",
+    "category": "timing",
+    "formula": "AG (proto_state = SessionStop -> AF (proto_state != SessionStop | timer_expired))",
+    "description": "Timer V2G_EVCC_SECC_ComMaxTimeWaitForSessionStopRes: transition from SessionStop must happen before timeout",
+    "source_reqs": [
+      "V2G20-2216"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T25_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1977"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T25_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = Authorization -> AF (proto_state != Authorization | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from Authorization must happen before timeout",
+    "source_reqs": [
+      "V2G20-1979"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T26_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = AuthorizationSetup -> AF (proto_state != AuthorizationSetup | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from AuthorizationSetup must happen before timeout",
+    "source_reqs": [
+      "V2G20-1970"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T27_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1412"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T27_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1973"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T27_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = CertificateInstallation -> AF (proto_state != CertificateInstallation | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from CertificateInstallation must happen before timeout",
+    "source_reqs": [
+      "V2G20-1975"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T28_V2G_EVCC_To_SECC_Timeout",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDiscovery -> AF (proto_state != ServiceDiscovery | timer_expired))",
+    "description": "Timer V2G_EVCC_To_SECC_Timeout: transition from ServiceDiscovery must happen before timeout",
+    "source_reqs": [
+      "V2G20-2603"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T29_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceDetail -> AF (proto_state != ServiceDetail | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ServiceDetail must happen before timeout",
+    "source_reqs": [
+      "V2G20-1981"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T30_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ServiceSelection -> AF (proto_state != ServiceSelection | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ServiceSelection must happen before timeout",
+    "source_reqs": [
+      "V2G20-1983"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T32_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1611"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "timing_T32_V2G_SECC_Msg_Performance_Time",
+    "category": "timing",
+    "formula": "AG (proto_state = ScheduleExchange -> AF (proto_state != ScheduleExchange | timer_expired))",
+    "description": "Timer V2G_SECC_Msg_Performance_Time: transition from ScheduleExchange must happen before timeout",
+    "source_reqs": [
+      "V2G20-1987"
+    ],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "deadlock_freedom",
+    "category": "safety",
+    "formula": "AG (proto_state != SessionStop -> EX TRUE)",
+    "description": "No deadlock: every non-terminal state has a successor",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_ServiceDetail",
+    "category": "safety",
+    "formula": "AG (proto_state = ServiceDetail -> retry_count <= 3)",
+    "description": "Retry count bounded at ServiceDetail",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_ScheduleExchange",
+    "category": "safety",
+    "formula": "AG (proto_state = ScheduleExchange -> retry_count <= 3)",
+    "description": "Retry count bounded at ScheduleExchange",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_CertificateInstallation",
+    "category": "safety",
+    "formula": "AG (proto_state = CertificateInstallation -> retry_count <= 3)",
+    "description": "Retry count bounded at CertificateInstallation",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_Authorization",
+    "category": "safety",
+    "formula": "AG (proto_state = Authorization -> retry_count <= 3)",
+    "description": "Retry count bounded at Authorization",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_PowerDelivery",
+    "category": "safety",
+    "formula": "AG (proto_state = PowerDelivery -> retry_count <= 3)",
+    "description": "Retry count bounded at PowerDelivery",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "retry_bound_AC_ChargeLoop",
+    "category": "safety",
+    "formula": "AG (proto_state = AC_ChargeLoop -> retry_count <= 3)",
+    "description": "Retry count bounded at AC_ChargeLoop",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_SupportedAppProtocol",
+    "category": "compliance",
+    "formula": "AG (proto_state = SupportedAppProtocol -> (ResponseCode = OK_SuccessfulNegotiation | ResponseCode = OK_SuccessfulNegotiationWithMinorDeviation))",
+    "description": "In SupportedAppProtocol, ResponseCode must be one of: OK_SuccessfulNegotiation, OK_SuccessfulNegotiationWithMinorDeviation",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_SessionSetup",
+    "category": "compliance",
+    "formula": "AG (proto_state = SessionSetup -> (ResponseCode = OK_NewSessionEstablished))",
+    "description": "In SessionSetup, ResponseCode must be one of: OK_NewSessionEstablished",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_AuthorizationSetup",
+    "category": "compliance",
+    "formula": "AG (proto_state = AuthorizationSetup -> (ResponseCode = OK))",
+    "description": "In AuthorizationSetup, ResponseCode must be one of: OK",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_Authorization",
+    "category": "compliance",
+    "formula": "AG (proto_state = Authorization -> (ResponseCode = OK))",
+    "description": "In Authorization, ResponseCode must be one of: OK",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_CertificateInstallation",
+    "category": "compliance",
+    "formula": "AG (proto_state = CertificateInstallation -> (ResponseCode = OK | ResponseCode = WARNING_CertificateValidationError))",
+    "description": "In CertificateInstallation, ResponseCode must be one of: OK, WARNING_CertificateValidationError",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_ServiceDiscovery",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDiscovery -> (ResponseCode = OK))",
+    "description": "In ServiceDiscovery, ResponseCode must be one of: OK",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_ServiceDetail",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceDetail -> (ResponseCode = OK | ResponseCode = FAILED_ServiceIDInvalid))",
+    "description": "In ServiceDetail, ResponseCode must be one of: OK, FAILED_ServiceIDInvalid",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_ServiceSelection",
+    "category": "compliance",
+    "formula": "AG (proto_state = ServiceSelection -> (ResponseCode = OK | ResponseCode = FAILED_ServiceSelectionInvalid))",
+    "description": "In ServiceSelection, ResponseCode must be one of: OK, FAILED_ServiceSelectionInvalid",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_AC_ChargeParameterDiscovery",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeParameterDiscovery -> (ResponseCode = FAILED_WrongChargeParameter))",
+    "description": "In AC_ChargeParameterDiscovery, ResponseCode must be one of: FAILED_WrongChargeParameter",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_ScheduleExchange",
+    "category": "compliance",
+    "formula": "AG (proto_state = ScheduleExchange -> (ResponseCode = OK | ResponseCode = WARNING_EVPowerProfileViolation | ResponseCode = FAILED_EVPowerProfileViolation))",
+    "description": "In ScheduleExchange, ResponseCode must be one of: OK, WARNING_EVPowerProfileViolation, FAILED_EVPowerProfileViolation",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_PowerDelivery",
+    "category": "compliance",
+    "formula": "AG (proto_state = PowerDelivery -> (ResponseCode = OK | ResponseCode = WARNING_StandbyNotAllowed))",
+    "description": "In PowerDelivery, ResponseCode must be one of: OK, WARNING_StandbyNotAllowed",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_AC_ChargeLoop",
+    "category": "compliance",
+    "formula": "AG (proto_state = AC_ChargeLoop -> (ResponseCode = WARNING_EVPowerProfileViolation | ResponseCode = FAILED_EVPowerProfileViolation))",
+    "description": "In AC_ChargeLoop, ResponseCode must be one of: WARNING_EVPowerProfileViolation, FAILED_EVPowerProfileViolation",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "rc_restrict_SessionStop",
+    "category": "compliance",
+    "formula": "AG (proto_state = SessionStop -> (ResponseCode = OK | ResponseCode = FAILED | ResponseCode = WARNING))",
+    "description": "In SessionStop, ResponseCode must be one of: OK, FAILED, WARNING",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_Authorization_EVSEProcessing",
+    "category": "invariant",
+    "formula": "AG (proto_state = Authorization -> (EVSEProcessing = Finished | EVSEProcessing = Ongoing))",
+    "description": "In Authorization, EVSEProcessing constrained to: Finished, Ongoing",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_CertificateInstallation_EVSEProcessing",
+    "category": "invariant",
+    "formula": "AG (proto_state = CertificateInstallation -> (EVSEProcessing = Finished | EVSEProcessing = ONGOING | EVSEProcessing = Ongoing))",
+    "description": "In CertificateInstallation, EVSEProcessing constrained to: Finished, ONGOING, Ongoing",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_ServiceDiscovery_ServiceRenegotiationSupported",
+    "category": "invariant",
+    "formula": "AG (proto_state = ServiceDiscovery -> (ServiceRenegotiationSupported = e_True))",
+    "description": "In ServiceDiscovery, ServiceRenegotiationSupported constrained to: True",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_ScheduleExchange_EVSEProcessing",
+    "category": "invariant",
+    "formula": "AG (proto_state = ScheduleExchange -> (EVSEProcessing = Finished | EVSEProcessing = Ongoing))",
+    "description": "In ScheduleExchange, EVSEProcessing constrained to: Finished, Ongoing",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_PowerDelivery_EVSEProcessing",
+    "category": "invariant",
+    "formula": "AG (proto_state = PowerDelivery -> (EVSEProcessing = NOT_APPLICABLE))",
+    "description": "In PowerDelivery, EVSEProcessing constrained to: NOT_APPLICABLE",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_PowerDelivery_EVProcessing",
+    "category": "invariant",
+    "formula": "AG (proto_state = PowerDelivery -> (EVProcessing = Ongoing))",
+    "description": "In PowerDelivery, EVProcessing constrained to: Ongoing",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_PowerDelivery_ChargeProgress",
+    "category": "invariant",
+    "formula": "AG (proto_state = PowerDelivery -> (ChargeProgress = Standby | ChargeProgress = Stop))",
+    "description": "In PowerDelivery, ChargeProgress constrained to: Standby, Stop",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_SessionStop_EVSENotification",
+    "category": "invariant",
+    "formula": "AG (proto_state = SessionStop -> (EVSENotification = Terminate))",
+    "description": "In SessionStop, EVSENotification constrained to: Terminate",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_SessionStop_ServiceRenegotiationSupported",
+    "category": "invariant",
+    "formula": "AG (proto_state = SessionStop -> (ServiceRenegotiationSupported = e_True))",
+    "description": "In SessionStop, ServiceRenegotiationSupported constrained to: True",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  },
+  {
+    "name": "constrain_SessionStop_ChargingSession",
+    "category": "invariant",
+    "formula": "AG (proto_state = SessionStop -> (ChargingSession = Pause | ChargingSession = ServiceRenegotiation | ChargingSession = Terminate))",
+    "description": "In SessionStop, ChargingSession constrained to: Pause, ServiceRenegotiation, Terminate",
+    "source_reqs": [],
+    "uses_monitor": false,
+    "monitor_var": ""
+  }
+]

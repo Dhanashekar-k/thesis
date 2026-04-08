@@ -1,0 +1,440 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 350,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>EVTargetVoltage</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Target voltage requested by the EV.</td></tr><tr><td>EVMaximumChargePower</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Maximum charge power allowed by the EV.</td></tr><tr><td>EVMinimumChargePower</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Minimum charge power allowed by the EV.</td></tr><tr><td>EVMaximumChargeCurrent</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Maximum charge current allowed by the EV.</td></tr><tr><td>EVMaximumVoltage</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Maximum voltage allowed by the EV.</td></tr><tr><td>EVMinimumVoltage</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Minimum voltage allowed by the EV.</td></tr><tr><td>EVMaximumDischargePower</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Maximum discharge power allowed by the EV.</td></tr><tr><td>EVMinimumDischargePower</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Minimum discharge power allowed by the EV.</td></tr><tr><td>EVMaximumDischargeCurrent</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Maximum discharge current allowed by the EV.</td></tr></table>",
+            "block_bbox": [
+                139,
+                162,
+                1117,
+                1064
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    162.0
+                ],
+                [
+                    1117.0,
+                    162.0
+                ],
+                [
+                    1117.0,
+                    1064.0
+                ],
+                [
+                    139.0,
+                    1064.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.5.7.5 BPT_Dynamic_DC_CLResControlModeType",
+            "block_bbox": [
+                193,
+                1083,
+                775,
+                1112
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    1083.0
+                ],
+                [
+                    775.0,
+                    1083.0
+                ],
+                [
+                    775.0,
+                    1112.0
+                ],
+                [
+                    193.0,
+                    1112.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1773] The SECC and the EVCC shall implement this type as defined in Figure 190 and Table 181.",
+            "block_bbox": [
+                143,
+                1132,
+                1119,
+                1186
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    143.0,
+                    1132.0
+                ],
+                [
+                    1119.0,
+                    1132.0
+                ],
+                [
+                    1119.0,
+                    1186.0
+                ],
+                [
+                    143.0,
+                    1186.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "345",
+            "block_bbox": [
+                1077,
+                1623,
+                1119,
+                1647
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    1077,
+                    1623
+                ],
+                [
+                    1077,
+                    1638
+                ],
+                [
+                    1106,
+                    1638
+                ],
+                [
+                    1107,
+                    1639
+                ],
+                [
+                    1107,
+                    1646
+                ],
+                [
+                    1118,
+                    1646
+                ],
+                [
+                    1118,
+                    1623
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1629,
+                1120,
+                1683
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    61,
+                    1637
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1078,
+                    1682
+                ],
+                [
+                    1119,
+                    1667
+                ],
+                [
+                    1119,
+                    1645
+                ],
+                [
+                    1090,
+                    1637
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8741896152496338,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9782435894012451,
+                "coordinate": [
+                    139,
+                    162,
+                    1117,
+                    1064
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        162.0
+                    ],
+                    [
+                        1117.0,
+                        162.0
+                    ],
+                    [
+                        1117.0,
+                        1064.0
+                    ],
+                    [
+                        139.0,
+                        1064.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7078754901885986,
+                "coordinate": [
+                    193,
+                    1083,
+                    775,
+                    1112
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        193.0,
+                        1083.0
+                    ],
+                    [
+                        775.0,
+                        1083.0
+                    ],
+                    [
+                        775.0,
+                        1112.0
+                    ],
+                    [
+                        193.0,
+                        1112.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8351108431816101,
+                "coordinate": [
+                    143,
+                    1132,
+                    1119,
+                    1186
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        143.0,
+                        1132.0
+                    ],
+                    [
+                        1119.0,
+                        1132.0
+                    ],
+                    [
+                        1119.0,
+                        1186.0
+                    ],
+                    [
+                        143.0,
+                        1186.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7171988487243652,
+                "coordinate": [
+                    1077,
+                    1623,
+                    1119,
+                    1647
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        1077,
+                        1623
+                    ],
+                    [
+                        1077,
+                        1638
+                    ],
+                    [
+                        1106,
+                        1638
+                    ],
+                    [
+                        1107,
+                        1639
+                    ],
+                    [
+                        1107,
+                        1646
+                    ],
+                    [
+                        1118,
+                        1646
+                    ],
+                    [
+                        1118,
+                        1623
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8605332374572754,
+                "coordinate": [
+                    61,
+                    1629,
+                    1120,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1637
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1078,
+                        1682
+                    ],
+                    [
+                        1119,
+                        1667
+                    ],
+                    [
+                        1119,
+                        1645
+                    ],
+                    [
+                        1090,
+                        1637
+                    ]
+                ]
+            }
+        ]
+    }
+}

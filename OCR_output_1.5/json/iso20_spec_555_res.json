@@ -1,0 +1,477 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 555,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<PriceRuleStacks>\n    <PriceRuleStack>\n        <Duration>86400</Duration>\n        <PriceRule>\n            <EnergyFee>\n                <v2gci_ct:Exponent>-2</v2gci_ct:Exponent>\n                <v2gci_ct:Value>1</v2gci_ct:Value>\n            </EnergyFee>\n            <PowerRangeStart>\n                <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                <v2gci_ct:Value>0</v2gci_ct:Value>\n            </PowerRangeStart>\n        </PriceRule>\n    </PriceRuleStack>\n</PriceRuleStacks>\n</AbsolutePriceSchedule>",
+            "block_bbox": [
+                80,
+                163,
+                670,
+                458
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    80.0,
+                    163.0
+                ],
+                [
+                    670.0,
+                    163.0
+                ],
+                [
+                    670.0,
+                    458.0
+                ],
+                [
+                    80.0,
+                    458.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.2.3 Energy and taxes",
+            "block_bbox": [
+                69,
+                481,
+                318,
+                508
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    481.0
+                ],
+                [
+                    318.0,
+                    481.0
+                ],
+                [
+                    318.0,
+                    508.0
+                ],
+                [
+                    69.0,
+                    508.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This example illustrates billing by the kWh, and now includes the taxes. Note that taxes are expressed in percent. This example charges $0.11 per kWh, and provides federal and state taxes.",
+            "block_bbox": [
+                68,
+                531,
+                1052,
+                586
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    531.0
+                ],
+                [
+                    1052.0,
+                    531.0
+                ],
+                [
+                    1052.0,
+                    586.0
+                ],
+                [
+                    68.0,
+                    586.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<AbsolutePriceSchedule\n    xmlns=\"urn:iso:std:iso:15118:-20:CommonMessages\"\n    xmlns:v2gci_ct=\"urn:iso:std:iso:15118:-20:CommonTypes\"       xmlns:xsi=\"http://www.w3.org/2001/XMLSchema\"\n    instance\" xsi:schemaLocation=\"urn:iso:std:iso:15118:-20:CommonMessages./V2G_CI_Common_Messages.xsd\"\n    <TimeAnchor>1582842864000000</TimeAnchor>\n    <PriceScheduleID>1</PriceScheduleID>\n    <PriceScheduleDescription>Fee_and_Tax_for_energy</PriceScheduleDescription>\n    <Currency>USD</Currency>\n    <Language>ENG</Language>\n    <TaxRules>\n        <TaxRule>\n            <TaxRuleID>1</TaxRuleID>\n            <TaxRuleName>Federal</TaxRuleName>\n            <TaxRate>\n                <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                <v2gci_ct:Value>5</v2gci_ct:Value>\n            </TaxRate>\n            <AppliesToEnergyFee>true</AppliesToEnergyFee>\n            <AppliesToParkingFee>true</AppliesToParkingFee>\n            <AppliesToOverstayFee>true</AppliesToOverstayFee>\n            <AppliesMinimumMaximumCost>true</AppliesMinimumMaximumCost>\n        </TaxRule>\n        <TaxRule>\n            <TaxRuleID>2</TaxRuleID>\n            <TaxRuleName>State</TaxRuleName>\n            <TaxRate>\n                <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                <v2gci_ct:Value>1</v2gci_ct:Value>\n            </TaxRate>\n            <AppliesToEnergyFee>true</AppliesToEnergyFee>\n            <AppliesToParkingFee>true</AppliesToParkingFee>\n            <AppliesToOverstayFee>true</AppliesToOverstayFee>\n            <AppliesMinimumMaximumCost>true</AppliesMinimumMaximumCost>\n        </TaxRule>\n    </TaxRules>\n    <PriceAlgorithm>urn:iso:std:iso:15118:-20:PriceAlgorithm:1-Power</PriceAlgorithm>\n    <PriceRuleStacks>\n        <PriceRuleStack>\n            <Duration>86400</Duration>\n            <PriceRule>\n                <EnergyFee>\n                    <v2gci_ct:Exponent>-2</v2gci_ct:Exponent>\n                    <v2gci_ct:Value>11</v2gci_ct:Value>\n                </EnergyFee>\n                <PowerRangeStart>\n                    <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                    <v2gci_ct:Value>0</v2gci_ct:Value>\n                </PowerRangeStart>\n            </PriceRule>\n        </PriceRuleStack>\n    </PriceRuleStacks>\n</AbsolutePriceSchedule>",
+            "block_bbox": [
+                73,
+                612,
+                1037,
+                1555
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    73.0,
+                    612.0
+                ],
+                [
+                    1037.0,
+                    612.0
+                ],
+                [
+                    1037.0,
+                    1555.0
+                ],
+                [
+                    73.0,
+                    1555.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "550",
+            "block_bbox": [
+                72,
+                1614,
+                115,
+                1636
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1635.0
+                ],
+                [
+                    72.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "© ISO 2022 – All rights reserved\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1617,
+                1119,
+                1682
+            ],
+            "block_id": 6,
+            "block_order": 5,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    61,
+                    1642
+                ],
+                [
+                    61,
+                    1681
+                ],
+                [
+                    1118,
+                    1673
+                ],
+                [
+                    1118,
+                    1617
+                ],
+                [
+                    537,
+                    1617
+                ],
+                [
+                    459,
+                    1634
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8478037714958191,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.9493873119354248,
+                "coordinate": [
+                    80,
+                    163,
+                    670,
+                    458
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        80.0,
+                        163.0
+                    ],
+                    [
+                        670.0,
+                        163.0
+                    ],
+                    [
+                        670.0,
+                        458.0
+                    ],
+                    [
+                        80.0,
+                        458.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8206512331962585,
+                "coordinate": [
+                    69,
+                    481,
+                    318,
+                    508
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        481.0
+                    ],
+                    [
+                        318.0,
+                        481.0
+                    ],
+                    [
+                        318.0,
+                        508.0
+                    ],
+                    [
+                        69.0,
+                        508.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.903725802898407,
+                "coordinate": [
+                    68,
+                    531,
+                    1052,
+                    586
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        531.0
+                    ],
+                    [
+                        1052.0,
+                        531.0
+                    ],
+                    [
+                        1052.0,
+                        586.0
+                    ],
+                    [
+                        68.0,
+                        586.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.9550163745880127,
+                "coordinate": [
+                    73,
+                    612,
+                    1037,
+                    1555
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        73.0,
+                        612.0
+                    ],
+                    [
+                        1037.0,
+                        612.0
+                    ],
+                    [
+                        1037.0,
+                        1555.0
+                    ],
+                    [
+                        73.0,
+                        1555.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7528859376907349,
+                "coordinate": [
+                    72,
+                    1614,
+                    115,
+                    1636
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1635.0
+                    ],
+                    [
+                        72.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.6113460659980774,
+                "coordinate": [
+                    61,
+                    1617,
+                    1119,
+                    1682
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        61,
+                        1642
+                    ],
+                    [
+                        61,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1673
+                    ],
+                    [
+                        1118,
+                        1617
+                    ],
+                    [
+                        537,
+                        1617
+                    ],
+                    [
+                        459,
+                        1634
+                    ]
+                ]
+            }
+        ]
+    }
+}

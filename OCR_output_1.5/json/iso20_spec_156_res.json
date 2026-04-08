@@ -1,0 +1,1040 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 156,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1219] If in message AuthorizationSetupRes, the SECC offers the service \"PnC\" in the parameter AuthorizationServices, the SECC shall use the element PnC_ASResAuthorizationMode.",
+            "block_bbox": [
+                137,
+                168,
+                1121,
+                247
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    168.0
+                ],
+                [
+                    1121.0,
+                    168.0
+                ],
+                [
+                    1121.0,
+                    247.0
+                ],
+                [
+                    137.0,
+                    247.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1220] If in message AuthorizationSetupRes, the SECC does not offer the service \"PnC\" in the parameter AuthorizationServices, the SECC shall use the element EIM_ASResAuthorizationMode.",
+            "block_bbox": [
+                137,
+                268,
+                1121,
+                347
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    268.0
+                ],
+                [
+                    1121.0,
+                    268.0
+                ],
+                [
+                    1121.0,
+                    347.0
+                ],
+                [
+                    137.0,
+                    347.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2096] In case authorization has already been completed by the time AuthorizationSetupReq is received by the SECC or authorization is not necessary, the SECC shall only offer EIM in AuthorizationSetupRes.",
+            "block_bbox": [
+                137,
+                371,
+                1121,
+                449
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    371.0
+                ],
+                [
+                    1121.0,
+                    371.0
+                ],
+                [
+                    1121.0,
+                    449.0
+                ],
+                [
+                    137.0,
+                    449.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2566] The SECC shall indicate via AuthorizationServices parameter, in AuthorizationSetupRes message, the authorization service(s) offered by the SECC. The SECC could offer EIM or PnC or both as the authorization service(s).",
+            "block_bbox": [
+                138,
+                472,
+                1120,
+                551
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    472.0
+                ],
+                [
+                    1120.0,
+                    472.0
+                ],
+                [
+                    1120.0,
+                    551.0
+                ],
+                [
+                    138.0,
+                    551.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2567] If the SECC offers only EIM as an authorization service, it shall include parameter EIM_ASResAuthorizationMode in AuthorizationSetupRes message.",
+            "block_bbox": [
+                138,
+                573,
+                1121,
+                628
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    573.0
+                ],
+                [
+                    1121.0,
+                    573.0
+                ],
+                [
+                    1121.0,
+                    628.0
+                ],
+                [
+                    138.0,
+                    628.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2568] If the SECC offers PnC as an authorization service, it shall include parameter PnC_ASResAuthorizationMode in AuthorizationSetupRes message.",
+            "block_bbox": [
+                138,
+                649,
+                1121,
+                705
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    649.0
+                ],
+                [
+                    1121.0,
+                    649.0
+                ],
+                [
+                    1121.0,
+                    705.0
+                ],
+                [
+                    138.0,
+                    705.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2570] A private SECC that did not offer OCSP responses for its PE certificate chain shall not provide PnC as an authorization service. Such a private SECC shall not indicate PnC as a supported service in AuthorizationServices parameter in AuthorizationSetupRes message. Consequently, this private SECC shall not include PnC_ASResAuthorizationMode in AuthorizationSetupRes message.",
+            "block_bbox": [
+                136,
+                725,
+                1122,
+                856
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    725.0
+                ],
+                [
+                    1122.0,
+                    725.0
+                ],
+                [
+                    1122.0,
+                    856.0
+                ],
+                [
+                    136.0,
+                    856.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.3.3 AuthorizationReq/Res",
+            "block_bbox": [
+                137,
+                875,
+                483,
+                902
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    875.0
+                ],
+                [
+                    483.0,
+                    875.0
+                ],
+                [
+                    483.0,
+                    902.0
+                ],
+                [
+                    137.0,
+                    902.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This subclause, and all subclauses within it, will provide specific and separate requirements for the private SECC and the SECC. Thus, unless otherwise specified for this subclause or any subclause within it, private SECC and SECC are not considered interchangeable.",
+            "block_bbox": [
+                136,
+                924,
+                1120,
+                1005
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    924.0
+                ],
+                [
+                    1120.0,
+                    924.0
+                ],
+                [
+                    1120.0,
+                    1005.0
+                ],
+                [
+                    136.0,
+                    1005.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.3.3.1 AuthorizationReq",
+            "block_bbox": [
+                193,
+                1023,
+                527,
+                1050
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    1023.0
+                ],
+                [
+                    527.0,
+                    1023.0
+                ],
+                [
+                    527.0,
+                    1050.0
+                ],
+                [
+                    193.0,
+                    1050.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1256] The EVCC and the SECC shall implement the message elements as defined in Table 36 and Figure 40.",
+            "block_bbox": [
+                142,
+                1073,
+                1120,
+                1124
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    142.0,
+                    1073.0
+                ],
+                [
+                    1120.0,
+                    1073.0
+                ],
+                [
+                    1120.0,
+                    1124.0
+                ],
+                [
+                    142.0,
+                    1124.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                240,
+                1149,
+                995,
+                1407
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    240.0,
+                    1149.0
+                ],
+                [
+                    995.0,
+                    1149.0
+                ],
+                [
+                    995.0,
+                    1407.0
+                ],
+                [
+                    240.0,
+                    1407.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 40 — Schema diagram - AuthorizationReq",
+            "block_bbox": [
+                376,
+                1442,
+                881,
+                1470
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    376.0,
+                    1442.0
+                ],
+                [
+                    881.0,
+                    1442.0
+                ],
+                [
+                    881.0,
+                    1470.0
+                ],
+                [
+                    376.0,
+                    1470.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 36.",
+            "block_bbox": [
+                137,
+                1490,
+                718,
+                1517
+            ],
+            "block_id": 14,
+            "block_order": 12,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1490.0
+                ],
+                [
+                    718.0,
+                    1490.0
+                ],
+                [
+                    718.0,
+                    1517.0
+                ],
+                [
+                    137.0,
+                    1517.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 - All rights reserved\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1118,
+                1682
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1682.0
+                ],
+                [
+                    61.0,
+                    1682.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8862345814704895,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9240049123764038,
+                "coordinate": [
+                    137,
+                    168,
+                    1121,
+                    247
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        168.0
+                    ],
+                    [
+                        1121.0,
+                        168.0
+                    ],
+                    [
+                        1121.0,
+                        247.0
+                    ],
+                    [
+                        137.0,
+                        247.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9266055226325989,
+                "coordinate": [
+                    137,
+                    268,
+                    1121,
+                    347
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        268.0
+                    ],
+                    [
+                        1121.0,
+                        268.0
+                    ],
+                    [
+                        1121.0,
+                        347.0
+                    ],
+                    [
+                        137.0,
+                        347.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9153608083724976,
+                "coordinate": [
+                    137,
+                    371,
+                    1121,
+                    449
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        371.0
+                    ],
+                    [
+                        1121.0,
+                        371.0
+                    ],
+                    [
+                        1121.0,
+                        449.0
+                    ],
+                    [
+                        137.0,
+                        449.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9221338033676147,
+                "coordinate": [
+                    138,
+                    472,
+                    1120,
+                    551
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        138.0,
+                        472.0
+                    ],
+                    [
+                        1120.0,
+                        472.0
+                    ],
+                    [
+                        1120.0,
+                        551.0
+                    ],
+                    [
+                        138.0,
+                        551.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9071319103240967,
+                "coordinate": [
+                    138,
+                    573,
+                    1121,
+                    628
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        138.0,
+                        573.0
+                    ],
+                    [
+                        1121.0,
+                        573.0
+                    ],
+                    [
+                        1121.0,
+                        628.0
+                    ],
+                    [
+                        138.0,
+                        628.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9072046279907227,
+                "coordinate": [
+                    138,
+                    649,
+                    1121,
+                    705
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        138.0,
+                        649.0
+                    ],
+                    [
+                        1121.0,
+                        649.0
+                    ],
+                    [
+                        1121.0,
+                        705.0
+                    ],
+                    [
+                        138.0,
+                        705.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9412829279899597,
+                "coordinate": [
+                    136,
+                    725,
+                    1122,
+                    856
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        725.0
+                    ],
+                    [
+                        1122.0,
+                        725.0
+                    ],
+                    [
+                        1122.0,
+                        856.0
+                    ],
+                    [
+                        136.0,
+                        856.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8558006882667542,
+                "coordinate": [
+                    137,
+                    875,
+                    483,
+                    902
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        875.0
+                    ],
+                    [
+                        483.0,
+                        875.0
+                    ],
+                    [
+                        483.0,
+                        902.0
+                    ],
+                    [
+                        137.0,
+                        902.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9384170770645142,
+                "coordinate": [
+                    136,
+                    924,
+                    1120,
+                    1005
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        136.0,
+                        924.0
+                    ],
+                    [
+                        1120.0,
+                        924.0
+                    ],
+                    [
+                        1120.0,
+                        1005.0
+                    ],
+                    [
+                        136.0,
+                        1005.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6888331770896912,
+                "coordinate": [
+                    193,
+                    1023,
+                    527,
+                    1050
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        193.0,
+                        1023.0
+                    ],
+                    [
+                        527.0,
+                        1023.0
+                    ],
+                    [
+                        527.0,
+                        1050.0
+                    ],
+                    [
+                        193.0,
+                        1050.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9012917280197144,
+                "coordinate": [
+                    142,
+                    1073,
+                    1120,
+                    1124
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        142.0,
+                        1073.0
+                    ],
+                    [
+                        1120.0,
+                        1073.0
+                    ],
+                    [
+                        1120.0,
+                        1124.0
+                    ],
+                    [
+                        142.0,
+                        1124.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9609258770942688,
+                "coordinate": [
+                    240,
+                    1149,
+                    995,
+                    1407
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        240.0,
+                        1149.0
+                    ],
+                    [
+                        995.0,
+                        1149.0
+                    ],
+                    [
+                        995.0,
+                        1407.0
+                    ],
+                    [
+                        240.0,
+                        1407.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8543409705162048,
+                "coordinate": [
+                    376,
+                    1442,
+                    881,
+                    1470
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        376.0,
+                        1442.0
+                    ],
+                    [
+                        881.0,
+                        1442.0
+                    ],
+                    [
+                        881.0,
+                        1470.0
+                    ],
+                    [
+                        376.0,
+                        1470.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7198869585990906,
+                "coordinate": [
+                    137,
+                    1490,
+                    718,
+                    1517
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1490.0
+                    ],
+                    [
+                        718.0,
+                        1490.0
+                    ],
+                    [
+                        718.0,
+                        1517.0
+                    ],
+                    [
+                        137.0,
+                        1517.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6633130311965942,
+                "coordinate": [
+                    61,
+                    1630,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1682.0
+                    ],
+                    [
+                        61.0,
+                        1682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7470477223396301,
+                "coordinate": [
+                    1080,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        1080,
+                        1624
+                    ],
+                    [
+                        1080,
+                        1644
+                    ],
+                    [
+                        1117,
+                        1644
+                    ],
+                    [
+                        1117,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

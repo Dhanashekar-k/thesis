@@ -1,0 +1,1010 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 373,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                67,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2664] The SECC shall only offer MobilityNeedsMode equal to \"2\" when ControlMode is set to \"2\" (dynamic).",
+            "block_bbox": [
+                69,
+                167,
+                1052,
+                222
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    222.0
+                ],
+                [
+                    69.0,
+                    222.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "8.4.3.2.3 DC service",
+            "block_bbox": [
+                69,
+                240,
+                291,
+                267
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    240.0
+                ],
+                [
+                    291.0,
+                    240.0
+                ],
+                [
+                    291.0,
+                    267.0
+                ],
+                [
+                    69.0,
+                    267.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1357] The EVCC and the SECC shall implement the ServiceParameterList for DC charging as defined in Table 207.",
+            "block_bbox": [
+                70,
+                289,
+                1051,
+                342
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    289.0
+                ],
+                [
+                    1051.0,
+                    289.0
+                ],
+                [
+                    1051.0,
+                    342.0
+                ],
+                [
+                    70.0,
+                    342.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 207 — Configuration parameters for DC_Charging",
+            "block_bbox": [
+                275,
+                363,
+                847,
+                392
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    275.0,
+                    363.0
+                ],
+                [
+                    847.0,
+                    363.0
+                ],
+                [
+                    847.0,
+                    392.0
+                ],
+                [
+                    275.0,
+                    392.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>ParameterName</td><td>ParameterType</td><td>Values</td><td>Description</td></tr><tr><td>Connector</td><td>intValue</td><td>1: Core2: Extended3: Dual24: Dual4</td><td>Usage of the connector.</td></tr><tr><td>ControlMode</td><td>intValue</td><td>1: Scheduled2: Dynamic</td><td>Selection of which party (SECC or EVCC) is responsible to fulfill the mobility needs of this service session.</td></tr><tr><td>MobilityNeedsMode</td><td>intValue</td><td>1: Mobility needs provided by EVCC2: Mobility needs provided by SECC allowed</td><td>Indicate who can provide mobility needs information. Value 2 indicates that not only EVCC but also SECC can provide mobility-needs information (however, the EVCC shall always provide an initial mobility-needs information including DepartureTime). Value 2 can be selected only if DynamicControlMode was selected.</td></tr><tr><td>Pricing</td><td>intValue</td><td>0: No pricing1: Absolute Pricing2: Price Levels</td><td>Providing information about which pricing structure will be used in the offered schedules.</td></tr></table>",
+            "block_bbox": [
+                78,
+                397,
+                1045,
+                1032
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    78.0,
+                    397.0
+                ],
+                [
+                    1045.0,
+                    397.0
+                ],
+                [
+                    1045.0,
+                    1032.0
+                ],
+                [
+                    78.0,
+                    1032.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE 1 Each ParameterSetID includes all parameters for a specific setup.",
+            "block_bbox": [
+                71,
+                1035,
+                727,
+                1060
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1035.0
+                ],
+                [
+                    727.0,
+                    1035.0
+                ],
+                [
+                    727.0,
+                    1060.0
+                ],
+                [
+                    71.0,
+                    1060.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 In case a pricing method is offered that will not be used by the EVCC, the EVCC can ignore the provided information.",
+            "block_bbox": [
+                69,
+                1082,
+                1052,
+                1133
+            ],
+            "block_id": 7,
+            "block_order": 4,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1082.0
+                ],
+                [
+                    1052.0,
+                    1082.0
+                ],
+                [
+                    1052.0,
+                    1133.0
+                ],
+                [
+                    69.0,
+                    1133.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2653] In case the DC service was selected, unless otherwise stated, anytime an element is prefixed with DC (e.g. DC_CPDReqEnergyTransferMode), it shall be used.",
+            "block_bbox": [
+                70,
+                1152,
+                1052,
+                1209
+            ],
+            "block_id": 8,
+            "block_order": 5,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1152.0
+                ],
+                [
+                    1052.0,
+                    1152.0
+                ],
+                [
+                    1052.0,
+                    1209.0
+                ],
+                [
+                    70.0,
+                    1209.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2666] The SECC shall only offer MobilityNeedsMode equal to \"2\" when ControlMode is set to \"2\" (Dynamic).",
+            "block_bbox": [
+                69,
+                1228,
+                1053,
+                1283
+            ],
+            "block_id": 9,
+            "block_order": 6,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1228.0
+                ],
+                [
+                    1053.0,
+                    1228.0
+                ],
+                [
+                    1053.0,
+                    1283.0
+                ],
+                [
+                    69.0,
+                    1283.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "8.4.3.2.3.1 DC BPT",
+            "block_bbox": [
+                124,
+                1301,
+                355,
+                1328
+            ],
+            "block_id": 10,
+            "block_order": 7,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    124.0,
+                    1301.0
+                ],
+                [
+                    355.0,
+                    1301.0
+                ],
+                [
+                    355.0,
+                    1328.0
+                ],
+                [
+                    124.0,
+                    1328.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "If the EVCC requires DC BPT service, the SECC provides relevant service parameter list.",
+            "block_bbox": [
+                68,
+                1350,
+                890,
+                1378
+            ],
+            "block_id": 11,
+            "block_order": 8,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1350.0
+                ],
+                [
+                    890.0,
+                    1350.0
+                ],
+                [
+                    890.0,
+                    1378.0
+                ],
+                [
+                    68.0,
+                    1378.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1360] The EVCC and the SECC shall implement the ServiceParameterList for DC bidirectional power transfer services as defined in Table 208.",
+            "block_bbox": [
+                69,
+                1400,
+                1053,
+                1453
+            ],
+            "block_id": 12,
+            "block_order": 9,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1400.0
+                ],
+                [
+                    1053.0,
+                    1400.0
+                ],
+                [
+                    1053.0,
+                    1453.0
+                ],
+                [
+                    69.0,
+                    1453.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Table 208 — Configuration parameters for DC BPT service",
+            "block_bbox": [
+                263,
+                1474,
+                859,
+                1502
+            ],
+            "block_id": 13,
+            "block_order": 10,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    263.0,
+                    1474.0
+                ],
+                [
+                    859.0,
+                    1474.0
+                ],
+                [
+                    859.0,
+                    1502.0
+                ],
+                [
+                    263.0,
+                    1502.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1636,
+                1119,
+                1681
+            ],
+            "block_id": 15,
+            "block_order": 11,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    60.7275390625,
+                    1644.001953125
+                ],
+                [
+                    1118.0,
+                    1636.0
+                ],
+                [
+                    1118.3282470703125,
+                    1679.369384765625
+                ],
+                [
+                    61.0557861328125,
+                    1687.371337890625
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8818337917327881,
+                "coordinate": [
+                    70,
+                    67,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.892556369304657,
+                "coordinate": [
+                    69,
+                    167,
+                    1052,
+                    222
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        222.0
+                    ],
+                    [
+                        69.0,
+                        222.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7768373489379883,
+                "coordinate": [
+                    69,
+                    240,
+                    291,
+                    267
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        240.0
+                    ],
+                    [
+                        291.0,
+                        240.0
+                    ],
+                    [
+                        291.0,
+                        267.0
+                    ],
+                    [
+                        69.0,
+                        267.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8829637765884399,
+                "coordinate": [
+                    70,
+                    289,
+                    1051,
+                    342
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        70.0,
+                        289.0
+                    ],
+                    [
+                        1051.0,
+                        289.0
+                    ],
+                    [
+                        1051.0,
+                        342.0
+                    ],
+                    [
+                        70.0,
+                        342.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8605794310569763,
+                "coordinate": [
+                    275,
+                    363,
+                    847,
+                    392
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        275.0,
+                        363.0
+                    ],
+                    [
+                        847.0,
+                        363.0
+                    ],
+                    [
+                        847.0,
+                        392.0
+                    ],
+                    [
+                        275.0,
+                        392.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9753881096839905,
+                "coordinate": [
+                    78,
+                    397,
+                    1045,
+                    1032
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        78.0,
+                        397.0
+                    ],
+                    [
+                        1045.0,
+                        397.0
+                    ],
+                    [
+                        1045.0,
+                        1032.0
+                    ],
+                    [
+                        78.0,
+                        1032.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.7814857363700867,
+                "coordinate": [
+                    71,
+                    1035,
+                    727,
+                    1060
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1035.0
+                    ],
+                    [
+                        727.0,
+                        1035.0
+                    ],
+                    [
+                        727.0,
+                        1060.0
+                    ],
+                    [
+                        71.0,
+                        1060.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8709959983825684,
+                "coordinate": [
+                    69,
+                    1082,
+                    1052,
+                    1133
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1082.0
+                    ],
+                    [
+                        1052.0,
+                        1082.0
+                    ],
+                    [
+                        1052.0,
+                        1133.0
+                    ],
+                    [
+                        69.0,
+                        1133.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8961827754974365,
+                "coordinate": [
+                    70,
+                    1152,
+                    1052,
+                    1209
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1152.0
+                    ],
+                    [
+                        1052.0,
+                        1152.0
+                    ],
+                    [
+                        1052.0,
+                        1209.0
+                    ],
+                    [
+                        70.0,
+                        1209.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8937514424324036,
+                "coordinate": [
+                    69,
+                    1228,
+                    1053,
+                    1283
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1228.0
+                    ],
+                    [
+                        1053.0,
+                        1228.0
+                    ],
+                    [
+                        1053.0,
+                        1283.0
+                    ],
+                    [
+                        69.0,
+                        1283.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8374502658843994,
+                "coordinate": [
+                    124,
+                    1301,
+                    355,
+                    1328
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        124.0,
+                        1301.0
+                    ],
+                    [
+                        355.0,
+                        1301.0
+                    ],
+                    [
+                        355.0,
+                        1328.0
+                    ],
+                    [
+                        124.0,
+                        1328.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8609105348587036,
+                "coordinate": [
+                    68,
+                    1350,
+                    890,
+                    1378
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1350.0
+                    ],
+                    [
+                        890.0,
+                        1350.0
+                    ],
+                    [
+                        890.0,
+                        1378.0
+                    ],
+                    [
+                        68.0,
+                        1378.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.864146888256073,
+                "coordinate": [
+                    69,
+                    1400,
+                    1053,
+                    1453
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1400.0
+                    ],
+                    [
+                        1053.0,
+                        1400.0
+                    ],
+                    [
+                        1053.0,
+                        1453.0
+                    ],
+                    [
+                        69.0,
+                        1453.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6747291088104248,
+                "coordinate": [
+                    263,
+                    1474,
+                    859,
+                    1502
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        263.0,
+                        1474.0
+                    ],
+                    [
+                        859.0,
+                        1474.0
+                    ],
+                    [
+                        859.0,
+                        1502.0
+                    ],
+                    [
+                        263.0,
+                        1502.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3358711898326874,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3094211518764496,
+                "coordinate": [
+                    61,
+                    1636,
+                    1119,
+                    1681
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        60.7275390625,
+                        1644.001953125
+                    ],
+                    [
+                        1118.0,
+                        1636.0
+                    ],
+                    [
+                        1118.3282470703125,
+                        1679.369384765625
+                    ],
+                    [
+                        61.0557861328125,
+                        1687.371337890625
+                    ]
+                ]
+            }
+        ]
+    }
+}

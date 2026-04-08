@@ -1,0 +1,29 @@
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td rowspan="2" colspan="3">ISO 15118-2 certificate profiles</td><td colspan="4">EV manufacturer: OEM provisioning</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>OEM root CA Root</td><td style='text-align: center; word-wrap: break-word;'>OEM sub-CA1 Sub</td><td style='text-align: center; word-wrap: break-word;'>OEM sub-CA2 Sub</td><td style='text-align: center; word-wrap: break-word;'>OEM provisioning certificate Leafs</td></tr><tr><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'></td><td style='text-align: center; word-wrap: break-word;'>subjectAltPublicKey</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>x (BIT STRING)</td></tr><tr><td rowspan="3">SignatureAlgorithm</td><td colspan="2">AlgorithmIdentifier</td><td style='text-align: center; word-wrap: break-word;'>x</td><td style='text-align: center; word-wrap: break-word;'>x</td><td style='text-align: center; word-wrap: break-word;'>x</td><td style='text-align: center; word-wrap: break-word;'>x</td></tr><tr><td colspan="2">algorithm</td><td style='text-align: center; word-wrap: break-word;'>x id-Ed448</td><td style='text-align: center; word-wrap: break-word;'>x id-Ed448</td><td style='text-align: center; word-wrap: break-word;'>x id-Ed448</td><td style='text-align: center; word-wrap: break-word;'>x id-Ed448</td></tr><tr><td colspan="2">parameters</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>-</td><td style='text-align: center; word-wrap: break-word;'>-</td></tr><tr><td colspan="3">SignatureValue</td><td style='text-align: center; word-wrap: break-word;'>(Raw BIT STRING)</td><td style='text-align: center; word-wrap: break-word;'>(Raw BIT STRING)</td><td style='text-align: center; word-wrap: break-word;'>(Raw BIT STRING)</td><td style='text-align: center; word-wrap: break-word;'>(Raw BIT STRING)</td></tr></table>
+
+<div style="text-align: center;">B.7.3 Common requirements for OEM provisioning certificate profiles</div>
+
+
+As mentioned in Table B.11 and Table B.12 it is optional to include the "certificatePolicies" extension in any of the OEM provisioning certificates. If the "certificatePolicies" extension is included, it can be marked as non-critical so that the relying party can ignore this extension if it cannot process it. This is done to improve the interoperability.
+
+It should be noted that neither EVCC nor SECC validate the OEM provisioning certificate or any other certificates included in that chain. The EVCC provides this certificate to the eMSP during CertificateInstallationReq. It is up to the eMSP to validate the certificate and ensure it meets the requirements.
+
+When the configurable mechanism as defined by [V2G20-2320] indicates that the curve as defined by [V2G20-2319] needs to be used, the EVCC will send its OEM provisioning certificate conforming to Table B.11 to the eMSP via the SECC. When the configurable mechanism as defined by [V2G20-2320] indicates that the curve as defined by [V2G20-2674] needs to be used, the EVCC will send its OEM provisioning certificate conforming to Table B.12 to the eMSP via the SECC. When the eMSP receives an OEM provisioning certificate conforming to Table B.12, it will use SubjectPublicKey defined in Table B.11 for ECDHE per 7.9.2.5.4. When the eMSP receives an OEM provisioning certificate conforming to Table B.12, it will use subjectAltPublicKey defined in Table B.12 for ECDHE per 7.9.2.5.4.
+
+[V2G20-1780] PCID shall be created per C.2.
+
+[V2G20-1781] PCID shall be contained in the subject field of the provisioning certificate as follows:
+
+- the PCID itself (see [V2G20-1780]) shall be the value of the common name (CN) of the distinguished name (DN);
+
+- the name of the OEM shall be encoded in the field organization (O) using a unique identifier chosen by the OEM, to identify this OEM;
+
+- the X.500 distinguished name in the subject field shall not contain any further values.
+
+[V2G20-2592] OEM sub-CA1 certificate, OEM sub-CA2 certificate and OEM provisioning certificate shall contain at least one or both of CRLDistributionPoints or/and AuthorityInfoAccess extensions.
+
+NOTE 1 Table B.11 and Table B.12 specify that both CRLDistributionPoints and AuthorityInfoAccess extensions are optional but critical to indicate that at least one is included and that it is processed. [V2G20-2592] clarifies that including at least one of them is mandatory while including both of them is not mandatory.
+
+NOTE 2 [V2G20-2592] does not specify which one of these extensions can be included. It is left up to the OEM to decide which certificate revocation method works best for it. In some cases CRLs will work better as they allow the relying party to download the entire CRL once and have it available for local checking of revocation status of the next contract certificate without a need for a live connection to the CRL server while in other cases OCSP will provide better results as it provides current revocation status and requires less storage and searching on part of the relying party.
+
+Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.

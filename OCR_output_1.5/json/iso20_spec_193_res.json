@@ -1,0 +1,1262 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 193,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                69,
+                68,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    69.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1279] The EVCC and the SECC shall implement the message elements as defined in Table 60 and Figure 64.",
+            "block_bbox": [
+                68,
+                167,
+                1052,
+                221
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    221.0
+                ],
+                [
+                    68.0,
+                    221.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                276,
+                242,
+                823,
+                349
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    276.0,
+                    242.0
+                ],
+                [
+                    823.0,
+                    242.0
+                ],
+                [
+                    823.0,
+                    349.0
+                ],
+                [
+                    276.0,
+                    349.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 64 — Schema diagram - DC_CableCheckReq",
+            "block_bbox": [
+                301,
+                384,
+                820,
+                412
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    301.0,
+                    384.0
+                ],
+                [
+                    820.0,
+                    384.0
+                ],
+                [
+                    820.0,
+                    412.0
+                ],
+                [
+                    301.0,
+                    412.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The element of this message is used according to Table 60.",
+            "block_bbox": [
+                70,
+                432,
+                626,
+                459
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    432.0
+                ],
+                [
+                    626.0,
+                    432.0
+                ],
+                [
+                    626.0,
+                    459.0
+                ],
+                [
+                    70.0,
+                    459.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 60 — Semantics and type definition for DC_CableCheckReq",
+            "block_bbox": [
+                230,
+                480,
+                891,
+                508
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    230.0,
+                    480.0
+                ],
+                [
+                    891.0,
+                    480.0
+                ],
+                [
+                    891.0,
+                    508.0
+                ],
+                [
+                    230.0,
+                    508.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>Header</td><td>complexType:MessageHeaderTyperefer to 8.3.3</td><td>Contains general information, used for all messages.</td></tr></table>",
+            "block_bbox": [
+                74,
+                515,
+                1047,
+                655
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    74.0,
+                    515.0
+                ],
+                [
+                    1047.0,
+                    515.0
+                ],
+                [
+                    1047.0,
+                    655.0
+                ],
+                [
+                    74.0,
+                    655.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE DC_CableCheckReq contains no elements",
+            "block_bbox": [
+                70,
+                658,
+                523,
+                682
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    658.0
+                ],
+                [
+                    523.0,
+                    658.0
+                ],
+                [
+                    523.0,
+                    682.0
+                ],
+                [
+                    70.0,
+                    682.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.5.3.3 DC CableCheckRes",
+            "block_bbox": [
+                125,
+                703,
+                470,
+                729
+            ],
+            "block_id": 8,
+            "block_order": 3,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    125.0,
+                    703.0
+                ],
+                [
+                    470.0,
+                    703.0
+                ],
+                [
+                    470.0,
+                    729.0
+                ],
+                [
+                    125.0,
+                    729.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "After receiving the DC_CableCheckReq from the EVCC the SECC sends the DC_CableCheckRes informing the EVCC about the result of the cable check and EVSE status.",
+            "block_bbox": [
+                67,
+                754,
+                1054,
+                806
+            ],
+            "block_id": 9,
+            "block_order": 4,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    754.0
+                ],
+                [
+                    1054.0,
+                    754.0
+                ],
+                [
+                    1054.0,
+                    806.0
+                ],
+                [
+                    67.0,
+                    806.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1280]\nThe EVCC and the SECC shall implement the message elements as defined in Table 61 and Figure 65.",
+            "block_bbox": [
+                70,
+                828,
+                219,
+                855
+            ],
+            "block_id": 10,
+            "block_order": 5,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    828.0
+                ],
+                [
+                    219.0,
+                    828.0
+                ],
+                [
+                    219.0,
+                    855.0
+                ],
+                [
+                    70.0,
+                    855.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                247,
+                829,
+                1051,
+                880
+            ],
+            "block_id": 11,
+            "block_order": 6,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    247.0,
+                    829.0
+                ],
+                [
+                    1051.0,
+                    829.0
+                ],
+                [
+                    1051.0,
+                    880.0
+                ],
+                [
+                    247.0,
+                    880.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                258,
+                908,
+                813,
+                1115
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    258.0,
+                    908.0
+                ],
+                [
+                    813.0,
+                    908.0
+                ],
+                [
+                    813.0,
+                    1115.0
+                ],
+                [
+                    258.0,
+                    1115.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 65 — Schema diagram - DC_CableCheckRes",
+            "block_bbox": [
+                303,
+                1144,
+                818,
+                1171
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    303.0,
+                    1144.0
+                ],
+                [
+                    818.0,
+                    1144.0
+                ],
+                [
+                    818.0,
+                    1171.0
+                ],
+                [
+                    303.0,
+                    1171.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 61.",
+            "block_bbox": [
+                67,
+                1192,
+                650,
+                1219
+            ],
+            "block_id": 14,
+            "block_order": 7,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1192.0
+                ],
+                [
+                    650.0,
+                    1192.0
+                ],
+                [
+                    650.0,
+                    1219.0
+                ],
+                [
+                    67.0,
+                    1219.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 61 — Semantics and type definition for DC_CableCheckRes",
+            "block_bbox": [
+                230,
+                1239,
+                890,
+                1266
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    230.0,
+                    1239.0
+                ],
+                [
+                    890.0,
+                    1239.0
+                ],
+                [
+                    890.0,
+                    1266.0
+                ],
+                [
+                    230.0,
+                    1266.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>Header</td><td>complexType:MessageHeaderTyperefer to 8.3.3</td><td>Contains general information, used for all messages.</td></tr><tr><td>ResponseCode</td><td>simpleType:responseCodeTypeenumerationrefer to Annex A for the type definition</td><td>ResponseCode indicating the acknowledgment status of any of the V2G messages received by the SECC.</td></tr></table>",
+            "block_bbox": [
+                72,
+                1273,
+                1048,
+                1565
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1273.0
+                ],
+                [
+                    1048.0,
+                    1273.0
+                ],
+                [
+                    1048.0,
+                    1565.0
+                ],
+                [
+                    72.0,
+                    1565.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "188",
+            "block_bbox": [
+                72,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    72.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    796.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1682
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1681
+                ],
+                [
+                    1053,
+                    1681
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8876439332962036,
+                "coordinate": [
+                    69,
+                    68,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        69.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        69.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8783969879150391,
+                "coordinate": [
+                    68,
+                    167,
+                    1052,
+                    221
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        221.0
+                    ],
+                    [
+                        68.0,
+                        221.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9359998106956482,
+                "coordinate": [
+                    276,
+                    242,
+                    823,
+                    349
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        276.0,
+                        242.0
+                    ],
+                    [
+                        823.0,
+                        242.0
+                    ],
+                    [
+                        823.0,
+                        349.0
+                    ],
+                    [
+                        276.0,
+                        349.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8478851914405823,
+                "coordinate": [
+                    301,
+                    384,
+                    820,
+                    412
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        301.0,
+                        384.0
+                    ],
+                    [
+                        820.0,
+                        384.0
+                    ],
+                    [
+                        820.0,
+                        412.0
+                    ],
+                    [
+                        301.0,
+                        412.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8222663998603821,
+                "coordinate": [
+                    70,
+                    432,
+                    626,
+                    459
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        70.0,
+                        432.0
+                    ],
+                    [
+                        626.0,
+                        432.0
+                    ],
+                    [
+                        626.0,
+                        459.0
+                    ],
+                    [
+                        70.0,
+                        459.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8709518313407898,
+                "coordinate": [
+                    230,
+                    480,
+                    891,
+                    508
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        230.0,
+                        480.0
+                    ],
+                    [
+                        891.0,
+                        480.0
+                    ],
+                    [
+                        891.0,
+                        508.0
+                    ],
+                    [
+                        230.0,
+                        508.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9549047350883484,
+                "coordinate": [
+                    74,
+                    515,
+                    1047,
+                    655
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        74.0,
+                        515.0
+                    ],
+                    [
+                        1047.0,
+                        515.0
+                    ],
+                    [
+                        1047.0,
+                        655.0
+                    ],
+                    [
+                        74.0,
+                        655.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.7880671620368958,
+                "coordinate": [
+                    70,
+                    658,
+                    523,
+                    682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        658.0
+                    ],
+                    [
+                        523.0,
+                        658.0
+                    ],
+                    [
+                        523.0,
+                        682.0
+                    ],
+                    [
+                        70.0,
+                        682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7637364864349365,
+                "coordinate": [
+                    125,
+                    703,
+                    470,
+                    729
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        125.0,
+                        703.0
+                    ],
+                    [
+                        470.0,
+                        703.0
+                    ],
+                    [
+                        470.0,
+                        729.0
+                    ],
+                    [
+                        125.0,
+                        729.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9049656391143799,
+                "coordinate": [
+                    67,
+                    754,
+                    1054,
+                    806
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        67.0,
+                        754.0
+                    ],
+                    [
+                        1054.0,
+                        754.0
+                    ],
+                    [
+                        1054.0,
+                        806.0
+                    ],
+                    [
+                        67.0,
+                        806.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.503978431224823,
+                "coordinate": [
+                    70,
+                    828,
+                    219,
+                    855
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        70.0,
+                        828.0
+                    ],
+                    [
+                        219.0,
+                        828.0
+                    ],
+                    [
+                        219.0,
+                        855.0
+                    ],
+                    [
+                        70.0,
+                        855.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7952224612236023,
+                "coordinate": [
+                    247,
+                    829,
+                    1051,
+                    880
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        247.0,
+                        829.0
+                    ],
+                    [
+                        1051.0,
+                        829.0
+                    ],
+                    [
+                        1051.0,
+                        880.0
+                    ],
+                    [
+                        247.0,
+                        880.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9581364393234253,
+                "coordinate": [
+                    258,
+                    908,
+                    813,
+                    1115
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        258.0,
+                        908.0
+                    ],
+                    [
+                        813.0,
+                        908.0
+                    ],
+                    [
+                        813.0,
+                        1115.0
+                    ],
+                    [
+                        258.0,
+                        1115.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8425605893135071,
+                "coordinate": [
+                    303,
+                    1144,
+                    818,
+                    1171
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        303.0,
+                        1144.0
+                    ],
+                    [
+                        818.0,
+                        1144.0
+                    ],
+                    [
+                        818.0,
+                        1171.0
+                    ],
+                    [
+                        303.0,
+                        1171.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8234438896179199,
+                "coordinate": [
+                    67,
+                    1192,
+                    650,
+                    1219
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1192.0
+                    ],
+                    [
+                        650.0,
+                        1192.0
+                    ],
+                    [
+                        650.0,
+                        1219.0
+                    ],
+                    [
+                        67.0,
+                        1219.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8470023274421692,
+                "coordinate": [
+                    230,
+                    1239,
+                    890,
+                    1266
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        230.0,
+                        1239.0
+                    ],
+                    [
+                        890.0,
+                        1239.0
+                    ],
+                    [
+                        890.0,
+                        1266.0
+                    ],
+                    [
+                        230.0,
+                        1266.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9691558480262756,
+                "coordinate": [
+                    72,
+                    1273,
+                    1048,
+                    1565
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1273.0
+                    ],
+                    [
+                        1048.0,
+                        1273.0
+                    ],
+                    [
+                        1048.0,
+                        1565.0
+                    ],
+                    [
+                        72.0,
+                        1565.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6707444787025452,
+                "coordinate": [
+                    72,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        72.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5783608555793762,
+                "coordinate": [
+                    796,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        796.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.36239033937454224,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1681
+                    ],
+                    [
+                        1053,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

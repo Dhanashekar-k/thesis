@@ -1,0 +1,19 @@
+message, in attribute ContractSignatureCertChain, is not yet valid. This includes any cross certificates (if applicable).
+
+2G20-2214] The message "AuthorizationRes" shall contain the ResponseCode "WARNING_CertificateRevoked" if the SECC (or SA) deduces (using OCSP responses or CRL) that one (or more) of the certificates in the ContractCertificate chain is received in AuthorizationReq message, in attribute ContractSignatureCertChain, is revoked. This includes any cross certificates (if applicable).
+
+[V2G20-2215] The message "AuthorizationRes" shall contain the ResponseCode "WARNING_CertificateValidationError" if certificate validation of one (or more) of the certificates in the ContractCertificate chain it received in AuthorizationReq message, in attribute ContractSignatureCertChain, fails due to any issue other than those identified by [V2G20-2212], [V2G20-2213] and [V2G20-2214]. This includes any cross certificates (if applicable).
+
+NOTE 6 ResponseCode "WARNING_CertificateValidationError" for message "AuthorizationRes" is a catch-all response code for cases that are not covered by the specific certificate validation error response codes defined in other requirements for "AuthorizationRes" message. This includes cases where certificate validation fails due to a mismatch in the curves in the contract certificate received in "AuthorizationReq" message and the curves the SECC/SA is allowed to process per the configuration parameter as defined by [V2G20-2320]. For example, in case the SECC/SA is unable to validate the contract certificate because the SECC/SA cannot process the curves in the contract certificate (due to changes to configuration parameter as defined by [V2G20-2320]), the SECC will send the ResponseCode "WARNING_CertificateValidationError".
+
+[V2G20-2216] The message "AuthorizationRes" shall contain the ResponseCode "WARNING_ChallengeInvalid" if the challenge response contained in the AuthorizationReq message, in attribute GenChallenge, is not valid versus the GenChallenge provided in AuthorizationSetupRes.
+
+[V2G20-2217] The message AuthorizationRes shall contain the ResponseCode "WARNING_GeneralPnCAuthorizationError" when the SECC received the information (potentially from SA; t is not in the scope of this document to define how the SECC received this information) that there is an issue either with the contract associated with the ContractCertificate message or with the ContractCertificate it received in AuthorizationReq message and conditions are not met to apply any of the response codes as defined by [V2G20-2209], [V2G20-2210], [V2G20-2211], [V2G20-2212], [V2G20-2213], [V2G20-2214], [V2G20-2215] and [V2G20-2216].
+
+NOTE 7 This response code could indicate an intermittent or temporary issue at the SA. It can also indicate an unknown issue with the customer contract. It can additionally be used in cases where the SA does not wish to provide detailed error information.
+
+[V2G20-2218] If the SECC (either on its own or via SA) is capable of comparing the validity of a ContractCertificate with the current time, the SECC shall set the ResponseCode for the AuthorizationRes to "OK_CertificateExpiresSoon" if the received contract certificate will expire in 14 days or fewer and conditions are not met to apply [V2G20-2212].
+
+[V2G20-2219] The message "AuthorizationRes" shall contain the ResponseCode "WARNING_EIMAuthorizationFailure" if EIM Authorization fails due to any reason. This includes customer cancelling EIM Authorization or any other errors with EIM Authorization.
+
+[V2G20-478] The message "PowerDeliveryRes" shall contain the ResponseCode "FAILED_EVPowerProfileInvalid" if the content of attribute "EVPowerProfile" in the

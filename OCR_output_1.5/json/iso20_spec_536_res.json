@@ -1,0 +1,355 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 536,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                865,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    865.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    865.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table H.1 — Levels of trust between PE EVSE and EV",
+            "block_bbox": [
+                361,
+                167,
+                897,
+                195
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    361.0,
+                    167.0
+                ],
+                [
+                    897.0,
+                    167.0
+                ],
+                [
+                    897.0,
+                    195.0
+                ],
+                [
+                    361.0,
+                    195.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>#</td><td>Challenge</td><td>Trust</td><td>Private SECC</td><td>EV</td><td>Usability</td></tr><tr><td>1</td><td>The manufacturer installs and maintains the PE private root CA certificate(s) and OEM root CA certificate(s)</td><td>very high</td><td>The private SECC neither transmits its trust anchor(s) at runtime nor does it install trust anchor(s) at runtime. The charging process does not change compared to charging in public.</td><td>The EV neither transmits its trust anchor(s) at runtime nor does it install trust anchor(s) at runtime. The charging process does not change compared to charging in public.</td><td>The user does not add or update required certificates. The manufacturer of the devices does this securely and automatically. Because of this, the user does not need to perform any additional activities. The EV user is unable to charge at a PE EVSE whose PE SECC does not contain the PE certificate chain from an OEM approved PE private root CA. Similarly, the EV user is unable to charge at PE EVSE whose PE SECC does not contain the EV&#x27;s OEM root CA certificate or the V2G root certificate.</td></tr></table>",
+            "block_bbox": [
+                139,
+                214,
+                1117,
+                1092
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    214.0
+                ],
+                [
+                    1117.0,
+                    214.0
+                ],
+                [
+                    1117.0,
+                    1092.0
+                ],
+                [
+                    139.0,
+                    1092.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "531",
+            "block_bbox": [
+                1077,
+                1624,
+                1118,
+                1645
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    1077.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1077.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1120,
+                1683
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1072,
+                    1682
+                ],
+                [
+                    1119,
+                    1665
+                ],
+                [
+                    1119,
+                    1639
+                ],
+                [
+                    1084,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8697503209114075,
+                "coordinate": [
+                    865,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        865.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        865.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8612673878669739,
+                "coordinate": [
+                    361,
+                    167,
+                    897,
+                    195
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        361.0,
+                        167.0
+                    ],
+                    [
+                        897.0,
+                        167.0
+                    ],
+                    [
+                        897.0,
+                        195.0
+                    ],
+                    [
+                        361.0,
+                        195.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9769368767738342,
+                "coordinate": [
+                    139,
+                    214,
+                    1117,
+                    1092
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        214.0
+                    ],
+                    [
+                        1117.0,
+                        214.0
+                    ],
+                    [
+                        1117.0,
+                        1092.0
+                    ],
+                    [
+                        139.0,
+                        1092.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7410699725151062,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1077.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1077.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8667721748352051,
+                "coordinate": [
+                    61,
+                    1630,
+                    1120,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1072,
+                        1682
+                    ],
+                    [
+                        1119,
+                        1665
+                    ],
+                    [
+                        1119,
+                        1639
+                    ],
+                    [
+                        1084,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

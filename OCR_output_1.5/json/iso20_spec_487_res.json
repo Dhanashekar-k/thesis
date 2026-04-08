@@ -1,0 +1,530 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 487,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                67,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "B.8.1 Based on curves as defined by [V2G20-2674]",
+            "block_bbox": [
+                68,
+                166,
+                591,
+                195
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    166.0
+                ],
+                [
+                    591.0,
+                    166.0
+                ],
+                [
+                    591.0,
+                    195.0
+                ],
+                [
+                    68.0,
+                    195.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table B.13 outlines the vehicle certificates based on curves as defined by [V2G20-2674].",
+            "block_bbox": [
+                68,
+                216,
+                902,
+                245
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    216.0
+                ],
+                [
+                    902.0,
+                    216.0
+                ],
+                [
+                    902.0,
+                    245.0
+                ],
+                [
+                    68.0,
+                    245.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table B.13 — Vehicle certificates based on curves as defined by [V2G20-2674]",
+            "block_bbox": [
+                162,
+                263,
+                957,
+                290
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    162.0,
+                    263.0
+                ],
+                [
+                    957.0,
+                    263.0
+                ],
+                [
+                    957.0,
+                    290.0
+                ],
+                [
+                    162.0,
+                    290.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td colspan=\"3\">ISO 15118-2 certificate profiles</td><td>EV manufacturer: vehicle certificatesVehicle sub-CA1Sub</td><td>Vehicle sub-CA2Sub</td><td>Vehicle certificateLeaf</td></tr><tr><td rowspan=\"37\">TbsCertificate</td><td colspan=\"2\">Version</td><td>2(&quot;2&quot; indicates X.509v3)</td><td>2(&quot;2&quot; indicates X.509v3)</td><td>2(&quot;2&quot; indicates X.509v3)</td></tr><tr><td colspan=\"2\">SerialNumber</td><td>(Positive integer)</td><td>(Positive integer)</td><td>(Positive integer)</td></tr><tr><td rowspan=\"4\">Signature</td><td>AlgorithmIdentifier</td><td>x</td><td>x</td><td>x</td></tr><tr><td rowspan=\"2\">algorithm</td><td>x</td><td>x</td><td>x</td></tr><tr><td>ecdsa-with-SHA512</td><td>ecdsa-with-SHA512</td><td>ecdsa-with-SHA512</td></tr><tr><td>parameters</td><td>-</td><td>-</td><td>-</td></tr><tr><td rowspan=\"5\">Issuer</td><td>Country</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td>Organization</td><td>x</td><td>x</td><td>x</td></tr><tr><td>Organization unit</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td>Common name</td><td>x</td><td>x</td><td>x</td></tr><tr><td>Domain component</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td rowspan=\"8\">Validity</td><td>Validity</td><td>x[up to OEM]</td><td>x[up to OEM]</td><td>x[up to OEM]</td></tr><tr><td>notBefore</td><td>x</td><td>x</td><td>x</td></tr><tr><td rowspan=\"2\">time</td><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td></tr><tr><td>[Actual time is CA discretionary]</td><td>[Actual time is CA discretionary]</td><td>[Actual time is CA discretionary]</td></tr><tr><td>notAfter</td><td>x</td><td>x</td><td>x</td></tr><tr><td rowspan=\"3\">time</td><td>x</td><td>x</td><td>x</td></tr><tr><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td><td>(GeneralizedTime expressed in Greenwich Mean Time (Zulu) with format YYYYMMDDHHMMSSZ)</td></tr><tr><td>[Actual time is CA discretionary]</td><td>[Actual time is CA discretionary]</td><td>[Actual time is CA discretionary]</td></tr><tr><td rowspan=\"5\">Subject</td><td>Country</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td>Organization</td><td>x</td><td>x</td><td>x</td></tr><tr><td>Organization unit</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td>Common name</td><td>x</td><td>x</td><td>xEVCCID(see [V2G20-2597])</td></tr><tr><td>Domain component</td><td>(x)</td><td>(x)</td><td>(x) &amp; &quot;EV&quot;</td></tr><tr><td rowspan=\"7\">SubjectPublicKeyInfo</td><td rowspan=\"2\">Algorithm</td><td>x</td><td>x</td><td>x</td></tr><tr><td>id-ecPublicKey</td><td>id-ecPublicKey</td><td>id-ecPublicKey</td></tr><tr><td rowspan=\"2\">parameters</td><td>x</td><td>x</td><td>x</td></tr><tr><td>ECParameters</td><td>ECParameters</td><td>ECParameters</td></tr><tr><td rowspan=\"2\">namedCurve</td><td>x</td><td>x</td><td>x</td></tr><tr><td>secp521r1</td><td>secp521r1</td><td>secp521r1</td></tr><tr><td>SubjectPublicKey</td><td>x(BIT STRING)</td><td>x(BIT STRING)</td><td>x(BIT STRING)</td></tr><tr><td colspan=\"2\">IssuerUniqueID</td><td>-</td><td>-</td><td>-</td></tr><tr><td colspan=\"2\">SubjectUniqueID</td><td>-</td><td>-</td><td>-</td></tr><tr><td rowspan=\"4\">Extensions</td><td>AuthorityKeyIdentifier</td><td>x/cid-ce-authorityKeyIdentifier</td><td>x/cid-ce-authorityKeyIdentifier</td><td>x/cid-ce-authorityKeyIdentifier</td></tr><tr><td>keyIdentifier</td><td>x(see [V2G20-1851])</td><td>x(see [V2G20-1851])</td><td>x(see [V2G20-1851])</td></tr><tr><td>authorityCertIssuer</td><td>(x)</td><td>(x)</td><td>(x)</td></tr><tr><td>authorityCertSerial Number</td><td>(x)(Positive integer)</td><td>(x)(Positive integer)</td><td>(x)(Positive integer)</td></tr></table>",
+            "block_bbox": [
+                57,
+                299,
+                1065,
+                1569
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    57.0,
+                    299.0
+                ],
+                [
+                    1065.0,
+                    299.0
+                ],
+                [
+                    1065.0,
+                    1569.0
+                ],
+                [
+                    57.0,
+                    1569.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "482",
+            "block_bbox": [
+                71,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    71.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1683
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1077,
+                    1682
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8635835647583008,
+                "coordinate": [
+                    70,
+                    67,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7856444120407104,
+                "coordinate": [
+                    68,
+                    166,
+                    591,
+                    195
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        166.0
+                    ],
+                    [
+                        591.0,
+                        166.0
+                    ],
+                    [
+                        591.0,
+                        195.0
+                    ],
+                    [
+                        68.0,
+                        195.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6175413131713867,
+                "coordinate": [
+                    68,
+                    216,
+                    902,
+                    245
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        68.0,
+                        216.0
+                    ],
+                    [
+                        902.0,
+                        216.0
+                    ],
+                    [
+                        902.0,
+                        245.0
+                    ],
+                    [
+                        68.0,
+                        245.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8697689175605774,
+                "coordinate": [
+                    162,
+                    263,
+                    957,
+                    290
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        162.0,
+                        263.0
+                    ],
+                    [
+                        957.0,
+                        263.0
+                    ],
+                    [
+                        957.0,
+                        290.0
+                    ],
+                    [
+                        162.0,
+                        290.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9783274531364441,
+                "coordinate": [
+                    57,
+                    299,
+                    1065,
+                    1569
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        57.0,
+                        299.0
+                    ],
+                    [
+                        1065.0,
+                        299.0
+                    ],
+                    [
+                        1065.0,
+                        1569.0
+                    ],
+                    [
+                        57.0,
+                        1569.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7185499668121338,
+                "coordinate": [
+                    71,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        71.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.38938939571380615,
+                "coordinate": [
+                    797,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.3831803798675537,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1077,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

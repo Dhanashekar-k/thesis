@@ -1,0 +1,546 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 458,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Optional/mandatory</td><td>Critical/non-critical</td><td>Meaning of the designation expected behavior of the relying party</td></tr><tr><td>(x)</td><td>nc</td><td>Optional extension that may be processed. The CA generating the certificate may or may not include this extension in the certificate. The relying party may or may not be able to recognize/interpret this extension in the certificate. One and only one (1) of the following behaviors are expected: - if the extension is not present the relying party will continue processing rest of the certificate without rejecting the certificate for lack of this optional extension; OR - if the extension is present but the relying party/validating entity is unable to recognize/interpret it, the relying party will continue processing rest of the certificate without rejecting the certificate for lack of capability to recognize/interpret this parameter; OR - if the extension is present and the relying party/validating entity is able to recognize/interpret it, the relying party will process the data and make a determination on certificate acceptance/rejection based on the data in the extension and the requirements as specified by this document.</td></tr></table>",
+            "block_bbox": [
+                139,
+                163,
+                1117,
+                1110
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    1110.0
+                ],
+                [
+                    139.0,
+                    1110.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Some requirements in this document may allow the relying party/validating entity to ignore certain critical/non-critical extensions even if they are present and the relying party/validating entity is able to recognize/interpret and process them. Those requirements will make it clear when the relying party can ignore the extensions and which exact extensions can be ignored.",
+            "block_bbox": [
+                134,
+                1163,
+                1122,
+                1268
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    1163.0
+                ],
+                [
+                    1122.0,
+                    1163.0
+                ],
+                [
+                    1122.0,
+                    1268.0
+                ],
+                [
+                    134.0,
+                    1268.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Similarly, some requirements in this document may mandate the relying party/validating entity to process certain critical/non-critical extensions even if they are marked as non-critical. Those requirements will make it clear when the relying party is mandated to process the extensions and which exact extensions are mandated to be processed.",
+            "block_bbox": [
+                135,
+                1289,
+                1123,
+                1394
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1289.0
+                ],
+                [
+                    1123.0,
+                    1289.0
+                ],
+                [
+                    1123.0,
+                    1394.0
+                ],
+                [
+                    135.0,
+                    1394.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "B.2.3 Common requirements for all certificate profiles",
+            "block_bbox": [
+                136,
+                1415,
+                701,
+                1443
+            ],
+            "block_id": 4,
+            "block_order": 3,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1415.0
+                ],
+                [
+                    701.0,
+                    1415.0
+                ],
+                [
+                    701.0,
+                    1443.0
+                ],
+                [
+                    136.0,
+                    1443.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Per ITU-T X.509 and IETF RFC 5280 (as updated by IETF RFC 6818, IETF RFC 8398 and IETF RFC 8399), every x.509v3 certificate will contain basic certificate fields \"TbsCertificate\", \"SignatureAlgorithm\" and \"SignatureValue\". If any of these fields are not present in the certificate or if the relying party/validating entity is unable to process any of these fields, the relying party will reject the certificate.",
+            "block_bbox": [
+                136,
+                1464,
+                1121,
+                1571
+            ],
+            "block_id": 5,
+            "block_order": 4,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1464.0
+                ],
+                [
+                    1121.0,
+                    1464.0
+                ],
+                [
+                    1121.0,
+                    1571.0
+                ],
+                [
+                    136.0,
+                    1571.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "453",
+            "block_bbox": [
+                1078,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    1078.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1643.0
+                ],
+                [
+                    1078.0,
+                    1643.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1631,
+                1119,
+                1683
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    60,
+                    1631
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1089,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1640
+                ],
+                [
+                    1083,
+                    1631
+                ],
+                [
+                    1071,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8754129409790039,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9733589291572571,
+                "coordinate": [
+                    139,
+                    163,
+                    1117,
+                    1110
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        1110.0
+                    ],
+                    [
+                        139.0,
+                        1110.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9390950202941895,
+                "coordinate": [
+                    134,
+                    1163,
+                    1122,
+                    1268
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        134.0,
+                        1163.0
+                    ],
+                    [
+                        1122.0,
+                        1163.0
+                    ],
+                    [
+                        1122.0,
+                        1268.0
+                    ],
+                    [
+                        134.0,
+                        1268.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.947270393371582,
+                "coordinate": [
+                    135,
+                    1289,
+                    1123,
+                    1394
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1289.0
+                    ],
+                    [
+                        1123.0,
+                        1289.0
+                    ],
+                    [
+                        1123.0,
+                        1394.0
+                    ],
+                    [
+                        135.0,
+                        1394.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8689942955970764,
+                "coordinate": [
+                    136,
+                    1415,
+                    701,
+                    1443
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1415.0
+                    ],
+                    [
+                        701.0,
+                        1415.0
+                    ],
+                    [
+                        701.0,
+                        1443.0
+                    ],
+                    [
+                        136.0,
+                        1443.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9496780633926392,
+                "coordinate": [
+                    136,
+                    1464,
+                    1121,
+                    1571
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1464.0
+                    ],
+                    [
+                        1121.0,
+                        1464.0
+                    ],
+                    [
+                        1121.0,
+                        1571.0
+                    ],
+                    [
+                        136.0,
+                        1571.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7429352402687073,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        1078.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1643.0
+                    ],
+                    [
+                        1078.0,
+                        1643.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8611048460006714,
+                "coordinate": [
+                    60,
+                    1631,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1631
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1089,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1640
+                    ],
+                    [
+                        1083,
+                        1631
+                    ],
+                    [
+                        1071,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

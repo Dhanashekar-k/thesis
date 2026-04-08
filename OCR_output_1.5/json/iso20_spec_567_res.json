@@ -1,0 +1,339 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 567,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "text",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                69,
+                68,
+                318,
+                97
+            ],
+            "block_id": 0,
+            "block_order": 1,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    68.0
+                ],
+                [
+                    318.0,
+                    68.0
+                ],
+                [
+                    318.0,
+                    97.0
+                ],
+                [
+                    69.0,
+                    97.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ICS 43.120",
+            "block_bbox": [
+                69,
+                1528,
+                200,
+                1557
+            ],
+            "block_id": 1,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1528.0
+                ],
+                [
+                    200.0,
+                    1528.0
+                ],
+                [
+                    200.0,
+                    1557.0
+                ],
+                [
+                    69.0,
+                    1557.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Price based on 561 pages",
+            "block_bbox": [
+                69,
+                1562,
+                273,
+                1587
+            ],
+            "block_id": 2,
+            "block_order": 3,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1562.0
+                ],
+                [
+                    273.0,
+                    1562.0
+                ],
+                [
+                    273.0,
+                    1587.0
+                ],
+                [
+                    69.0,
+                    1587.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                66,
+                1603,
+                333,
+                1629
+            ],
+            "block_id": 3,
+            "block_order": 4,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    66.0,
+                    1603.0
+                ],
+                [
+                    333.0,
+                    1603.0
+                ],
+                [
+                    333.0,
+                    1629.0
+                ],
+                [
+                    66.0,
+                    1629.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                59,
+                1635,
+                1119,
+                1683
+            ],
+            "block_id": 4,
+            "block_order": 5,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    59.0,
+                    1635.0
+                ],
+                [
+                    1119.0,
+                    1635.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    59.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6548546552658081,
+                "coordinate": [
+                    69,
+                    68,
+                    318,
+                    97
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        68.0
+                    ],
+                    [
+                        318.0,
+                        68.0
+                    ],
+                    [
+                        318.0,
+                        97.0
+                    ],
+                    [
+                        69.0,
+                        97.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3116542398929596,
+                "coordinate": [
+                    69,
+                    1528,
+                    200,
+                    1557
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1528.0
+                    ],
+                    [
+                        200.0,
+                        1528.0
+                    ],
+                    [
+                        200.0,
+                        1557.0
+                    ],
+                    [
+                        69.0,
+                        1557.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.44008371233940125,
+                "coordinate": [
+                    69,
+                    1562,
+                    273,
+                    1587
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1562.0
+                    ],
+                    [
+                        273.0,
+                        1562.0
+                    ],
+                    [
+                        273.0,
+                        1587.0
+                    ],
+                    [
+                        69.0,
+                        1587.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3941456079483032,
+                "coordinate": [
+                    66,
+                    1603,
+                    333,
+                    1629
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        66.0,
+                        1603.0
+                    ],
+                    [
+                        333.0,
+                        1603.0
+                    ],
+                    [
+                        333.0,
+                        1629.0
+                    ],
+                    [
+                        66.0,
+                        1629.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4226442575454712,
+                "coordinate": [
+                    59,
+                    1635,
+                    1119,
+                    1683
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        59.0,
+                        1635.0
+                    ],
+                    [
+                        1119.0,
+                        1635.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        59.0,
+                        1683.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

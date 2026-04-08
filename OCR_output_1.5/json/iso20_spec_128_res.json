@@ -1,0 +1,416 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 128,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                865,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    865.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    865.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 23 — P2PS/PPD and CouplingType value setting in the SDP request",
+            "block_bbox": [
+                254,
+                167,
+                1004,
+                196
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    254.0,
+                    167.0
+                ],
+                [
+                    1004.0,
+                    167.0
+                ],
+                [
+                    1004.0,
+                    196.0
+                ],
+                [
+                    254.0,
+                    196.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Description</td><td>P2PS/PPD</td><td>Coupling type</td></tr><tr><td>Byte no. SDP request message</td><td>3-4</td><td>5</td></tr><tr><td>Applicable values</td><td>Bit coding according to Table 24Bit 7 of Byte 3 is reserved for future applicationsByte 4 is reserved for future applications</td><td>0x00: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex A.2 (infrastructure mounted inverse pantograph, cross rail contacts)0x01: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex A.3 (infrastructure mounted inverse pantograph, in line contacts)0x02: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex A.4 (infrastructure mounted pantograph, contact dome)0x03: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex B EVmounted pantograph0x04: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex C, ACDmounted underneath the EV0x05: Configuration according to IEC 61851-23-1 and EN50696:2021, Annex D, ACDmounted on infrastructure to the side or roof of EV0x10 = WPT (IEC 61980)0x20 = ACD-U (Manipulator on Infrastructure)0x21 = ACD-U (Manipulator on EV)0x30 = ACD-S0x40 = Conductive manual0xFF = n.a.</td></tr></table>",
+            "block_bbox": [
+                173,
+                202,
+                1082,
+                1528
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    173.0,
+                    202.0
+                ],
+                [
+                    1082.0,
+                    202.0
+                ],
+                [
+                    1082.0,
+                    1528.0
+                ],
+                [
+                    173.0,
+                    1528.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "Table 24 below specifies the bit coding for Byte No.3 and No.4 for an SDP request.",
+            "block_bbox": [
+                136,
+                1531,
+                910,
+                1558
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1531.0
+                ],
+                [
+                    910.0,
+                    1531.0
+                ],
+                [
+                    910.0,
+                    1558.0
+                ],
+                [
+                    136.0,
+                    1558.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "123",
+            "block_bbox": [
+                1079,
+                1624,
+                1120,
+                1645
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    1079.0,
+                    1624.0
+                ],
+                [
+                    1119.0,
+                    1624.0
+                ],
+                [
+                    1119.0,
+                    1644.0
+                ],
+                [
+                    1079.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1120,
+                1683
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1090,
+                    1682
+                ],
+                [
+                    1119,
+                    1665
+                ],
+                [
+                    1119,
+                    1639
+                ],
+                [
+                    1072,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8774034380912781,
+                "coordinate": [
+                    865,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        865.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        865.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8657220005989075,
+                "coordinate": [
+                    254,
+                    167,
+                    1004,
+                    196
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        254.0,
+                        167.0
+                    ],
+                    [
+                        1004.0,
+                        167.0
+                    ],
+                    [
+                        1004.0,
+                        196.0
+                    ],
+                    [
+                        254.0,
+                        196.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9791257381439209,
+                "coordinate": [
+                    173,
+                    202,
+                    1082,
+                    1528
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        173.0,
+                        202.0
+                    ],
+                    [
+                        1082.0,
+                        202.0
+                    ],
+                    [
+                        1082.0,
+                        1528.0
+                    ],
+                    [
+                        173.0,
+                        1528.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.665016233921051,
+                "coordinate": [
+                    136,
+                    1531,
+                    910,
+                    1558
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1531.0
+                    ],
+                    [
+                        910.0,
+                        1531.0
+                    ],
+                    [
+                        910.0,
+                        1558.0
+                    ],
+                    [
+                        136.0,
+                        1558.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7288237810134888,
+                "coordinate": [
+                    1079,
+                    1624,
+                    1120,
+                    1645
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1079.0,
+                        1624.0
+                    ],
+                    [
+                        1119.0,
+                        1624.0
+                    ],
+                    [
+                        1119.0,
+                        1644.0
+                    ],
+                    [
+                        1079.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8738466501235962,
+                "coordinate": [
+                    61,
+                    1630,
+                    1120,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1090,
+                        1682
+                    ],
+                    [
+                        1119,
+                        1665
+                    ],
+                    [
+                        1119,
+                        1639
+                    ],
+                    [
+                        1072,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

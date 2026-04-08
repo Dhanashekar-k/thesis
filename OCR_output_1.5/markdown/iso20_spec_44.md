@@ -1,0 +1,19 @@
+read by an attacker, the attacker could impersonate the original equipment. It is considered good security practice that each V2G entity and any PKI operator additionally protects all private keys and symmetric keys. This can range from simple security measures such as setting readout protection fuse bits in the microcontroller to more advanced protection via secure boot facilities, debug access protection, and embedded hardware security modules (HSM). The HSMs offer a high level of security including protection against physical attacks. A suitable HSM provides a secure environment for private key and symmetric key operations. It offers interfaces to use the private key and the symmetric keys but ensures that the keys cannot be read out or manipulated.
+
+The V2G entity or the PKI operator can use a trusted platform module (TPM) 2.0 to implement the HSM.
+
+The TPM 2.0 is representative of a HSM that is qualified for the automotive use cases according to AEC-Q100, has Common Criteria (CC) EAL4+ certification and can implement the desired security features. A TPM 2.0 can securely store sensitive data such as private keys, provides a secure execution environment for symmetric and asymmetric cryptographic operations (including secure random number generation) and enables additional security mechanisms such as the direct import of encrypted keys, credential protection, secured (measured) boot and a policy-based enhanced authorization mechanism. The TPM 2.0 library specification developed by the Trusted Computing Group (TCG) is adopted as open international standards ISO/IEC 11889-1:2015, ISO/IEC 11889-2:2015, ISO/IEC 11889-3:2015 and ISO/IEC 11889-4:2015.
+
+##### 7.3.6.1 Protection of the EVCC keys
+
+In an EVCC environment, the private keys of the contract certificate, vehicle certificate and the OEM provisioning certificate are considered to be sensitive data. The EVCC can protect the private keys and symmetric keys (including session keys) by employing secure environments like HSM that offer interfaces to use the keys but ensures that the keys cannot be read out or manipulated, even from a program running on the EVCC. A customized HSM may even accept input of an encrypted contract certificate private key, so that the private key is never accessible outside of the HSM in plain, unencrypted form. Such a HSM can be integrated into the EVCC as a separate physical package or as an on-chip microcontroller extension.
+
+It is advised that the EVCC keeps the keys secure under all conditions, including while they are in use. An easy way to achieve this is to utilize the HSM to store and use the keys including any cryptographic operations that use those keys.
+
+In addition, the EVCC can also utilize the HSM to perform other cryptographic functions in a secure manner (e.g. encryption/decryption, signature calculation and verification, asymmetric key-pair generation, etc.).
+
+The EVCC can opt to use TPM to perform all (or some) of the functions mentioned above for the HSM. Refer to 7.3.6 for details of TPM.
+
+##### 7.3.6.2 Protection of the keys in public SECC
+
+This subclause does not cover requirements for the private SECC. It only covers requirements for a public SECC. In some cases, though, a private SECC may be required to meet these requirements as well. Such cases will be specifically called out. In a public SECC environment, the private key of the SECC certificate is considered to be sensitive data. It is advised that the public SECC protects the private key and symmetric keys (including session keys) by employing secure environments like HSM that offer interfaces to use the keys but ensure that the keys cannot be read out or manipulated, even from a program running on the public SECC. Such a HSM can be integrated into the public SECC as a separate physical package or as an on-chip microcontroller extension.

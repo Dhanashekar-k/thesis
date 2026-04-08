@@ -1,0 +1,469 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 113,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                69,
+                67,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    69.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 19 — TPM key profiles for (elliptic curve) EC P-521/secp521r1 (public area)",
+            "block_bbox": [
+                139,
+                167,
+                980,
+                196
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    167.0
+                ],
+                [
+                    980.0,
+                    167.0
+                ],
+                [
+                    980.0,
+                    196.0
+                ],
+                [
+                    139.0,
+                    196.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td rowspan=\"2\">Parameter</td><td colspan=\"3\">Content</td></tr><tr><td>Storage key</td><td>OEM provisioning key</td><td>Contract key</td></tr><tr><td>type</td><td>TPM2_ALG_ECC</td><td>TPM2_ALG_ECC</td><td>TPM2_ALG_ECC</td></tr><tr><td>nameAlg</td><td>TPM2_ALG_SHA512</td><td>TPM2_ALG_SHA512</td><td>TPM2_ALG_SHA512</td></tr><tr><td>objectAttributes</td><td>fixedTPM = 1stClear = 0fixedParent = 1sensitiveDataOrigin = 1userWithAuth = 1adminWithPolicy = 0noDA = 0encryptedDuplication = 0restricted = 1decrypt = 1sign = 0</td><td>fixedTPM = 1stClear = 0fixedParent = 1sensitiveDataOrigin = 1userWithAuth = 0 (1 if no policy)adminWithPolicy = 1 (0 if no policy)noDA = 0encryptedDuplication = 0restricted = 0decrypt = 1sign = 1</td><td>fixedTPM = 0stClear = 0fixedParent = 0sensitiveDataOrigin = 1userWithAuth = 0 (1 if no policy)adminWithPolicy = 1 (0 if no policy)noDA = 0encryptedDuplication = 0restricted = 0decrypt = 0sign = 1</td></tr><tr><td>authPolicy</td><td></td><td></td><td></td></tr><tr><td>size</td><td>0</td><td>64 (0 if no policy)</td><td>64 (0 if no policy)</td></tr><tr><td>buffer</td><td>NULL</td><td>OEM chosen policy digest</td><td>OEM chosen policy digest</td></tr><tr><td>parameters</td><td></td><td></td><td></td></tr><tr><td>symmetric.algorithm</td><td>TPM2_ALG_AES</td><td>TPM2_ALG_NULL</td><td>TPM2_ALG_NULL</td></tr><tr><td>symmetric.keyBits</td><td>256</td><td>NULL</td><td>NULL</td></tr><tr><td>symmetric.mode</td><td>TPM2_ALG_CFB</td><td>NULL</td><td>NULL</td></tr><tr><td>symmetric.details</td><td>NULL</td><td>NULL</td><td>NULL</td></tr><tr><td>scheme.scheme</td><td>TPM2_ALG_NULL</td><td>TPM2_ALG_NULL</td><td>TPM2_ALG_NULL</td></tr><tr><td>scheme.details</td><td>NULL</td><td>NULL</td><td>NULL</td></tr><tr><td>curveID</td><td>TPM2_ECC_NIST_P521</td><td>TPM2_ECC_NIST_P521</td><td>TPM2_ECC_NIST_P521</td></tr><tr><td>kdf.scheme</td><td>TPM2_ALG_NULL</td><td>TPM2_ALG_NULL</td><td>TPM2_ALG_NULL</td></tr><tr><td>kdf.details</td><td>NULL</td><td>NULL</td><td>NULL</td></tr><tr><td>Unique</td><td></td><td></td><td></td></tr><tr><td>x.size</td><td>66</td><td>66</td><td>66</td></tr><tr><td>x.buffer</td><td>NULL</td><td>NULL</td><td>NULL</td></tr><tr><td>y.size</td><td>66</td><td>66</td><td>66</td></tr><tr><td>y.buffer</td><td>NULL</td><td>NULL</td><td>NULL</td></tr></table>",
+            "block_bbox": [
+                107,
+                203,
+                1014,
+                1393
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    107.0,
+                    203.0
+                ],
+                [
+                    1014.0,
+                    203.0
+                ],
+                [
+                    1014.0,
+                    1393.0
+                ],
+                [
+                    107.0,
+                    1393.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE 4 Table 19 contains the TPM Key Profiles for the default ECC algorithm as defined by [V2G20-2321]. Further ECC algorithms supported by TPM 2.0 are specified in TCG algorithm registry. Once the specifications add support for Curve448, the implementers can follow the TPM 2.0 specifications to define the TPM key profiles for X448 (alternative ECC algorithm according to [V2G20-2319]) by adjusting the respective parameters in Table 19. The parameters specific to the curve type that need to be updated by the TPM key profiles include the fields \"nameAlg\", \"authPolicy\", \"curveID\" and \"Unique\".",
+            "block_bbox": [
+                67,
+                1396,
+                1054,
+                1541
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1396.0
+                ],
+                [
+                    1054.0,
+                    1396.0
+                ],
+                [
+                    1054.0,
+                    1541.0
+                ],
+                [
+                    67.0,
+                    1541.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "108",
+            "block_bbox": [
+                71,
+                1613,
+                117,
+                1636
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1613.0
+                ],
+                [
+                    116.0,
+                    1613.0
+                ],
+                [
+                    116.0,
+                    1635.0
+                ],
+                [
+                    71.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1615,
+                1054,
+                1637
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1615.0
+                ],
+                [
+                    1054.0,
+                    1615.0
+                ],
+                [
+                    1054.0,
+                    1637.0
+                ],
+                [
+                    796.0,
+                    1637.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1634,
+                1119,
+                1682
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    60,
+                    1642
+                ],
+                [
+                    60,
+                    1681
+                ],
+                [
+                    1065,
+                    1681
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1634
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8662017583847046,
+                "coordinate": [
+                    69,
+                    67,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        69.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        69.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8456505537033081,
+                "coordinate": [
+                    139,
+                    167,
+                    980,
+                    196
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        167.0
+                    ],
+                    [
+                        980.0,
+                        167.0
+                    ],
+                    [
+                        980.0,
+                        196.0
+                    ],
+                    [
+                        139.0,
+                        196.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.97454434633255,
+                "coordinate": [
+                    107,
+                    203,
+                    1014,
+                    1393
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        107.0,
+                        203.0
+                    ],
+                    [
+                        1014.0,
+                        203.0
+                    ],
+                    [
+                        1014.0,
+                        1393.0
+                    ],
+                    [
+                        107.0,
+                        1393.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.9101947546005249,
+                "coordinate": [
+                    67,
+                    1396,
+                    1054,
+                    1541
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1396.0
+                    ],
+                    [
+                        1054.0,
+                        1396.0
+                    ],
+                    [
+                        1054.0,
+                        1541.0
+                    ],
+                    [
+                        67.0,
+                        1541.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6887107491493225,
+                "coordinate": [
+                    71,
+                    1613,
+                    117,
+                    1636
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1613.0
+                    ],
+                    [
+                        116.0,
+                        1613.0
+                    ],
+                    [
+                        116.0,
+                        1635.0
+                    ],
+                    [
+                        71.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.4891713559627533,
+                "coordinate": [
+                    796,
+                    1615,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1615.0
+                    ],
+                    [
+                        1054.0,
+                        1615.0
+                    ],
+                    [
+                        1054.0,
+                        1637.0
+                    ],
+                    [
+                        796.0,
+                        1637.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.4969278872013092,
+                "coordinate": [
+                    60,
+                    1634,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1642
+                    ],
+                    [
+                        60,
+                        1681
+                    ],
+                    [
+                        1065,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1634
+                    ]
+                ]
+            }
+        ]
+    }
+}

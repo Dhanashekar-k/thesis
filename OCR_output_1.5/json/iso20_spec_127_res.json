@@ -1,0 +1,1193 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 127,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "transmission security and transport protocol for the port provided in the same payload as the security and transport protocol bytes.",
+            "block_bbox": [
+                256,
+                168,
+                1052,
+                223
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    256.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    223.0
+                ],
+                [
+                    256.0,
+                    223.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.10.1.7 Timing and error handling",
+            "block_bbox": [
+                151,
+                241,
+                537,
+                268
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    151.0,
+                    241.0
+                ],
+                [
+                    537.0,
+                    241.0
+                ],
+                [
+                    537.0,
+                    268.0
+                ],
+                [
+                    151.0,
+                    268.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The process of SECC discovery is based on the application time out definitions as described in 7.10.1. This subclause describes additional timing and error handling for the SECC discovery protocol.",
+            "block_bbox": [
+                68,
+                290,
+                1052,
+                344
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    290.0
+                ],
+                [
+                    1052.0,
+                    290.0
+                ],
+                [
+                    1052.0,
+                    344.0
+                ],
+                [
+                    68.0,
+                    344.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-157] The SDP client shall count the number of SECC discovery request messages until a valid SECC discovery response message has been received.",
+            "block_bbox": [
+                70,
+                366,
+                1052,
+                421
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    366.0
+                ],
+                [
+                    1052.0,
+                    366.0
+                ],
+                [
+                    1052.0,
+                    421.0
+                ],
+                [
+                    70.0,
+                    421.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-158] The SDP client shall reset the counter for sent SECC discovery request messages after a valid SECC discovery response message has been received.",
+            "block_bbox": [
+                70,
+                442,
+                1053,
+                495
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    442.0
+                ],
+                [
+                    1053.0,
+                    442.0
+                ],
+                [
+                    1053.0,
+                    495.0
+                ],
+                [
+                    70.0,
+                    495.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE Valid means that a valid IP address was received and communication setup procedure can continue.",
+            "block_bbox": [
+                69,
+                516,
+                1022,
+                542
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    516.0
+                ],
+                [
+                    1022.0,
+                    516.0
+                ],
+                [
+                    1022.0,
+                    542.0
+                ],
+                [
+                    69.0,
+                    542.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-159] After sending an SECC discovery request message, the SDP client shall wait for an SECC discovery response message for at least 250 ms.",
+            "block_bbox": [
+                70,
+                565,
+                1053,
+                620
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    565.0
+                ],
+                [
+                    1053.0,
+                    565.0
+                ],
+                [
+                    1053.0,
+                    620.0
+                ],
+                [
+                    70.0,
+                    620.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-160] After unsuccessfully waiting for an SECC discovery response message the SDP client shall send a new SECC discovery request message and increment the counter for sent SECC discovery request messages.",
+            "block_bbox": [
+                70,
+                639,
+                1054,
+                718
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    639.0
+                ],
+                [
+                    1054.0,
+                    639.0
+                ],
+                [
+                    1054.0,
+                    718.0
+                ],
+                [
+                    70.0,
+                    718.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-161] If the SDP client has not received any valid SECC discovery response message after sending in maximum 50 consecutive SECC discovery request messages it shall stop the SECC discovery.",
+            "block_bbox": [
+                70,
+                742,
+                1053,
+                819
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    742.0
+                ],
+                [
+                    1053.0,
+                    742.0
+                ],
+                [
+                    1053.0,
+                    819.0
+                ],
+                [
+                    70.0,
+                    819.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-162] After unsuccessfully stopping the SECC discovery, the SDP client shall go to the same state as defined for a timeout (refer to Figure 8).",
+            "block_bbox": [
+                70,
+                842,
+                1052,
+                896
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    842.0
+                ],
+                [
+                    1052.0,
+                    842.0
+                ],
+                [
+                    1052.0,
+                    896.0
+                ],
+                [
+                    70.0,
+                    896.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "7.10.1.8 SECC discovery request message for communication according to ISO 15118-8",
+            "block_bbox": [
+                150,
+                916,
+                1050,
+                943
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    150.0,
+                    916.0
+                ],
+                [
+                    1050.0,
+                    916.0
+                ],
+                [
+                    1050.0,
+                    943.0
+                ],
+                [
+                    150.0,
+                    943.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For the SDP clients for wireless communication, the requirements [V2G20-135], [V2G20-136], [V2G20-137], [V2G20-138], [V2G20-139] shall apply. Table 22 contains further information for the request message for wireless communication.",
+            "block_bbox": [
+                68,
+                965,
+                1053,
+                1045
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    965.0
+                ],
+                [
+                    1053.0,
+                    965.0
+                ],
+                [
+                    1053.0,
+                    1045.0
+                ],
+                [
+                    68.0,
+                    1045.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Information regarding P2PS/PPD and CouplingType value settings in the SDP request can be found below in Table 23.",
+            "block_bbox": [
+                68,
+                1067,
+                1053,
+                1120
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1067.0
+                ],
+                [
+                    1053.0,
+                    1067.0
+                ],
+                [
+                    1053.0,
+                    1120.0
+                ],
+                [
+                    68.0,
+                    1120.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 22 — SECC Discovery request message for wireless communication",
+            "block_bbox": [
+                188,
+                1143,
+                932,
+                1170
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    188.0,
+                    1143.0
+                ],
+                [
+                    932.0,
+                    1143.0
+                ],
+                [
+                    932.0,
+                    1170.0
+                ],
+                [
+                    188.0,
+                    1170.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Byte No.</td><td>Description</td></tr><tr><td>1</td><td>Security</td></tr><tr><td>2</td><td>Transport protocol</td></tr><tr><td>3 - 4</td><td>P2PS/PPD</td></tr><tr><td>5</td><td>CouplingType</td></tr><tr><td>6 - 25</td><td>EVID</td></tr><tr><td>26 - 62</td><td>EVSEID</td></tr></table>",
+            "block_bbox": [
+                252,
+                1176,
+                867,
+                1460
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    252.0,
+                    1176.0
+                ],
+                [
+                    867.0,
+                    1176.0
+                ],
+                [
+                    867.0,
+                    1460.0
+                ],
+                [
+                    252.0,
+                    1460.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "122",
+            "block_bbox": [
+                72,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    72.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                798,
+                1616,
+                1052,
+                1637
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    798.0,
+                    1616.0
+                ],
+                [
+                    1051.0,
+                    1616.0
+                ],
+                [
+                    1051.0,
+                    1636.0
+                ],
+                [
+                    798.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1638,
+                1118,
+                1682
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1638.0
+                ],
+                [
+                    1118.0,
+                    1638.0
+                ],
+                [
+                    1118.0,
+                    1682.0
+                ],
+                [
+                    60.0,
+                    1682.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8832217454910278,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9172282218933105,
+                "coordinate": [
+                    256,
+                    168,
+                    1052,
+                    223
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        256.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        223.0
+                    ],
+                    [
+                        256.0,
+                        223.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8647428750991821,
+                "coordinate": [
+                    151,
+                    241,
+                    537,
+                    268
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        151.0,
+                        241.0
+                    ],
+                    [
+                        537.0,
+                        241.0
+                    ],
+                    [
+                        537.0,
+                        268.0
+                    ],
+                    [
+                        151.0,
+                        268.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9252310395240784,
+                "coordinate": [
+                    68,
+                    290,
+                    1052,
+                    344
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        290.0
+                    ],
+                    [
+                        1052.0,
+                        290.0
+                    ],
+                    [
+                        1052.0,
+                        344.0
+                    ],
+                    [
+                        68.0,
+                        344.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9018433690071106,
+                "coordinate": [
+                    70,
+                    366,
+                    1052,
+                    421
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        70.0,
+                        366.0
+                    ],
+                    [
+                        1052.0,
+                        366.0
+                    ],
+                    [
+                        1052.0,
+                        421.0
+                    ],
+                    [
+                        70.0,
+                        421.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.909704864025116,
+                "coordinate": [
+                    70,
+                    442,
+                    1053,
+                    495
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        70.0,
+                        442.0
+                    ],
+                    [
+                        1053.0,
+                        442.0
+                    ],
+                    [
+                        1053.0,
+                        495.0
+                    ],
+                    [
+                        70.0,
+                        495.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8511452078819275,
+                "coordinate": [
+                    69,
+                    516,
+                    1022,
+                    542
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        69.0,
+                        516.0
+                    ],
+                    [
+                        1022.0,
+                        516.0
+                    ],
+                    [
+                        1022.0,
+                        542.0
+                    ],
+                    [
+                        69.0,
+                        542.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9080900549888611,
+                "coordinate": [
+                    70,
+                    565,
+                    1053,
+                    620
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        70.0,
+                        565.0
+                    ],
+                    [
+                        1053.0,
+                        565.0
+                    ],
+                    [
+                        1053.0,
+                        620.0
+                    ],
+                    [
+                        70.0,
+                        620.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9228907227516174,
+                "coordinate": [
+                    70,
+                    639,
+                    1054,
+                    718
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        70.0,
+                        639.0
+                    ],
+                    [
+                        1054.0,
+                        639.0
+                    ],
+                    [
+                        1054.0,
+                        718.0
+                    ],
+                    [
+                        70.0,
+                        718.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9165093898773193,
+                "coordinate": [
+                    70,
+                    742,
+                    1053,
+                    819
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        70.0,
+                        742.0
+                    ],
+                    [
+                        1053.0,
+                        742.0
+                    ],
+                    [
+                        1053.0,
+                        819.0
+                    ],
+                    [
+                        70.0,
+                        819.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8927193880081177,
+                "coordinate": [
+                    70,
+                    842,
+                    1052,
+                    896
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        842.0
+                    ],
+                    [
+                        1052.0,
+                        842.0
+                    ],
+                    [
+                        1052.0,
+                        896.0
+                    ],
+                    [
+                        70.0,
+                        896.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8217142820358276,
+                "coordinate": [
+                    150,
+                    916,
+                    1050,
+                    943
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        150.0,
+                        916.0
+                    ],
+                    [
+                        1050.0,
+                        916.0
+                    ],
+                    [
+                        1050.0,
+                        943.0
+                    ],
+                    [
+                        150.0,
+                        943.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9332735538482666,
+                "coordinate": [
+                    68,
+                    965,
+                    1053,
+                    1045
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        965.0
+                    ],
+                    [
+                        1053.0,
+                        965.0
+                    ],
+                    [
+                        1053.0,
+                        1045.0
+                    ],
+                    [
+                        68.0,
+                        1045.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.917180597782135,
+                "coordinate": [
+                    68,
+                    1067,
+                    1053,
+                    1120
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1067.0
+                    ],
+                    [
+                        1053.0,
+                        1067.0
+                    ],
+                    [
+                        1053.0,
+                        1120.0
+                    ],
+                    [
+                        68.0,
+                        1120.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8494720458984375,
+                "coordinate": [
+                    188,
+                    1143,
+                    932,
+                    1170
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        188.0,
+                        1143.0
+                    ],
+                    [
+                        932.0,
+                        1143.0
+                    ],
+                    [
+                        932.0,
+                        1170.0
+                    ],
+                    [
+                        188.0,
+                        1170.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9610999226570129,
+                "coordinate": [
+                    252,
+                    1176,
+                    867,
+                    1460
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        252.0,
+                        1176.0
+                    ],
+                    [
+                        867.0,
+                        1176.0
+                    ],
+                    [
+                        867.0,
+                        1460.0
+                    ],
+                    [
+                        252.0,
+                        1460.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6972007751464844,
+                "coordinate": [
+                    72,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        72.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6138662099838257,
+                "coordinate": [
+                    798,
+                    1616,
+                    1052,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        798.0,
+                        1616.0
+                    ],
+                    [
+                        1051.0,
+                        1616.0
+                    ],
+                    [
+                        1051.0,
+                        1636.0
+                    ],
+                    [
+                        798.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.44900673627853394,
+                "coordinate": [
+                    60,
+                    1638,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1638.0
+                    ],
+                    [
+                        1118.0,
+                        1638.0
+                    ],
+                    [
+                        1118.0,
+                        1682.0
+                    ],
+                    [
+                        60.0,
+                        1682.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

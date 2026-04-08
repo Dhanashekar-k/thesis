@@ -1,0 +1,1087 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 172,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "When the EVCC does not possess a valid contract certificate or the contract certificate is due to expire soon or the EVCC needs a new contract certificate (for example when the existing contract certificate is not accepted at the particular EVSE where the EV is currently charging, etc.) or EV wants to simply check if a new contract certificate is available, the EVCC can trigger an installation of a new contract certificate into the EVCC. In this use case the EVCC requests available contract certificates from the SECC to be installed into the EVCC. This procedure typically happens before PnC charging since PnC charging with authorization can only be started if a valid contract certificate is available in the EVCC. The SECC may request the certificate from a SA.",
+            "block_bbox": [
+                134,
+                169,
+                1123,
+                377
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    169.0
+                ],
+                [
+                    1123.0,
+                    169.0
+                ],
+                [
+                    1123.0,
+                    377.0
+                ],
+                [
+                    134.0,
+                    377.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The installation of multiple contract certificates is realized with a loop of CertificateInstallation message pairs. Depending on SECC and SA implementations, the SECC may, however, only need to send the first CertificateInstallationReq to the SA in order to retrieve all available contract certificates associated with the OEM provisioning certificate's PCID. Each CertificateInstallationReq/Res message pair between the EVCC and the SECC is used to install exactly one of the available contract certificate chains (including the related sub-CA certificates) and the encrypted private key.",
+            "block_bbox": [
+                135,
+                399,
+                1122,
+                556
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    399.0
+                ],
+                [
+                    1122.0,
+                    399.0
+                ],
+                [
+                    1122.0,
+                    556.0
+                ],
+                [
+                    135.0,
+                    556.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In contrast to ISO 15118-2, both the installation and update of a contract certificate are performed with the CertificateInstallationReq/Res message pair. The CertificateUpdateReq/Res message pair has been removed from this version. The initial installation and later update of one or more contract certificates may take up to several minutes depending on the existing communication link between the SECC and the secondary actors and the number of contract certificates to be installed into the EV. Therefore, it is recommended to not initiate a certificate installation process during each charging session. This avoids unnecessary traffic to the backend as, in most cases, there will not be a new certificate available yet.",
+            "block_bbox": [
+                134,
+                577,
+                1123,
+                761
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    577.0
+                ],
+                [
+                    1123.0,
+                    577.0
+                ],
+                [
+                    1123.0,
+                    761.0
+                ],
+                [
+                    134.0,
+                    761.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The OEM may want to apprise the driver that in cases where contract certificate installation is needed before entering a charging loop, it might take more time than usual for the charging process to start.",
+            "block_bbox": [
+                135,
+                781,
+                1121,
+                836
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    781.0
+                ],
+                [
+                    1121.0,
+                    781.0
+                ],
+                [
+                    1121.0,
+                    836.0
+                ],
+                [
+                    135.0,
+                    836.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The implementation of the CertificationInstallationReq/Res is optional for both EV and EVSE. If the EV does support CertificationInstallationReq/Res messages, the OEM is required to install an OEM provisioning certificate in the EVCC. In such cases, the procedure described here can be used for the installation of the contract certificate.",
+            "block_bbox": [
+                134,
+                857,
+                1122,
+                963
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    857.0
+                ],
+                [
+                    1122.0,
+                    857.0
+                ],
+                [
+                    1122.0,
+                    963.0
+                ],
+                [
+                    134.0,
+                    963.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "If no OEM provisioning certificate is available in the EVCC, the procedure described in 8.3.4.3.3.2 (and its sub clauses) cannot be used for contract certificate installation. In these cases the contract certificate should be installed into the EVCC by other means. Mechanisms other than using an OEM provisioning certificate for installing the contract certificate are out of the scope of this document.",
+            "block_bbox": [
+                134,
+                984,
+                1123,
+                1090
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    984.0
+                ],
+                [
+                    1123.0,
+                    984.0
+                ],
+                [
+                    1123.0,
+                    1090.0
+                ],
+                [
+                    134.0,
+                    1090.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For details on OEM provisioning certificates refer to H.4.",
+            "block_bbox": [
+                136,
+                1111,
+                672,
+                1138
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1111.0
+                ],
+                [
+                    672.0,
+                    1111.0
+                ],
+                [
+                    672.0,
+                    1138.0
+                ],
+                [
+                    136.0,
+                    1138.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 The SECC can request the signed contract data at a secondary actor, if it has online capabilities.",
+            "block_bbox": [
+                136,
+                1160,
+                1046,
+                1186
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1160.0
+                ],
+                [
+                    1046.0,
+                    1160.0
+                ],
+                [
+                    1046.0,
+                    1186.0
+                ],
+                [
+                    136.0,
+                    1186.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 If the SECC is not able to deliver the requested certificates an appropriate error handling should be performed. If an EVSE is not able to support this function in general, it is supposed to be marked for instance as \"offline EVSE\" (e.g. by a label at the EVSE). If the EVCC does not possess a valid contract certificate associated with a legal contract, it is not able to use PnC until a certificate installation process is performed successfully.",
+            "block_bbox": [
+                136,
+                1208,
+                1121,
+                1306
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1208.0
+                ],
+                [
+                    1121.0,
+                    1208.0
+                ],
+                [
+                    1121.0,
+                    1306.0
+                ],
+                [
+                    136.0,
+                    1306.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 For a more detailed explanation of the certificate installation process, see 7.9.2.5 and its subclauses.",
+            "block_bbox": [
+                136,
+                1326,
+                1089,
+                1352
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1326.0
+                ],
+                [
+                    1089.0,
+                    1326.0
+                ],
+                [
+                    1089.0,
+                    1352.0
+                ],
+                [
+                    136.0,
+                    1352.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.3.9.2 CertificateInstallationReq",
+            "block_bbox": [
+                193,
+                1373,
+                608,
+                1399
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    1373.0
+                ],
+                [
+                    608.0,
+                    1373.0
+                ],
+                [
+                    608.0,
+                    1399.0
+                ],
+                [
+                    193.0,
+                    1399.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "By sending the CertificateInstallationReq, the EVCC requests the SECC to deliver the certificates that belong to the currently valid contracts of the EV user.",
+            "block_bbox": [
+                136,
+                1421,
+                1121,
+                1476
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1421.0
+                ],
+                [
+                    1121.0,
+                    1421.0
+                ],
+                [
+                    1121.0,
+                    1476.0
+                ],
+                [
+                    136.0,
+                    1476.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2684]\nThe EVCC shall possess a certificate and corresponding private key usable for signature and key agreement to support the decryption of encrypted information.",
+            "block_bbox": [
+                140,
+                1496,
+                288,
+                1523
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    1496.0
+                ],
+                [
+                    288.0,
+                    1496.0
+                ],
+                [
+                    288.0,
+                    1523.0
+                ],
+                [
+                    140.0,
+                    1523.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                323,
+                1495,
+                1121,
+                1551
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    323.0,
+                    1495.0
+                ],
+                [
+                    1121.0,
+                    1495.0
+                ],
+                [
+                    1121.0,
+                    1551.0
+                ],
+                [
+                    323.0,
+                    1551.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "167",
+            "block_bbox": [
+                1079,
+                1624,
+                1119,
+                1646
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    1079.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1645.0
+                ],
+                [
+                    1079.0,
+                    1645.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 - All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1118,
+                1682
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1681
+                ],
+                [
+                    1094,
+                    1681
+                ],
+                [
+                    1117,
+                    1664
+                ],
+                [
+                    1117,
+                    1640
+                ],
+                [
+                    1070,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8736149668693542,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9623277187347412,
+                "coordinate": [
+                    134,
+                    169,
+                    1123,
+                    377
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        134.0,
+                        169.0
+                    ],
+                    [
+                        1123.0,
+                        169.0
+                    ],
+                    [
+                        1123.0,
+                        377.0
+                    ],
+                    [
+                        134.0,
+                        377.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9542126059532166,
+                "coordinate": [
+                    135,
+                    399,
+                    1122,
+                    556
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.0,
+                        399.0
+                    ],
+                    [
+                        1122.0,
+                        399.0
+                    ],
+                    [
+                        1122.0,
+                        556.0
+                    ],
+                    [
+                        135.0,
+                        556.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9607071876525879,
+                "coordinate": [
+                    134,
+                    577,
+                    1123,
+                    761
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        134.0,
+                        577.0
+                    ],
+                    [
+                        1123.0,
+                        577.0
+                    ],
+                    [
+                        1123.0,
+                        761.0
+                    ],
+                    [
+                        134.0,
+                        761.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9200262427330017,
+                "coordinate": [
+                    135,
+                    781,
+                    1121,
+                    836
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        135.0,
+                        781.0
+                    ],
+                    [
+                        1121.0,
+                        781.0
+                    ],
+                    [
+                        1121.0,
+                        836.0
+                    ],
+                    [
+                        135.0,
+                        836.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9478119611740112,
+                "coordinate": [
+                    134,
+                    857,
+                    1122,
+                    963
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        134.0,
+                        857.0
+                    ],
+                    [
+                        1122.0,
+                        857.0
+                    ],
+                    [
+                        1122.0,
+                        963.0
+                    ],
+                    [
+                        134.0,
+                        963.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9499039053916931,
+                "coordinate": [
+                    134,
+                    984,
+                    1123,
+                    1090
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        134.0,
+                        984.0
+                    ],
+                    [
+                        1123.0,
+                        984.0
+                    ],
+                    [
+                        1123.0,
+                        1090.0
+                    ],
+                    [
+                        134.0,
+                        1090.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.84760981798172,
+                "coordinate": [
+                    136,
+                    1111,
+                    672,
+                    1138
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1111.0
+                    ],
+                    [
+                        672.0,
+                        1111.0
+                    ],
+                    [
+                        672.0,
+                        1138.0
+                    ],
+                    [
+                        136.0,
+                        1138.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8498833775520325,
+                "coordinate": [
+                    136,
+                    1160,
+                    1046,
+                    1186
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1160.0
+                    ],
+                    [
+                        1046.0,
+                        1160.0
+                    ],
+                    [
+                        1046.0,
+                        1186.0
+                    ],
+                    [
+                        136.0,
+                        1186.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9510251879692078,
+                "coordinate": [
+                    136,
+                    1208,
+                    1121,
+                    1306
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1208.0
+                    ],
+                    [
+                        1121.0,
+                        1208.0
+                    ],
+                    [
+                        1121.0,
+                        1306.0
+                    ],
+                    [
+                        136.0,
+                        1306.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.855516791343689,
+                "coordinate": [
+                    136,
+                    1326,
+                    1089,
+                    1352
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1326.0
+                    ],
+                    [
+                        1089.0,
+                        1326.0
+                    ],
+                    [
+                        1089.0,
+                        1352.0
+                    ],
+                    [
+                        136.0,
+                        1352.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8700456619262695,
+                "coordinate": [
+                    193,
+                    1373,
+                    608,
+                    1399
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        193.0,
+                        1373.0
+                    ],
+                    [
+                        608.0,
+                        1373.0
+                    ],
+                    [
+                        608.0,
+                        1399.0
+                    ],
+                    [
+                        193.0,
+                        1399.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9257399439811707,
+                "coordinate": [
+                    136,
+                    1421,
+                    1121,
+                    1476
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1421.0
+                    ],
+                    [
+                        1121.0,
+                        1421.0
+                    ],
+                    [
+                        1121.0,
+                        1476.0
+                    ],
+                    [
+                        136.0,
+                        1476.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7050654888153076,
+                "coordinate": [
+                    140,
+                    1496,
+                    288,
+                    1523
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        140.0,
+                        1496.0
+                    ],
+                    [
+                        288.0,
+                        1496.0
+                    ],
+                    [
+                        288.0,
+                        1523.0
+                    ],
+                    [
+                        140.0,
+                        1523.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9176292419433594,
+                "coordinate": [
+                    323,
+                    1495,
+                    1121,
+                    1551
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        323.0,
+                        1495.0
+                    ],
+                    [
+                        1121.0,
+                        1495.0
+                    ],
+                    [
+                        1121.0,
+                        1551.0
+                    ],
+                    [
+                        323.0,
+                        1551.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7570253610610962,
+                "coordinate": [
+                    1079,
+                    1624,
+                    1119,
+                    1646
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        1079.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1645.0
+                    ],
+                    [
+                        1079.0,
+                        1645.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8318583965301514,
+                "coordinate": [
+                    61,
+                    1631,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1681
+                    ],
+                    [
+                        1094,
+                        1681
+                    ],
+                    [
+                        1117,
+                        1664
+                    ],
+                    [
+                        1117,
+                        1640
+                    ],
+                    [
+                        1070,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

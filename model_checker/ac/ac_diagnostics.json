@@ -1,0 +1,485 @@
+[
+  {
+    "severity": "warning",
+    "stage": "enrichment",
+    "message": "Requirement V2G20-2227 referenced by transition 9 (Authorization \u2192 Authorization) not found in KB",
+    "context": "",
+    "related_req": "V2G20-2227"
+  },
+  {
+    "severity": "warning",
+    "stage": "enrichment",
+    "message": "Requirement V2G20-2131 referenced by transition 9 (Authorization \u2192 Authorization) not found in KB",
+    "context": "",
+    "related_req": "V2G20-2131"
+  },
+  {
+    "severity": "warning",
+    "stage": "enrichment",
+    "message": "Requirement V2G20-2233 referenced by transition 10 (Authorization \u2192 ServiceDiscovery) not found in KB",
+    "context": "",
+    "related_req": "V2G20-2233"
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'SupportedAppProtocolReq' (used in state SupportedAppProtocol)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'SupportedAppProtocolRes' (used in state SupportedAppProtocol)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'SessionSetupRes' (used in state SessionSetup)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'AuthorizationSetupReq' (used in state AuthorizationSetup)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'ServiceDiscoveryRes' (used in state ServiceDiscovery)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'ServiceDetailReq' (used in state ServiceDetail)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "info",
+    "stage": "validator",
+    "message": "No schema found for message 'PowerDeliveryReq' (used in state PowerDelivery)",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Msg_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_Msg_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Sequence_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_Sequence_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Ongoing_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_Ongoing_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Msg_Timeout (MessageType)' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_Msg_Performance_Time (MessageType)' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Ongoing_Timeout' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_Ongoing_Performance_Time' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_CommunicationSetup_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_CommunicationSetup_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_DC_CableCheck_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_DC_CableCheck_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_DC_PreCharge_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_DC_PreCharge_Timer' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_DC_CableCheck_Timeout' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_DC_CableCheck_Performance_Time' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_DC_PreCharge_Timeout' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_DC_PreCharge_Performance_Time' has no value (0.0s) \u2014 extracted from cached",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'communication setup timer' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'AckMaxDelay' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'message_timer' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'sequence_timer' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'ongoing_timer' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'communication_setup_timer' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'application_level_timeout' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Sequence_Performance_Timeout' has no value (0.0s) \u2014 extracted from vlm",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SessionStopTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_AC_CL_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_To_SECC_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SendTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSE_ResponseTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSEMaxTimeToWaitForChargeLoopReq' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SendChargeLoopReqTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_ChargeLoopReqTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SessionStopReq_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSE_Processing_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_PowerDeliveryReq_StartTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_DCCL_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSEMaxTimeOut' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_To_SECC_LongestCommTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SECC_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SendChargeLoopReq_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_SessionStopTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_ServiceDetailReq_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SendMessageTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_SVCStatusTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_ServiceDiscoveryTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSE_VoltageAdjustmentTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_SECC_ComMaxTimeWaitForSessionStopRes' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_ACChargeLoopReqTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Transaction_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVSE_Response_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Send_PaymentServiceSelectionReq_Timeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_SECC_FullHandshakeTimeout' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_EVCC_Pause_Period' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  },
+  {
+    "severity": "warning",
+    "stage": "validator",
+    "message": "Timer 'V2G_Communication_Session' has no value (0.0s) \u2014 extracted from requirement_atom",
+    "context": "",
+    "related_req": ""
+  }
+]

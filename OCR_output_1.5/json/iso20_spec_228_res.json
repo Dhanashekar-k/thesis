@@ -1,0 +1,827 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 228,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "it can decide whether it is sufficiently in position to initiate charging or send another ACDP_VehiclePositioningReq. This looping continues until the EVCC decides that it is in position and is also immobilized. Then, it will then send a ACDP_VehiclePositioningReq with EVMobilityStatus=Immobilized. The SECC will reply with a ACDP_VehiclePositioningRes with EVSEProcessing=Finished and the sequence will continue with AuthorizationSetupReq.",
+            "block_bbox": [
+                264,
+                169,
+                1122,
+                288
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    264.0,
+                    169.0
+                ],
+                [
+                    1122.0,
+                    169.0
+                ],
+                [
+                    1122.0,
+                    288.0
+                ],
+                [
+                    264.0,
+                    288.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "the EVCC does not support SECC supported positioning. The EVCC will send ACDP_VehiclePositioningReq with EVPositioningSupport=False, and EVMobilityStatus=Mobilized. The SECC will reply with ACDP_VehiclePositioningRes with EVSEPositioningSupport=False/True (do not care) and EVSEProcessing=Ongoing. When the EVCC receives this information, the EV can decide whether it is sufficiently in position (using other means, such as the driver using visual aids to park, or advanced EV sensors) to stop the positioning process, or to send another ACDP_VehiclePositioningReq in a loop. This looping continues until the EV decides that the EV is in position, and is also immobilized. Then it will then send a ACDP_VehiclePositioningReq with EVMobilityStatus=Immobilized. The SECC will reply with a ACDP_VehiclePositioningRes with EVSEProcessing=Finished, and the sequence will continue with AuthorizationSetupReq.",
+            "block_bbox": [
+                206,
+                310,
+                1116,
+                546
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    206.0,
+                    310.0
+                ],
+                [
+                    1116.0,
+                    310.0
+                ],
+                [
+                    1116.0,
+                    546.0
+                ],
+                [
+                    206.0,
+                    546.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Case 3: the EVCC supports positioning, but the SECC does not. In this case, the EVCC will send ACDP_VehiclePositioningReq with EVPositioningSupport=True, and EVMobilityStatus=Mobilized. The SECC will reply ACDP_VehiclePositioningRes with EVSEPositioningSupport=False and EVSEProcessing=Ongoing. At this point, the EVCC may allow for manual positioning of the EV as described in the second case. If the EVCC decides that it requires SECC positioning support, it may stop the charging process by sending SessionStop.",
+            "block_bbox": [
+                136,
+                567,
+                1122,
+                711
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    567.0
+                ],
+                [
+                    1122.0,
+                    567.0
+                ],
+                [
+                    1122.0,
+                    711.0
+                ],
+                [
+                    136.0,
+                    711.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In all cases where there is an ongoing positioning loop, the SECC monitors its PPD to verify that pairing is still correct. If the EV moves out of the pairing zone, then the SECC will send ACDP_VehiclePositioningRes with ResponseCode=FAILED_AssociationError, the EVCC will send SessionStop and the SDP process will restart.",
+            "block_bbox": [
+                135,
+                732,
+                1123,
+                838
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    732.0
+                ],
+                [
+                    1123.0,
+                    732.0
+                ],
+                [
+                    1123.0,
+                    838.0
+                ],
+                [
+                    135.0,
+                    838.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 If the EV already knows it is in position and is also immobilized, then no loop is required, and the EVCC can directly send a ACDP_VehiclePositioningReq with EVMobilityStatus=Immobilized. The SECC will then reply with a ACDP_VehiclePositioningRes with EVSEProcessing=Finished, and the sequence will continue with AuthorizationSetupReq.",
+            "block_bbox": [
+                136,
+                859,
+                1121,
+                956
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    859.0
+                ],
+                [
+                    1121.0,
+                    859.0
+                ],
+                [
+                    1121.0,
+                    956.0
+                ],
+                [
+                    136.0,
+                    956.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 Positioning support with the RFID PPD is very basic. The only information that is returned by the SECC is EV_InChargePosition = True/False. This information indicates that the EV is within/not within the partition zone for charging.",
+            "block_bbox": [
+                136,
+                976,
+                1121,
+                1050
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    976.0
+                ],
+                [
+                    1121.0,
+                    976.0
+                ],
+                [
+                    1121.0,
+                    1050.0
+                ],
+                [
+                    136.0,
+                    1050.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 It is possible that more than one PPD technology is available. For example, the EV and EVSE have both the Basic RFID PPD as well as an advanced optical PPD. Since the active part of the PPD is always on the EVSE, the EVSE can determine the presence of the advanced optical PPD during the SDP pairing for WLAN process and continue using this during the positioning process.",
+            "block_bbox": [
+                136,
+                1070,
+                1121,
+                1169
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1070.0
+                ],
+                [
+                    1121.0,
+                    1070.0
+                ],
+                [
+                    1121.0,
+                    1169.0
+                ],
+                [
+                    136.0,
+                    1169.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.7.5.2 ACDP_VehiclePositioningReq",
+            "block_bbox": [
+                193,
+                1187,
+                640,
+                1215
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    1187.0
+                ],
+                [
+                    640.0,
+                    1187.0
+                ],
+                [
+                    640.0,
+                    1215.0
+                ],
+                [
+                    193.0,
+                    1215.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4004] The EVCC and the SECC shall implement the message elements as defined in Figure 84 and Table 81.",
+            "block_bbox": [
+                137,
+                1235,
+                1119,
+                1287
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1235.0
+                ],
+                [
+                    1119.0,
+                    1235.0
+                ],
+                [
+                    1119.0,
+                    1287.0
+                ],
+                [
+                    137.0,
+                    1287.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                284,
+                1314,
+                948,
+                1527
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    284.0,
+                    1314.0
+                ],
+                [
+                    948.0,
+                    1314.0
+                ],
+                [
+                    948.0,
+                    1527.0
+                ],
+                [
+                    284.0,
+                    1527.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    60.0,
+                    1683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "223",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    1077,
+                    1624
+                ],
+                [
+                    1077,
+                    1643
+                ],
+                [
+                    1118,
+                    1643
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8823913931846619,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9477612376213074,
+                "coordinate": [
+                    264,
+                    169,
+                    1122,
+                    288
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        264.0,
+                        169.0
+                    ],
+                    [
+                        1122.0,
+                        169.0
+                    ],
+                    [
+                        1122.0,
+                        288.0
+                    ],
+                    [
+                        264.0,
+                        288.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.930072546005249,
+                "coordinate": [
+                    206,
+                    310,
+                    1116,
+                    546
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        206.0,
+                        310.0
+                    ],
+                    [
+                        1116.0,
+                        310.0
+                    ],
+                    [
+                        1116.0,
+                        546.0
+                    ],
+                    [
+                        206.0,
+                        546.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.944118082523346,
+                "coordinate": [
+                    136,
+                    567,
+                    1122,
+                    711
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        567.0
+                    ],
+                    [
+                        1122.0,
+                        567.0
+                    ],
+                    [
+                        1122.0,
+                        711.0
+                    ],
+                    [
+                        136.0,
+                        711.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9421609044075012,
+                "coordinate": [
+                    135,
+                    732,
+                    1123,
+                    838
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        135.0,
+                        732.0
+                    ],
+                    [
+                        1123.0,
+                        732.0
+                    ],
+                    [
+                        1123.0,
+                        838.0
+                    ],
+                    [
+                        135.0,
+                        838.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9385950565338135,
+                "coordinate": [
+                    136,
+                    859,
+                    1121,
+                    956
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        136.0,
+                        859.0
+                    ],
+                    [
+                        1121.0,
+                        859.0
+                    ],
+                    [
+                        1121.0,
+                        956.0
+                    ],
+                    [
+                        136.0,
+                        956.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9294023513793945,
+                "coordinate": [
+                    136,
+                    976,
+                    1121,
+                    1050
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        136.0,
+                        976.0
+                    ],
+                    [
+                        1121.0,
+                        976.0
+                    ],
+                    [
+                        1121.0,
+                        1050.0
+                    ],
+                    [
+                        136.0,
+                        1050.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9471850395202637,
+                "coordinate": [
+                    136,
+                    1070,
+                    1121,
+                    1169
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1070.0
+                    ],
+                    [
+                        1121.0,
+                        1070.0
+                    ],
+                    [
+                        1121.0,
+                        1169.0
+                    ],
+                    [
+                        136.0,
+                        1169.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6670598387718201,
+                "coordinate": [
+                    193,
+                    1187,
+                    640,
+                    1215
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        193.0,
+                        1187.0
+                    ],
+                    [
+                        640.0,
+                        1187.0
+                    ],
+                    [
+                        640.0,
+                        1215.0
+                    ],
+                    [
+                        193.0,
+                        1215.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8796249032020569,
+                "coordinate": [
+                    137,
+                    1235,
+                    1119,
+                    1287
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1235.0
+                    ],
+                    [
+                        1119.0,
+                        1235.0
+                    ],
+                    [
+                        1119.0,
+                        1287.0
+                    ],
+                    [
+                        137.0,
+                        1287.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.935441255569458,
+                "coordinate": [
+                    284,
+                    1314,
+                    948,
+                    1527
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        284.0,
+                        1314.0
+                    ],
+                    [
+                        948.0,
+                        1314.0
+                    ],
+                    [
+                        948.0,
+                        1527.0
+                    ],
+                    [
+                        284.0,
+                        1527.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8149455189704895,
+                "coordinate": [
+                    60,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        60.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.729346513748169,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        1077,
+                        1624
+                    ],
+                    [
+                        1077,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

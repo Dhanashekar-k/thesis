@@ -1,0 +1,522 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 302,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                307,
+                172,
+                937,
+                585
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    307.0,
+                    172.0
+                ],
+                [
+                    937.0,
+                    172.0
+                ],
+                [
+                    937.0,
+                    585.0
+                ],
+                [
+                    307.0,
+                    585.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 165 — Schema diagram — PriceLevelScheduleType",
+            "block_bbox": [
+                329,
+                621,
+                928,
+                649
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    329.0,
+                    621.0
+                ],
+                [
+                    928.0,
+                    621.0
+                ],
+                [
+                    928.0,
+                    649.0
+                ],
+                [
+                    329.0,
+                    649.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "The elements of this message are used according to Table 156.",
+            "block_bbox": [
+                136,
+                659,
+                731,
+                687
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    659.0
+                ],
+                [
+                    731.0,
+                    659.0
+                ],
+                [
+                    731.0,
+                    687.0
+                ],
+                [
+                    136.0,
+                    687.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 156 — Semantics and type definition for PriceLevelScheduleType",
+            "block_bbox": [
+                264,
+                707,
+                994,
+                733
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    264.0,
+                    707.0
+                ],
+                [
+                    994.0,
+                    707.0
+                ],
+                [
+                    994.0,
+                    733.0
+                ],
+                [
+                    264.0,
+                    733.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>Id</td><td>simpleType: xs:ID</td><td>This element is used for referencing this type in the message header when a signature needs to be applied.</td></tr><tr><td>TimeAnchor</td><td>simpleType: xs:unsignedLong</td><td>The time that defines the starting point for the PriceLevelSchedule. The value is encoded at microseconds resolution in SECC time, a concept that is defined in 8.3.3.3. In context of price level the TimeAnchor will define a time that either is the present or some point in the near past.</td></tr><tr><td>PriceScheduleID</td><td>simpleType: numericIDType refer to Annex A for the type definition</td><td>Unique ID for the price schedule</td></tr><tr><td>PriceScheduleDescription</td><td>simpleType: descriptionType refer to Annex A for the type definition</td><td>Optional: Optional description of the PriceSchedule.</td></tr><tr><td>NumberOfPriceLevels</td><td>simpleType: xs:unsignedByte</td><td>Defines the overall number of distinct PriceLevel elements used across all PriceLevelSchedules.</td></tr><tr><td>PriceLevelScheduleEntries</td><td>complexType: PriceLevelScheduleEntryListType Refer 8.3.5.3.63</td><td>List of entries of the PriceLevelSchedule</td></tr></table>",
+            "block_bbox": [
+                128,
+                737,
+                1129,
+                1524
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    128.0,
+                    737.0
+                ],
+                [
+                    1129.0,
+                    737.0
+                ],
+                [
+                    1129.0,
+                    1524.0
+                ],
+                [
+                    128.0,
+                    1524.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "297",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    1077,
+                    1624
+                ],
+                [
+                    1077,
+                    1643
+                ],
+                [
+                    1118,
+                    1643
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8689263463020325,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9645909070968628,
+                "coordinate": [
+                    307,
+                    172,
+                    937,
+                    585
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        307.0,
+                        172.0
+                    ],
+                    [
+                        937.0,
+                        172.0
+                    ],
+                    [
+                        937.0,
+                        585.0
+                    ],
+                    [
+                        307.0,
+                        585.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.861348032951355,
+                "coordinate": [
+                    329,
+                    621,
+                    928,
+                    649
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        329.0,
+                        621.0
+                    ],
+                    [
+                        928.0,
+                        621.0
+                    ],
+                    [
+                        928.0,
+                        649.0
+                    ],
+                    [
+                        329.0,
+                        649.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5007152557373047,
+                "coordinate": [
+                    136,
+                    659,
+                    731,
+                    687
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        136.0,
+                        659.0
+                    ],
+                    [
+                        731.0,
+                        659.0
+                    ],
+                    [
+                        731.0,
+                        687.0
+                    ],
+                    [
+                        136.0,
+                        687.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8765442371368408,
+                "coordinate": [
+                    264,
+                    707,
+                    994,
+                    733
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        264.0,
+                        707.0
+                    ],
+                    [
+                        994.0,
+                        707.0
+                    ],
+                    [
+                        994.0,
+                        733.0
+                    ],
+                    [
+                        264.0,
+                        733.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9804947376251221,
+                "coordinate": [
+                    128,
+                    737,
+                    1129,
+                    1524
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        128.0,
+                        737.0
+                    ],
+                    [
+                        1129.0,
+                        737.0
+                    ],
+                    [
+                        1129.0,
+                        1524.0
+                    ],
+                    [
+                        128.0,
+                        1524.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8283618092536926,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7653297781944275,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1077,
+                        1624
+                    ],
+                    [
+                        1077,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

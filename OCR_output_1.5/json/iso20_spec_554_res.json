@@ -1,0 +1,888 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 554,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "Annex J\n(informative)",
+            "block_bbox": [
+                546,
+                168,
+                712,
+                232
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    546.0,
+                    168.0
+                ],
+                [
+                    712.0,
+                    168.0
+                ],
+                [
+                    712.0,
+                    232.0
+                ],
+                [
+                    546.0,
+                    232.0
+                ]
+            ]
+        },
+        {
+            "block_label": "doc_title",
+            "block_content": "Absolute pricing examples",
+            "block_bbox": [
+                455,
+                260,
+                804,
+                294
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    455.0,
+                    260.0
+                ],
+                [
+                    804.0,
+                    260.0
+                ],
+                [
+                    804.0,
+                    294.0
+                ],
+                [
+                    455.0,
+                    294.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.1 Overview",
+            "block_bbox": [
+                136,
+                367,
+                323,
+                397
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    367.0
+                ],
+                [
+                    323.0,
+                    367.0
+                ],
+                [
+                    323.0,
+                    397.0
+                ],
+                [
+                    136.0,
+                    397.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Absolute pricing provides a means for the EV to figure out exactly how much the charging session will cost the driver. Absolute Pricing allows for the CSO to set prices for power, occupancy, overstay, taxes, and other extra selected services (e.g. valet, carwash).",
+            "block_bbox": [
+                136,
+                419,
+                1121,
+                499
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    419.0
+                ],
+                [
+                    1121.0,
+                    419.0
+                ],
+                [
+                    1121.0,
+                    499.0
+                ],
+                [
+                    136.0,
+                    499.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.2 Simple examples",
+            "block_bbox": [
+                137,
+                523,
+                403,
+                553
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    523.0
+                ],
+                [
+                    403.0,
+                    523.0
+                ],
+                [
+                    403.0,
+                    553.0
+                ],
+                [
+                    137.0,
+                    553.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.2.1 Parking fee only",
+            "block_bbox": [
+                137,
+                573,
+                374,
+                601
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    573.0
+                ],
+                [
+                    374.0,
+                    573.0
+                ],
+                [
+                    374.0,
+                    601.0
+                ],
+                [
+                    137.0,
+                    601.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The simplest example is where the CSO only charges the driver for parking the car in the charging spot. This example charges 5 € for 24 h of parking (all times are in seconds).",
+            "block_bbox": [
+                136,
+                623,
+                1119,
+                678
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    623.0
+                ],
+                [
+                    1119.0,
+                    623.0
+                ],
+                [
+                    1119.0,
+                    678.0
+                ],
+                [
+                    136.0,
+                    678.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AbsolutePriceSchedule xmlns=\"urn:iso:std:iso:15118:-20:CommonMessages\" xmlns:v2gci_ct=\"urn:iso:std:iso:15118:-20:CommonTypes\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:iso:std:iso:15118:-20:CommonMessages./V2G_CI_Common_Messages.xsd\">\n    <TimeAnchor>1582842864000000</TimeAnchor>\n    <PriceScheduleID>1</PriceScheduleID>\n    <PriceScheduleDescription>Day_of_Parking</PriceScheduleDescription>\n    <Currency>EUR</Currency>\n    <Language>FRA</Language>\n    <PriceAlgorithm>urn:iso:std:iso:15118:-20:PriceAlgorithm:1-Power</PriceAlgorithm>\n    <PriceRuleStacks>\n        <PriceRuleStack>\n            <Duration>86400</Duration>\n            <PriceRule>\n                <EnergyFee>\n                    <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                    <v2gci_ct:Value>0</v2gci_ct:Value>\n                </EnergyFee>\n                <ParkingFee>\n                    <v2gci_ct:Exponent>0</Exponent>\n                    <v2gci_ct:Value>5</Value>\n                </ParkingFee>\n                <ParkingFeePeriod>86400</n1:ParkingFeePeriod>\n                <PowerRangeStart>\n                    <v2gci_ct:Exponent>0</v2gci_ct:Exponent>\n                    <v2gci_ct:Value>0</v2gci_ct:Value>\n                </PowerRangeStart>\n                </PriceRule>\n            </PriceRuleStack>\n        </PriceRuleStacks>\n    </AbsolutePriceSchedule>",
+            "block_bbox": [
+                137,
+                695,
+                1116,
+                1259
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    695.0
+                ],
+                [
+                    1116.0,
+                    695.0
+                ],
+                [
+                    1116.0,
+                    1259.0
+                ],
+                [
+                    137.0,
+                    1259.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.2.2 Energy fee only",
+            "block_bbox": [
+                137,
+                1284,
+                365,
+                1311
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1284.0
+                ],
+                [
+                    365.0,
+                    1284.0
+                ],
+                [
+                    365.0,
+                    1311.0
+                ],
+                [
+                    137.0,
+                    1311.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This example illustrates billing by the kWh. This example charges $0.11 per kWh.",
+            "block_bbox": [
+                137,
+                1333,
+                973,
+                1361
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1333.0
+                ],
+                [
+                    973.0,
+                    1333.0
+                ],
+                [
+                    973.0,
+                    1361.0
+                ],
+                [
+                    137.0,
+                    1361.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<AbsolutePriceSchedule xmlns=\"urn:iso:std:iso:15118:-20:CommonMessages\"\nxmlns:v2gci_ct=\"urn:iso:std:iso:15118:-20:CommonTypes\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xsi:schemaLocation=\"urn:iso:std:iso:15118:-20:CommonMessages./V2G_CI_Common_Messages.xsd\">\n<TimeAnchor>1582842864000000</TimeAnchor>\n<PriceScheduleID>1</PriceScheduleID>\n<PriceScheduleDescription>Fee_for_energy</PriceScheduleDescription>\n<Currency>USD</Currency>\n<Language>ENG</Language>\n<PriceAlgorithm>urn:iso:std:iso:15118:-20:PriceAlgorithm:1-Power</PriceAlgorithm>",
+            "block_bbox": [
+                139,
+                1379,
+                1118,
+                1562
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    1379.0
+                ],
+                [
+                    1118.0,
+                    1379.0
+                ],
+                [
+                    1118.0,
+                    1562.0
+                ],
+                [
+                    139.0,
+                    1562.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1118,
+                1683
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "549",
+            "block_bbox": [
+                1078,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    1078,
+                    1624
+                ],
+                [
+                    1078,
+                    1643
+                ],
+                [
+                    1118,
+                    1643
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8834593296051025,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.5034424662590027,
+                "coordinate": [
+                    546,
+                    168,
+                    712,
+                    232
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        546.0,
+                        168.0
+                    ],
+                    [
+                        712.0,
+                        168.0
+                    ],
+                    [
+                        712.0,
+                        232.0
+                    ],
+                    [
+                        546.0,
+                        232.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 6,
+                "label": "doc_title",
+                "score": 0.631255030632019,
+                "coordinate": [
+                    455,
+                    260,
+                    804,
+                    294
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        455.0,
+                        260.0
+                    ],
+                    [
+                        804.0,
+                        260.0
+                    ],
+                    [
+                        804.0,
+                        294.0
+                    ],
+                    [
+                        455.0,
+                        294.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8564420938491821,
+                "coordinate": [
+                    136,
+                    367,
+                    323,
+                    397
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        367.0
+                    ],
+                    [
+                        323.0,
+                        367.0
+                    ],
+                    [
+                        323.0,
+                        397.0
+                    ],
+                    [
+                        136.0,
+                        397.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9308400750160217,
+                "coordinate": [
+                    136,
+                    419,
+                    1121,
+                    499
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        419.0
+                    ],
+                    [
+                        1121.0,
+                        419.0
+                    ],
+                    [
+                        1121.0,
+                        499.0
+                    ],
+                    [
+                        136.0,
+                        499.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8676526546478271,
+                "coordinate": [
+                    137,
+                    523,
+                    403,
+                    553
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        523.0
+                    ],
+                    [
+                        403.0,
+                        523.0
+                    ],
+                    [
+                        403.0,
+                        553.0
+                    ],
+                    [
+                        137.0,
+                        553.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8650760054588318,
+                "coordinate": [
+                    137,
+                    573,
+                    374,
+                    601
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        137.0,
+                        573.0
+                    ],
+                    [
+                        374.0,
+                        573.0
+                    ],
+                    [
+                        374.0,
+                        601.0
+                    ],
+                    [
+                        137.0,
+                        601.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9235263466835022,
+                "coordinate": [
+                    136,
+                    623,
+                    1119,
+                    678
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        623.0
+                    ],
+                    [
+                        1119.0,
+                        623.0
+                    ],
+                    [
+                        1119.0,
+                        678.0
+                    ],
+                    [
+                        136.0,
+                        678.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.984463095664978,
+                "coordinate": [
+                    137,
+                    695,
+                    1116,
+                    1259
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        695.0
+                    ],
+                    [
+                        1116.0,
+                        695.0
+                    ],
+                    [
+                        1116.0,
+                        1259.0
+                    ],
+                    [
+                        137.0,
+                        1259.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8522250652313232,
+                "coordinate": [
+                    137,
+                    1284,
+                    365,
+                    1311
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1284.0
+                    ],
+                    [
+                        365.0,
+                        1284.0
+                    ],
+                    [
+                        365.0,
+                        1311.0
+                    ],
+                    [
+                        137.0,
+                        1311.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8637115359306335,
+                "coordinate": [
+                    137,
+                    1333,
+                    973,
+                    1361
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1333.0
+                    ],
+                    [
+                        973.0,
+                        1333.0
+                    ],
+                    [
+                        973.0,
+                        1361.0
+                    ],
+                    [
+                        137.0,
+                        1361.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.9674646258354187,
+                "coordinate": [
+                    139,
+                    1379,
+                    1118,
+                    1562
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        139.0,
+                        1379.0
+                    ],
+                    [
+                        1118.0,
+                        1379.0
+                    ],
+                    [
+                        1118.0,
+                        1562.0
+                    ],
+                    [
+                        139.0,
+                        1562.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7067072987556458,
+                "coordinate": [
+                    61,
+                    1630,
+                    1118,
+                    1683
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7461027503013611,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        1078,
+                        1624
+                    ],
+                    [
+                        1078,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

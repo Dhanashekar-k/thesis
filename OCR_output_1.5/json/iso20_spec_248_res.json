@@ -1,0 +1,1087 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 248,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1825] The EV shall adjust its energy transfer behavior to the new setpoints, that have been communicated by the EVSETargetActivePower and/or the EVSETargetReactive elements, as fast as technically feasible.",
+            "block_bbox": [
+                137,
+                168,
+                1120,
+                246
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    168.0
+                ],
+                [
+                    1120.0,
+                    168.0
+                ],
+                [
+                    1120.0,
+                    246.0
+                ],
+                [
+                    137.0,
+                    246.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.2.2 Rules related to asymmetric polyphaser values",
+            "block_bbox": [
+                136,
+                267,
+                727,
+                294
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    267.0
+                ],
+                [
+                    727.0,
+                    267.0
+                ],
+                [
+                    727.0,
+                    294.0
+                ],
+                [
+                    136.0,
+                    294.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In order to support asymmetric polyphase energy transfers many elements which are related to power in the context of AC messages are provided in sets with phase specific variants. The following requirements apply to all such element sets unless explicitly stated otherwise in different requirements.",
+            "block_bbox": [
+                136,
+                316,
+                1122,
+                397
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    316.0
+                ],
+                [
+                    1122.0,
+                    316.0
+                ],
+                [
+                    1122.0,
+                    397.0
+                ],
+                [
+                    136.0,
+                    397.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1814] For AC power phase specific element sets the line names L1, L2 and L3 shall identify the associated pins on the charging connector (e.g. as defined in IEC 62196).",
+            "block_bbox": [
+                136,
+                417,
+                1119,
+                470
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    417.0
+                ],
+                [
+                    1119.0,
+                    417.0
+                ],
+                [
+                    1119.0,
+                    470.0
+                ],
+                [
+                    136.0,
+                    470.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE This document only controls the energy exchange between the EV and the EVSE. In that context L1, L2 and L3 are clearly defined by the connector. A mapping to the associated lines at the grid connection point is only possible in the context of a specific installation within the premises and therefore out of the scope for this document.",
+            "block_bbox": [
+                136,
+                492,
+                1121,
+                566
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    492.0
+                ],
+                [
+                    1121.0,
+                    492.0
+                ],
+                [
+                    1121.0,
+                    566.0
+                ],
+                [
+                    136.0,
+                    566.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1815] In the context of AC services with the connector choice SinglePhase only the power phase specific base elements (e.g. EVMaximumChargePower) shall be used. Elements with the suffix \"L2\" and \"L3\" shall not be used.",
+            "block_bbox": [
+                138,
+                587,
+                1121,
+                666
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    587.0
+                ],
+                [
+                    1121.0,
+                    587.0
+                ],
+                [
+                    1121.0,
+                    666.0
+                ],
+                [
+                    138.0,
+                    666.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1816] In the context of AC services with the connector choice ThreePhase power phase specific elements with the suffix \"L2\" and \"L3\" shall be allowed.",
+            "block_bbox": [
+                138,
+                688,
+                1120,
+                743
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    688.0
+                ],
+                [
+                    1120.0,
+                    688.0
+                ],
+                [
+                    1120.0,
+                    743.0
+                ],
+                [
+                    138.0,
+                    743.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1817] In the context of AC services with the connector choice ThreePhase the power phase specific base elements (e.g. EVMaximumChargePower) shall represent the sum of all three lines if neither the element sets peer with the suffix \"L2\" nor \"L3\" is present in the same message. If a sum value is communicated an even distribution across all three power phases shall be applied.",
+            "block_bbox": [
+                137,
+                763,
+                1121,
+                895
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    763.0
+                ],
+                [
+                    1121.0,
+                    763.0
+                ],
+                [
+                    1121.0,
+                    895.0
+                ],
+                [
+                    137.0,
+                    895.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1818] In the context of AC services with the connector choice ThreePhase the power phase specific base elements (e.g. EVMaximumChargePower) shall identify the value associated with the L1 line if either the element sets peer with the suffix \"L2\" or \"L3\" is present in the same message.",
+            "block_bbox": [
+                137,
+                917,
+                1120,
+                1022
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    917.0
+                ],
+                [
+                    1120.0,
+                    917.0
+                ],
+                [
+                    1120.0,
+                    1022.0
+                ],
+                [
+                    137.0,
+                    1022.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1819] All requirements which apply to the base element (e.g. EVMaximumChargePower) of a power phase specific element set shall also apply to the peers with the suffix \"L2\" or \"L3\" in an equivalent way.",
+            "block_bbox": [
+                137,
+                1044,
+                1122,
+                1122
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1044.0
+                ],
+                [
+                    1122.0,
+                    1044.0
+                ],
+                [
+                    1122.0,
+                    1122.0
+                ],
+                [
+                    137.0,
+                    1122.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.2.3 Rules related to EV energy request values",
+            "block_bbox": [
+                137,
+                1144,
+                673,
+                1171
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1144.0
+                ],
+                [
+                    673.0,
+                    1144.0
+                ],
+                [
+                    673.0,
+                    1171.0
+                ],
+                [
+                    137.0,
+                    1171.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The EV energy request parameters defined below are used by the EV to inform the EVSE of its energy demands and limitations. They are instantaneous values that will change over time during the energy transfer loops. They are calculated, updated and sent during the energy transfer loop by the EV and they form the foundation for the DynamicControlMode.",
+            "block_bbox": [
+                135,
+                1193,
+                1122,
+                1299
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1193.0
+                ],
+                [
+                    1122.0,
+                    1193.0
+                ],
+                [
+                    1122.0,
+                    1299.0
+                ],
+                [
+                    135.0,
+                    1299.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The EV shall ensure that at any time: EV Minimum Energy Level ≤ EV Target Energy Level ≤ EV Maximum Energy Level and therefore the resulting energy requests satisfy the following relationship: EVMinimumEnergyRequest ≤ EVTargetEnergyRequest ≤ EVMaximumEnergyRequest.",
+            "block_bbox": [
+                321,
+                1319,
+                1120,
+                1427
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    321.0,
+                    1319.0
+                ],
+                [
+                    1120.0,
+                    1319.0
+                ],
+                [
+                    1120.0,
+                    1427.0
+                ],
+                [
+                    321.0,
+                    1427.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2191] In dynamic control mode the objective of the energy transfer plan shall be that at the end of the service session the EVTargetEnergyRequest will be less than or equal to zero.",
+            "block_bbox": [
+                137,
+                1448,
+                1120,
+                1524
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1448.0
+                ],
+                [
+                    1120.0,
+                    1448.0
+                ],
+                [
+                    1120.0,
+                    1524.0
+                ],
+                [
+                    137.0,
+                    1524.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "243",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1645
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1644.0
+                ],
+                [
+                    1076.9998779296875,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1095,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1071,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8782711029052734,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9083932042121887,
+                "coordinate": [
+                    137,
+                    168,
+                    1120,
+                    246
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        246.0
+                    ],
+                    [
+                        137.0,
+                        246.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8676748275756836,
+                "coordinate": [
+                    136,
+                    267,
+                    727,
+                    294
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        267.0
+                    ],
+                    [
+                        727.0,
+                        267.0
+                    ],
+                    [
+                        727.0,
+                        294.0
+                    ],
+                    [
+                        136.0,
+                        294.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9375024437904358,
+                "coordinate": [
+                    136,
+                    316,
+                    1122,
+                    397
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        316.0
+                    ],
+                    [
+                        1122.0,
+                        316.0
+                    ],
+                    [
+                        1122.0,
+                        397.0
+                    ],
+                    [
+                        136.0,
+                        397.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8693707585334778,
+                "coordinate": [
+                    136,
+                    417,
+                    1119,
+                    470
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        417.0
+                    ],
+                    [
+                        1119.0,
+                        417.0
+                    ],
+                    [
+                        1119.0,
+                        470.0
+                    ],
+                    [
+                        136.0,
+                        470.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.931878387928009,
+                "coordinate": [
+                    136,
+                    492,
+                    1121,
+                    566
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        136.0,
+                        492.0
+                    ],
+                    [
+                        1121.0,
+                        492.0
+                    ],
+                    [
+                        1121.0,
+                        566.0
+                    ],
+                    [
+                        136.0,
+                        566.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9275919198989868,
+                "coordinate": [
+                    138,
+                    587,
+                    1121,
+                    666
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        138.0,
+                        587.0
+                    ],
+                    [
+                        1121.0,
+                        587.0
+                    ],
+                    [
+                        1121.0,
+                        666.0
+                    ],
+                    [
+                        138.0,
+                        666.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9023956060409546,
+                "coordinate": [
+                    138,
+                    688,
+                    1120,
+                    743
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        138.0,
+                        688.0
+                    ],
+                    [
+                        1120.0,
+                        688.0
+                    ],
+                    [
+                        1120.0,
+                        743.0
+                    ],
+                    [
+                        138.0,
+                        743.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9416153430938721,
+                "coordinate": [
+                    137,
+                    763,
+                    1121,
+                    895
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        763.0
+                    ],
+                    [
+                        1121.0,
+                        763.0
+                    ],
+                    [
+                        1121.0,
+                        895.0
+                    ],
+                    [
+                        137.0,
+                        895.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9311856031417847,
+                "coordinate": [
+                    137,
+                    917,
+                    1120,
+                    1022
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        917.0
+                    ],
+                    [
+                        1120.0,
+                        917.0
+                    ],
+                    [
+                        1120.0,
+                        1022.0
+                    ],
+                    [
+                        137.0,
+                        1022.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.916446328163147,
+                "coordinate": [
+                    137,
+                    1044,
+                    1122,
+                    1122
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1044.0
+                    ],
+                    [
+                        1122.0,
+                        1044.0
+                    ],
+                    [
+                        1122.0,
+                        1122.0
+                    ],
+                    [
+                        137.0,
+                        1122.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8640304207801819,
+                "coordinate": [
+                    137,
+                    1144,
+                    673,
+                    1171
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1144.0
+                    ],
+                    [
+                        673.0,
+                        1144.0
+                    ],
+                    [
+                        673.0,
+                        1171.0
+                    ],
+                    [
+                        137.0,
+                        1171.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9495522975921631,
+                "coordinate": [
+                    135,
+                    1193,
+                    1122,
+                    1299
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1193.0
+                    ],
+                    [
+                        1122.0,
+                        1193.0
+                    ],
+                    [
+                        1122.0,
+                        1299.0
+                    ],
+                    [
+                        135.0,
+                        1299.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9361284971237183,
+                "coordinate": [
+                    321,
+                    1319,
+                    1120,
+                    1427
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        321.0,
+                        1319.0
+                    ],
+                    [
+                        1120.0,
+                        1319.0
+                    ],
+                    [
+                        1120.0,
+                        1427.0
+                    ],
+                    [
+                        321.0,
+                        1427.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9148365259170532,
+                "coordinate": [
+                    137,
+                    1448,
+                    1120,
+                    1524
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1448.0
+                    ],
+                    [
+                        1120.0,
+                        1448.0
+                    ],
+                    [
+                        1120.0,
+                        1524.0
+                    ],
+                    [
+                        137.0,
+                        1524.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7524739503860474,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1644.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8510578870773315,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1095,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1071,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

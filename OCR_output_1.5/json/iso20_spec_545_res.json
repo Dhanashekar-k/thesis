@@ -1,0 +1,888 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 545,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "At conclusion of an energy contract (refer to Figure H.13, step 3) the customer forwards the PCID to the contract partner (mobility provider, utility, etc.). The contract partner assigns (in its IT system) the contract information with this PCID. Furthermore, the contract partner creates a contract certificate and assigns the contract certificate with this PCID as well. The information about the existence of a contract for this PCID is forwarded to the clearing house (of this country) – ideally together with the contract certificate (in order to avoid delays later on during communication in step 4).",
+            "block_bbox": [
+                67,
+                168,
+                1055,
+                326
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    326.0
+                ],
+                [
+                    67.0,
+                    326.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "H.5.1.4 Certificate installation",
+            "block_bbox": [
+                69,
+                344,
+                385,
+                371
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    344.0
+                ],
+                [
+                    385.0,
+                    344.0
+                ],
+                [
+                    385.0,
+                    371.0
+                ],
+                [
+                    69.0,
+                    371.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "When necessary (i.e. at first charging of the EV, or whenever the EV it does not possess a valid contract certificate, the user triggers the EV to do so), the EV transmits its OEM provisioning certificate to the SECC using the message CertificateInstallationReq (refer to Figure H.13, step 4). The SECC forwards this message resp. certificate to the clearing house (or all known resp. its own mobility provider(s) if there does not exist a central clearing house in this country). The clearing house (i) checks whether the OEM provisioning certificate is authentic (i.e. valid) by using the root certificate of the OEM and (ii) verifies the certificate and checks whether a contract for this provisioning certificate is registered. If the corresponding contract certificate was not sent to the clearing house in step 3 the clearing house requests a contract certificate from the mobility provider which concluded in the contract. Then, the contract certificate (including the certificate chain necessary for validation) and the corresponding encrypted private key are sent via the SECC to the EV by using the message CertificateInstallationRes (see below). This certificate provisioning procedure is used in all cases mentioned above; e.g. conclusion of a new contract, changing the mobility provider, etc. – or regarded from the perspective of the EV if no contract certificate is available in the EV, the contract certificate is expired, or it was revoked; i.e. whenever the EV does not possess a valid contract certificate.",
+            "block_bbox": [
+                67,
+                394,
+                1054,
+                784
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    394.0
+                ],
+                [
+                    1054.0,
+                    394.0
+                ],
+                [
+                    1054.0,
+                    784.0
+                ],
+                [
+                    67.0,
+                    784.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "H.5.1.5 Component replacement",
+            "block_bbox": [
+                69,
+                802,
+                408,
+                830
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    802.0
+                ],
+                [
+                    408.0,
+                    802.0
+                ],
+                [
+                    408.0,
+                    830.0
+                ],
+                [
+                    69.0,
+                    830.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "When in case of an EV repair, the component containing the contract certificate needs to be exchanged, the new component may contain a different OEM provisioning certificate with a different PCID. The reason is that the private key belonging to the original OEM provisioning certificate was stored solely inside the defect component and is lost. In such a case, the customer (or the garage) announces the replacement of the PCID to all relying parties. The format of this notification is not in the scope of this document. Then a current contract certificate can be installed using the standard certificate installation procedure (See H.5.1.4). That means that even after an EV repair no manual treatment of contract certificates becomes necessary.",
+            "block_bbox": [
+                67,
+                853,
+                1054,
+                1061
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    853.0
+                ],
+                [
+                    1054.0,
+                    853.0
+                ],
+                [
+                    1054.0,
+                    1061.0
+                ],
+                [
+                    67.0,
+                    1061.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "H.6 Risks of root CA compromise",
+            "block_bbox": [
+                69,
+                1085,
+                444,
+                1114
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1085.0
+                ],
+                [
+                    444.0,
+                    1085.0
+                ],
+                [
+                    444.0,
+                    1114.0
+                ],
+                [
+                    69.0,
+                    1114.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Revocation of root CA certificates is not possible. Even if a root CA is abandoned/discarded after an attack, unless all relying parties replace the compromised root CA's certificate stored as trust anchor, all certificates issues under the compromised root CA can continue to be utilized until they expire and no new certificates can be generated. This includes OCSP signer sertificates, CRL certificates, etc.",
+            "block_bbox": [
+                67,
+                1136,
+                1054,
+                1242
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1136.0
+                ],
+                [
+                    1054.0,
+                    1136.0
+                ],
+                [
+                    1054.0,
+                    1242.0
+                ],
+                [
+                    67.0,
+                    1242.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "It should be noted that since this document requires the use of OSCP or CRL to validate certificates during TLS handshake, if a root CA is abandoned due to a compromise, the V2G entity may not be able to receive OCSP response for any certificates generated from that compromised root CA. As such, the V2G entity should reject those certificates. But that only works if the V2G entity does not simply decide to ignore lack of OCSP response or CRL.",
+            "block_bbox": [
+                67,
+                1263,
+                1054,
+                1394
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1263.0
+                ],
+                [
+                    1054.0,
+                    1263.0
+                ],
+                [
+                    1054.0,
+                    1394.0
+                ],
+                [
+                    67.0,
+                    1394.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In cases where the V2G entity is operating in an emergency mode where it is ignoring lack of OCP response or CRL due to lack of internet connection, the compromised certificates based on compromised roots could be used.",
+            "block_bbox": [
+                67,
+                1416,
+                1054,
+                1495
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1416.0
+                ],
+                [
+                    1054.0,
+                    1416.0
+                ],
+                [
+                    1054.0,
+                    1495.0
+                ],
+                [
+                    67.0,
+                    1495.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In addition, since the root CA certificate is now compromised, there is nothing stopping the adversary from setting up a parallel PKI mimicking the original PKI under that root CA. This includes the OCSP",
+            "block_bbox": [
+                67,
+                1517,
+                1055,
+                1572
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1517.0
+                ],
+                [
+                    1055.0,
+                    1517.0
+                ],
+                [
+                    1055.0,
+                    1572.0
+                ],
+                [
+                    67.0,
+                    1572.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "540",
+            "block_bbox": [
+                70,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    59.720455169677734,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.0003662109375
+                ],
+                [
+                    1118.3336181640625,
+                    1680.1055908203125
+                ],
+                [
+                    60.053955078125,
+                    1688.1077880859375
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8716892004013062,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9543942213058472,
+                "coordinate": [
+                    67,
+                    168,
+                    1055,
+                    326
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        67.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        326.0
+                    ],
+                    [
+                        67.0,
+                        326.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8518744707107544,
+                "coordinate": [
+                    69,
+                    344,
+                    385,
+                    371
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        344.0
+                    ],
+                    [
+                        385.0,
+                        344.0
+                    ],
+                    [
+                        385.0,
+                        371.0
+                    ],
+                    [
+                        69.0,
+                        371.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9670609831809998,
+                "coordinate": [
+                    67,
+                    394,
+                    1054,
+                    784
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        67.0,
+                        394.0
+                    ],
+                    [
+                        1054.0,
+                        394.0
+                    ],
+                    [
+                        1054.0,
+                        784.0
+                    ],
+                    [
+                        67.0,
+                        784.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8602322340011597,
+                "coordinate": [
+                    69,
+                    802,
+                    408,
+                    830
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        802.0
+                    ],
+                    [
+                        408.0,
+                        802.0
+                    ],
+                    [
+                        408.0,
+                        830.0
+                    ],
+                    [
+                        69.0,
+                        830.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9588571786880493,
+                "coordinate": [
+                    67,
+                    853,
+                    1054,
+                    1061
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        67.0,
+                        853.0
+                    ],
+                    [
+                        1054.0,
+                        853.0
+                    ],
+                    [
+                        1054.0,
+                        1061.0
+                    ],
+                    [
+                        67.0,
+                        1061.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8558303117752075,
+                "coordinate": [
+                    69,
+                    1085,
+                    444,
+                    1114
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1085.0
+                    ],
+                    [
+                        444.0,
+                        1085.0
+                    ],
+                    [
+                        444.0,
+                        1114.0
+                    ],
+                    [
+                        69.0,
+                        1114.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9467202425003052,
+                "coordinate": [
+                    67,
+                    1136,
+                    1054,
+                    1242
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1136.0
+                    ],
+                    [
+                        1054.0,
+                        1136.0
+                    ],
+                    [
+                        1054.0,
+                        1242.0
+                    ],
+                    [
+                        67.0,
+                        1242.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9568920731544495,
+                "coordinate": [
+                    67,
+                    1263,
+                    1054,
+                    1394
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1263.0
+                    ],
+                    [
+                        1054.0,
+                        1263.0
+                    ],
+                    [
+                        1054.0,
+                        1394.0
+                    ],
+                    [
+                        67.0,
+                        1394.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9465692043304443,
+                "coordinate": [
+                    67,
+                    1416,
+                    1054,
+                    1495
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1416.0
+                    ],
+                    [
+                        1054.0,
+                        1416.0
+                    ],
+                    [
+                        1054.0,
+                        1495.0
+                    ],
+                    [
+                        67.0,
+                        1495.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9136855006217957,
+                "coordinate": [
+                    67,
+                    1517,
+                    1055,
+                    1572
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1517.0
+                    ],
+                    [
+                        1055.0,
+                        1517.0
+                    ],
+                    [
+                        1055.0,
+                        1572.0
+                    ],
+                    [
+                        67.0,
+                        1572.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7092885971069336,
+                "coordinate": [
+                    70,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6776943206787109,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7431517839431763,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.720455169677734,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.3336181640625,
+                        1680.1055908203125
+                    ],
+                    [
+                        60.053955078125,
+                        1688.1077880859375
+                    ]
+                ]
+            }
+        ]
+    }
+}

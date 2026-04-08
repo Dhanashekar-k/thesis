@@ -1,0 +1,1498 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 29,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 14 As mentioned in Annex B, there are many mandatory and optional parameters in a certificate. Some parameters have well defined fixed lengths while others are variable length parameters. The certificate issuer can experiment with different optional parameters, different parameter data for variable length parameters, etc. to stay within the bounds of [V2G20-1234]. For example, if the OCSP responder address is too long, the certificate issuer can use methodologies to shorten the address to keep the certificate length within the bounds of [V2G20-1234].",
+            "block_bbox": [
+                68,
+                168,
+                1054,
+                288
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    288.0
+                ],
+                [
+                    68.0,
+                    288.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1004] Certificates shall be issued and signed by the CA within the validity of its own certificate.",
+            "block_bbox": [
+                70,
+                308,
+                1053,
+                362
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    308.0
+                ],
+                [
+                    1053.0,
+                    308.0
+                ],
+                [
+                    1053.0,
+                    362.0
+                ],
+                [
+                    70.0,
+                    362.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-911] If only one sub-CA layer is used, i.e. a sub-CA signed by a root CA directly signs leaf certificates, the profile of sub-CA2 shall apply for that sub-CA.",
+            "block_bbox": [
+                70,
+                384,
+                1054,
+                438
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    384.0
+                ],
+                [
+                    1054.0,
+                    384.0
+                ],
+                [
+                    1054.0,
+                    438.0
+                ],
+                [
+                    70.0,
+                    438.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1003] All certificate chains (except where a cross certificate is used) shall have a maximum length of 3.",
+            "block_bbox": [
+                70,
+                459,
+                1052,
+                512
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    459.0
+                ],
+                [
+                    1052.0,
+                    459.0
+                ],
+                [
+                    1052.0,
+                    512.0
+                ],
+                [
+                    70.0,
+                    512.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 15 The certificate chain includes the leaf certificate. The certificate chain does not include the root certificate.",
+            "block_bbox": [
+                68,
+                535,
+                1053,
+                584
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    535.0
+                ],
+                [
+                    1053.0,
+                    535.0
+                ],
+                [
+                    1053.0,
+                    584.0
+                ],
+                [
+                    68.0,
+                    584.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 16 This means, at most two sub-CA levels can be used.",
+            "block_bbox": [
+                68,
+                606,
+                606,
+                632
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    606.0
+                ],
+                [
+                    606.0,
+                    606.0
+                ],
+                [
+                    606.0,
+                    632.0
+                ],
+                [
+                    68.0,
+                    632.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1005] All certificate chains, including a cross certificate, shall have a maximum length of 4.",
+            "block_bbox": [
+                68,
+                653,
+                1048,
+                682
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    653.0
+                ],
+                [
+                    1048.0,
+                    653.0
+                ],
+                [
+                    1048.0,
+                    682.0
+                ],
+                [
+                    68.0,
+                    682.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 17 The certificate chain includes the leaf certificate and the cross certificate. The certificate chain does not include the root certificate.",
+            "block_bbox": [
+                69,
+                703,
+                1053,
+                753
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    703.0
+                ],
+                [
+                    1053.0,
+                    703.0
+                ],
+                [
+                    1053.0,
+                    753.0
+                ],
+                [
+                    69.0,
+                    753.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 18 A cross certificate adds one more level.",
+            "block_bbox": [
+                68,
+                773,
+                504,
+                800
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    773.0
+                ],
+                [
+                    504.0,
+                    773.0
+                ],
+                [
+                    504.0,
+                    800.0
+                ],
+                [
+                    68.0,
+                    800.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1002] When cross-certification is used, the certificate chain sent shall include the cross-certificate.",
+            "block_bbox": [
+                70,
+                821,
+                1052,
+                876
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    821.0
+                ],
+                [
+                    1052.0,
+                    821.0
+                ],
+                [
+                    1052.0,
+                    876.0
+                ],
+                [
+                    70.0,
+                    876.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 19 The profile of a cross certificate differs from that of other CA certificates by the validity period and the use of Subject Information Access extension. See Annex B for further details.",
+            "block_bbox": [
+                68,
+                897,
+                1053,
+                946
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    897.0
+                ],
+                [
+                    1053.0,
+                    897.0
+                ],
+                [
+                    1053.0,
+                    946.0
+                ],
+                [
+                    68.0,
+                    946.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1853] A cross-certificate shall not be valid beyond the validity period of the cross-certified CA's certificate and cross-certifying CA's certificate.",
+            "block_bbox": [
+                70,
+                968,
+                1051,
+                1023
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    968.0
+                ],
+                [
+                    1051.0,
+                    968.0
+                ],
+                [
+                    1051.0,
+                    1023.0
+                ],
+                [
+                    70.0,
+                    1023.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1001] All certificate validations shall be carried out in conformance with IETF RFC 5280 and ITU-T X.509. During certificate validation, each certificate shall be checked for conformance with the appropriate profile in Annex B. All requirements from Annex B shall be met for the appropriate certificate profile. The EVCC and the SECC shall cache certificate validation results during one service session.",
+            "block_bbox": [
+                68,
+                1044,
+                1053,
+                1174
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1044.0
+                ],
+                [
+                    1053.0,
+                    1044.0
+                ],
+                [
+                    1053.0,
+                    1174.0
+                ],
+                [
+                    68.0,
+                    1174.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 20 The certificate validation includes checking the following.",
+            "block_bbox": [
+                69,
+                1196,
+                695,
+                1221
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1196.0
+                ],
+                [
+                    695.0,
+                    1196.0
+                ],
+                [
+                    695.0,
+                    1221.0
+                ],
+                [
+                    69.0,
+                    1221.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "a) The content of a leaf certificate has not been altered after issue. This means it is possible to check and confirm the signature up to the trust anchor level and thus the integrity of the signed content.",
+            "block_bbox": [
+                284,
+                1227,
+                1051,
+                1300
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    284.0,
+                    1227.0
+                ],
+                [
+                    1051.0,
+                    1227.0
+                ],
+                [
+                    1051.0,
+                    1300.0
+                ],
+                [
+                    284.0,
+                    1300.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "b) The signature up to the trust anchor level is not compromised (none of the certificates have been revoked). Certificate revocation is checked via the OCSP response (or CRL, if allowed for that particular certificate) as detailed in 7.7.3.1 and 7.7.3.3.",
+            "block_bbox": [
+                284,
+                1302,
+                1052,
+                1376
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    284.0,
+                    1302.0
+                ],
+                [
+                    1052.0,
+                    1302.0
+                ],
+                [
+                    1052.0,
+                    1376.0
+                ],
+                [
+                    284.0,
+                    1376.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "c) The validity period of each certificate in the chain up to the trust anchor has not yet elapsed.",
+            "block_bbox": [
+                284,
+                1378,
+                1054,
+                1425
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    284.0,
+                    1378.0
+                ],
+                [
+                    1054.0,
+                    1378.0
+                ],
+                [
+                    1054.0,
+                    1425.0
+                ],
+                [
+                    284.0,
+                    1425.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "d) Each certificate in the certificate chain matches the appropriate certificate profile as defined in Annex B. This includes checking the following:",
+            "block_bbox": [
+                285,
+                1427,
+                1052,
+                1475
+            ],
+            "block_id": 18,
+            "block_order": 18,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    285.0,
+                    1427.0
+                ],
+                [
+                    1052.0,
+                    1427.0
+                ],
+                [
+                    1052.0,
+                    1475.0
+                ],
+                [
+                    285.0,
+                    1475.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "- the key length of each certificate in the certificate chain matches the key length specified by that certificate’s profile in Annex B;",
+            "block_bbox": [
+                364,
+                1477,
+                1051,
+                1526
+            ],
+            "block_id": 19,
+            "block_order": 19,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    364.0,
+                    1477.0
+                ],
+                [
+                    1051.0,
+                    1477.0
+                ],
+                [
+                    1051.0,
+                    1526.0
+                ],
+                [
+                    364.0,
+                    1526.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "- every critical KeyUsage attribute is set to the appropriate value (i.e. 0 or 1) as defined for that certificate's profile in Annex B;",
+            "block_bbox": [
+                364,
+                1527,
+                1051,
+                1576
+            ],
+            "block_id": 20,
+            "block_order": 20,
+            "group_id": 20,
+            "block_polygon_points": [
+                [
+                    364.0,
+                    1527.0
+                ],
+                [
+                    1051.0,
+                    1527.0
+                ],
+                [
+                    1051.0,
+                    1576.0
+                ],
+                [
+                    364.0,
+                    1576.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "24",
+            "block_bbox": [
+                69,
+                1614,
+                102,
+                1636
+            ],
+            "block_id": 21,
+            "block_order": 21,
+            "group_id": 21,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1614.0
+                ],
+                [
+                    101.0,
+                    1614.0
+                ],
+                [
+                    101.0,
+                    1635.0
+                ],
+                [
+                    69.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1636
+            ],
+            "block_id": 22,
+            "block_order": 22,
+            "group_id": 22,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1635.0
+                ],
+                [
+                    797.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1683
+            ],
+            "block_id": 23,
+            "block_order": 23,
+            "group_id": 23,
+            "block_polygon_points": [
+                [
+                    59.712886810302734,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.0003662109375
+                ],
+                [
+                    1118.3455810546875,
+                    1681.6876220703125
+                ],
+                [
+                    60.058349609375,
+                    1689.6898193359375
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8788511753082275,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.950642466545105,
+                "coordinate": [
+                    68,
+                    168,
+                    1054,
+                    288
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        288.0
+                    ],
+                    [
+                        68.0,
+                        288.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8907245993614197,
+                "coordinate": [
+                    70,
+                    308,
+                    1053,
+                    362
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        70.0,
+                        308.0
+                    ],
+                    [
+                        1053.0,
+                        308.0
+                    ],
+                    [
+                        1053.0,
+                        362.0
+                    ],
+                    [
+                        70.0,
+                        362.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9009583592414856,
+                "coordinate": [
+                    70,
+                    384,
+                    1054,
+                    438
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        70.0,
+                        384.0
+                    ],
+                    [
+                        1054.0,
+                        384.0
+                    ],
+                    [
+                        1054.0,
+                        438.0
+                    ],
+                    [
+                        70.0,
+                        438.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.904743492603302,
+                "coordinate": [
+                    70,
+                    459,
+                    1052,
+                    512
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        70.0,
+                        459.0
+                    ],
+                    [
+                        1052.0,
+                        459.0
+                    ],
+                    [
+                        1052.0,
+                        512.0
+                    ],
+                    [
+                        70.0,
+                        512.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8975099325180054,
+                "coordinate": [
+                    68,
+                    535,
+                    1053,
+                    584
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        535.0
+                    ],
+                    [
+                        1053.0,
+                        535.0
+                    ],
+                    [
+                        1053.0,
+                        584.0
+                    ],
+                    [
+                        68.0,
+                        584.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8495857119560242,
+                "coordinate": [
+                    68,
+                    606,
+                    606,
+                    632
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        606.0
+                    ],
+                    [
+                        606.0,
+                        606.0
+                    ],
+                    [
+                        606.0,
+                        632.0
+                    ],
+                    [
+                        68.0,
+                        632.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8408023118972778,
+                "coordinate": [
+                    68,
+                    653,
+                    1048,
+                    682
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        653.0
+                    ],
+                    [
+                        1048.0,
+                        653.0
+                    ],
+                    [
+                        1048.0,
+                        682.0
+                    ],
+                    [
+                        68.0,
+                        682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.910323441028595,
+                "coordinate": [
+                    69,
+                    703,
+                    1053,
+                    753
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        69.0,
+                        703.0
+                    ],
+                    [
+                        1053.0,
+                        703.0
+                    ],
+                    [
+                        1053.0,
+                        753.0
+                    ],
+                    [
+                        69.0,
+                        753.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8479889035224915,
+                "coordinate": [
+                    68,
+                    773,
+                    504,
+                    800
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        773.0
+                    ],
+                    [
+                        504.0,
+                        773.0
+                    ],
+                    [
+                        504.0,
+                        800.0
+                    ],
+                    [
+                        68.0,
+                        800.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9005870223045349,
+                "coordinate": [
+                    70,
+                    821,
+                    1052,
+                    876
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        821.0
+                    ],
+                    [
+                        1052.0,
+                        821.0
+                    ],
+                    [
+                        1052.0,
+                        876.0
+                    ],
+                    [
+                        70.0,
+                        876.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9106578826904297,
+                "coordinate": [
+                    68,
+                    897,
+                    1053,
+                    946
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        897.0
+                    ],
+                    [
+                        1053.0,
+                        897.0
+                    ],
+                    [
+                        1053.0,
+                        946.0
+                    ],
+                    [
+                        68.0,
+                        946.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9094167351722717,
+                "coordinate": [
+                    70,
+                    968,
+                    1051,
+                    1023
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        70.0,
+                        968.0
+                    ],
+                    [
+                        1051.0,
+                        968.0
+                    ],
+                    [
+                        1051.0,
+                        1023.0
+                    ],
+                    [
+                        70.0,
+                        1023.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9464548230171204,
+                "coordinate": [
+                    68,
+                    1044,
+                    1053,
+                    1174
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1044.0
+                    ],
+                    [
+                        1053.0,
+                        1044.0
+                    ],
+                    [
+                        1053.0,
+                        1174.0
+                    ],
+                    [
+                        68.0,
+                        1174.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8658074736595154,
+                "coordinate": [
+                    69,
+                    1196,
+                    695,
+                    1221
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1196.0
+                    ],
+                    [
+                        695.0,
+                        1196.0
+                    ],
+                    [
+                        695.0,
+                        1221.0
+                    ],
+                    [
+                        69.0,
+                        1221.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9415798187255859,
+                "coordinate": [
+                    284,
+                    1227,
+                    1051,
+                    1300
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        284.0,
+                        1227.0
+                    ],
+                    [
+                        1051.0,
+                        1227.0
+                    ],
+                    [
+                        1051.0,
+                        1300.0
+                    ],
+                    [
+                        284.0,
+                        1300.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9464154243469238,
+                "coordinate": [
+                    284,
+                    1302,
+                    1052,
+                    1376
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        284.0,
+                        1302.0
+                    ],
+                    [
+                        1052.0,
+                        1302.0
+                    ],
+                    [
+                        1052.0,
+                        1376.0
+                    ],
+                    [
+                        284.0,
+                        1376.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9234231114387512,
+                "coordinate": [
+                    284,
+                    1378,
+                    1054,
+                    1425
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        284.0,
+                        1378.0
+                    ],
+                    [
+                        1054.0,
+                        1378.0
+                    ],
+                    [
+                        1054.0,
+                        1425.0
+                    ],
+                    [
+                        284.0,
+                        1425.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9180008172988892,
+                "coordinate": [
+                    285,
+                    1427,
+                    1052,
+                    1475
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        285.0,
+                        1427.0
+                    ],
+                    [
+                        1052.0,
+                        1427.0
+                    ],
+                    [
+                        1052.0,
+                        1475.0
+                    ],
+                    [
+                        285.0,
+                        1475.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.917986273765564,
+                "coordinate": [
+                    364,
+                    1477,
+                    1051,
+                    1526
+                ],
+                "order": 19,
+                "polygon_points": [
+                    [
+                        364.0,
+                        1477.0
+                    ],
+                    [
+                        1051.0,
+                        1477.0
+                    ],
+                    [
+                        1051.0,
+                        1526.0
+                    ],
+                    [
+                        364.0,
+                        1526.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9006981253623962,
+                "coordinate": [
+                    364,
+                    1527,
+                    1051,
+                    1576
+                ],
+                "order": 20,
+                "polygon_points": [
+                    [
+                        364.0,
+                        1527.0
+                    ],
+                    [
+                        1051.0,
+                        1527.0
+                    ],
+                    [
+                        1051.0,
+                        1576.0
+                    ],
+                    [
+                        364.0,
+                        1576.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.6549414992332458,
+                "coordinate": [
+                    69,
+                    1614,
+                    102,
+                    1636
+                ],
+                "order": 21,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1614.0
+                    ],
+                    [
+                        101.0,
+                        1614.0
+                    ],
+                    [
+                        101.0,
+                        1635.0
+                    ],
+                    [
+                        69.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3875305950641632,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1636
+                ],
+                "order": 22,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1635.0
+                    ],
+                    [
+                        797.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7003536224365234,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1683
+                ],
+                "order": 23,
+                "polygon_points": [
+                    [
+                        59.712886810302734,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.3455810546875,
+                        1681.6876220703125
+                    ],
+                    [
+                        60.058349609375,
+                        1689.6898193359375
+                    ]
+                ]
+            }
+        ]
+    }
+}

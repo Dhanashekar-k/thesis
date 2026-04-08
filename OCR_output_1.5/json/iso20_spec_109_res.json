@@ -1,0 +1,957 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 109,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2505]\nUpon reception of SECP521_EncryptedPrivateKey, the receiver (EVCC) shall decrypt the contract certificate private key using the session key derived in the ECDHE protocol (see 7.9.2.5.4) and applying the algorithm AES-GCM-256 according to NIST Special Publication 800-38D. The IV shall be read from the 12 most significant bytes of the SECP521_EncryptedPrivateKey field. The ciphertext (encrypted private key) shall be read from the 66 bytes after the IV in the SECP521_EncryptedPrivateKey field. The AAD for this decryption shall be calculated before decryption following [V2G20-2492] and [V2G20-2494]. The authentication tag shall be read from the 16 least significant bytes of the SECP521_EncryptedPrivateKey field.",
+            "block_bbox": [
+                69,
+                167,
+                218,
+                195
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    167.0
+                ],
+                [
+                    218.0,
+                    167.0
+                ],
+                [
+                    218.0,
+                    195.0
+                ],
+                [
+                    69.0,
+                    195.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                251,
+                168,
+                1055,
+                403
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    251.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    403.0
+                ],
+                [
+                    251.0,
+                    403.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "NOTE 1 See Figure 21 for a pictorial reference of the decryption.",
+            "block_bbox": [
+                68,
+                422,
+                650,
+                449
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    422.0
+                ],
+                [
+                    650.0,
+                    422.0
+                ],
+                [
+                    650.0,
+                    449.0
+                ],
+                [
+                    68.0,
+                    449.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "NOTE 2 Refer to Figure 18 further details of the SECP521\\_EncryptedPrivateKey structure.",
+            "block_bbox": [
+                68,
+                470,
+                868,
+                496
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    470.0
+                ],
+                [
+                    868.0,
+                    470.0
+                ],
+                [
+                    868.0,
+                    496.0
+                ],
+                [
+                    68.0,
+                    496.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                74,
+                523,
+                1044,
+                1156
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    74.0,
+                    523.0
+                ],
+                [
+                    1044.0,
+                    523.0
+                ],
+                [
+                    1044.0,
+                    1156.0
+                ],
+                [
+                    74.0,
+                    1156.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 21 — 521 bit contract certificate private key decryption overview",
+            "block_bbox": [
+                189,
+                1177,
+                932,
+                1204
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    189.0,
+                    1177.0
+                ],
+                [
+                    932.0,
+                    1177.0
+                ],
+                [
+                    932.0,
+                    1204.0
+                ],
+                [
+                    189.0,
+                    1204.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "When decrypting the data using AES-GCM-256, the order of data is important. The receiver should ensure that the input data to AES-GCM-256 decryption function/API follows NIST Special Publication 800-38D. Refer to Figure 22 for further details.",
+            "block_bbox": [
+                68,
+                1215,
+                1052,
+                1295
+            ],
+            "block_id": 7,
+            "block_order": 3,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1215.0
+                ],
+                [
+                    1052.0,
+                    1215.0
+                ],
+                [
+                    1052.0,
+                    1295.0
+                ],
+                [
+                    68.0,
+                    1295.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                84,
+                1308,
+                1041,
+                1375
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    84.0,
+                    1308.0
+                ],
+                [
+                    1041.0,
+                    1308.0
+                ],
+                [
+                    1041.0,
+                    1375.0
+                ],
+                [
+                    84.0,
+                    1375.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 22 — 521 bit contract certificate private key decryption",
+            "block_bbox": [
+                239,
+                1400,
+                882,
+                1428
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    239.0,
+                    1400.0
+                ],
+                [
+                    882.0,
+                    1400.0
+                ],
+                [
+                    882.0,
+                    1428.0
+                ],
+                [
+                    239.0,
+                    1428.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "[V2G20-2678]",
+            "block_bbox": [
+                72,
+                1436,
+                220,
+                1467
+            ],
+            "block_id": 10,
+            "block_order": 4,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1436.0
+                ],
+                [
+                    220.0,
+                    1436.0
+                ],
+                [
+                    220.0,
+                    1467.0
+                ],
+                [
+                    72.0,
+                    1467.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The EVCC shall consider the Certificate InstallationRes as invalid if the decrypted data does not contain 7 zeros in the most significant 7 bits.",
+            "block_bbox": [
+                249,
+                1438,
+                1054,
+                1492
+            ],
+            "block_id": 11,
+            "block_order": 5,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    249.0,
+                    1438.0
+                ],
+                [
+                    1054.0,
+                    1438.0
+                ],
+                [
+                    1054.0,
+                    1492.0
+                ],
+                [
+                    249.0,
+                    1492.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2506] The EVCC shall use the 521 least significant bits of the decrypted data as the 521 bit contract certificate private key.",
+            "block_bbox": [
+                72,
+                1513,
+                1054,
+                1567
+            ],
+            "block_id": 12,
+            "block_order": 6,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1513.0
+                ],
+                [
+                    1054.0,
+                    1513.0
+                ],
+                [
+                    1054.0,
+                    1567.0
+                ],
+                [
+                    72.0,
+                    1567.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1054,
+                1638
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1638.0
+                ],
+                [
+                    796.0,
+                    1638.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1683
+            ],
+            "block_id": 14,
+            "block_order": 7,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1047,
+                    1682
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8725674748420715,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.3648195266723633,
+                "coordinate": [
+                    69,
+                    167,
+                    218,
+                    195
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        167.0
+                    ],
+                    [
+                        218.0,
+                        167.0
+                    ],
+                    [
+                        218.0,
+                        195.0
+                    ],
+                    [
+                        69.0,
+                        195.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9518343806266785,
+                "coordinate": [
+                    251,
+                    168,
+                    1055,
+                    403
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        251.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        403.0
+                    ],
+                    [
+                        251.0,
+                        403.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.5039534568786621,
+                "coordinate": [
+                    68,
+                    422,
+                    650,
+                    449
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        68.0,
+                        422.0
+                    ],
+                    [
+                        650.0,
+                        422.0
+                    ],
+                    [
+                        650.0,
+                        449.0
+                    ],
+                    [
+                        68.0,
+                        449.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.7588950991630554,
+                "coordinate": [
+                    68,
+                    470,
+                    868,
+                    496
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        68.0,
+                        470.0
+                    ],
+                    [
+                        868.0,
+                        470.0
+                    ],
+                    [
+                        868.0,
+                        496.0
+                    ],
+                    [
+                        68.0,
+                        496.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9556182622909546,
+                "coordinate": [
+                    74,
+                    523,
+                    1044,
+                    1156
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        74.0,
+                        523.0
+                    ],
+                    [
+                        1044.0,
+                        523.0
+                    ],
+                    [
+                        1044.0,
+                        1156.0
+                    ],
+                    [
+                        74.0,
+                        1156.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8653334975242615,
+                "coordinate": [
+                    189,
+                    1177,
+                    932,
+                    1204
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        189.0,
+                        1177.0
+                    ],
+                    [
+                        932.0,
+                        1177.0
+                    ],
+                    [
+                        932.0,
+                        1204.0
+                    ],
+                    [
+                        189.0,
+                        1204.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5365893244743347,
+                "coordinate": [
+                    68,
+                    1215,
+                    1052,
+                    1295
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1215.0
+                    ],
+                    [
+                        1052.0,
+                        1215.0
+                    ],
+                    [
+                        1052.0,
+                        1295.0
+                    ],
+                    [
+                        68.0,
+                        1295.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.7031442523002625,
+                "coordinate": [
+                    84,
+                    1308,
+                    1041,
+                    1375
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        84.0,
+                        1308.0
+                    ],
+                    [
+                        1041.0,
+                        1308.0
+                    ],
+                    [
+                        1041.0,
+                        1375.0
+                    ],
+                    [
+                        84.0,
+                        1375.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8116759657859802,
+                "coordinate": [
+                    239,
+                    1400,
+                    882,
+                    1428
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        239.0,
+                        1400.0
+                    ],
+                    [
+                        882.0,
+                        1400.0
+                    ],
+                    [
+                        882.0,
+                        1428.0
+                    ],
+                    [
+                        239.0,
+                        1428.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.37358328700065613,
+                "coordinate": [
+                    72,
+                    1436,
+                    220,
+                    1467
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1436.0
+                    ],
+                    [
+                        220.0,
+                        1436.0
+                    ],
+                    [
+                        220.0,
+                        1467.0
+                    ],
+                    [
+                        72.0,
+                        1467.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.47947046160697937,
+                "coordinate": [
+                    249,
+                    1438,
+                    1054,
+                    1492
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        249.0,
+                        1438.0
+                    ],
+                    [
+                        1054.0,
+                        1438.0
+                    ],
+                    [
+                        1054.0,
+                        1492.0
+                    ],
+                    [
+                        249.0,
+                        1492.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7014806270599365,
+                "coordinate": [
+                    72,
+                    1513,
+                    1054,
+                    1567
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1513.0
+                    ],
+                    [
+                        1054.0,
+                        1513.0
+                    ],
+                    [
+                        1054.0,
+                        1567.0
+                    ],
+                    [
+                        72.0,
+                        1567.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3305520713329315,
+                "coordinate": [
+                    796,
+                    1616,
+                    1054,
+                    1638
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1638.0
+                    ],
+                    [
+                        796.0,
+                        1638.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4175957441329956,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1683
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1047,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,965 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 66,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "message is empty), a private SECC not in CPM4PE shall send in the \"ServerHello\" message its own certificate chain (PE certificate chain) including any necessary cross-certificates up to a root (excluding the root certificate itself) of its own choosing.",
+            "block_bbox": [
+                321,
+                167,
+                1124,
+                249
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    321.0,
+                    167.0
+                ],
+                [
+                    1124.0,
+                    167.0
+                ],
+                [
+                    1124.0,
+                    249.0
+                ],
+                [
+                    321.0,
+                    249.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2385] A private SECC in CPM4PE shall disregard [V2G20-2383] and send the \"ServerHello\" message containing its own certificate chain (PE certificate chain) including any necessary cross-certificates and its PE private root CA certificate. Refer to H.2.2.3 for details of CPM4PE.",
+            "block_bbox": [
+                135,
+                268,
+                1121,
+                372
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    268.0
+                ],
+                [
+                    1121.0,
+                    268.0
+                ],
+                [
+                    1121.0,
+                    372.0
+                ],
+                [
+                    135.0,
+                    372.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2386] If the EVCC offers and private SECC chooses a named group and signature algorithm based on curves as defined by [V2G20-2674] (as per the configurable mechanism as defined by [V2G20-2320]), the PE certificate chain provided by the private SECC in the \"ServerHello\" message shall be based on profiles as defined in B.10.1.",
+            "block_bbox": [
+                135,
+                395,
+                1122,
+                502
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    395.0
+                ],
+                [
+                    1122.0,
+                    395.0
+                ],
+                [
+                    1122.0,
+                    502.0
+                ],
+                [
+                    135.0,
+                    502.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2387] If the EVCC offers and private SECC chooses a named group and signature algorithm based on curves as defined by [V2G20-2319] (as per the configurable mechanism as defined by [V2G20-2320]), the PE certificate chain provided by the private SECC in the \"ServerHello\" message shall be based on profiles as defined in B.10.2.",
+            "block_bbox": [
+                135,
+                523,
+                1122,
+                629
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    523.0
+                ],
+                [
+                    1122.0,
+                    523.0
+                ],
+                [
+                    1122.0,
+                    629.0
+                ],
+                [
+                    135.0,
+                    629.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2388] Since the EVCC used the \"status_request\" extension to request OCSP response for the certificate chain sent by the public SECC, it shall include an OCSP response for each certificate in the certificate chain sent by the public SECC in the \"ServerHello\" message. Refer to IETF RFC 6960 (as updated by IETF RFC 8954) and IETF RFC 8446 for further details.",
+            "block_bbox": [
+                135,
+                650,
+                1122,
+                780
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    650.0
+                ],
+                [
+                    1122.0,
+                    650.0
+                ],
+                [
+                    1122.0,
+                    780.0
+                ],
+                [
+                    135.0,
+                    780.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 15 If the public SECC is deployed in a stand-alone application without internet connection or is operating in a semi-online manner without internet connection, the public SECC will not be able to provide the OCSP response.",
+            "block_bbox": [
+                136,
+                804,
+                1121,
+                853
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    804.0
+                ],
+                [
+                    1121.0,
+                    804.0
+                ],
+                [
+                    1121.0,
+                    853.0
+                ],
+                [
+                    136.0,
+                    853.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2389] If the EVCC offers and the public SECC chooses a named group and signature algorithm based on curves as defined by [V2G20-2674] (as per the configurable mechanism as defined by [V2G20-2320]), the OCSP certificate chain(s) provided by the public SECC in the \"ServerHello\" message shall be based on profiles as defined in B.9.1.",
+            "block_bbox": [
+                134,
+                874,
+                1122,
+                1005
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    874.0
+                ],
+                [
+                    1122.0,
+                    874.0
+                ],
+                [
+                    1122.0,
+                    1005.0
+                ],
+                [
+                    134.0,
+                    1005.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 16 In these cases, the OCSP responses are signed using signature algorithm based on curves as defined by [V2G20-2674].",
+            "block_bbox": [
+                136,
+                1027,
+                1120,
+                1077
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1027.0
+                ],
+                [
+                    1120.0,
+                    1027.0
+                ],
+                [
+                    1120.0,
+                    1077.0
+                ],
+                [
+                    136.0,
+                    1077.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2390] If the EVCC offers and the public SECC chooses a named group and signature algorithm based on curves as defined by [V2G20-2319] (as per the configurable mechanism as defined by [V2G20-2320]), the OCSP certificate chain(s) provided by the public SECC in the \"ServerHello\" message shall be based on profiles as defined in B.9.2.",
+            "block_bbox": [
+                136,
+                1098,
+                1120,
+                1228
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1098.0
+                ],
+                [
+                    1120.0,
+                    1098.0
+                ],
+                [
+                    1120.0,
+                    1228.0
+                ],
+                [
+                    136.0,
+                    1228.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 17 In these cases, the OCSP responses are signed using signature algorithm based on curves as defined by [V2G20-2319].",
+            "block_bbox": [
+                136,
+                1250,
+                1120,
+                1300
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1250.0
+                ],
+                [
+                    1120.0,
+                    1250.0
+                ],
+                [
+                    1120.0,
+                    1300.0
+                ],
+                [
+                    136.0,
+                    1300.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2391] Since the EVCC used the \"status_request\" extension to request OCSP response for the certificate chain sent by private SECC, if the private SECC supports PnC, it shall include an OCSP response for each certificate in the certificate chain sent by the private SECC in the \"ServerHello\" message. Refer to IETF RFC 6960 (as updated by IETF RFC 8954) and IETF RFC 8446 for further adetails.",
+            "block_bbox": [
+                136,
+                1321,
+                1120,
+                1453
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1321.0
+                ],
+                [
+                    1120.0,
+                    1321.0
+                ],
+                [
+                    1120.0,
+                    1453.0
+                ],
+                [
+                    136.0,
+                    1453.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2392] If the EVCC offers and the private SECC chooses a named group and signature algorithm based on curves as defined by [V2G20-2674] (as per the configurable mechanism as defined by [V2G20-2320]), the OCSP certificate chain(s) provided by",
+            "block_bbox": [
+                137,
+                1474,
+                1120,
+                1555
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1474.0
+                ],
+                [
+                    1120.0,
+                    1474.0
+                ],
+                [
+                    1120.0,
+                    1555.0
+                ],
+                [
+                    137.0,
+                    1555.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "61",
+            "block_bbox": [
+                1091,
+                1625,
+                1118,
+                1645
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    1091.0,
+                    1625.0
+                ],
+                [
+                    1117.0,
+                    1625.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1091.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1089,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8727487325668335,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9273610711097717,
+                "coordinate": [
+                    321,
+                    167,
+                    1124,
+                    249
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        321.0,
+                        167.0
+                    ],
+                    [
+                        1124.0,
+                        167.0
+                    ],
+                    [
+                        1124.0,
+                        249.0
+                    ],
+                    [
+                        321.0,
+                        249.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9294436573982239,
+                "coordinate": [
+                    135,
+                    268,
+                    1121,
+                    372
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.0,
+                        268.0
+                    ],
+                    [
+                        1121.0,
+                        268.0
+                    ],
+                    [
+                        1121.0,
+                        372.0
+                    ],
+                    [
+                        135.0,
+                        372.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9274841547012329,
+                "coordinate": [
+                    135,
+                    395,
+                    1122,
+                    502
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        135.0,
+                        395.0
+                    ],
+                    [
+                        1122.0,
+                        395.0
+                    ],
+                    [
+                        1122.0,
+                        502.0
+                    ],
+                    [
+                        135.0,
+                        502.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9317502379417419,
+                "coordinate": [
+                    135,
+                    523,
+                    1122,
+                    629
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        135.0,
+                        523.0
+                    ],
+                    [
+                        1122.0,
+                        523.0
+                    ],
+                    [
+                        1122.0,
+                        629.0
+                    ],
+                    [
+                        135.0,
+                        629.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9400190711021423,
+                "coordinate": [
+                    135,
+                    650,
+                    1122,
+                    780
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        135.0,
+                        650.0
+                    ],
+                    [
+                        1122.0,
+                        650.0
+                    ],
+                    [
+                        1122.0,
+                        780.0
+                    ],
+                    [
+                        135.0,
+                        780.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9094884991645813,
+                "coordinate": [
+                    136,
+                    804,
+                    1121,
+                    853
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        136.0,
+                        804.0
+                    ],
+                    [
+                        1121.0,
+                        804.0
+                    ],
+                    [
+                        1121.0,
+                        853.0
+                    ],
+                    [
+                        136.0,
+                        853.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9325352907180786,
+                "coordinate": [
+                    134,
+                    874,
+                    1122,
+                    1005
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        134.0,
+                        874.0
+                    ],
+                    [
+                        1122.0,
+                        874.0
+                    ],
+                    [
+                        1122.0,
+                        1005.0
+                    ],
+                    [
+                        134.0,
+                        1005.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9010950326919556,
+                "coordinate": [
+                    136,
+                    1027,
+                    1120,
+                    1077
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1027.0
+                    ],
+                    [
+                        1120.0,
+                        1027.0
+                    ],
+                    [
+                        1120.0,
+                        1077.0
+                    ],
+                    [
+                        136.0,
+                        1077.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9290987849235535,
+                "coordinate": [
+                    136,
+                    1098,
+                    1120,
+                    1228
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1098.0
+                    ],
+                    [
+                        1120.0,
+                        1098.0
+                    ],
+                    [
+                        1120.0,
+                        1228.0
+                    ],
+                    [
+                        136.0,
+                        1228.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9090286493301392,
+                "coordinate": [
+                    136,
+                    1250,
+                    1120,
+                    1300
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1250.0
+                    ],
+                    [
+                        1120.0,
+                        1250.0
+                    ],
+                    [
+                        1120.0,
+                        1300.0
+                    ],
+                    [
+                        136.0,
+                        1300.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9387058615684509,
+                "coordinate": [
+                    136,
+                    1321,
+                    1120,
+                    1453
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1321.0
+                    ],
+                    [
+                        1120.0,
+                        1321.0
+                    ],
+                    [
+                        1120.0,
+                        1453.0
+                    ],
+                    [
+                        136.0,
+                        1453.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9095483422279358,
+                "coordinate": [
+                    137,
+                    1474,
+                    1120,
+                    1555
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1474.0
+                    ],
+                    [
+                        1120.0,
+                        1474.0
+                    ],
+                    [
+                        1120.0,
+                        1555.0
+                    ],
+                    [
+                        137.0,
+                        1555.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7430245876312256,
+                "coordinate": [
+                    1091,
+                    1625,
+                    1118,
+                    1645
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        1091.0,
+                        1625.0
+                    ],
+                    [
+                        1117.0,
+                        1625.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1091.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8316969871520996,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1089,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

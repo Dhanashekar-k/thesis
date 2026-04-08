@@ -1,0 +1,1254 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 297,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.3.55 OverstayRuleListType",
+            "block_bbox": [
+                68,
+                166,
+                410,
+                192
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    166.0
+                ],
+                [
+                    410.0,
+                    166.0
+                ],
+                [
+                    410.0,
+                    192.0
+                ],
+                [
+                    68.0,
+                    192.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This type represents rules used to discourage EVs from staying too long at an EVSE. The typical scenario would be an EV finishes charging, but the driver does not return to move the car for several hours causing other people to not be able to charge.",
+            "block_bbox": [
+                68,
+                215,
+                1054,
+                295
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    215.0
+                ],
+                [
+                    1054.0,
+                    215.0
+                ],
+                [
+                    1054.0,
+                    295.0
+                ],
+                [
+                    68.0,
+                    295.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The overstay would become active by either a time trigger (OverstayTimeThreshold) or a power level trigger (OverstayPowerThreshold). Once either of those triggers become active, then the OverstayRule becomes active. The price of the overstay is defined in list of OverstayRules.",
+            "block_bbox": [
+                68,
+                316,
+                1054,
+                397
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    316.0
+                ],
+                [
+                    1054.0,
+                    316.0
+                ],
+                [
+                    1054.0,
+                    397.0
+                ],
+                [
+                    68.0,
+                    397.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Once the overstay is triggered, the OverstayRules become active when the time from triggering is greater than their StartTime.",
+            "block_bbox": [
+                68,
+                418,
+                1054,
+                470
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    418.0
+                ],
+                [
+                    1054.0,
+                    418.0
+                ],
+                [
+                    1054.0,
+                    470.0
+                ],
+                [
+                    68.0,
+                    470.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1909]\nThe SECC and the EVCC shall implement this type as defined in Figure 158 and Table 149.",
+            "block_bbox": [
+                71,
+                492,
+                219,
+                520
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    492.0
+                ],
+                [
+                    219.0,
+                    492.0
+                ],
+                [
+                    219.0,
+                    520.0
+                ],
+                [
+                    71.0,
+                    520.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                256,
+                493,
+                1053,
+                545
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    256.0,
+                    493.0
+                ],
+                [
+                    1053.0,
+                    493.0
+                ],
+                [
+                    1053.0,
+                    545.0
+                ],
+                [
+                    256.0,
+                    545.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                281,
+                570,
+                842,
+                734
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    281.0,
+                    570.0
+                ],
+                [
+                    842.0,
+                    570.0
+                ],
+                [
+                    842.0,
+                    734.0
+                ],
+                [
+                    281.0,
+                    734.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 158 — Schema diagram - OverstayRuleListType",
+            "block_bbox": [
+                279,
+                765,
+                842,
+                793
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    279.0,
+                    765.0
+                ],
+                [
+                    842.0,
+                    765.0
+                ],
+                [
+                    842.0,
+                    793.0
+                ],
+                [
+                    279.0,
+                    793.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 149.",
+            "block_bbox": [
+                68,
+                804,
+                662,
+                830
+            ],
+            "block_id": 9,
+            "block_order": 7,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    804.0
+                ],
+                [
+                    662.0,
+                    804.0
+                ],
+                [
+                    662.0,
+                    830.0
+                ],
+                [
+                    68.0,
+                    830.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 149 — Semantics and type definition for OverstayRuleListType",
+            "block_bbox": [
+                208,
+                850,
+                914,
+                877
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    208.0,
+                    850.0
+                ],
+                [
+                    914.0,
+                    850.0
+                ],
+                [
+                    914.0,
+                    877.0
+                ],
+                [
+                    208.0,
+                    877.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>OverstayTimeThreshold</td><td>simpleTypexs:unsignedInt</td><td>Optional:Time till overstay is applied.</td></tr><tr><td>OverstayPowerThreshold</td><td>complexType:RationalNumberTypeRefer to 8.3.5.3.8</td><td>Optional:Power threshold at which the overstay applies.</td></tr><tr><td>OverstayRule</td><td>complexType:OverstayRuleTypeRefer to 8.3.5.3.56</td><td>Overstay rules that will be applied.</td></tr></table>",
+            "block_bbox": [
+                70,
+                884,
+                1050,
+                1186
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    884.0
+                ],
+                [
+                    1050.0,
+                    884.0
+                ],
+                [
+                    1050.0,
+                    1186.0
+                ],
+                [
+                    70.0,
+                    1186.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "[V2G20-1910] There shall be only one overstay active at any time.",
+            "block_bbox": [
+                71,
+                1191,
+                745,
+                1218
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1191.0
+                ],
+                [
+                    745.0,
+                    1191.0
+                ],
+                [
+                    745.0,
+                    1218.0
+                ],
+                [
+                    71.0,
+                    1218.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1911] The OverstayRule(s) shall become active when the time matches the OverstayTimeThreshold + the time when the OverstayRuleList became active or when the power being transferred is less than OverstayPowerThreshold.",
+            "block_bbox": [
+                70,
+                1240,
+                1052,
+                1319
+            ],
+            "block_id": 13,
+            "block_order": 8,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1240.0
+                ],
+                [
+                    1052.0,
+                    1240.0
+                ],
+                [
+                    1052.0,
+                    1319.0
+                ],
+                [
+                    70.0,
+                    1319.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1912] When a new overstay becomes active, the overstay that was previously active shall become inactive.",
+            "block_bbox": [
+                70,
+                1341,
+                1053,
+                1394
+            ],
+            "block_id": 14,
+            "block_order": 9,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1341.0
+                ],
+                [
+                    1053.0,
+                    1341.0
+                ],
+                [
+                    1053.0,
+                    1394.0
+                ],
+                [
+                    70.0,
+                    1394.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1913] Each OverstayListID shall be unique.",
+            "block_bbox": [
+                69,
+                1417,
+                608,
+                1445
+            ],
+            "block_id": 15,
+            "block_order": 10,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1417.0
+                ],
+                [
+                    608.0,
+                    1417.0
+                ],
+                [
+                    608.0,
+                    1445.0
+                ],
+                [
+                    69.0,
+                    1445.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 Overstay rules are active in parallel to PriceRules.",
+            "block_bbox": [
+                69,
+                1466,
+                597,
+                1492
+            ],
+            "block_id": 16,
+            "block_order": 11,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1466.0
+                ],
+                [
+                    597.0,
+                    1466.0
+                ],
+                [
+                    597.0,
+                    1492.0
+                ],
+                [
+                    69.0,
+                    1492.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2159] Once the overstay is triggered (e.g. by low power levels or timer), then the overstay remains triggered until replaced by another overstay.",
+            "block_bbox": [
+                70,
+                1514,
+                1052,
+                1567
+            ],
+            "block_id": 17,
+            "block_order": 12,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1514.0
+                ],
+                [
+                    1052.0,
+                    1514.0
+                ],
+                [
+                    1052.0,
+                    1567.0
+                ],
+                [
+                    70.0,
+                    1567.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "292",
+            "block_bbox": [
+                69,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    69.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8814657330513,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8666613698005676,
+                "coordinate": [
+                    68,
+                    166,
+                    410,
+                    192
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        166.0
+                    ],
+                    [
+                        410.0,
+                        166.0
+                    ],
+                    [
+                        410.0,
+                        192.0
+                    ],
+                    [
+                        68.0,
+                        192.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9348194599151611,
+                "coordinate": [
+                    68,
+                    215,
+                    1054,
+                    295
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        215.0
+                    ],
+                    [
+                        1054.0,
+                        215.0
+                    ],
+                    [
+                        1054.0,
+                        295.0
+                    ],
+                    [
+                        68.0,
+                        295.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9349909424781799,
+                "coordinate": [
+                    68,
+                    316,
+                    1054,
+                    397
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        316.0
+                    ],
+                    [
+                        1054.0,
+                        316.0
+                    ],
+                    [
+                        1054.0,
+                        397.0
+                    ],
+                    [
+                        68.0,
+                        397.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8977854251861572,
+                "coordinate": [
+                    68,
+                    418,
+                    1054,
+                    470
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        418.0
+                    ],
+                    [
+                        1054.0,
+                        418.0
+                    ],
+                    [
+                        1054.0,
+                        470.0
+                    ],
+                    [
+                        68.0,
+                        470.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6357271671295166,
+                "coordinate": [
+                    71,
+                    492,
+                    219,
+                    520
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        71.0,
+                        492.0
+                    ],
+                    [
+                        219.0,
+                        492.0
+                    ],
+                    [
+                        219.0,
+                        520.0
+                    ],
+                    [
+                        71.0,
+                        520.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8575076460838318,
+                "coordinate": [
+                    256,
+                    493,
+                    1053,
+                    545
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        256.0,
+                        493.0
+                    ],
+                    [
+                        1053.0,
+                        493.0
+                    ],
+                    [
+                        1053.0,
+                        545.0
+                    ],
+                    [
+                        256.0,
+                        545.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9564731121063232,
+                "coordinate": [
+                    281,
+                    570,
+                    842,
+                    734
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        281.0,
+                        570.0
+                    ],
+                    [
+                        842.0,
+                        570.0
+                    ],
+                    [
+                        842.0,
+                        734.0
+                    ],
+                    [
+                        281.0,
+                        734.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8727875351905823,
+                "coordinate": [
+                    279,
+                    765,
+                    842,
+                    793
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        279.0,
+                        765.0
+                    ],
+                    [
+                        842.0,
+                        765.0
+                    ],
+                    [
+                        842.0,
+                        793.0
+                    ],
+                    [
+                        279.0,
+                        793.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7696270942687988,
+                "coordinate": [
+                    68,
+                    804,
+                    662,
+                    830
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        804.0
+                    ],
+                    [
+                        662.0,
+                        804.0
+                    ],
+                    [
+                        662.0,
+                        830.0
+                    ],
+                    [
+                        68.0,
+                        830.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8778443932533264,
+                "coordinate": [
+                    208,
+                    850,
+                    914,
+                    877
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        208.0,
+                        850.0
+                    ],
+                    [
+                        914.0,
+                        850.0
+                    ],
+                    [
+                        914.0,
+                        877.0
+                    ],
+                    [
+                        208.0,
+                        877.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9591202735900879,
+                "coordinate": [
+                    70,
+                    884,
+                    1050,
+                    1186
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        884.0
+                    ],
+                    [
+                        1050.0,
+                        884.0
+                    ],
+                    [
+                        1050.0,
+                        1186.0
+                    ],
+                    [
+                        70.0,
+                        1186.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.42274466156959534,
+                "coordinate": [
+                    71,
+                    1191,
+                    745,
+                    1218
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1191.0
+                    ],
+                    [
+                        745.0,
+                        1191.0
+                    ],
+                    [
+                        745.0,
+                        1218.0
+                    ],
+                    [
+                        71.0,
+                        1218.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9152571558952332,
+                "coordinate": [
+                    70,
+                    1240,
+                    1052,
+                    1319
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1240.0
+                    ],
+                    [
+                        1052.0,
+                        1240.0
+                    ],
+                    [
+                        1052.0,
+                        1319.0
+                    ],
+                    [
+                        70.0,
+                        1319.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8963636159896851,
+                "coordinate": [
+                    70,
+                    1341,
+                    1053,
+                    1394
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1341.0
+                    ],
+                    [
+                        1053.0,
+                        1341.0
+                    ],
+                    [
+                        1053.0,
+                        1394.0
+                    ],
+                    [
+                        70.0,
+                        1394.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8341068625450134,
+                "coordinate": [
+                    69,
+                    1417,
+                    608,
+                    1445
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1417.0
+                    ],
+                    [
+                        608.0,
+                        1417.0
+                    ],
+                    [
+                        608.0,
+                        1445.0
+                    ],
+                    [
+                        69.0,
+                        1445.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8180764317512512,
+                "coordinate": [
+                    69,
+                    1466,
+                    597,
+                    1492
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1466.0
+                    ],
+                    [
+                        597.0,
+                        1466.0
+                    ],
+                    [
+                        597.0,
+                        1492.0
+                    ],
+                    [
+                        69.0,
+                        1492.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8701539039611816,
+                "coordinate": [
+                    70,
+                    1514,
+                    1052,
+                    1567
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1514.0
+                    ],
+                    [
+                        1052.0,
+                        1514.0
+                    ],
+                    [
+                        1052.0,
+                        1567.0
+                    ],
+                    [
+                        70.0,
+                        1567.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5990496277809143,
+                "coordinate": [
+                    69,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        69.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.45342719554901123,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,721 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 366,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td rowspan=\"3\">EVSOC</td><td>simpleType:</td><td>Optional:</td></tr><tr><td>percentValueType</td><td>For operation usable SOC status in %. This value may differ from physical SOC of the battery.</td></tr><tr><td>refer to Annex A for the type definition</td><td>This parameter can be same as PresentSOC in DisplayParameter.</td></tr><tr><td rowspan=\"3\">EVErrorCode</td><td>simpleType:</td><td>Optional:</td></tr><tr><td>errorCodeType</td><td rowspan=\"2\">Element signalizes the EV error status code of the technical fault.</td></tr><tr><td>refer to Annex A for the type definition</td></tr><tr><td rowspan=\"3\">EVTimeout</td><td>simpleType:</td><td>Optional:</td></tr><tr><td rowspan=\"2\">xs:boolean</td><td>Indicates the occurrence of a timeout in the EVCC.</td></tr><tr><td>Possible states are: True, False</td></tr></table>",
+            "block_bbox": [
+                166,
+                164,
+                1089,
+                598
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    166.0,
+                    164.0
+                ],
+                [
+                    1089.0,
+                    164.0
+                ],
+                [
+                    1089.0,
+                    598.0
+                ],
+                [
+                    166.0,
+                    598.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE The EVImmobilizationRequest element provides information whether the charging process was aborted due to an error or otherwise intentionally by the driver releasing the hand brake. This information is important for remote diagnosis.",
+            "block_bbox": [
+                137,
+                602,
+                1120,
+                675
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    602.0
+                ],
+                [
+                    1120.0,
+                    602.0
+                ],
+                [
+                    1120.0,
+                    675.0
+                ],
+                [
+                    137.0,
+                    675.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Table 203 below lists the EV errorCodeType related to the ACDP_SystemStatus.",
+            "block_bbox": [
+                137,
+                697,
+                888,
+                725
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    697.0
+                ],
+                [
+                    888.0,
+                    697.0
+                ],
+                [
+                    888.0,
+                    725.0
+                ],
+                [
+                    137.0,
+                    725.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 203 — Enumeration for errorCodeType",
+            "block_bbox": [
+                393,
+                747,
+                864,
+                774
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    393.0,
+                    747.0
+                ],
+                [
+                    864.0,
+                    747.0
+                ],
+                [
+                    864.0,
+                    774.0
+                ],
+                [
+                    393.0,
+                    774.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Comment</td></tr><tr><td>No_EV_Error</td><td>Indicates that the EV has no error</td></tr><tr><td>EV_FAILED_EmergencyEvent</td><td>EV had an emergency event and stopped charging</td></tr><tr><td>EV_FAILED_Breaker</td><td>EV had a breaker failure, charging not possible</td></tr><tr><td>EV_FAILED_RESSTemperatureInhibit</td><td>EV had an RESS overtemperature event, charging not possible</td></tr><tr><td>EV_FAILED_RESS</td><td>EV had an RESS failure, charging not possible</td></tr><tr><td>EV_FAILED_ChargingCurrentDifferential</td><td>EV had an over current event and stopped charging</td></tr><tr><td>EV_FAILED_ChargingVoltageOutOfRange</td><td>EV had an over voltage event and stopped charging</td></tr><tr><td>EV_FAILED</td><td>EV had an undefined other event and stopped charging</td></tr><tr><td>Reserved_by_ISO_1</td><td></td></tr><tr><td>Reserved_by_ISO_2</td><td></td></tr></table>",
+            "block_bbox": [
+                186,
+                782,
+                1070,
+                1310
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    186.0,
+                    782.0
+                ],
+                [
+                    1070.0,
+                    782.0
+                ],
+                [
+                    1070.0,
+                    1310.0
+                ],
+                [
+                    186.0,
+                    1310.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.4 Service selection",
+            "block_bbox": [
+                137,
+                1318,
+                351,
+                1343
+            ],
+            "block_id": 6,
+            "block_order": 2,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1318.0
+                ],
+                [
+                    351.0,
+                    1318.0
+                ],
+                [
+                    351.0,
+                    1343.0
+                ],
+                [
+                    137.0,
+                    1343.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.4.1 General",
+            "block_bbox": [
+                208,
+                1365,
+                369,
+                1391
+            ],
+            "block_id": 7,
+            "block_order": 3,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    208.0,
+                    1365.0
+                ],
+                [
+                    369.0,
+                    1365.0
+                ],
+                [
+                    369.0,
+                    1391.0
+                ],
+                [
+                    208.0,
+                    1391.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO 15118-1 defines use case elements covering different services such as charging, WPT and BPT scenarios. Depending on a use case and a service scenario only one subset of the messages and parameters defined in this document are applied and transmitted by the EVCC and the SECC, respectively.",
+            "block_bbox": [
+                136,
+                1414,
+                1121,
+                1495
+            ],
+            "block_id": 8,
+            "block_order": 4,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1414.0
+                ],
+                [
+                    1121.0,
+                    1414.0
+                ],
+                [
+                    1121.0,
+                    1495.0
+                ],
+                [
+                    136.0,
+                    1495.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "361",
+            "block_bbox": [
+                1077,
+                1624,
+                1118,
+                1645
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    1077.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1077.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1118,
+                1683
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1082,
+                    1682
+                ],
+                [
+                    1117,
+                    1665
+                ],
+                [
+                    1117,
+                    1640
+                ],
+                [
+                    1070,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8753315806388855,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9732818007469177,
+                "coordinate": [
+                    166,
+                    164,
+                    1089,
+                    598
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        166.0,
+                        164.0
+                    ],
+                    [
+                        1089.0,
+                        164.0
+                    ],
+                    [
+                        1089.0,
+                        598.0
+                    ],
+                    [
+                        166.0,
+                        598.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.8983246088027954,
+                "coordinate": [
+                    137,
+                    602,
+                    1120,
+                    675
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        137.0,
+                        602.0
+                    ],
+                    [
+                        1120.0,
+                        602.0
+                    ],
+                    [
+                        1120.0,
+                        675.0
+                    ],
+                    [
+                        137.0,
+                        675.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.611655592918396,
+                "coordinate": [
+                    137,
+                    697,
+                    888,
+                    725
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        697.0
+                    ],
+                    [
+                        888.0,
+                        697.0
+                    ],
+                    [
+                        888.0,
+                        725.0
+                    ],
+                    [
+                        137.0,
+                        725.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8652344346046448,
+                "coordinate": [
+                    393,
+                    747,
+                    864,
+                    774
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        393.0,
+                        747.0
+                    ],
+                    [
+                        864.0,
+                        747.0
+                    ],
+                    [
+                        864.0,
+                        774.0
+                    ],
+                    [
+                        393.0,
+                        774.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9807139039039612,
+                "coordinate": [
+                    186,
+                    782,
+                    1070,
+                    1310
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        186.0,
+                        782.0
+                    ],
+                    [
+                        1070.0,
+                        782.0
+                    ],
+                    [
+                        1070.0,
+                        1310.0
+                    ],
+                    [
+                        186.0,
+                        1310.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8403211236000061,
+                "coordinate": [
+                    137,
+                    1318,
+                    351,
+                    1343
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1318.0
+                    ],
+                    [
+                        351.0,
+                        1318.0
+                    ],
+                    [
+                        351.0,
+                        1343.0
+                    ],
+                    [
+                        137.0,
+                        1343.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8467268943786621,
+                "coordinate": [
+                    208,
+                    1365,
+                    369,
+                    1391
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        208.0,
+                        1365.0
+                    ],
+                    [
+                        369.0,
+                        1365.0
+                    ],
+                    [
+                        369.0,
+                        1391.0
+                    ],
+                    [
+                        208.0,
+                        1391.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9446125626564026,
+                "coordinate": [
+                    136,
+                    1414,
+                    1121,
+                    1495
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1414.0
+                    ],
+                    [
+                        1121.0,
+                        1414.0
+                    ],
+                    [
+                        1121.0,
+                        1495.0
+                    ],
+                    [
+                        136.0,
+                        1495.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7812139987945557,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        1077.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1077.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8713183403015137,
+                "coordinate": [
+                    61,
+                    1631,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1082,
+                        1682
+                    ],
+                    [
+                        1117,
+                        1665
+                    ],
+                    [
+                        1117,
+                        1640
+                    ],
+                    [
+                        1070,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

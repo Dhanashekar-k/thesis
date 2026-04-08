@@ -1,0 +1,583 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 387,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td rowspan=\"2\">Parameter name</td><td rowspan=\"2\">Definition</td><td colspan=\"2\">Implementation</td></tr><tr><td>EVCC</td><td>SECC</td></tr><tr><td>V2G_EVCC_CommunicationSetup_Timeout</td><td>Timeout for the communication setup timer as defined in Table 221.</td><td>✗</td><td></td></tr><tr><td>V2G_SECC_CommunicationSetup_Performance_Time</td><td>Performance time for the communication setup timer as defined in Table 221.</td><td></td><td>✗</td></tr></table>",
+            "block_bbox": [
+                67,
+                164,
+                1052,
+                401
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    164.0
+                ],
+                [
+                    1052.0,
+                    164.0
+                ],
+                [
+                    1052.0,
+                    401.0
+                ],
+                [
+                    67.0,
+                    401.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "[V2G20-605] The EVCC and SECC shall implement the timing parameter values defined in Table 221.",
+            "block_bbox": [
+                71,
+                406,
+                1052,
+                457
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    406.0
+                ],
+                [
+                    1052.0,
+                    406.0
+                ],
+                [
+                    1052.0,
+                    457.0
+                ],
+                [
+                    71.0,
+                    457.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 221 — Common EVCC and SECC message sequence and session timing parameter values",
+            "block_bbox": [
+                84,
+                478,
+                1037,
+                505
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    84.0,
+                    478.0
+                ],
+                [
+                    1037.0,
+                    478.0
+                ],
+                [
+                    1037.0,
+                    505.0
+                ],
+                [
+                    84.0,
+                    505.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td rowspan=\"2\">Parameter name</td><td rowspan=\"2\">Value [s]</td><td colspan=\"2\">Implementation</td></tr><tr><td>EVCC</td><td>SECC</td></tr><tr><td>V2G_SECC_CommunicationSetup_Performance_Time</td><td>18</td><td></td><td>✗</td></tr><tr><td>V2G_EVCC_CommunicationSetup_Timeout</td><td>20</td><td>✗</td><td></td></tr></table>",
+            "block_bbox": [
+                77,
+                514,
+                1045,
+                685
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    77.0,
+                    514.0
+                ],
+                [
+                    1045.0,
+                    514.0
+                ],
+                [
+                    1045.0,
+                    685.0
+                ],
+                [
+                    77.0,
+                    685.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 213 illustrates how the timing parameters defined in Table 220 are applied.",
+            "block_bbox": [
+                68,
+                712,
+                852,
+                740
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    712.0
+                ],
+                [
+                    852.0,
+                    712.0
+                ],
+                [
+                    852.0,
+                    740.0
+                ],
+                [
+                    68.0,
+                    740.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "382",
+            "block_bbox": [
+                71,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    71.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1617,
+                1053,
+                1637
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1617.0
+                ],
+                [
+                    1052.0,
+                    1617.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1638,
+                1119,
+                1682
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1638.0
+                ],
+                [
+                    1119.0,
+                    1638.0
+                ],
+                [
+                    1119.0,
+                    1682.0
+                ],
+                [
+                    60.0,
+                    1682.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.873714029788971,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9597271084785461,
+                "coordinate": [
+                    67,
+                    164,
+                    1052,
+                    401
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        67.0,
+                        164.0
+                    ],
+                    [
+                        1052.0,
+                        164.0
+                    ],
+                    [
+                        1052.0,
+                        401.0
+                    ],
+                    [
+                        67.0,
+                        401.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.8474404811859131,
+                "coordinate": [
+                    71,
+                    406,
+                    1052,
+                    457
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        71.0,
+                        406.0
+                    ],
+                    [
+                        1052.0,
+                        406.0
+                    ],
+                    [
+                        1052.0,
+                        457.0
+                    ],
+                    [
+                        71.0,
+                        457.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8680208325386047,
+                "coordinate": [
+                    84,
+                    478,
+                    1037,
+                    505
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        84.0,
+                        478.0
+                    ],
+                    [
+                        1037.0,
+                        478.0
+                    ],
+                    [
+                        1037.0,
+                        505.0
+                    ],
+                    [
+                        84.0,
+                        505.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9589499235153198,
+                "coordinate": [
+                    77,
+                    514,
+                    1045,
+                    685
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        77.0,
+                        514.0
+                    ],
+                    [
+                        1045.0,
+                        514.0
+                    ],
+                    [
+                        1045.0,
+                        685.0
+                    ],
+                    [
+                        77.0,
+                        685.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8792189955711365,
+                "coordinate": [
+                    68,
+                    712,
+                    852,
+                    740
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        68.0,
+                        712.0
+                    ],
+                    [
+                        852.0,
+                        712.0
+                    ],
+                    [
+                        852.0,
+                        740.0
+                    ],
+                    [
+                        68.0,
+                        740.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.8101615309715271,
+                "coordinate": [
+                    71,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        71.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6890034079551697,
+                "coordinate": [
+                    797,
+                    1617,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1617.0
+                    ],
+                    [
+                        1052.0,
+                        1617.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8342188000679016,
+                "coordinate": [
+                    60,
+                    1638,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1638.0
+                    ],
+                    [
+                        1119.0,
+                        1638.0
+                    ],
+                    [
+                        1119.0,
+                        1682.0
+                    ],
+                    [
+                        60.0,
+                        1682.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

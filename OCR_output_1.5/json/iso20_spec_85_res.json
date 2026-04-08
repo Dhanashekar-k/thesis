@@ -1,0 +1,949 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 85,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                94
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    94.0
+                ],
+                [
+                    70.0,
+                    94.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2046] When a TLS session is terminated due to a VAS session being terminated, the EVCC shall irretrievably erase/delete/destroy all cryptographic data calculated for that particular TLS session. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, etc.",
+            "block_bbox": [
+                69,
+                168,
+                1052,
+                271
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    271.0
+                ],
+                [
+                    69.0,
+                    271.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2047] When a TLS session is terminated due to a V2G session being paused, the EVCC shall irretrievably erase/delete/destroy all cryptographic data calculated for that particular TLS session. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, etc.",
+            "block_bbox": [
+                70,
+                294,
+                1054,
+                399
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    294.0
+                ],
+                [
+                    1054.0,
+                    294.0
+                ],
+                [
+                    1054.0,
+                    399.0
+                ],
+                [
+                    70.0,
+                    399.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2049] When a V2G session is terminated due to any reason (charging process completed, user cancelled charging, cable disconnected, etc.), the EVCC shall terminate all TLS sessions associated with that V2G session. This includes terminating any TLS sessions associated with any VAS associated with that V2G session. The EVCC shall irretrievably erase/delete/destroy all cryptographic data calculated for all TLS sessions being terminated. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, any TLS session tickets that may have been stored, data stored for \"Session Binding\", etc.",
+            "block_bbox": [
+                69,
+                422,
+                1054,
+                630
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    422.0
+                ],
+                [
+                    1054.0,
+                    422.0
+                ],
+                [
+                    1054.0,
+                    630.0
+                ],
+                [
+                    69.0,
+                    630.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2050] When a TLS session is terminated due to a VAS session being terminated, the SECC shall irretrievably erase/delete/destroy all cryptographic data calculated for that particular TLS session. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, etc.",
+            "block_bbox": [
+                70,
+                652,
+                1053,
+                756
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    652.0
+                ],
+                [
+                    1053.0,
+                    652.0
+                ],
+                [
+                    1053.0,
+                    756.0
+                ],
+                [
+                    70.0,
+                    756.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 All other active TLS session(s) tied to the same V2G session can be completely unaffected under these circumstances.",
+            "block_bbox": [
+                68,
+                779,
+                1052,
+                826
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    779.0
+                ],
+                [
+                    1052.0,
+                    779.0
+                ],
+                [
+                    1052.0,
+                    826.0
+                ],
+                [
+                    68.0,
+                    826.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2051] When a TLS session is terminated due to a V2G session being paused, the SECC shall irretrievably erase/delete/destroy all cryptographic data calculated for that particular TLS session. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, etc.",
+            "block_bbox": [
+                69,
+                850,
+                1053,
+                954
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    850.0
+                ],
+                [
+                    1053.0,
+                    850.0
+                ],
+                [
+                    1053.0,
+                    954.0
+                ],
+                [
+                    69.0,
+                    954.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2053] When a V2G session is terminated due to any reason (charging process completed, user cancelled charging, cable disconnected, etc.), the SECC shall terminate all TLS sessions associated with that V2G session. This includes terminating any TLS sessions associated with any VAS associated with that V2G session. SECC shall irretrievably erase/delete/destroy all cryptographic data calculated for all TLS sessions being terminated. This includes all keys calculated for TLS encryption, any data calculated for certificate validation, any TLS session tickets that may have been stored, data stored for \"Session Binding\", etc.",
+            "block_bbox": [
+                68,
+                978,
+                1053,
+                1185
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    978.0
+                ],
+                [
+                    1053.0,
+                    978.0
+                ],
+                [
+                    1053.0,
+                    1185.0
+                ],
+                [
+                    68.0,
+                    1185.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 This is different than pausing of the V2G session.",
+            "block_bbox": [
+                69,
+                1208,
+                586,
+                1233
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1208.0
+                ],
+                [
+                    586.0,
+                    1208.0
+                ],
+                [
+                    586.0,
+                    1233.0
+                ],
+                [
+                    69.0,
+                    1233.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.7.3.9 General TLS security comments",
+            "block_bbox": [
+                151,
+                1253,
+                585,
+                1280
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    151.0,
+                    1253.0
+                ],
+                [
+                    585.0,
+                    1253.0
+                ],
+                [
+                    585.0,
+                    1280.0
+                ],
+                [
+                    151.0,
+                    1280.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 8446:2018, Annex E provides some security risks associated with TLS 1.3 and suggests a few mitigation techniques. The implementers should be cognizant of these and should carefully consider pros and cons of each mitigation technique before incorporating it in the solution.",
+            "block_bbox": [
+                68,
+                1303,
+                1053,
+                1382
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1303.0
+                ],
+                [
+                    1053.0,
+                    1303.0
+                ],
+                [
+                    1053.0,
+                    1382.0
+                ],
+                [
+                    68.0,
+                    1382.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "At the discretion of CSO, the SECC may cache OCSP responses for vehicle certificate for later use. The next time the SECC receives the vehicle certificates for the same EVCC, it may use the cached OCSP responses, if still valid, for revocation status thereby saving time. The methodology to achieve this is not in the scope of this document. It should be noted, though, that relying on the cached OCSP response here will mean that latest updates to that certificate's status could be missed. Refer to 7.3.1 when implementing OCSP response caching.",
+            "block_bbox": [
+                68,
+                1404,
+                1054,
+                1562
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1404.0
+                ],
+                [
+                    1053.0,
+                    1404.0
+                ],
+                [
+                    1053.0,
+                    1553.0
+                ],
+                [
+                    68.0,
+                    1553.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "80",
+            "block_bbox": [
+                69,
+                1614,
+                102,
+                1635
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1614.0
+                ],
+                [
+                    101.0,
+                    1614.0
+                ],
+                [
+                    101.0,
+                    1634.0
+                ],
+                [
+                    69.0,
+                    1634.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                798,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    798.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    798.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 14,
+            "block_order": 13,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    59.72044372558594,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.0003662109375
+                ],
+                [
+                    1118.333251953125,
+                    1680.0601806640625
+                ],
+                [
+                    60.0535888671875,
+                    1688.0623779296875
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8356330990791321,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    94
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        94.0
+                    ],
+                    [
+                        70.0,
+                        94.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9238232374191284,
+                "coordinate": [
+                    69,
+                    168,
+                    1052,
+                    271
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        271.0
+                    ],
+                    [
+                        69.0,
+                        271.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9280424118041992,
+                "coordinate": [
+                    70,
+                    294,
+                    1054,
+                    399
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        70.0,
+                        294.0
+                    ],
+                    [
+                        1054.0,
+                        294.0
+                    ],
+                    [
+                        1054.0,
+                        399.0
+                    ],
+                    [
+                        70.0,
+                        399.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9521453380584717,
+                "coordinate": [
+                    69,
+                    422,
+                    1054,
+                    630
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        422.0
+                    ],
+                    [
+                        1054.0,
+                        422.0
+                    ],
+                    [
+                        1054.0,
+                        630.0
+                    ],
+                    [
+                        69.0,
+                        630.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.930817186832428,
+                "coordinate": [
+                    70,
+                    652,
+                    1053,
+                    756
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        70.0,
+                        652.0
+                    ],
+                    [
+                        1053.0,
+                        652.0
+                    ],
+                    [
+                        1053.0,
+                        756.0
+                    ],
+                    [
+                        70.0,
+                        756.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8839393258094788,
+                "coordinate": [
+                    68,
+                    779,
+                    1052,
+                    826
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        779.0
+                    ],
+                    [
+                        1052.0,
+                        779.0
+                    ],
+                    [
+                        1052.0,
+                        826.0
+                    ],
+                    [
+                        68.0,
+                        826.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9267436265945435,
+                "coordinate": [
+                    69,
+                    850,
+                    1053,
+                    954
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        69.0,
+                        850.0
+                    ],
+                    [
+                        1053.0,
+                        850.0
+                    ],
+                    [
+                        1053.0,
+                        954.0
+                    ],
+                    [
+                        69.0,
+                        954.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9480361938476562,
+                "coordinate": [
+                    68,
+                    978,
+                    1053,
+                    1185
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        978.0
+                    ],
+                    [
+                        1053.0,
+                        978.0
+                    ],
+                    [
+                        1053.0,
+                        1185.0
+                    ],
+                    [
+                        68.0,
+                        1185.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7087929248809814,
+                "coordinate": [
+                    69,
+                    1208,
+                    586,
+                    1233
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1208.0
+                    ],
+                    [
+                        586.0,
+                        1208.0
+                    ],
+                    [
+                        586.0,
+                        1233.0
+                    ],
+                    [
+                        69.0,
+                        1233.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8469437956809998,
+                "coordinate": [
+                    151,
+                    1253,
+                    585,
+                    1280
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        151.0,
+                        1253.0
+                    ],
+                    [
+                        585.0,
+                        1253.0
+                    ],
+                    [
+                        585.0,
+                        1280.0
+                    ],
+                    [
+                        151.0,
+                        1280.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9473612308502197,
+                "coordinate": [
+                    68,
+                    1303,
+                    1053,
+                    1382
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1303.0
+                    ],
+                    [
+                        1053.0,
+                        1303.0
+                    ],
+                    [
+                        1053.0,
+                        1382.0
+                    ],
+                    [
+                        68.0,
+                        1382.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9622945189476013,
+                "coordinate": [
+                    68,
+                    1404,
+                    1054,
+                    1562
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1404.0
+                    ],
+                    [
+                        1053.0,
+                        1404.0
+                    ],
+                    [
+                        1053.0,
+                        1553.0
+                    ],
+                    [
+                        68.0,
+                        1553.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.3056819438934326,
+                "coordinate": [
+                    69,
+                    1614,
+                    102,
+                    1635
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1614.0
+                    ],
+                    [
+                        101.0,
+                        1614.0
+                    ],
+                    [
+                        101.0,
+                        1634.0
+                    ],
+                    [
+                        69.0,
+                        1634.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5251711010932922,
+                "coordinate": [
+                    798,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        798.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        798.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4197293817996979,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        59.72044372558594,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.333251953125,
+                        1680.0601806640625
+                    ],
+                    [
+                        60.0535888671875,
+                        1688.0623779296875
+                    ]
+                ]
+            }
+        ]
+    }
+}

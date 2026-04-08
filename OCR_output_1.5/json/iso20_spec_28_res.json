@@ -1,0 +1,1270 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 28,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 5 The design and implementation of this configuration mechanism is not in the scope of this document.",
+            "block_bbox": [
+                137,
+                168,
+                1100,
+                193
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    168.0
+                ],
+                [
+                    1100.0,
+                    168.0
+                ],
+                [
+                    1100.0,
+                    193.0
+                ],
+                [
+                    137.0,
+                    193.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 6 secp521r1 is a very common ECC algorithm supported by NIST. Curve Ed448 is not as widely used at the time of the publication of this document. Although there are quite a few implementations supporting curve Ed448, secp521r1 is used as the main curve due to its ubiquity. In case flaw(s) are found in the secp521r1, availability of the alternative curves allows implementers to quickly switch to a parallel algorithm without the need for implementation and validation of a new cryptographic algorithm. This ensures that the implementers/operators can quickly respond to any reported vulnerabilities in secp521r1.",
+            "block_bbox": [
+                136,
+                215,
+                1121,
+                359
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    215.0
+                ],
+                [
+                    1121.0,
+                    215.0
+                ],
+                [
+                    1121.0,
+                    359.0
+                ],
+                [
+                    136.0,
+                    359.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2321]\nAs long as no issues or flaws are identified in the (elliptic curve) EC as specified by [V2G20-2674], the (elliptic curve) EC as specified by [V2G20-2674] shall be considered the preferred ECC algorithm. The mechanism defined by [V2G20-2320] shall only be updated to usage of (elliptic curve) EC as defined by [V2G20-2319] when there are issues/flaws identified with the (elliptic curve) EC as specified by [V2G20-2674].",
+            "block_bbox": [
+                139,
+                380,
+                287,
+                407
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    380.0
+                ],
+                [
+                    287.0,
+                    380.0
+                ],
+                [
+                    287.0,
+                    407.0
+                ],
+                [
+                    139.0,
+                    407.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                320,
+                381,
+                1122,
+                537
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    320.0,
+                    381.0
+                ],
+                [
+                    1122.0,
+                    381.0
+                ],
+                [
+                    1122.0,
+                    537.0
+                ],
+                [
+                    320.0,
+                    537.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 7 By default the mechanism defined by [V2G20-2320] can be set to use (elliptic curve) EC as specified by [V2G20-2674].",
+            "block_bbox": [
+                137,
+                558,
+                1120,
+                606
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    558.0
+                ],
+                [
+                    1120.0,
+                    558.0
+                ],
+                [
+                    1120.0,
+                    606.0
+                ],
+                [
+                    137.0,
+                    606.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2675] Each V2G entity shall support a key length of 521 bits for ECC based asymmetric cryptography.",
+            "block_bbox": [
+                138,
+                630,
+                1120,
+                683
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    630.0
+                ],
+                [
+                    1120.0,
+                    630.0
+                ],
+                [
+                    1120.0,
+                    683.0
+                ],
+                [
+                    138.0,
+                    683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 8 Additionally, key length of 448 bits is used with certain curves in the application of this document. If a V2G entity can manage and utilize 521 bit keys, it can be capable of managing and utilizing 448 bit keys as well.",
+            "block_bbox": [
+                136,
+                704,
+                1119,
+                755
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    704.0
+                ],
+                [
+                    1119.0,
+                    704.0
+                ],
+                [
+                    1119.0,
+                    755.0
+                ],
+                [
+                    136.0,
+                    755.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2322] Each certificate shall meet all requirements as specified for that certificate in this subclause (and any of its subclauses), 7.3.3 (and any of its subclauses) and in Annex B.",
+            "block_bbox": [
+                138,
+                776,
+                1124,
+                830
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    776.0
+                ],
+                [
+                    1124.0,
+                    776.0
+                ],
+                [
+                    1124.0,
+                    830.0
+                ],
+                [
+                    138.0,
+                    830.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 9 Annex B provides the certificate profiles.",
+            "block_bbox": [
+                138,
+                851,
+                587,
+                876
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    851.0
+                ],
+                [
+                    587.0,
+                    851.0
+                ],
+                [
+                    587.0,
+                    876.0
+                ],
+                [
+                    138.0,
+                    876.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-926] The certificate extensions mentioned in Annex B shall be supported.",
+            "block_bbox": [
+                137,
+                899,
+                969,
+                927
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    899.0
+                ],
+                [
+                    969.0,
+                    899.0
+                ],
+                [
+                    969.0,
+                    927.0
+                ],
+                [
+                    137.0,
+                    927.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 10 Where necessary, deviations have been specified.",
+            "block_bbox": [
+                137,
+                948,
+                661,
+                973
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    948.0
+                ],
+                [
+                    661.0,
+                    948.0
+                ],
+                [
+                    661.0,
+                    973.0
+                ],
+                [
+                    137.0,
+                    973.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2323] Certificates used in this document shall not contain any extensions other than those specified in Annex B.",
+            "block_bbox": [
+                138,
+                995,
+                1119,
+                1048
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    995.0
+                ],
+                [
+                    1119.0,
+                    995.0
+                ],
+                [
+                    1119.0,
+                    1048.0
+                ],
+                [
+                    138.0,
+                    1048.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 11 If an extension is mentioned as allowed for a certificate profile in Annex B, regardless whether it is marked as mandatory or optional, a certificate generated to meet that certificate profile is permitted to utilize that extension. If the extension is not mentioned as allowed in the corresponding certificate profile, that extension cannot be present in the corresponding certificate. For example, \"CertificatePolicies\" extension is marked as optional in most profiles. That means whether the \"CertificatePolicies\" extension is included is up to the certificate issuer's and certificate requester's discretion. On the other hand, since the \"subjectDirectoryAttributes\" extension is not specified as a mandatory or optional extension by Annex B, the \"subjectDirectoryAttributes\" extension cannot be included in any certificate used in this document.",
+            "block_bbox": [
+                136,
+                1072,
+                1121,
+                1262
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1072.0
+                ],
+                [
+                    1121.0,
+                    1072.0
+                ],
+                [
+                    1121.0,
+                    1262.0
+                ],
+                [
+                    136.0,
+                    1262.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 12 This ensures that incompatible extensions do not result in unforeseen issues or result in interoperability concerns.",
+            "block_bbox": [
+                137,
+                1284,
+                1120,
+                1332
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1284.0
+                ],
+                [
+                    1120.0,
+                    1284.0
+                ],
+                [
+                    1120.0,
+                    1332.0
+                ],
+                [
+                    137.0,
+                    1332.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1234]\nEach certificate in a certificate chain shall be DER encoded and the size of each certificate in DER encoded form shall be limited to a maximum of 1 600 bytes. Refer to ITU-T X.509 for details of DER encoding.",
+            "block_bbox": [
+                139,
+                1355,
+                287,
+                1381
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    1355.0
+                ],
+                [
+                    287.0,
+                    1355.0
+                ],
+                [
+                    287.0,
+                    1381.0
+                ],
+                [
+                    139.0,
+                    1381.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                321,
+                1355,
+                1121,
+                1433
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    321.0,
+                    1355.0
+                ],
+                [
+                    1121.0,
+                    1355.0
+                ],
+                [
+                    1121.0,
+                    1433.0
+                ],
+                [
+                    321.0,
+                    1433.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 13 A certificate chain is made up of multiple certificates. [V2G20-1234] applies to each certificate in the certificate chain, not the entire certificate chain itself. If a certificate chain is made up of four certificates, that chain will be a maximum of 6 400 bytes in DER format.",
+            "block_bbox": [
+                137,
+                1456,
+                1121,
+                1528
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1456.0
+                ],
+                [
+                    1121.0,
+                    1456.0
+                ],
+                [
+                    1121.0,
+                    1528.0
+                ],
+                [
+                    137.0,
+                    1528.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "23",
+            "block_bbox": [
+                1091,
+                1624,
+                1119,
+                1645
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    1091.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1644.0
+                ],
+                [
+                    1091.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1119,
+                1683
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1089,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1640
+                ],
+                [
+                    1083,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8793793320655823,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6807150840759277,
+                "coordinate": [
+                    137,
+                    168,
+                    1100,
+                    193
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        168.0
+                    ],
+                    [
+                        1100.0,
+                        168.0
+                    ],
+                    [
+                        1100.0,
+                        193.0
+                    ],
+                    [
+                        137.0,
+                        193.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9566282629966736,
+                "coordinate": [
+                    136,
+                    215,
+                    1121,
+                    359
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        215.0
+                    ],
+                    [
+                        1121.0,
+                        215.0
+                    ],
+                    [
+                        1121.0,
+                        359.0
+                    ],
+                    [
+                        136.0,
+                        359.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.41016894578933716,
+                "coordinate": [
+                    139,
+                    380,
+                    287,
+                    407
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        139.0,
+                        380.0
+                    ],
+                    [
+                        287.0,
+                        380.0
+                    ],
+                    [
+                        287.0,
+                        407.0
+                    ],
+                    [
+                        139.0,
+                        407.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8957740068435669,
+                "coordinate": [
+                    320,
+                    381,
+                    1122,
+                    537
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        320.0,
+                        381.0
+                    ],
+                    [
+                        1122.0,
+                        381.0
+                    ],
+                    [
+                        1122.0,
+                        537.0
+                    ],
+                    [
+                        320.0,
+                        537.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9047818779945374,
+                "coordinate": [
+                    137,
+                    558,
+                    1120,
+                    606
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        558.0
+                    ],
+                    [
+                        1120.0,
+                        558.0
+                    ],
+                    [
+                        1120.0,
+                        606.0
+                    ],
+                    [
+                        137.0,
+                        606.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9005429744720459,
+                "coordinate": [
+                    138,
+                    630,
+                    1120,
+                    683
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        138.0,
+                        630.0
+                    ],
+                    [
+                        1120.0,
+                        630.0
+                    ],
+                    [
+                        1120.0,
+                        683.0
+                    ],
+                    [
+                        138.0,
+                        683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9098936319351196,
+                "coordinate": [
+                    136,
+                    704,
+                    1119,
+                    755
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        704.0
+                    ],
+                    [
+                        1119.0,
+                        704.0
+                    ],
+                    [
+                        1119.0,
+                        755.0
+                    ],
+                    [
+                        136.0,
+                        755.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8834485411643982,
+                "coordinate": [
+                    138,
+                    776,
+                    1124,
+                    830
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        138.0,
+                        776.0
+                    ],
+                    [
+                        1124.0,
+                        776.0
+                    ],
+                    [
+                        1124.0,
+                        830.0
+                    ],
+                    [
+                        138.0,
+                        830.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8170063495635986,
+                "coordinate": [
+                    138,
+                    851,
+                    587,
+                    876
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        138.0,
+                        851.0
+                    ],
+                    [
+                        587.0,
+                        851.0
+                    ],
+                    [
+                        587.0,
+                        876.0
+                    ],
+                    [
+                        138.0,
+                        876.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8432909250259399,
+                "coordinate": [
+                    137,
+                    899,
+                    969,
+                    927
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        137.0,
+                        899.0
+                    ],
+                    [
+                        969.0,
+                        899.0
+                    ],
+                    [
+                        969.0,
+                        927.0
+                    ],
+                    [
+                        137.0,
+                        927.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8355010747909546,
+                "coordinate": [
+                    137,
+                    948,
+                    661,
+                    973
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        137.0,
+                        948.0
+                    ],
+                    [
+                        661.0,
+                        948.0
+                    ],
+                    [
+                        661.0,
+                        973.0
+                    ],
+                    [
+                        137.0,
+                        973.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8929412364959717,
+                "coordinate": [
+                    138,
+                    995,
+                    1119,
+                    1048
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        138.0,
+                        995.0
+                    ],
+                    [
+                        1119.0,
+                        995.0
+                    ],
+                    [
+                        1119.0,
+                        1048.0
+                    ],
+                    [
+                        138.0,
+                        1048.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.964504599571228,
+                "coordinate": [
+                    136,
+                    1072,
+                    1121,
+                    1262
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1072.0
+                    ],
+                    [
+                        1121.0,
+                        1072.0
+                    ],
+                    [
+                        1121.0,
+                        1262.0
+                    ],
+                    [
+                        136.0,
+                        1262.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.881563663482666,
+                "coordinate": [
+                    137,
+                    1284,
+                    1120,
+                    1332
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1284.0
+                    ],
+                    [
+                        1120.0,
+                        1284.0
+                    ],
+                    [
+                        1120.0,
+                        1332.0
+                    ],
+                    [
+                        137.0,
+                        1332.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5381456613540649,
+                "coordinate": [
+                    139,
+                    1355,
+                    287,
+                    1381
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        139.0,
+                        1355.0
+                    ],
+                    [
+                        287.0,
+                        1355.0
+                    ],
+                    [
+                        287.0,
+                        1381.0
+                    ],
+                    [
+                        139.0,
+                        1381.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8734727501869202,
+                "coordinate": [
+                    321,
+                    1355,
+                    1121,
+                    1433
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        321.0,
+                        1355.0
+                    ],
+                    [
+                        1121.0,
+                        1355.0
+                    ],
+                    [
+                        1121.0,
+                        1433.0
+                    ],
+                    [
+                        321.0,
+                        1433.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9394469261169434,
+                "coordinate": [
+                    137,
+                    1456,
+                    1121,
+                    1528
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1456.0
+                    ],
+                    [
+                        1121.0,
+                        1456.0
+                    ],
+                    [
+                        1121.0,
+                        1528.0
+                    ],
+                    [
+                        137.0,
+                        1528.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7243700623512268,
+                "coordinate": [
+                    1091,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        1091.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1644.0
+                    ],
+                    [
+                        1091.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8389649987220764,
+                "coordinate": [
+                    61,
+                    1631,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1089,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1640
+                    ],
+                    [
+                        1083,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

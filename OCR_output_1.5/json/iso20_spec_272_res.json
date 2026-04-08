@@ -1,0 +1,918 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 272,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>NotificationMaxDelay</td><td>simpleType: xs:unsignedShort</td><td>This value is the time in seconds from the point in time this message is sent (relative time) and expected to perform the action immediately. The SECC uses the NotificationMaxDelay element in the EVSEStatus to indicate the time until it expects the EVCC to react on the action request indicated in EVSENotification.</td></tr><tr><td>EVSENotification</td><td>simpleType: EVSENotificationType Enumeration refer to Annex A for the type definition</td><td>This value is used by the SECC to influence the behavior of the EVCC. The EVSENotification contains an action that the SECC wants the EVCC to perform. The requested action is expected by the EVCC until the time provided in NotificationMaxDelay. If the target time is not in the future, the EVCC is expected to perform the action immediately. Requestable actions are: - ScheduleRenegotiation, - ServiceRenegotiation, - MeteringConfirmation, - Pause, - ExitStandby, - Terminate.</td></tr></table>",
+            "block_bbox": [
+                139,
+                163,
+                1117,
+                897
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    897.0
+                ],
+                [
+                    139.0,
+                    897.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.3.27 ListOfRootCertificateIDsType",
+            "block_bbox": [
+                137,
+                919,
+                552,
+                946
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    919.0
+                ],
+                [
+                    552.0,
+                    919.0
+                ],
+                [
+                    552.0,
+                    946.0
+                ],
+                [
+                    137.0,
+                    946.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1339] The SECC and the EVCC shall implement this type as defined in Table 121 and Figure 124.",
+            "block_bbox": [
+                137,
+                968,
+                1119,
+                1020
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    968.0
+                ],
+                [
+                    1119.0,
+                    968.0
+                ],
+                [
+                    1119.0,
+                    1020.0
+                ],
+                [
+                    137.0,
+                    1020.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                362,
+                1044,
+                895,
+                1112
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    362.0,
+                    1044.0
+                ],
+                [
+                    895.0,
+                    1044.0
+                ],
+                [
+                    895.0,
+                    1112.0
+                ],
+                [
+                    362.0,
+                    1112.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 124 — Schema diagram - ListOfRootCertificateIDsType",
+            "block_bbox": [
+                311,
+                1141,
+                947,
+                1170
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    311.0,
+                    1141.0
+                ],
+                [
+                    947.0,
+                    1141.0
+                ],
+                [
+                    947.0,
+                    1170.0
+                ],
+                [
+                    311.0,
+                    1170.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 121.",
+            "block_bbox": [
+                136,
+                1189,
+                730,
+                1217
+            ],
+            "block_id": 6,
+            "block_order": 3,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1189.0
+                ],
+                [
+                    730.0,
+                    1189.0
+                ],
+                [
+                    730.0,
+                    1217.0
+                ],
+                [
+                    136.0,
+                    1217.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 121 — Semantics and type definition for ListOfRootCertificateIDsType",
+            "block_bbox": [
+                239,
+                1236,
+                1018,
+                1264
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    239.0,
+                    1236.0
+                ],
+                [
+                    1018.0,
+                    1236.0
+                ],
+                [
+                    1018.0,
+                    1264.0
+                ],
+                [
+                    239.0,
+                    1264.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>RootCertificateID</td><td>complexType: xmslg:X509IssuerSerialType</td><td>This message element uniquely identifies a V2G root certificate installed in the EVCC.</td></tr></table>",
+            "block_bbox": [
+                142,
+                1271,
+                1114,
+                1400
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    142.0,
+                    1271.0
+                ],
+                [
+                    1114.0,
+                    1271.0
+                ],
+                [
+                    1114.0,
+                    1400.0
+                ],
+                [
+                    142.0,
+                    1400.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.3.28 DisplayParametersType",
+            "block_bbox": [
+                138,
+                1425,
+                499,
+                1451
+            ],
+            "block_id": 9,
+            "block_order": 4,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1425.0
+                ],
+                [
+                    499.0,
+                    1425.0
+                ],
+                [
+                    499.0,
+                    1451.0
+                ],
+                [
+                    138.0,
+                    1451.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "[V2G20-1343]",
+            "block_bbox": [
+                139,
+                1474,
+                288,
+                1501
+            ],
+            "block_id": 10,
+            "block_order": 5,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    1474.0
+                ],
+                [
+                    288.0,
+                    1474.0
+                ],
+                [
+                    288.0,
+                    1501.0
+                ],
+                [
+                    139.0,
+                    1501.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The SECC and the EVCC shall implement this type as defined in Table 122 and Figure 125.",
+            "block_bbox": [
+                317,
+                1474,
+                1120,
+                1526
+            ],
+            "block_id": 11,
+            "block_order": 6,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    317.0,
+                    1474.0
+                ],
+                [
+                    1120.0,
+                    1474.0
+                ],
+                [
+                    1120.0,
+                    1526.0
+                ],
+                [
+                    317.0,
+                    1526.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 The DisplayParameters have no influence on the energy transfer and are optional for both sides.",
+            "block_bbox": [
+                136,
+                1550,
+                1012,
+                1575
+            ],
+            "block_id": 12,
+            "block_order": 7,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1550.0
+                ],
+                [
+                    1012.0,
+                    1550.0
+                ],
+                [
+                    1012.0,
+                    1575.0
+                ],
+                [
+                    136.0,
+                    1575.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.877924919128418,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9783092141151428,
+                "coordinate": [
+                    139,
+                    163,
+                    1117,
+                    897
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        897.0
+                    ],
+                    [
+                        139.0,
+                        897.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7903577089309692,
+                "coordinate": [
+                    137,
+                    919,
+                    552,
+                    946
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        919.0
+                    ],
+                    [
+                        552.0,
+                        919.0
+                    ],
+                    [
+                        552.0,
+                        946.0
+                    ],
+                    [
+                        137.0,
+                        946.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8646533489227295,
+                "coordinate": [
+                    137,
+                    968,
+                    1119,
+                    1020
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        968.0
+                    ],
+                    [
+                        1119.0,
+                        968.0
+                    ],
+                    [
+                        1119.0,
+                        1020.0
+                    ],
+                    [
+                        137.0,
+                        1020.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.8725893497467041,
+                "coordinate": [
+                    362,
+                    1044,
+                    895,
+                    1112
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        362.0,
+                        1044.0
+                    ],
+                    [
+                        895.0,
+                        1044.0
+                    ],
+                    [
+                        895.0,
+                        1112.0
+                    ],
+                    [
+                        362.0,
+                        1112.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6513468027114868,
+                "coordinate": [
+                    311,
+                    1141,
+                    947,
+                    1170
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        311.0,
+                        1141.0
+                    ],
+                    [
+                        947.0,
+                        1141.0
+                    ],
+                    [
+                        947.0,
+                        1170.0
+                    ],
+                    [
+                        311.0,
+                        1170.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8086800575256348,
+                "coordinate": [
+                    136,
+                    1189,
+                    730,
+                    1217
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1189.0
+                    ],
+                    [
+                        730.0,
+                        1189.0
+                    ],
+                    [
+                        730.0,
+                        1217.0
+                    ],
+                    [
+                        136.0,
+                        1217.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.839172899723053,
+                "coordinate": [
+                    239,
+                    1236,
+                    1018,
+                    1264
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        239.0,
+                        1236.0
+                    ],
+                    [
+                        1018.0,
+                        1236.0
+                    ],
+                    [
+                        1018.0,
+                        1264.0
+                    ],
+                    [
+                        239.0,
+                        1264.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9444997906684875,
+                "coordinate": [
+                    142,
+                    1271,
+                    1114,
+                    1400
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        142.0,
+                        1271.0
+                    ],
+                    [
+                        1114.0,
+                        1271.0
+                    ],
+                    [
+                        1114.0,
+                        1400.0
+                    ],
+                    [
+                        142.0,
+                        1400.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.849906861782074,
+                "coordinate": [
+                    138,
+                    1425,
+                    499,
+                    1451
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1425.0
+                    ],
+                    [
+                        499.0,
+                        1425.0
+                    ],
+                    [
+                        499.0,
+                        1451.0
+                    ],
+                    [
+                        138.0,
+                        1451.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.3218429386615753,
+                "coordinate": [
+                    139,
+                    1474,
+                    288,
+                    1501
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        139.0,
+                        1474.0
+                    ],
+                    [
+                        288.0,
+                        1474.0
+                    ],
+                    [
+                        288.0,
+                        1501.0
+                    ],
+                    [
+                        139.0,
+                        1501.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8527733087539673,
+                "coordinate": [
+                    317,
+                    1474,
+                    1120,
+                    1526
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        317.0,
+                        1474.0
+                    ],
+                    [
+                        1120.0,
+                        1474.0
+                    ],
+                    [
+                        1120.0,
+                        1526.0
+                    ],
+                    [
+                        317.0,
+                        1526.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7694512009620667,
+                "coordinate": [
+                    136,
+                    1550,
+                    1012,
+                    1575
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1550.0
+                    ],
+                    [
+                        1012.0,
+                        1550.0
+                    ],
+                    [
+                        1012.0,
+                        1575.0
+                    ],
+                    [
+                        136.0,
+                        1575.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.737695574760437,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7525694370269775,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        1077,
+                        1624
+                    ],
+                    [
+                        1077,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

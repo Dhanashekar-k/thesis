@@ -1,0 +1,17 @@
+[V2G20-5086] After receiving a WPT_FinePositioningReq with EVProcessing set to "Finished", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to "Finished" within V2G_SECC_Msg_Performance_Time according to Table 218. The next allowed request shall be WPT_PairingReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.
+
+[V2G20-5087] After receiving a WPT_FinePositioningReq with EVProcessing set to "Ongoing", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to "Ongoing" within V2G_SECC_Msg_Performance_Time according to Table 218, while the vehicle positioning is still ongoing. The next allowed request shall be WPT_FinePositioningReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.
+
+[V2G20-5088] After receiving a WPT_FinePositioningReq with EVProcessing set to "Ongoing", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to "Finished" within V2G_SECC_Msg_Performance_Time according to Table 218, when the vehicle positioning has finished. The next allowed request shall be WPT_PairingReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.
+
+[V2G20-5089] After receiving the WPT_PairingReq with EVProcessing set to "Finished", the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to "Finished" within V2G_SECC_Msg_Performance_Time according to Table 215. The next allowed request shall be AuthorizationSetupReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.
+
+[V2G20-5090] After receiving a WPT_PairingReq with EVProcessing set to "Ongoing", the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to "Ongoing" within V2G_SECC_Msg_Performance_Time according to Table 218, while the pairing process is still ongoing. The next allowed request shall be WPT_PairingReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.
+
+[V2G20-5091] After receiving a WPT_PairingReq, the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to "Finished" within V2G_SECC_Msg_Performance_Time according to Table 218, when the pairing process has finished (see also [V2G20-5018]). The next allowed request shall be AuthorizationSetupReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.
+
+[V2G20-5044] After receiving the ScheduleExchangeReq, the SECC shall respond with a ScheduleExchangeRes within V2G_SECC_Msg_Performance_Time according to Table 215. If EVSEProcessing was set to "Finished", the next allowed request shall be WPT_AlignmentCheckReq or WPT_FinePositioningSetupReq if ServiceName= WPT in Table 204 was selected. The V2G_SECC_Sequence_Timeout is set according to Table 215.
+
+[V2G20-5092] After receiving a WPT_AlignmentCheckReq, the SECC shall respond with a WPT_AlignmentCheckRes with EVSEProcessing set to "Finished" within V2G_SECC_Msg_Performance_Time according to Table 218, if the alignment process is finished. The next allowed request shall be PowerDeliveryReq or WPT_FinePositioningSetupReq. The V2G_SECC_Sequence_Timeout is set according to Table 215.
+
+[V2G20-5093] After receiving a WPT_AlignmentCheckReq, the SECC shall respond with a WPT_AlignmentCheckRes with EVSEProcessing set to "Ongoing" within V2G_SECC_Msg_Performance_Time according to Table 218, if the alignment process

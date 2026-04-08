@@ -1,0 +1,827 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 309,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1829] The EVSEPowerRampLimitation shall be applied as a %/min factor to either the EVMaximumChargePower or the EVMaximumDischargePower in order to calculate the highest allowed absolute power change rate per minute.",
+            "block_bbox": [
+                69,
+                168,
+                1052,
+                248
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    248.0
+                ],
+                [
+                    69.0,
+                    248.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1830] An EVSEPowerRampLimitation value of 0 %/min shall be interpreted as if the parameter was not present. In those cases the SECC does not require any local power ramp limits.",
+            "block_bbox": [
+                69,
+                268,
+                1053,
+                348
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    268.0
+                ],
+                [
+                    1053.0,
+                    268.0
+                ],
+                [
+                    1053.0,
+                    348.0
+                ],
+                [
+                    69.0,
+                    348.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1831] The EVSEPowerRampLimitation shall be respected by the EV when adjusting its power level to external setpoint commands. This includes the reaction to changing maximum power levels as prescribed by the different entries in power schedules or the changes made by the EV user via other input means, like for example a mobile app.",
+            "block_bbox": [
+                70,
+                371,
+                1053,
+                502
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    371.0
+                ],
+                [
+                    1053.0,
+                    371.0
+                ],
+                [
+                    1053.0,
+                    502.0
+                ],
+                [
+                    70.0,
+                    502.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1832] The EVSETargetActivePower control shall be able to override any limitation that was derived from the EVSEPowerRampLimitation. The same shall apply to any technique which implements a grid code requirement that has a higher priority than power ramp limitation.",
+            "block_bbox": [
+                70,
+                523,
+                1052,
+                628
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    523.0
+                ],
+                [
+                    1052.0,
+                    523.0
+                ],
+                [
+                    1052.0,
+                    628.0
+                ],
+                [
+                    70.0,
+                    628.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1826] In scheduled control mode within the context of the AC_ChargeLoopRes the elements EVSETargetActivePower and EVSETargetReactivePower shall only be used by the SECC in situations where the technical requirements of the local grid code mandate such ad-hoc interference with the EV's power profile.",
+            "block_bbox": [
+                70,
+                650,
+                1052,
+                756
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    650.0
+                ],
+                [
+                    1052.0,
+                    650.0
+                ],
+                [
+                    1052.0,
+                    756.0
+                ],
+                [
+                    70.0,
+                    756.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 A typical example is \"Active response to frequency deviation - P(f)\" which is mandatory in some regions even for adjustable loads when the grid enters a highly critical state (sometimes referred to as \"red phase\").",
+            "block_bbox": [
+                68,
+                777,
+                1052,
+                827
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    777.0
+                ],
+                [
+                    1052.0,
+                    777.0
+                ],
+                [
+                    1052.0,
+                    827.0
+                ],
+                [
+                    68.0,
+                    827.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.4.3 Dynamic_AC_CLReqControlModeType",
+            "block_bbox": [
+                68,
+                846,
+                564,
+                874
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    846.0
+                ],
+                [
+                    564.0,
+                    846.0
+                ],
+                [
+                    564.0,
+                    874.0
+                ],
+                [
+                    68.0,
+                    874.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This type contains all elements of the AC_ChargeLoopReq message that are only required in case the control mode Dynamic is chosen.",
+            "block_bbox": [
+                68,
+                896,
+                1053,
+                950
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    896.0
+                ],
+                [
+                    1053.0,
+                    896.0
+                ],
+                [
+                    1053.0,
+                    950.0
+                ],
+                [
+                    68.0,
+                    950.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1758] The SECC and the EVCC shall implement this type as defined in Table 161 and Figure 170.",
+            "block_bbox": [
+                70,
+                971,
+                1053,
+                1023
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    971.0
+                ],
+                [
+                    1053.0,
+                    971.0
+                ],
+                [
+                    1053.0,
+                    1023.0
+                ],
+                [
+                    70.0,
+                    1023.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "304",
+            "block_bbox": [
+                70,
+                1614,
+                115,
+                1636
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                798,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    798.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    798.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1638,
+                1118,
+                1681
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1638.0
+                ],
+                [
+                    1118.0,
+                    1638.0
+                ],
+                [
+                    1118.0,
+                    1681.0
+                ],
+                [
+                    60.0,
+                    1681.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.7291374206542969,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9002792835235596,
+                "coordinate": [
+                    69,
+                    168,
+                    1052,
+                    248
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        248.0
+                    ],
+                    [
+                        69.0,
+                        248.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9093178510665894,
+                "coordinate": [
+                    69,
+                    268,
+                    1053,
+                    348
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        268.0
+                    ],
+                    [
+                        1053.0,
+                        268.0
+                    ],
+                    [
+                        1053.0,
+                        348.0
+                    ],
+                    [
+                        69.0,
+                        348.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9339951276779175,
+                "coordinate": [
+                    70,
+                    371,
+                    1053,
+                    502
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        70.0,
+                        371.0
+                    ],
+                    [
+                        1053.0,
+                        371.0
+                    ],
+                    [
+                        1053.0,
+                        502.0
+                    ],
+                    [
+                        70.0,
+                        502.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.931126058101654,
+                "coordinate": [
+                    70,
+                    523,
+                    1052,
+                    628
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        70.0,
+                        523.0
+                    ],
+                    [
+                        1052.0,
+                        523.0
+                    ],
+                    [
+                        1052.0,
+                        628.0
+                    ],
+                    [
+                        70.0,
+                        628.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9247046709060669,
+                "coordinate": [
+                    70,
+                    650,
+                    1052,
+                    756
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        70.0,
+                        650.0
+                    ],
+                    [
+                        1052.0,
+                        650.0
+                    ],
+                    [
+                        1052.0,
+                        756.0
+                    ],
+                    [
+                        70.0,
+                        756.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9035609364509583,
+                "coordinate": [
+                    68,
+                    777,
+                    1052,
+                    827
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        777.0
+                    ],
+                    [
+                        1052.0,
+                        777.0
+                    ],
+                    [
+                        1052.0,
+                        827.0
+                    ],
+                    [
+                        68.0,
+                        827.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8660559058189392,
+                "coordinate": [
+                    68,
+                    846,
+                    564,
+                    874
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        846.0
+                    ],
+                    [
+                        564.0,
+                        846.0
+                    ],
+                    [
+                        564.0,
+                        874.0
+                    ],
+                    [
+                        68.0,
+                        874.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9179648756980896,
+                "coordinate": [
+                    68,
+                    896,
+                    1053,
+                    950
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        896.0
+                    ],
+                    [
+                        1053.0,
+                        896.0
+                    ],
+                    [
+                        1053.0,
+                        950.0
+                    ],
+                    [
+                        68.0,
+                        950.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8719921708106995,
+                "coordinate": [
+                    70,
+                    971,
+                    1053,
+                    1023
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        70.0,
+                        971.0
+                    ],
+                    [
+                        1053.0,
+                        971.0
+                    ],
+                    [
+                        1053.0,
+                        1023.0
+                    ],
+                    [
+                        70.0,
+                        1023.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7111442685127258,
+                "coordinate": [
+                    70,
+                    1614,
+                    115,
+                    1636
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6051093339920044,
+                "coordinate": [
+                    798,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        798.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        798.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.4721720218658447,
+                "coordinate": [
+                    60,
+                    1638,
+                    1118,
+                    1681
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1638.0
+                    ],
+                    [
+                        1118.0,
+                        1638.0
+                    ],
+                    [
+                        1118.0,
+                        1681.0
+                    ],
+                    [
+                        60.0,
+                        1681.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

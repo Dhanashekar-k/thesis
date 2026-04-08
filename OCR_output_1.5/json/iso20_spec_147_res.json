@@ -1,0 +1,1018 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 147,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4000] If EVCC is using ServiceName = DC_ACDP, the following requirements are not applicable: [V2G20-1540], [V2G20-2301], [V2G20-2624] and [V2G20-1028].",
+            "block_bbox": [
+                68,
+                167,
+                1052,
+                223
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    223.0
+                ],
+                [
+                    68.0,
+                    223.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 To enable pause when using ServiceName = DC_ACDP the common requirements [V2G20-1227], [V2G20-1541], [V2G20-1839], [V2G20-1840], [V2G20-1841], [V2G20-1842], [V2G20-1843] and [V2G20-1844] apply.",
+            "block_bbox": [
+                68,
+                241,
+                1052,
+                317
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    241.0
+                ],
+                [
+                    1052.0,
+                    241.0
+                ],
+                [
+                    1052.0,
+                    317.0
+                ],
+                [
+                    68.0,
+                    317.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4001] If EVCC is using ServiceName = DC_ACDP, an EVCC shall pause a V2G communication session with the parameter ChargingSession set to value \"Pause\" in message SessionStopReq after receiving ACDP_DisconnectRes with parameter \"EVSEProcessing\" set to \"Finished\".",
+            "block_bbox": [
+                69,
+                337,
+                1052,
+                442
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    337.0
+                ],
+                [
+                    1052.0,
+                    337.0
+                ],
+                [
+                    1052.0,
+                    442.0
+                ],
+                [
+                    69.0,
+                    442.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 To enable pause when using ServiceName = DC_ACDP the common requirements [V2G20-1058], [V2G20-1613], [V2G20-2545], [V2G20-1614], [V2G20-2623], [V2G20-1847], [V2G20-1061] and [V2G20-1032] apply.",
+            "block_bbox": [
+                68,
+                463,
+                1052,
+                538
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    463.0
+                ],
+                [
+                    1052.0,
+                    463.0
+                ],
+                [
+                    1052.0,
+                    538.0
+                ],
+                [
+                    68.0,
+                    538.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1541] When the EVCC wants to resume the previously paused V2G communication session, the EVCC shall send the SessionID of the previously paused V2G communication session it is trying to resume.",
+            "block_bbox": [
+                68,
+                558,
+                1053,
+                639
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    558.0
+                ],
+                [
+                    1053.0,
+                    558.0
+                ],
+                [
+                    1053.0,
+                    639.0
+                ],
+                [
+                    68.0,
+                    639.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 The EVCC received this SessionID in the SessionSetupRes message before the EVCC paused the V2G communication session. The EVCC will send this SessionID in the SessionSetupReq message to resume the previously paused V2G communication session.",
+            "block_bbox": [
+                67,
+                659,
+                1054,
+                735
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    659.0
+                ],
+                [
+                    1054.0,
+                    659.0
+                ],
+                [
+                    1054.0,
+                    735.0
+                ],
+                [
+                    67.0,
+                    735.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1613] If an EVCC chooses to resume an energy transfer session by sending a SessionSetupReq with a message header including the SessionID value from the previously paused V2G communication session, the SECC shall compare this value to the value stored from the preceding V2G communication session.",
+            "block_bbox": [
+                68,
+                754,
+                1053,
+                861
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    754.0
+                ],
+                [
+                    1053.0,
+                    754.0
+                ],
+                [
+                    1053.0,
+                    861.0
+                ],
+                [
+                    68.0,
+                    861.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2545] If the SessionID value received in the current SessionSetupReq is equal to a SessionID value stored from a preceding V2G communication session that has not been terminated yet, the SECC shall check that this V2G communication session resumption request came from the same EVCC with which the SECC had setup this particular V2G communication session. The exact methodology for this check is left up to the CSO and/or the manufacturer of the SECC.",
+            "block_bbox": [
+                68,
+                881,
+                1054,
+                1038
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    881.0
+                ],
+                [
+                    1054.0,
+                    881.0
+                ],
+                [
+                    1054.0,
+                    1038.0
+                ],
+                [
+                    68.0,
+                    1038.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 Since authorization from the preceding V2G communication session is reused in a resumed V2G communication session, it is important for the SECC to ensure that it does not resume a paused V2G session with a wrong EVCC. An example is provided in NOTE 2 below.",
+            "block_bbox": [
+                68,
+                1060,
+                1053,
+                1135
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1060.0
+                ],
+                [
+                    1053.0,
+                    1060.0
+                ],
+                [
+                    1053.0,
+                    1135.0
+                ],
+                [
+                    68.0,
+                    1135.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 5 For example, when two EVCCs are connected to the same SECC and both pause their respective V2G communication session, one EV can try to restart the V2G communication session using the SessionID of the other EV. If the SECC does not ensure that the EV trying to reuse someone else's V2G communication session is not denied that privilege, the EV trying to reuse the other EV's V2G communication session will not only be able to reuse other EV's V2G communication session, it will also be able to utilize other EV's charging/service authorization regardless if that authorization was based on PnC or EIM.",
+            "block_bbox": [
+                67,
+                1154,
+                1054,
+                1299
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1154.0
+                ],
+                [
+                    1054.0,
+                    1154.0
+                ],
+                [
+                    1054.0,
+                    1299.0
+                ],
+                [
+                    67.0,
+                    1299.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 6 An example of a methodology to check that this V2G communication session resumption request came from the same EVCC with which the SECC had setup this particular V2G communication session is provided in 8.3.4.1.1.",
+            "block_bbox": [
+                68,
+                1320,
+                1053,
+                1391
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1320.0
+                ],
+                [
+                    1053.0,
+                    1320.0
+                ],
+                [
+                    1053.0,
+                    1391.0
+                ],
+                [
+                    68.0,
+                    1391.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2622] If the check as described by [V2G20-2545] succeeds, i.e. this V2G communication session resumption request came from the same EVCC with which the SECC had setup this particular V2G communication session, the SECC shall continue with V2G session resumption.",
+            "block_bbox": [
+                70,
+                1414,
+                1054,
+                1518
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1414.0
+                ],
+                [
+                    1054.0,
+                    1414.0
+                ],
+                [
+                    1054.0,
+                    1518.0
+                ],
+                [
+                    70.0,
+                    1518.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "142",
+            "block_bbox": [
+                71,
+                1614,
+                115,
+                1637
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1636.0
+                ],
+                [
+                    71.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1683
+            ],
+            "block_id": 15,
+            "block_order": 13,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1047,
+                    1682
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8625744581222534,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8094788193702698,
+                "coordinate": [
+                    68,
+                    167,
+                    1052,
+                    223
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        223.0
+                    ],
+                    [
+                        68.0,
+                        223.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9248785972595215,
+                "coordinate": [
+                    68,
+                    241,
+                    1052,
+                    317
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        241.0
+                    ],
+                    [
+                        1052.0,
+                        241.0
+                    ],
+                    [
+                        1052.0,
+                        317.0
+                    ],
+                    [
+                        68.0,
+                        317.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.899324357509613,
+                "coordinate": [
+                    69,
+                    337,
+                    1052,
+                    442
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        337.0
+                    ],
+                    [
+                        1052.0,
+                        337.0
+                    ],
+                    [
+                        1052.0,
+                        442.0
+                    ],
+                    [
+                        69.0,
+                        442.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9216723442077637,
+                "coordinate": [
+                    68,
+                    463,
+                    1052,
+                    538
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        463.0
+                    ],
+                    [
+                        1052.0,
+                        463.0
+                    ],
+                    [
+                        1052.0,
+                        538.0
+                    ],
+                    [
+                        68.0,
+                        538.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8993805646896362,
+                "coordinate": [
+                    68,
+                    558,
+                    1053,
+                    639
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        558.0
+                    ],
+                    [
+                        1053.0,
+                        558.0
+                    ],
+                    [
+                        1053.0,
+                        639.0
+                    ],
+                    [
+                        68.0,
+                        639.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9292834997177124,
+                "coordinate": [
+                    67,
+                    659,
+                    1054,
+                    735
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        67.0,
+                        659.0
+                    ],
+                    [
+                        1054.0,
+                        659.0
+                    ],
+                    [
+                        1054.0,
+                        735.0
+                    ],
+                    [
+                        67.0,
+                        735.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9201560616493225,
+                "coordinate": [
+                    68,
+                    754,
+                    1053,
+                    861
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        754.0
+                    ],
+                    [
+                        1053.0,
+                        754.0
+                    ],
+                    [
+                        1053.0,
+                        861.0
+                    ],
+                    [
+                        68.0,
+                        861.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.942124605178833,
+                "coordinate": [
+                    68,
+                    881,
+                    1054,
+                    1038
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        881.0
+                    ],
+                    [
+                        1054.0,
+                        881.0
+                    ],
+                    [
+                        1054.0,
+                        1038.0
+                    ],
+                    [
+                        68.0,
+                        1038.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9245753288269043,
+                "coordinate": [
+                    68,
+                    1060,
+                    1053,
+                    1135
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1060.0
+                    ],
+                    [
+                        1053.0,
+                        1060.0
+                    ],
+                    [
+                        1053.0,
+                        1135.0
+                    ],
+                    [
+                        68.0,
+                        1135.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9580195546150208,
+                "coordinate": [
+                    67,
+                    1154,
+                    1054,
+                    1299
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1154.0
+                    ],
+                    [
+                        1054.0,
+                        1154.0
+                    ],
+                    [
+                        1054.0,
+                        1299.0
+                    ],
+                    [
+                        67.0,
+                        1299.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9213035702705383,
+                "coordinate": [
+                    68,
+                    1320,
+                    1053,
+                    1391
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1320.0
+                    ],
+                    [
+                        1053.0,
+                        1320.0
+                    ],
+                    [
+                        1053.0,
+                        1391.0
+                    ],
+                    [
+                        68.0,
+                        1391.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8938263058662415,
+                "coordinate": [
+                    70,
+                    1414,
+                    1054,
+                    1518
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1414.0
+                    ],
+                    [
+                        1054.0,
+                        1414.0
+                    ],
+                    [
+                        1054.0,
+                        1518.0
+                    ],
+                    [
+                        70.0,
+                        1518.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.3358536660671234,
+                "coordinate": [
+                    71,
+                    1614,
+                    115,
+                    1637
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1636.0
+                    ],
+                    [
+                        71.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3304104208946228,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4093797504901886,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1683
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1047,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

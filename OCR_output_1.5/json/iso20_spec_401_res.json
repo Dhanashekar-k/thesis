@@ -1,0 +1,1193 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 401,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Besides the requirements for request-response message pairs and request-response message sequences as defined in 8.6.4 the EVCC and the SECC shall conform to the following requirements.",
+            "block_bbox": [
+                68,
+                168,
+                1052,
+                223
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    168.0
+                ],
+                [
+                    1052.0,
+                    223.0
+                ],
+                [
+                    68.0,
+                    223.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-734] If the ResponseCode contains a value starting with OK, the EVCC shall process the other parameters of the response message as defined in 8.6.",
+            "block_bbox": [
+                69,
+                241,
+                1053,
+                300
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    241.0
+                ],
+                [
+                    1053.0,
+                    241.0
+                ],
+                [
+                    1053.0,
+                    300.0
+                ],
+                [
+                    69.0,
+                    300.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-735] If the ResponseCode contains a value starting with FAILED, the EVCC shall ignore the other parameters of the response message.",
+            "block_bbox": [
+                70,
+                318,
+                1053,
+                374
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    318.0
+                ],
+                [
+                    1053.0,
+                    318.0
+                ],
+                [
+                    1053.0,
+                    374.0
+                ],
+                [
+                    70.0,
+                    374.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-736] If the SECC sends a ResponseCode containing a value starting with FAILED all mandatory parameters shall be filled in with arbitrary XSD conform values. Additionally, all values shall be chosen in a way that results in a minimal size of the response message.",
+            "block_bbox": [
+                70,
+                394,
+                1053,
+                500
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    394.0
+                ],
+                [
+                    1053.0,
+                    394.0
+                ],
+                [
+                    1053.0,
+                    500.0
+                ],
+                [
+                    70.0,
+                    500.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2201] If the ResponseCode contains a value starting with WARNING, the EVCC shall take appropriate actions as defined for that particular WARNING response for that particular message.",
+            "block_bbox": [
+                69,
+                520,
+                1054,
+                601
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    520.0
+                ],
+                [
+                    1054.0,
+                    520.0
+                ],
+                [
+                    1054.0,
+                    601.0
+                ],
+                [
+                    69.0,
+                    601.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 Each WARNING ResponseCode can have different reaction requirements for the EVCC. In some cases the EVCC can be required to ignore the other parameters of the response message and take a pre-defined action while in other cases the EVCC can be required to take an action based on the parameters received in the message but act in a different way than when it receives OK ResponseCode for the same message.",
+            "block_bbox": [
+                68,
+                622,
+                1054,
+                720
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    622.0
+                ],
+                [
+                    1054.0,
+                    622.0
+                ],
+                [
+                    1054.0,
+                    720.0
+                ],
+                [
+                    68.0,
+                    720.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2202] If the SECC sends a ResponseCode containing a value starting with WARNING all mandatory parameters shall be filled as defined for that particular WARNING response for that particular message.",
+            "block_bbox": [
+                69,
+                740,
+                1053,
+                820
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    740.0
+                ],
+                [
+                    1053.0,
+                    740.0
+                ],
+                [
+                    1053.0,
+                    820.0
+                ],
+                [
+                    69.0,
+                    820.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 Each WARNING ResponseCode can have a different requirements for the parameters. In some cases the SECC can be required to send default/arbitrary XSD conform values while in others the SECC can be required to send some specific values so that the EVCC can take an action based on the parameters received in the message.",
+            "block_bbox": [
+                67,
+                841,
+                1054,
+                916
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    841.0
+                ],
+                [
+                    1054.0,
+                    841.0
+                ],
+                [
+                    1054.0,
+                    916.0
+                ],
+                [
+                    67.0,
+                    916.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In general each response message can contain two types of ResponseCode values \"OK\" or \"FAILED\". In addition some response messages can further contain the ResponseCode value \"WARNING_ (see Table 224).",
+            "block_bbox": [
+                67,
+                937,
+                1054,
+                1015
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    937.0
+                ],
+                [
+                    1054.0,
+                    937.0
+                ],
+                [
+                    1054.0,
+                    1015.0
+                ],
+                [
+                    67.0,
+                    1015.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-457] A response message shall contain the ResponseCode \"OK\" in the \"ResponseCode\" attribute if the processing of the request message was successful. If later on a specific positive \"ResponseCode\" is defined for a dedicated situation, this ResponseCode shall be used.",
+            "block_bbox": [
+                68,
+                1036,
+                1054,
+                1143
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1036.0
+                ],
+                [
+                    1054.0,
+                    1036.0
+                ],
+                [
+                    1054.0,
+                    1143.0
+                ],
+                [
+                    68.0,
+                    1143.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-458] A response message shall contain the ResponseCode \"FAILED\" in the \"ResponseCode\" attribute if the processing of the request message was not successful and no specific \"ResponseCodeType\" is defined for the concrete error case.",
+            "block_bbox": [
+                68,
+                1164,
+                1054,
+                1246
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1164.0
+                ],
+                [
+                    1054.0,
+                    1164.0
+                ],
+                [
+                    1054.0,
+                    1246.0
+                ],
+                [
+                    68.0,
+                    1246.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-459] The response message shall contain the ResponseCode \"FAILED_SequenceError\" if the SECC has received an unexpected request message.",
+            "block_bbox": [
+                68,
+                1266,
+                1055,
+                1320
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1266.0
+                ],
+                [
+                    1055.0,
+                    1266.0
+                ],
+                [
+                    1055.0,
+                    1320.0
+                ],
+                [
+                    68.0,
+                    1320.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-460] The response message shall contain the ResponseCode \"FAILED_UnknownSession\" if the SessionID in any request message except SessionSetupReq is not equal to the SessionID value stored for the currently active V2G communication session.",
+            "block_bbox": [
+                68,
+                1341,
+                1054,
+                1422
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1341.0
+                ],
+                [
+                    1054.0,
+                    1341.0
+                ],
+                [
+                    1054.0,
+                    1422.0
+                ],
+                [
+                    68.0,
+                    1422.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-461] The response message shall contain the ResponseCode \"FAILED_SignatureError\" if the validation of the Security element in the message header failed.",
+            "block_bbox": [
+                69,
+                1443,
+                1054,
+                1497
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1443.0
+                ],
+                [
+                    1054.0,
+                    1443.0
+                ],
+                [
+                    1054.0,
+                    1497.0
+                ],
+                [
+                    69.0,
+                    1497.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-462] The message \"SessionSetupRes\" shall contain the specific ResponseCode \"OK_NewSessionEstablished\" if processing of the SessionSetupReq message was",
+            "block_bbox": [
+                68,
+                1518,
+                1054,
+                1573
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1518.0
+                ],
+                [
+                    1054.0,
+                    1518.0
+                ],
+                [
+                    1054.0,
+                    1573.0
+                ],
+                [
+                    68.0,
+                    1573.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "396",
+            "block_bbox": [
+                70,
+                1614,
+                115,
+                1636
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    796.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1637,
+                1118,
+                1681
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    59.734962463378906,
+                    1645.001708984375
+                ],
+                [
+                    1116.9998779296875,
+                    1636.999755859375
+                ],
+                [
+                    1117.31884765625,
+                    1679.149658203125
+                ],
+                [
+                    60.053955078125,
+                    1687.151611328125
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8779521584510803,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9124274253845215,
+                "coordinate": [
+                    68,
+                    168,
+                    1052,
+                    223
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        168.0
+                    ],
+                    [
+                        1052.0,
+                        223.0
+                    ],
+                    [
+                        68.0,
+                        223.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9112250208854675,
+                "coordinate": [
+                    69,
+                    241,
+                    1053,
+                    300
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        241.0
+                    ],
+                    [
+                        1053.0,
+                        241.0
+                    ],
+                    [
+                        1053.0,
+                        300.0
+                    ],
+                    [
+                        69.0,
+                        300.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9105226397514343,
+                "coordinate": [
+                    70,
+                    318,
+                    1053,
+                    374
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        70.0,
+                        318.0
+                    ],
+                    [
+                        1053.0,
+                        318.0
+                    ],
+                    [
+                        1053.0,
+                        374.0
+                    ],
+                    [
+                        70.0,
+                        374.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9326676726341248,
+                "coordinate": [
+                    70,
+                    394,
+                    1053,
+                    500
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        70.0,
+                        394.0
+                    ],
+                    [
+                        1053.0,
+                        394.0
+                    ],
+                    [
+                        1053.0,
+                        500.0
+                    ],
+                    [
+                        70.0,
+                        500.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9203537106513977,
+                "coordinate": [
+                    69,
+                    520,
+                    1054,
+                    601
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        69.0,
+                        520.0
+                    ],
+                    [
+                        1054.0,
+                        520.0
+                    ],
+                    [
+                        1054.0,
+                        601.0
+                    ],
+                    [
+                        69.0,
+                        601.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9465887546539307,
+                "coordinate": [
+                    68,
+                    622,
+                    1054,
+                    720
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        622.0
+                    ],
+                    [
+                        1054.0,
+                        622.0
+                    ],
+                    [
+                        1054.0,
+                        720.0
+                    ],
+                    [
+                        68.0,
+                        720.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9242057204246521,
+                "coordinate": [
+                    69,
+                    740,
+                    1053,
+                    820
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        69.0,
+                        740.0
+                    ],
+                    [
+                        1053.0,
+                        740.0
+                    ],
+                    [
+                        1053.0,
+                        820.0
+                    ],
+                    [
+                        69.0,
+                        820.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9328551888465881,
+                "coordinate": [
+                    67,
+                    841,
+                    1054,
+                    916
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        67.0,
+                        841.0
+                    ],
+                    [
+                        1054.0,
+                        841.0
+                    ],
+                    [
+                        1054.0,
+                        916.0
+                    ],
+                    [
+                        67.0,
+                        916.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9326302409172058,
+                "coordinate": [
+                    67,
+                    937,
+                    1054,
+                    1015
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        67.0,
+                        937.0
+                    ],
+                    [
+                        1054.0,
+                        937.0
+                    ],
+                    [
+                        1054.0,
+                        1015.0
+                    ],
+                    [
+                        67.0,
+                        1015.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9336121678352356,
+                "coordinate": [
+                    68,
+                    1036,
+                    1054,
+                    1143
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1036.0
+                    ],
+                    [
+                        1054.0,
+                        1036.0
+                    ],
+                    [
+                        1054.0,
+                        1143.0
+                    ],
+                    [
+                        68.0,
+                        1143.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.931526780128479,
+                "coordinate": [
+                    68,
+                    1164,
+                    1054,
+                    1246
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1164.0
+                    ],
+                    [
+                        1054.0,
+                        1164.0
+                    ],
+                    [
+                        1054.0,
+                        1246.0
+                    ],
+                    [
+                        68.0,
+                        1246.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9089375138282776,
+                "coordinate": [
+                    68,
+                    1266,
+                    1055,
+                    1320
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1266.0
+                    ],
+                    [
+                        1055.0,
+                        1266.0
+                    ],
+                    [
+                        1055.0,
+                        1320.0
+                    ],
+                    [
+                        68.0,
+                        1320.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9418606162071228,
+                "coordinate": [
+                    68,
+                    1341,
+                    1054,
+                    1422
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1341.0
+                    ],
+                    [
+                        1054.0,
+                        1341.0
+                    ],
+                    [
+                        1054.0,
+                        1422.0
+                    ],
+                    [
+                        68.0,
+                        1422.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9047760963439941,
+                "coordinate": [
+                    69,
+                    1443,
+                    1054,
+                    1497
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1443.0
+                    ],
+                    [
+                        1054.0,
+                        1443.0
+                    ],
+                    [
+                        1054.0,
+                        1497.0
+                    ],
+                    [
+                        69.0,
+                        1497.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8962133526802063,
+                "coordinate": [
+                    68,
+                    1518,
+                    1054,
+                    1573
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1518.0
+                    ],
+                    [
+                        1054.0,
+                        1518.0
+                    ],
+                    [
+                        1054.0,
+                        1573.0
+                    ],
+                    [
+                        68.0,
+                        1573.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7359083294868469,
+                "coordinate": [
+                    70,
+                    1614,
+                    115,
+                    1636
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.40090784430503845,
+                "coordinate": [
+                    796,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        796.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.340813010931015,
+                "coordinate": [
+                    60,
+                    1637,
+                    1118,
+                    1681
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.734962463378906,
+                        1645.001708984375
+                    ],
+                    [
+                        1116.9998779296875,
+                        1636.999755859375
+                    ],
+                    [
+                        1117.31884765625,
+                        1679.149658203125
+                    ],
+                    [
+                        60.053955078125,
+                        1687.151611328125
+                    ]
+                ]
+            }
+        ]
+    }
+}

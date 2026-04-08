@@ -1,0 +1,16 @@
+[V2G20-1348] The EVCC and the SECC shall implement this type as defined in Table 171 and Figure 180.
+
+<div style="text-align: center;"><img src="imgs/img_in_image_box_215_244_908_584.jpg" alt="Image" width="58%" /></div>
+
+
+<div style="text-align: center;">Figure 180 — Schema diagram - DC_CPDReqEnergyTransferModeType</div>
+
+
+<div style="text-align: center;">The elements of this message are used according to Table 171.</div>
+
+
+<div style="text-align: center;">Table 171 — Semantics and type definition for DC_CPDReqEnergyTransferModeType</div>
+
+
+
+<table border=1 style='margin: auto; word-wrap: break-word;'><tr><td style='text-align: center; word-wrap: break-word;'>Element name</td><td style='text-align: center; word-wrap: break-word;'>Type</td><td style='text-align: center; word-wrap: break-word;'>Semantics</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMaximumChargePower</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Maximum charge power supported by the EV.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMinimumChargePower</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Any target power between this level and zero may, for technical reasons, result in a drop of the actual power to zero watts.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMaximumChargeCurrent</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Maximum charge current supported by the EV.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMinimumChargeCurrent</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Any target current between this level and zero may, for technical reasons, result in a drop of the actual current to zero ampere.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMaximumVoltage</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Maximum voltage allowed by the EV.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>EVMinimumVoltage</td><td style='text-align: center; word-wrap: break-word;'>complexType: RationalNumberType refer to 8.3.5.3.8</td><td style='text-align: center; word-wrap: break-word;'>Minimum voltage allowed by the EV.</td></tr><tr><td style='text-align: center; word-wrap: break-word;'>TargetSOC</td><td style='text-align: center; word-wrap: break-word;'>simpleType: percentValueType refer to Annex A for the type definition</td><td style='text-align: center; word-wrap: break-word;'>Optional: SOC at which the EV considers the battery to be fully charged.</td></tr></table>

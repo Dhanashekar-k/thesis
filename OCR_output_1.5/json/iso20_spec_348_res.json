@@ -1,0 +1,430 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 348,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                68,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>EVMaximumChargePower</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Maximum charge power allowed by the EV.</td></tr><tr><td>EVMinimumChargePower</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Minimum charge power allowed by the EV.</td></tr><tr><td>EVMaximumChargeCurrent</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Maximum charge current allowed by the EV.</td></tr><tr><td>EVMaximumVoltage</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Maximum voltage allowed by the EV.</td></tr><tr><td>EVMinimumVoltage</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Minimum voltage allowed by the EV.</td></tr><tr><td>EVMaximumDischargePower</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Maximum discharge power allowed by the EV.</td></tr><tr><td>EVMinimumDischargePower</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Minimum discharge power allowed by the EV.</td></tr><tr><td>EVMaximumDischargeCurrent</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Maximum discharge current allowed by the EV.</td></tr><tr><td>EVMaximumV2XEnergyRequest</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Optional: Energy which may be charged until the PresentSOC has left the range dedicated for cycling activity. A negative value indicates that PresentSOC is above the V2X range.</td></tr><tr><td>EVMinimumV2XEnergyRequest</td><td>complexType: RationalNumberType refer to 8.3.5.3.8</td><td>Optional: Energy which needs to be charged until the PresentSOC enters the range dedicated for cycling activity. A positive value indicates that PresentSOC is below the V2X range.</td></tr></table>",
+            "block_bbox": [
+                139,
+                163,
+                1117,
+                1236
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    1236.0
+                ],
+                [
+                    139.0,
+                    1236.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE If the EVCC sends the parameters EVMaximumV2XEnergyRequest and EVMinimumV2XEnergyRequest, it is indicating a preferred operational V2X range (i.e. for bidirectional cycling) and the SECC can attempt to stay within these limits as long as possible.",
+            "block_bbox": [
+                138,
+                1240,
+                1121,
+                1313
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1240.0
+                ],
+                [
+                    1121.0,
+                    1240.0
+                ],
+                [
+                    1121.0,
+                    1313.0
+                ],
+                [
+                    138.0,
+                    1313.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2679] If EVMaximumV2XEnergyRequest and EVMinimumV2XEnergyRequest are sent by the EVCC, they always need to be sent together.",
+            "block_bbox": [
+                137,
+                1333,
+                1120,
+                1391
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1333.0
+                ],
+                [
+                    1120.0,
+                    1333.0
+                ],
+                [
+                    1120.0,
+                    1391.0
+                ],
+                [
+                    137.0,
+                    1391.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2680] If the EVCC provides EVMaximumV2XEnergyRequest and EVMaximumV2XEnergyRequest, EVMaximumEnergyRequest shall be less than or equal to EVMaximumV2XEnergyRequest, which shall be less than or equal to EVMaximumV2XEnergyRequest, which shall be less than or equal to EVMaximumEnergyRequest.",
+            "block_bbox": [
+                136,
+                1409,
+                1122,
+                1541
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1409.0
+                ],
+                [
+                    1122.0,
+                    1409.0
+                ],
+                [
+                    1122.0,
+                    1541.0
+                ],
+                [
+                    136.0,
+                    1541.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1120,
+                1683
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1120.0,
+                    1630.0
+                ],
+                [
+                    1120.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8740561604499817,
+                "coordinate": [
+                    866,
+                    68,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9814444780349731,
+                "coordinate": [
+                    139,
+                    163,
+                    1117,
+                    1236
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        1236.0
+                    ],
+                    [
+                        139.0,
+                        1236.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.7235589623451233,
+                "coordinate": [
+                    138,
+                    1240,
+                    1121,
+                    1313
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1240.0
+                    ],
+                    [
+                        1121.0,
+                        1240.0
+                    ],
+                    [
+                        1121.0,
+                        1313.0
+                    ],
+                    [
+                        138.0,
+                        1313.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9080480933189392,
+                "coordinate": [
+                    137,
+                    1333,
+                    1120,
+                    1391
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1333.0
+                    ],
+                    [
+                        1120.0,
+                        1333.0
+                    ],
+                    [
+                        1120.0,
+                        1391.0
+                    ],
+                    [
+                        137.0,
+                        1391.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.939219057559967,
+                "coordinate": [
+                    136,
+                    1409,
+                    1122,
+                    1541
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1409.0
+                    ],
+                    [
+                        1122.0,
+                        1409.0
+                    ],
+                    [
+                        1122.0,
+                        1541.0
+                    ],
+                    [
+                        136.0,
+                        1541.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8634023070335388,
+                "coordinate": [
+                    61,
+                    1630,
+                    1120,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1120.0,
+                        1630.0
+                    ],
+                    [
+                        1120.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7641440033912659,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        1077,
+                        1624
+                    ],
+                    [
+                        1077,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

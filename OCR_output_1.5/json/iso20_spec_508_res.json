@@ -1,0 +1,566 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 508,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                865,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    865.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    865.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "- All separators and leading zeros are removed before calculating the check digit.\n- While the numbers (DIGIT) keep their value, the letters (ALPHA) are mapped to values from A=10 to Z=35.\n; The mapping is case-insensitive, i.e. \"D\" as well as \"d\" maps to the value 13.\n- In the resulting <value string>, each digit is multiplied with the weight  $ 2^{(<pos> \\text{modulo } 28))} $ (\"2 to the power of (<pos> \\text{modulo } 28)\"), where <pos> represents the position of the digit in the <value string> and <pos> starts on the left with number zero. The resulting products are summed up to <CHECKSUM>.\n; The modulo 28 method was introduced to allow calculating the check digit within 32-bit integers.\n- Finally, <CHECKSUM> is taken \"modulo 11\". The result of this modulo computation is a number between \"0\" and \"10\". The numbers between \"0\" and \"9\" are taken as <Check Digit>, the <Check Digit> for \"10\" is the letter \"X\" (or case-insensitive \"x\", like the Latin numeral for \"10\").",
+            "block_bbox": [
+                348,
+                161,
+                1127,
+                774
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    354,
+                    161
+                ],
+                [
+                    348,
+                    773
+                ],
+                [
+                    1126,
+                    773
+                ],
+                [
+                    1121,
+                    170
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE This algorithm is able to identify single typing errors as well as single transposed characters.",
+            "block_bbox": [
+                137,
+                794,
+                1029,
+                821
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    794.0
+                ],
+                [
+                    1029.0,
+                    794.0
+                ],
+                [
+                    1029.0,
+                    821.0
+                ],
+                [
+                    137.0,
+                    821.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "EXAMPLE For the <EMAID> \"DE-0008AA-1A2B3C4D5\" first all leading zeros within the elements and separators are removed, resulting in the significant characters \"DE8AA1A2B3C4D5\". The 14 characters of \"DE8AA1A2B3C4D5\" are transcoded to values, resulting in the <value string> \"1314810101102113124135\" and the <CHECKSUM> \"15664971\". The modulo-11 computation results in the <Check Digit> \"3\" which is appended to the <EMAID> to form the correct string \"DE-8AA-1A2B3C4D5-3\".",
+            "block_bbox": [
+                136,
+                841,
+                1123,
+                962
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    841.0
+                ],
+                [
+                    1123.0,
+                    841.0
+                ],
+                [
+                    1123.0,
+                    962.0
+                ],
+                [
+                    136.0,
+                    962.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "503",
+            "block_bbox": [
+                1077,
+                1623,
+                1119,
+                1645
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1623.0
+                ],
+                [
+                    1117.9998779296875,
+                    1623.0
+                ],
+                [
+                    1117.9998779296875,
+                    1644.0
+                ],
+                [
+                    1076.9998779296875,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1120,
+                1683
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1078,
+                    1682
+                ],
+                [
+                    1119,
+                    1665
+                ],
+                [
+                    1119,
+                    1639
+                ],
+                [
+                    1084,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8597814440727234,
+                "coordinate": [
+                    865,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        865.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        865.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4894944429397583,
+                "coordinate": [
+                    352,
+                    168,
+                    1120,
+                    221
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        352.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        221.0
+                    ],
+                    [
+                        352.0,
+                        221.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.5546042919158936,
+                "coordinate": [
+                    348,
+                    161,
+                    1127,
+                    774
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        354,
+                        161
+                    ],
+                    [
+                        348,
+                        773
+                    ],
+                    [
+                        1126,
+                        773
+                    ],
+                    [
+                        1121,
+                        170
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5340355634689331,
+                "coordinate": [
+                    352,
+                    244,
+                    1120,
+                    297
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        352,
+                        244
+                    ],
+                    [
+                        352,
+                        296
+                    ],
+                    [
+                        1119,
+                        296
+                    ],
+                    [
+                        1119,
+                        244
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4810956120491028,
+                "coordinate": [
+                    459,
+                    317,
+                    1118,
+                    370
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        459.0,
+                        317.0
+                    ],
+                    [
+                        1118.0,
+                        317.0
+                    ],
+                    [
+                        1118.0,
+                        370.0
+                    ],
+                    [
+                        459.0,
+                        370.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.4514780342578888,
+                "coordinate": [
+                    351,
+                    396,
+                    1122,
+                    548
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        351.0,
+                        396.0
+                    ],
+                    [
+                        1122.0,
+                        396.0
+                    ],
+                    [
+                        1122.0,
+                        548.0
+                    ],
+                    [
+                        351.0,
+                        548.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.33378395438194275,
+                "coordinate": [
+                    352,
+                    643,
+                    1123,
+                    771
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        352.0,
+                        643.0
+                    ],
+                    [
+                        1123.0,
+                        643.0
+                    ],
+                    [
+                        1123.0,
+                        771.0
+                    ],
+                    [
+                        352.0,
+                        771.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5678042769432068,
+                "coordinate": [
+                    137,
+                    794,
+                    1029,
+                    821
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        137.0,
+                        794.0
+                    ],
+                    [
+                        1029.0,
+                        794.0
+                    ],
+                    [
+                        1029.0,
+                        821.0
+                    ],
+                    [
+                        137.0,
+                        821.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9070269465446472,
+                "coordinate": [
+                    136,
+                    841,
+                    1123,
+                    962
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        841.0
+                    ],
+                    [
+                        1123.0,
+                        841.0
+                    ],
+                    [
+                        1123.0,
+                        962.0
+                    ],
+                    [
+                        136.0,
+                        962.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7387498021125793,
+                "coordinate": [
+                    1077,
+                    1623,
+                    1119,
+                    1645
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1623.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1623.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1644.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8490022420883179,
+                "coordinate": [
+                    61,
+                    1630,
+                    1120,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1078,
+                        1682
+                    ],
+                    [
+                        1119,
+                        1665
+                    ],
+                    [
+                        1119,
+                        1639
+                    ],
+                    [
+                        1084,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

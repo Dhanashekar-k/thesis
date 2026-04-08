@@ -1,0 +1,1071 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 255,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                69,
+                68,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    69.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                344,
+                170,
+                773,
+                260
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    344.0,
+                    170.0
+                ],
+                [
+                    773.0,
+                    170.0
+                ],
+                [
+                    773.0,
+                    260.0
+                ],
+                [
+                    344.0,
+                    260.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 105 — Schema diagram - RationalNumberType",
+            "block_bbox": [
+                281,
+                292,
+                840,
+                320
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    281.0,
+                    292.0
+                ],
+                [
+                    840.0,
+                    292.0
+                ],
+                [
+                    840.0,
+                    320.0
+                ],
+                [
+                    281.0,
+                    320.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 102.",
+            "block_bbox": [
+                68,
+                340,
+                663,
+                367
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    340.0
+                ],
+                [
+                    663.0,
+                    340.0
+                ],
+                [
+                    663.0,
+                    367.0
+                ],
+                [
+                    68.0,
+                    367.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 102 — Semantics and type definition for RationalNumberType",
+            "block_bbox": [
+                210,
+                387,
+                911,
+                414
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    210.0,
+                    387.0
+                ],
+                [
+                    911.0,
+                    387.0
+                ],
+                [
+                    911.0,
+                    414.0
+                ],
+                [
+                    210.0,
+                    414.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>Exponent (exp)</td><td>simpleType: ExponentType xs:byte</td><td>The exponent to base 10 (dec). The final physical value is determined by:  $ x_{\\text{RationalNumberType}} = y \\times 10^{\\text{exp}} $</td></tr><tr><td>Value (y)</td><td>simpleType xs:short</td><td>Value which shall be multiplied</td></tr></table>",
+            "block_bbox": [
+                74,
+                420,
+                1046,
+                646
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    74.0,
+                    420.0
+                ],
+                [
+                    1046.0,
+                    420.0
+                ],
+                [
+                    1046.0,
+                    646.0
+                ],
+                [
+                    74.0,
+                    646.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "NOTE For more information on the aspect of measurement tolerances of RationalNumberType elements see Annex I.",
+            "block_bbox": [
+                68,
+                651,
+                1053,
+                700
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    651.0
+                ],
+                [
+                    1053.0,
+                    651.0
+                ],
+                [
+                    1053.0,
+                    700.0
+                ],
+                [
+                    68.0,
+                    700.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.3.9 EVPowerProfileType",
+            "block_bbox": [
+                68,
+                719,
+                398,
+                746
+            ],
+            "block_id": 7,
+            "block_order": 2,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    719.0
+                ],
+                [
+                    398.0,
+                    719.0
+                ],
+                [
+                    398.0,
+                    746.0
+                ],
+                [
+                    68.0,
+                    746.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1316] The SECC and the EVCC shall implement this type as defined in Table 103 and Figure 106.",
+            "block_bbox": [
+                79,
+                768,
+                1052,
+                821
+            ],
+            "block_id": 8,
+            "block_order": 3,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    79.0,
+                    768.0
+                ],
+                [
+                    1052.0,
+                    768.0
+                ],
+                [
+                    1052.0,
+                    821.0
+                ],
+                [
+                    79.0,
+                    821.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                208,
+                846,
+                914,
+                1033
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    208.0,
+                    846.0
+                ],
+                [
+                    914.0,
+                    846.0
+                ],
+                [
+                    914.0,
+                    1033.0
+                ],
+                [
+                    208.0,
+                    1033.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 106 — Schema diagram - EVPowerProfileType",
+            "block_bbox": [
+                285,
+                1069,
+                836,
+                1097
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    285.0,
+                    1069.0
+                ],
+                [
+                    836.0,
+                    1069.0
+                ],
+                [
+                    836.0,
+                    1097.0
+                ],
+                [
+                    285.0,
+                    1097.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 103.",
+            "block_bbox": [
+                69,
+                1117,
+                663,
+                1144
+            ],
+            "block_id": 11,
+            "block_order": 4,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1117.0
+                ],
+                [
+                    663.0,
+                    1117.0
+                ],
+                [
+                    663.0,
+                    1144.0
+                ],
+                [
+                    69.0,
+                    1144.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 103 — Semantics and type definition for EVPowerProfileType",
+            "block_bbox": [
+                214,
+                1164,
+                908,
+                1191
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    214.0,
+                    1164.0
+                ],
+                [
+                    908.0,
+                    1164.0
+                ],
+                [
+                    908.0,
+                    1191.0
+                ],
+                [
+                    214.0,
+                    1191.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>TimeAnchor</td><td>simpleType:xs:unsignedLong</td><td>The time that defines the starting point for the first EVPowerProfileEntry in this power profile.The value is encoded at microseconds resolution in SECC time, a concept that is defined in 8.3.3.3.Commonly the TimeAnchor will define a time that either is the present or some point in the near future.</td></tr></table>",
+            "block_bbox": [
+                72,
+                1198,
+                1047,
+                1553
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1198.0
+                ],
+                [
+                    1047.0,
+                    1198.0
+                ],
+                [
+                    1047.0,
+                    1553.0
+                ],
+                [
+                    72.0,
+                    1553.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "250",
+            "block_bbox": [
+                70,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    796.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1637,
+                1119,
+                1683
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    59.720455169677734,
+                    1645.002197265625
+                ],
+                [
+                    1118.0001220703125,
+                    1637.0
+                ],
+                [
+                    1118.3363037109375,
+                    1681.460693359375
+                ],
+                [
+                    60.056640625,
+                    1689.462890625
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8830108046531677,
+                "coordinate": [
+                    69,
+                    68,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        69.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        69.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9237638711929321,
+                "coordinate": [
+                    344,
+                    170,
+                    773,
+                    260
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        344.0,
+                        170.0
+                    ],
+                    [
+                        773.0,
+                        170.0
+                    ],
+                    [
+                        773.0,
+                        260.0
+                    ],
+                    [
+                        344.0,
+                        260.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8604682683944702,
+                "coordinate": [
+                    281,
+                    292,
+                    840,
+                    320
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        281.0,
+                        292.0
+                    ],
+                    [
+                        840.0,
+                        292.0
+                    ],
+                    [
+                        840.0,
+                        320.0
+                    ],
+                    [
+                        281.0,
+                        320.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7357000708580017,
+                "coordinate": [
+                    68,
+                    340,
+                    663,
+                    367
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        340.0
+                    ],
+                    [
+                        663.0,
+                        340.0
+                    ],
+                    [
+                        663.0,
+                        367.0
+                    ],
+                    [
+                        68.0,
+                        367.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8575521111488342,
+                "coordinate": [
+                    210,
+                    387,
+                    911,
+                    414
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        210.0,
+                        387.0
+                    ],
+                    [
+                        911.0,
+                        387.0
+                    ],
+                    [
+                        911.0,
+                        414.0
+                    ],
+                    [
+                        210.0,
+                        414.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9601019024848938,
+                "coordinate": [
+                    74,
+                    420,
+                    1046,
+                    646
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        74.0,
+                        420.0
+                    ],
+                    [
+                        1046.0,
+                        420.0
+                    ],
+                    [
+                        1046.0,
+                        646.0
+                    ],
+                    [
+                        74.0,
+                        646.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.6709274649620056,
+                "coordinate": [
+                    68,
+                    651,
+                    1053,
+                    700
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        68.0,
+                        651.0
+                    ],
+                    [
+                        1053.0,
+                        651.0
+                    ],
+                    [
+                        1053.0,
+                        700.0
+                    ],
+                    [
+                        68.0,
+                        700.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.832219123840332,
+                "coordinate": [
+                    68,
+                    719,
+                    398,
+                    746
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        719.0
+                    ],
+                    [
+                        398.0,
+                        719.0
+                    ],
+                    [
+                        398.0,
+                        746.0
+                    ],
+                    [
+                        68.0,
+                        746.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.812612771987915,
+                "coordinate": [
+                    79,
+                    768,
+                    1052,
+                    821
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        79.0,
+                        768.0
+                    ],
+                    [
+                        1052.0,
+                        768.0
+                    ],
+                    [
+                        1052.0,
+                        821.0
+                    ],
+                    [
+                        79.0,
+                        821.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9562657475471497,
+                "coordinate": [
+                    208,
+                    846,
+                    914,
+                    1033
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        208.0,
+                        846.0
+                    ],
+                    [
+                        914.0,
+                        846.0
+                    ],
+                    [
+                        914.0,
+                        1033.0
+                    ],
+                    [
+                        208.0,
+                        1033.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8608191013336182,
+                "coordinate": [
+                    285,
+                    1069,
+                    836,
+                    1097
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        285.0,
+                        1069.0
+                    ],
+                    [
+                        836.0,
+                        1069.0
+                    ],
+                    [
+                        836.0,
+                        1097.0
+                    ],
+                    [
+                        285.0,
+                        1097.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6511730551719666,
+                "coordinate": [
+                    69,
+                    1117,
+                    663,
+                    1144
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1117.0
+                    ],
+                    [
+                        663.0,
+                        1117.0
+                    ],
+                    [
+                        663.0,
+                        1144.0
+                    ],
+                    [
+                        69.0,
+                        1144.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8577650189399719,
+                "coordinate": [
+                    214,
+                    1164,
+                    908,
+                    1191
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        214.0,
+                        1164.0
+                    ],
+                    [
+                        908.0,
+                        1164.0
+                    ],
+                    [
+                        908.0,
+                        1191.0
+                    ],
+                    [
+                        214.0,
+                        1191.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9715396761894226,
+                "coordinate": [
+                    72,
+                    1198,
+                    1047,
+                    1553
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1198.0
+                    ],
+                    [
+                        1047.0,
+                        1198.0
+                    ],
+                    [
+                        1047.0,
+                        1553.0
+                    ],
+                    [
+                        72.0,
+                        1553.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7658080458641052,
+                "coordinate": [
+                    70,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5875314474105835,
+                "coordinate": [
+                    796,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        796.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5599696040153503,
+                "coordinate": [
+                    60,
+                    1637,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.720455169677734,
+                        1645.002197265625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1637.0
+                    ],
+                    [
+                        1118.3363037109375,
+                        1681.460693359375
+                    ],
+                    [
+                        60.056640625,
+                        1689.462890625
+                    ]
+                ]
+            }
+        ]
+    }
+}

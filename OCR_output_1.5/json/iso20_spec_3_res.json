@@ -1,0 +1,347 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 3,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                67,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    67.0
+                ],
+                [
+                    322.0,
+                    67.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "content",
+            "block_content": "8.2.1 Handshake sequence..... 129\n8.2.2 Message definition supportedAppProtocolReq and supportedAppProtocolRes..... 131\n8.2.3 Semantics description supportedAppProtocol messages..... 132\n8.2.4 Message examples..... 133\n8.3 V2G message definition..... 134\n8.3.1 Overview..... 134\n8.3.2 General..... 135\n8.3.3 Header definition..... 135\n8.3.4 Request and response definitions..... 138\n8.3.5 Complex data types..... 240\n8.4 Service selection..... 361\n8.4.1 General..... 361\n8.4.2 General description of configuration parameters..... 362\n8.4.3 Selection of service and service parameters..... 363\n8.5 V2G communication timing..... 373\n8.5.1 Overview..... 373\n8.5.2 Common..... 373\n8.5.3 DC service..... 374\n8.5.4 Message sequence and communication session..... 374\n8.5.5 Session setup and ready to charge..... 381\n8.5.6 V2G message synchronization for AC and DC with IEC 61851-1 signalling..... 387\n8.5.7 V2G message synchronization with IEC 61980-2 signalling for WPT..... 394\n8.6 Message sequencing and error handling..... 394\n8.6.1 Overview..... 394\n8.6.2 Basic definitions for error handling..... 395\n8.6.3 ResponseCode handling..... 395\n8.6.4 Request-response message sequence requirements..... 406\n8.6.5 Multiplexed communication..... 434\n8.6.6 Message sequence diagrams..... 437\nAnnex A (normative) Schema definition..... 442\nAnnex B (normative) Certificate profiles..... 444\nAnnex C (normative) Specification of identifiers..... 498\nAnnex D (informative) ACDP..... 504\nAnnex E (informative) Basic PPD for interoperability..... 506\nAnnex F (informative) Message sequencing for renegotiation..... 509\nAnnex G (informative) Association of VAS client to V2G session..... 511\nAnnex H (informative) Application of certificates..... 512\nAnnex I (informative) Precision of measurements and tolerances..... 547\nAnnex J (informative) Absolute pricing examples..... 549",
+            "block_bbox": [
+                68,
+                162,
+                1005,
+                1300
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    162.0
+                ],
+                [
+                    1005.0,
+                    162.0
+                ],
+                [
+                    1005.0,
+                    1300.0
+                ],
+                [
+                    68.0,
+                    1300.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "iv",
+            "block_bbox": [
+                70,
+                1614,
+                94,
+                1637
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    93.0,
+                    1614.0
+                ],
+                [
+                    93.0,
+                    1636.0
+                ],
+                [
+                    70.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                798,
+                1616,
+                1055,
+                1637
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    798.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1636.0
+                ],
+                [
+                    798.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1634,
+                1118,
+                1680
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    61,
+                    1642
+                ],
+                [
+                    61,
+                    1679
+                ],
+                [
+                    999,
+                    1679
+                ],
+                [
+                    1117,
+                    1664
+                ],
+                [
+                    1117,
+                    1634
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8595873713493347,
+                "coordinate": [
+                    70,
+                    67,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        67.0
+                    ],
+                    [
+                        322.0,
+                        67.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 4,
+                "label": "content",
+                "score": 0.9806089997291565,
+                "coordinate": [
+                    68,
+                    162,
+                    1005,
+                    1300
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        162.0
+                    ],
+                    [
+                        1005.0,
+                        162.0
+                    ],
+                    [
+                        1005.0,
+                        1300.0
+                    ],
+                    [
+                        68.0,
+                        1300.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5416291356086731,
+                "coordinate": [
+                    70,
+                    1614,
+                    94,
+                    1637
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        93.0,
+                        1614.0
+                    ],
+                    [
+                        93.0,
+                        1636.0
+                    ],
+                    [
+                        70.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.49056750535964966,
+                "coordinate": [
+                    798,
+                    1616,
+                    1055,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        798.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1636.0
+                    ],
+                    [
+                        798.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.37511324882507324,
+                "coordinate": [
+                    61,
+                    1634,
+                    1118,
+                    1680
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1642
+                    ],
+                    [
+                        61,
+                        1679
+                    ],
+                    [
+                        999,
+                        1679
+                    ],
+                    [
+                        1117,
+                        1664
+                    ],
+                    [
+                        1117,
+                        1634
+                    ]
+                ]
+            }
+        ]
+    }
+}

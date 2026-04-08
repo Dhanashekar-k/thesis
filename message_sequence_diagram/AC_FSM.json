@@ -1,0 +1,294 @@
+{
+  "fsm_id": "Figure 215",
+  "title": "AC message sequence diagram",
+  "legend": {
+    "grey_text": "EVCC",
+    "black_text": "SECC"
+  },
+  "entry_point": {
+    "trigger": "start_marker",
+    "target_state": "SupportedAppProtocol",
+    "evcc_refs": ["V2G20-1746"],
+    "secc_refs": ["V2G20-1483"]
+  },
+  "exit_point": {
+    "source_state": "SessionStop",
+    "target": "end_marker",
+    "evcc_refs": ["V2G20-1463"],
+    "secc_refs": ["V2G20-1632", "V2G20-1633"]
+  },
+  "states": [
+    { "id": "ST1", "label": "SupportedAppProtocol" },
+    { "id": "ST2", "label": "SessionSetup" },
+    { "id": "ST3", "label": "AuthorizationSetup" },
+    { "id": "ST4", "label": "Authorization" },
+    { "id": "ST5", "label": "CertificateInstallation" },
+    { "id": "ST6", "label": "ServiceDiscovery" },
+    { "id": "ST7", "label": "ServiceDetail" },
+    { "id": "ST8", "label": "ServiceSelection" },
+    { "id": "ST9", "label": "AC_ChargeParameterDiscovery" },
+    { "id": "ST10", "label": "ScheduleExchange" },
+    { "id": "ST11", "label": "PowerDelivery" },
+    { "id": "ST12", "label": "AC_ChargeLoop" },
+    { "id": "ST13", "label": "SessionStop" }
+  ],
+  "transitions": [
+    {
+      "id": 1,
+      "from": "ST1",
+      "to": "ST2",
+      "evcc_refs": ["V2G20-1747"],
+      "secc_refs": ["V2G20-1484"]
+    },
+    {
+      "id": 2,
+      "from": "ST2",
+      "to": "ST3",
+      "evcc_refs": ["V2G20-1749"],
+      "secc_refs": ["V2G20-1486"]
+    },
+    {
+      "id": 3,
+      "from": "ST2",
+      "to": "ST9",
+      "evcc_refs": ["V2G20-2097"],
+      "secc_refs": []
+    },
+    {
+      "id": 4,
+      "from": "ST3",
+      "to": "ST4",
+      "evcc_refs": ["V2G20-1577"],
+      "secc_refs": ["V2G20-1970", "V2G20-1971"]
+    },
+    {
+      "id": 5,
+      "from": "ST3",
+      "to": "ST5",
+      "evcc_refs": ["V2G20-1576"],
+      "secc_refs": ["V2G20-1970"]
+    },
+    {
+      "id": 6,
+      "from": "ST5",
+      "to": "ST5",
+      "evcc_refs": ["V2G20-1578", "V2G20-1579"],
+      "secc_refs": ["V2G20-1972", "V2G20-1973"]
+    },
+    {
+      "id": 7,
+      "from": "ST5",
+      "to": "ST4",
+      "evcc_refs": ["V2G20-1579", "V2G20-1580", "V2G20-1581"],
+      "secc_refs": [
+        "V2G20-1973",
+        "V2G20-1975",
+        "V2G20-1976",
+        "V2G20-2223",
+        "V2G20-2224",
+        "V2G20-2225"
+      ]
+    },
+    {
+      "id": 8,
+      "from": "ST4",
+      "to": "ST5",
+      "evcc_refs": ["V2G20-2221"],
+      "secc_refs": [
+        "V2G20-1978",
+        "V2G20-2226",
+        "V2G20-2228",
+        "V2G20-2230",
+        "V2G20-2232"
+      ]
+    },
+    {
+      "id": 9,
+      "from": "ST4",
+      "to": "ST4",
+      "evcc_refs": ["V2G20-1582", "V2G20-1583"],
+      "secc_refs": [
+        "V2G20-1977",
+        "V2G20-1978",
+        "V2G20-2226",
+        "V2G20-2227",
+        "V2G20-2131",
+        "V2G20-2228",
+        "V2G20-2229",
+        "V2G20-2230",
+        "V2G20-2231"
+      ]
+    },
+    {
+      "id": 10,
+      "from": "ST4",
+      "to": "ST6",
+      "evcc_refs": ["V2G20-1584","V2G20-2221"],
+      "secc_refs": [
+        "V2G20-2232",
+        "V2G20-2233",
+        "V2G20-1979",
+        "V2G20-2234"
+      ]
+    },
+    {
+      "id": 11,
+      "from": "ST6",
+      "to": "ST13",
+      "evcc_refs": ["V2G20-2644"],
+      "secc_refs": ["V2G20-1957","V20G0-2645"]
+    },
+    {
+      "id": 12,
+      "from": "ST6",
+      "to": "ST7",
+      "evcc_refs": ["V2G20-1585"],
+      "secc_refs": ["V2G20-1980"]
+    },
+    {
+      "id": 13,
+      "from": "ST7",
+      "to": "ST7",
+      "evcc_refs": ["V2G20-1586"],
+      "secc_refs": ["V2G20-1981"]
+    },
+    {
+      "id": 14,
+      "from": "ST7",
+      "to": "ST8",
+      "evcc_refs": ["V2G20-1587"],
+      "secc_refs": ["V2G20-1981"]
+    },
+    {
+      "id": 15,
+      "from": "ST8",
+      "to": "ST9",
+      "evcc_refs": ["V2G20-1590"],
+      "secc_refs": ["V2G20-1983"]
+    },
+    {
+      "id": 16,
+      "from": "ST9",
+      "to": "ST10",
+      "evcc_refs": ["V2G20-2659"],
+      "secc_refs": ["V2G20-2658"]
+    },
+    {
+      "id": 17,
+      "from": "ST10",
+      "to": "ST10",
+      "evcc_refs": ["V2G20-1593"],
+      "secc_refs": ["V2G20-1986", "V2G20-1987"]
+    },
+    {
+      "id": 18,
+      "from": "ST10",
+      "to": "ST11",
+      "evcc_refs": ["V2G20-1596", "V2G20-2123"],
+      "secc_refs": ["V2G20-1989", "V20G0-2122"]
+    },
+    {
+      "id": 19,
+      "from": "ST11",
+      "to": "ST11",
+      "evcc_refs": ["V2G20-1436"],
+      "secc_refs": ["V2G20-2007", "V2G20-2008", "V2G20-1601", "V2G20-2018"]
+    },
+    {
+      "id": 20,
+      "from": "ST11",
+      "to": "ST12",
+      "evcc_refs": ["V2G20-1437","V2G20-1443", "V2G20-2193", "V2G20-1969"],
+      "secc_refs": ["V20G0-2009","V2G20-1642","V20G0-2192","V20G0-2012"]
+    },
+    {
+      "id": 21,
+      "from": "ST12",
+      "to": "ST11",
+      "evcc_refs": ["V2G20-1437","V2G20-1443", "V2G20-2193", "V2G20-1969"],
+      "secc_refs": ["V20G0-2009","V2G20-1642","V20G0-2192","V20G0-2012"]
+    },
+    {
+      "id": 22,
+      "from": "ST12",
+      "to": "ST12",
+      "evcc_refs": ["V2G20-1440"],
+      "secc_refs": ["V2G20-2012"]
+    },
+    {
+      "id": 23,
+      "from": "ST11",
+      "to": "ST13",
+      "evcc_refs": [],
+      "secc_refs": ["V2G20-1623"]
+    },
+    {
+      "id": 24,
+      "from": "ST13",
+      "to": "ST6",
+      "evcc_refs": ["V2G20-1477"],
+      "secc_refs": ["V2G20-1643"]
+    },
+    {
+    "id": 25,
+    "from": "ST4",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 26,
+    "from": "ST3",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 27,
+    "from": "ST5",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 28,
+    "from": "ST6",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 29,
+    "from": "ST7",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 30,
+    "from": "ST8",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 31,
+    "from": "ST9",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  },
+  {
+    "id": 32,
+    "from": "ST10",
+    "to": "ST13",
+    "evcc_refs": ["V2G20-2644"],
+    "secc_refs": ["V2G20-2645"]
+  }
+  ],
+"counts": {
+  "total_states": 13,
+  "total_transitions": 32,
+  "note": "Excludes the initial start marker and final end marker."
+}
+}

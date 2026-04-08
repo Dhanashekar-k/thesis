@@ -1,0 +1,668 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 408,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                68,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 225 — Overview on application of AC ResponseCodes",
+            "block_bbox": [
+                326,
+                167,
+                932,
+                195
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    326.0,
+                    167.0
+                ],
+                [
+                    932.0,
+                    167.0
+                ],
+                [
+                    932.0,
+                    195.0
+                ],
+                [
+                    326.0,
+                    195.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td rowspan=\"2\">ResponseCode (Enumeration)</td><td colspan=\"2\">V2G application layer messages</td></tr><tr><td>AC_ChargeParameterDiscoveryRes</td><td>AC_ChargeLoopRes</td></tr><tr><td>OK</td><td>X</td><td>X</td></tr><tr><td>WARNING_EVPowerProfileViola</td><td></td><td>X</td></tr><tr><td>WARNING_ScheduleRenegotiati</td><td></td><td>X</td></tr><tr><td>FAILED</td><td>X</td><td>X</td></tr><tr><td>FAILED_SequenceError</td><td>X</td><td>X</td></tr><tr><td>FAILED_UnknownSession</td><td>X</td><td>X</td></tr><tr><td>FAILED_WrongChargeParameter</td><td>X</td><td></td></tr><tr><td>FAILED_EVPowerProfileViolatio</td><td></td><td>X</td></tr><tr><td>FAILED_ScheduleRenegotiation</td><td></td><td>X</td></tr></table>",
+            "block_bbox": [
+                392,
+                201,
+                867,
+                896
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    392.0,
+                    201.0
+                ],
+                [
+                    867.0,
+                    201.0
+                ],
+                [
+                    867.0,
+                    896.0
+                ],
+                [
+                    392.0,
+                    896.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.6.3.3 DC requirements",
+            "block_bbox": [
+                182,
+                917,
+                433,
+                944
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    182.0,
+                    917.0
+                ],
+                [
+                    433.0,
+                    917.0
+                ],
+                [
+                    433.0,
+                    944.0
+                ],
+                [
+                    182.0,
+                    944.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2272] The message \"DC_ChargeParameterDiscoveryRes\" shall contain the ResponseCode \"FAILED_WrongChargeParameter\" if the content of attribute \"EV_EnergyTransferParameter\" in the DC_ChargeParameterDiscoveryReq message is not valid, for example, wrong parameter set is provided, one or multiple parameters cannot be interpreted.",
+            "block_bbox": [
+                136,
+                964,
+                1120,
+                1097
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    135.99996948242188,
+                    964.0
+                ],
+                [
+                    1120.1259765625,
+                    973.01025390625
+                ],
+                [
+                    1118.922119140625,
+                    1104.5048828125
+                ],
+                [
+                    134.79611206054688,
+                    1095.49462890625
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1947] The message DC_ChargeLoopRes shall contain the ResponseCode \"WARNING_EVPowerProfileViolation\" if a violation of the PowerTolerance band was detected according to the conditions defined in [V2G20-1864].",
+            "block_bbox": [
+                136,
+                1118,
+                1120,
+                1199
+            ],
+            "block_id": 5,
+            "block_order": 3,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1118.0
+                ],
+                [
+                    1120.0,
+                    1118.0
+                ],
+                [
+                    1120.0,
+                    1199.0
+                ],
+                [
+                    136.0,
+                    1199.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1950] The message DC_ChargeLoopRes shall contain the ResponseCode \"FAILED_EVPowerProfileViolation\" if a violation of the PowerTolerance band was detected according to the conditions defined in [V2G20-1865].",
+            "block_bbox": [
+                137,
+                1220,
+                1120,
+                1299
+            ],
+            "block_id": 6,
+            "block_order": 4,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1220.0
+                ],
+                [
+                    1120.0,
+                    1220.0
+                ],
+                [
+                    1120.0,
+                    1299.0
+                ],
+                [
+                    137.0,
+                    1299.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Table 226 shows an overview of the DC ResponseCode values and the messages as defined above.",
+            "block_bbox": [
+                137,
+                1321,
+                1058,
+                1350
+            ],
+            "block_id": 7,
+            "block_order": 5,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1321.0
+                ],
+                [
+                    1058.0,
+                    1321.0
+                ],
+                [
+                    1058.0,
+                    1350.0
+                ],
+                [
+                    137.0,
+                    1350.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "403",
+            "block_bbox": [
+                1078,
+                1624,
+                1119,
+                1646
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    1078.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1645.0
+                ],
+                [
+                    1078.0,
+                    1645.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1083,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ],
+                [
+                    1071,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8747217655181885,
+                "coordinate": [
+                    866,
+                    68,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8704036474227905,
+                "coordinate": [
+                    326,
+                    167,
+                    932,
+                    195
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        326.0,
+                        167.0
+                    ],
+                    [
+                        932.0,
+                        167.0
+                    ],
+                    [
+                        932.0,
+                        195.0
+                    ],
+                    [
+                        326.0,
+                        195.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9691659212112427,
+                "coordinate": [
+                    392,
+                    201,
+                    867,
+                    896
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        392.0,
+                        201.0
+                    ],
+                    [
+                        867.0,
+                        201.0
+                    ],
+                    [
+                        867.0,
+                        896.0
+                    ],
+                    [
+                        392.0,
+                        896.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8406791090965271,
+                "coordinate": [
+                    182,
+                    917,
+                    433,
+                    944
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        182.0,
+                        917.0
+                    ],
+                    [
+                        433.0,
+                        917.0
+                    ],
+                    [
+                        433.0,
+                        944.0
+                    ],
+                    [
+                        182.0,
+                        944.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9328274726867676,
+                "coordinate": [
+                    136,
+                    964,
+                    1120,
+                    1097
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.99996948242188,
+                        964.0
+                    ],
+                    [
+                        1120.1259765625,
+                        973.01025390625
+                    ],
+                    [
+                        1118.922119140625,
+                        1104.5048828125
+                    ],
+                    [
+                        134.79611206054688,
+                        1095.49462890625
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9263309836387634,
+                "coordinate": [
+                    136,
+                    1118,
+                    1120,
+                    1199
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1118.0
+                    ],
+                    [
+                        1120.0,
+                        1118.0
+                    ],
+                    [
+                        1120.0,
+                        1199.0
+                    ],
+                    [
+                        136.0,
+                        1199.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9200081825256348,
+                "coordinate": [
+                    137,
+                    1220,
+                    1120,
+                    1299
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1220.0
+                    ],
+                    [
+                        1120.0,
+                        1220.0
+                    ],
+                    [
+                        1120.0,
+                        1299.0
+                    ],
+                    [
+                        137.0,
+                        1299.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8604528903961182,
+                "coordinate": [
+                    137,
+                    1321,
+                    1058,
+                    1350
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1321.0
+                    ],
+                    [
+                        1058.0,
+                        1321.0
+                    ],
+                    [
+                        1058.0,
+                        1350.0
+                    ],
+                    [
+                        137.0,
+                        1350.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.760164201259613,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1646
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        1078.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1645.0
+                    ],
+                    [
+                        1078.0,
+                        1645.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8738939166069031,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1083,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ],
+                    [
+                        1071,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

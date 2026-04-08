@@ -1,0 +1,949 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 513,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                69,
+                67,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    69.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Description</td><td>Length (Byte)</td><td>Example</td></tr><tr><td>RFU (proprietary use)</td><td>3</td><td>XX XX XX</td></tr><tr><td>CRC16</td><td>2</td><td>a6 09</td></tr><tr><td>Summary</td><td>8</td><td>510403XXXXXXa609</td></tr></table>",
+            "block_bbox": [
+                268,
+                164,
+                851,
+                454
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    268.0,
+                    164.0
+                ],
+                [
+                    851.0,
+                    164.0
+                ],
+                [
+                    851.0,
+                    454.0
+                ],
+                [
+                    268.0,
+                    454.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "The EV ID is stored in the user memory of the tag from address 0 and comprises 18 bytes of data (ASCII format) + 2 bytes of CRC16. If the EV ID is shorter than 8 bytes, the remaining bytes are filled with 0x00.",
+            "block_bbox": [
+                69,
+                461,
+                1052,
+                514
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    461.0
+                ],
+                [
+                    1052.0,
+                    461.0
+                ],
+                [
+                    1052.0,
+                    514.0
+                ],
+                [
+                    69.0,
+                    514.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The nominal height of the tags above the road surface is provided so that the infrastructure mounted RFID reader can adjust to different height vehicles, e.g. double deck buses versus single deck buses.",
+            "block_bbox": [
+                68,
+                536,
+                1053,
+                591
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    536.0
+                ],
+                [
+                    1053.0,
+                    536.0
+                ],
+                [
+                    1053.0,
+                    591.0
+                ],
+                [
+                    68.0,
+                    591.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The Salt is an optional pre-shared value for additional security. For example, it could be only known to vehicles and chargers belonging to a particular fleet operator to prevent others from using one of the operator’s chargers.",
+            "block_bbox": [
+                68,
+                612,
+                1053,
+                692
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    612.0
+                ],
+                [
+                    1053.0,
+                    612.0
+                ],
+                [
+                    1053.0,
+                    692.0
+                ],
+                [
+                    68.0,
+                    692.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The hash value is stored from address 20 and comprises 20 bytes of data. The hash is formed from sha1 (EPC-ID + EVID + TagID + Salt) and is used for the validation and copy protection of a tag. The TagID is unique and write-protected ex works for each tag.",
+            "block_bbox": [
+                68,
+                712,
+                1053,
+                794
+            ],
+            "block_id": 5,
+            "block_order": 3,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    712.0
+                ],
+                [
+                    1053.0,
+                    712.0
+                ],
+                [
+                    1053.0,
+                    794.0
+                ],
+                [
+                    68.0,
+                    794.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table E.2 — User memory",
+            "block_bbox": [
+                425,
+                815,
+                695,
+                841
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    425.0,
+                    815.0
+                ],
+                [
+                    695.0,
+                    815.0
+                ],
+                [
+                    695.0,
+                    841.0
+                ],
+                [
+                    425.0,
+                    841.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Description</td><td>Length(Byte)</td><td>Example</td></tr><tr><td>EV ID</td><td>18</td><td>ABCDEFGHIJKLMNOPQR</td></tr><tr><td>Nominal height of tag against top of road. [mm]</td><td>2</td><td>0c80 (3200 mm)</td></tr><tr><td>CRC16</td><td>2</td><td></td></tr><tr><td>Hash</td><td>20</td><td>sha1(EPC-ID + EVID + TagID + Salt)</td></tr></table>",
+            "block_bbox": [
+                216,
+                847,
+                903,
+                1237
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    216.0,
+                    847.0
+                ],
+                [
+                    903.0,
+                    847.0
+                ],
+                [
+                    903.0,
+                    1237.0
+                ],
+                [
+                    216.0,
+                    1237.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "E.2.1.3 Specific requirements for the basic RFID PPD",
+            "block_bbox": [
+                69,
+                1260,
+                620,
+                1287
+            ],
+            "block_id": 8,
+            "block_order": 4,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1260.0
+                ],
+                [
+                    620.0,
+                    1260.0
+                ],
+                [
+                    620.0,
+                    1287.0
+                ],
+                [
+                    69.0,
+                    1287.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4076]\nIn case more than 1 tag is used, the RFID reader PPD shall indicate sufficient positional accuracy information to support pairing during the wireless SDP process when it can correctly read at least n (number of tags) - 1 tags on the vehicle.",
+            "block_bbox": [
+                71,
+                1311,
+                219,
+                1337
+            ],
+            "block_id": 9,
+            "block_order": 5,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1311.0
+                ],
+                [
+                    219.0,
+                    1311.0
+                ],
+                [
+                    219.0,
+                    1337.0
+                ],
+                [
+                    71.0,
+                    1337.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                249,
+                1311,
+                1052,
+                1388
+            ],
+            "block_id": 10,
+            "block_order": 6,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    249.0,
+                    1311.0
+                ],
+                [
+                    1052.0,
+                    1311.0
+                ],
+                [
+                    1052.0,
+                    1388.0
+                ],
+                [
+                    249.0,
+                    1388.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4077] In case more than 1 tag is used, The RFID reader PPD shall indicate sufficient positional accuracy information to support partitioning during the positioning process when it can correctly read at least n (number of tags) - 1 tags on the vehicle.",
+            "block_bbox": [
+                69,
+                1411,
+                1054,
+                1491
+            ],
+            "block_id": 11,
+            "block_order": 7,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1411.0
+                ],
+                [
+                    1054.0,
+                    1411.0
+                ],
+                [
+                    1054.0,
+                    1491.0
+                ],
+                [
+                    69.0,
+                    1491.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "508",
+            "block_bbox": [
+                71,
+                1613,
+                116,
+                1636
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1613.0
+                ],
+                [
+                    115.0,
+                    1613.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    71.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 14,
+            "block_order": 8,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    59.72043991088867,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.0003662109375
+                ],
+                [
+                    1118.337646484375,
+                    1680.6424560546875
+                ],
+                [
+                    60.0579833984375,
+                    1688.6446533203125
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8801699876785278,
+                "coordinate": [
+                    69,
+                    67,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        69.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        69.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9669697880744934,
+                "coordinate": [
+                    268,
+                    164,
+                    851,
+                    454
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        268.0,
+                        164.0
+                    ],
+                    [
+                        851.0,
+                        164.0
+                    ],
+                    [
+                        851.0,
+                        454.0
+                    ],
+                    [
+                        268.0,
+                        454.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.7954461574554443,
+                "coordinate": [
+                    69,
+                    461,
+                    1052,
+                    514
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        69.0,
+                        461.0
+                    ],
+                    [
+                        1052.0,
+                        461.0
+                    ],
+                    [
+                        1052.0,
+                        514.0
+                    ],
+                    [
+                        69.0,
+                        514.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9091929793357849,
+                "coordinate": [
+                    68,
+                    536,
+                    1053,
+                    591
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        536.0
+                    ],
+                    [
+                        1053.0,
+                        536.0
+                    ],
+                    [
+                        1053.0,
+                        591.0
+                    ],
+                    [
+                        68.0,
+                        591.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9353548884391785,
+                "coordinate": [
+                    68,
+                    612,
+                    1053,
+                    692
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        612.0
+                    ],
+                    [
+                        1053.0,
+                        612.0
+                    ],
+                    [
+                        1053.0,
+                        692.0
+                    ],
+                    [
+                        68.0,
+                        692.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.935675323009491,
+                "coordinate": [
+                    68,
+                    712,
+                    1053,
+                    794
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        712.0
+                    ],
+                    [
+                        1053.0,
+                        712.0
+                    ],
+                    [
+                        1053.0,
+                        794.0
+                    ],
+                    [
+                        68.0,
+                        794.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8600496053695679,
+                "coordinate": [
+                    425,
+                    815,
+                    695,
+                    841
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        425.0,
+                        815.0
+                    ],
+                    [
+                        695.0,
+                        815.0
+                    ],
+                    [
+                        695.0,
+                        841.0
+                    ],
+                    [
+                        425.0,
+                        841.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9680803418159485,
+                "coordinate": [
+                    216,
+                    847,
+                    903,
+                    1237
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        216.0,
+                        847.0
+                    ],
+                    [
+                        903.0,
+                        847.0
+                    ],
+                    [
+                        903.0,
+                        1237.0
+                    ],
+                    [
+                        216.0,
+                        1237.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.7815958261489868,
+                "coordinate": [
+                    69,
+                    1260,
+                    620,
+                    1287
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1260.0
+                    ],
+                    [
+                        620.0,
+                        1260.0
+                    ],
+                    [
+                        620.0,
+                        1287.0
+                    ],
+                    [
+                        69.0,
+                        1287.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.31714287400245667,
+                "coordinate": [
+                    71,
+                    1311,
+                    219,
+                    1337
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1311.0
+                    ],
+                    [
+                        219.0,
+                        1311.0
+                    ],
+                    [
+                        219.0,
+                        1337.0
+                    ],
+                    [
+                        71.0,
+                        1337.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8426142930984497,
+                "coordinate": [
+                    249,
+                    1311,
+                    1052,
+                    1388
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        249.0,
+                        1311.0
+                    ],
+                    [
+                        1052.0,
+                        1311.0
+                    ],
+                    [
+                        1052.0,
+                        1388.0
+                    ],
+                    [
+                        249.0,
+                        1388.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9165330529212952,
+                "coordinate": [
+                    69,
+                    1411,
+                    1054,
+                    1491
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1411.0
+                    ],
+                    [
+                        1054.0,
+                        1411.0
+                    ],
+                    [
+                        1054.0,
+                        1491.0
+                    ],
+                    [
+                        69.0,
+                        1491.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5743302702903748,
+                "coordinate": [
+                    71,
+                    1613,
+                    116,
+                    1636
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1613.0
+                    ],
+                    [
+                        115.0,
+                        1613.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        71.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5689337849617004,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.38099583983421326,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        59.72043991088867,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.337646484375,
+                        1680.6424560546875
+                    ],
+                    [
+                        60.0579833984375,
+                        1688.6446533203125
+                    ]
+                ]
+            }
+        ]
+    }
+}

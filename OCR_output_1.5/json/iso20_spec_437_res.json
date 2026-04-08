@@ -1,0 +1,827 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 437,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5086] After receiving a WPT_FinePositioningReq with EVProcessing set to \"Finished\", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to \"Finished\" within V2G_SECC_Msg_Performance_Time according to Table 218. The next allowed request shall be WPT_PairingReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.",
+            "block_bbox": [
+                67,
+                167,
+                1054,
+                300
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    300.0
+                ],
+                [
+                    67.0,
+                    300.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5087] After receiving a WPT_FinePositioningReq with EVProcessing set to \"Ongoing\", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to \"Ongoing\" within V2G_SECC_Msg_Performance_Time according to Table 218, while the vehicle positioning is still ongoing. The next allowed request shall be WPT_FinePositioningReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.",
+            "block_bbox": [
+                67,
+                320,
+                1054,
+                476
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    320.0
+                ],
+                [
+                    1054.0,
+                    320.0
+                ],
+                [
+                    1054.0,
+                    476.0
+                ],
+                [
+                    67.0,
+                    476.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5088] After receiving a WPT_FinePositioningReq with EVProcessing set to \"Ongoing\", the SECC shall respond with a WPT_FinePositioningRes with EVSEProcessing set to \"Finished\" within V2G_SECC_Msg_Performance_Time according to Table 218, when the vehicle positioning has finished. The next allowed request shall be WPT_PairingReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.",
+            "block_bbox": [
+                67,
+                498,
+                1054,
+                633
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    498.0
+                ],
+                [
+                    1054.0,
+                    498.0
+                ],
+                [
+                    1054.0,
+                    633.0
+                ],
+                [
+                    67.0,
+                    633.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5089] After receiving the WPT_PairingReq with EVProcessing set to \"Finished\", the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to \"Finished\" within V2G_SECC_Msg_Performance_Time according to Table 215. The next allowed request shall be AuthorizationSetupReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                68,
+                651,
+                1054,
+                784
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    651.0
+                ],
+                [
+                    1054.0,
+                    651.0
+                ],
+                [
+                    1054.0,
+                    784.0
+                ],
+                [
+                    68.0,
+                    784.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5090] After receiving a WPT_PairingReq with EVProcessing set to \"Ongoing\", the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to \"Ongoing\" within V2G_SECC_Msg_Performance_Time according to Table 218, while the pairing process is still ongoing. The next allowed request shall be WPT_PairingReq and the V2G_SECC_Sequence_Timeout is set according to Table 218.",
+            "block_bbox": [
+                67,
+                803,
+                1054,
+                938
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    803.0
+                ],
+                [
+                    1054.0,
+                    803.0
+                ],
+                [
+                    1054.0,
+                    938.0
+                ],
+                [
+                    67.0,
+                    938.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5091] After receiving a WPT_PairingReq, the SECC shall respond with a WPT_PairingRes with EVSEProcessing set to \"Finished\" within V2G_SECC_Msg_Performance_Time according to Table 218, when the pairing process has finished (see also [V2G20-5018]). The next allowed request shall be AuthorizationSetupReq or WPT_FinePositioningSetupReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                67,
+                957,
+                1054,
+                1115
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    957.0
+                ],
+                [
+                    1054.0,
+                    957.0
+                ],
+                [
+                    1054.0,
+                    1115.0
+                ],
+                [
+                    67.0,
+                    1115.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5044] After receiving the ScheduleExchangeReq, the SECC shall respond with a ScheduleExchangeRes within V2G_SECC_Msg_Performance_Time according to Table 215. If EVSEProcessing was set to \"Finished\", the next allowed request shall be WPT_AlignmentCheckReq or WPT_FinePositioningSetupReq if ServiceName= WPT in Table 204 was selected. The V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                68,
+                1136,
+                1054,
+                1293
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1136.0
+                ],
+                [
+                    1054.0,
+                    1136.0
+                ],
+                [
+                    1054.0,
+                    1293.0
+                ],
+                [
+                    68.0,
+                    1293.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5092] After receiving a WPT_AlignmentCheckReq, the SECC shall respond with a WPT_AlignmentCheckRes with EVSEProcessing set to \"Finished\" within V2G_SECC_Msg_Performance_Time according to Table 218, if the alignment process is finished. The next allowed request shall be PowerDeliveryReq or WPT_FinePositioningSetupReq. The V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                67,
+                1315,
+                1054,
+                1472
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1315.0
+                ],
+                [
+                    1054.0,
+                    1315.0
+                ],
+                [
+                    1054.0,
+                    1472.0
+                ],
+                [
+                    67.0,
+                    1472.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5093] After receiving a WPT_AlignmentCheckReq, the SECC shall respond with a WPT_AlignmentCheckRes with EVSEProcessing set to \"Ongoing\" within V2G_SECC_Msg_Performance_Time according to Table 218, if the alignment process",
+            "block_bbox": [
+                68,
+                1493,
+                1054,
+                1575
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1493.0
+                ],
+                [
+                    1054.0,
+                    1493.0
+                ],
+                [
+                    1054.0,
+                    1575.0
+                ],
+                [
+                    68.0,
+                    1575.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "432",
+            "block_bbox": [
+                70,
+                1614,
+                116,
+                1637
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1636.0
+                ],
+                [
+                    70.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    796.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    59.720455169677734,
+                    1644.00244140625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.000244140625
+                ],
+                [
+                    1118.3363037109375,
+                    1680.4609375
+                ],
+                [
+                    60.056640625,
+                    1688.463134765625
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8564593195915222,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9331443905830383,
+                "coordinate": [
+                    67,
+                    167,
+                    1054,
+                    300
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        67.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        300.0
+                    ],
+                    [
+                        67.0,
+                        300.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9428495764732361,
+                "coordinate": [
+                    67,
+                    320,
+                    1054,
+                    476
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        67.0,
+                        320.0
+                    ],
+                    [
+                        1054.0,
+                        320.0
+                    ],
+                    [
+                        1054.0,
+                        476.0
+                    ],
+                    [
+                        67.0,
+                        476.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.929330050945282,
+                "coordinate": [
+                    67,
+                    498,
+                    1054,
+                    633
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        67.0,
+                        498.0
+                    ],
+                    [
+                        1054.0,
+                        498.0
+                    ],
+                    [
+                        1054.0,
+                        633.0
+                    ],
+                    [
+                        67.0,
+                        633.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9370433688163757,
+                "coordinate": [
+                    68,
+                    651,
+                    1054,
+                    784
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        651.0
+                    ],
+                    [
+                        1054.0,
+                        651.0
+                    ],
+                    [
+                        1054.0,
+                        784.0
+                    ],
+                    [
+                        68.0,
+                        784.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9307711124420166,
+                "coordinate": [
+                    67,
+                    803,
+                    1054,
+                    938
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        67.0,
+                        803.0
+                    ],
+                    [
+                        1054.0,
+                        803.0
+                    ],
+                    [
+                        1054.0,
+                        938.0
+                    ],
+                    [
+                        67.0,
+                        938.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9435524940490723,
+                "coordinate": [
+                    67,
+                    957,
+                    1054,
+                    1115
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        67.0,
+                        957.0
+                    ],
+                    [
+                        1054.0,
+                        957.0
+                    ],
+                    [
+                        1054.0,
+                        1115.0
+                    ],
+                    [
+                        67.0,
+                        1115.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9425595998764038,
+                "coordinate": [
+                    68,
+                    1136,
+                    1054,
+                    1293
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1136.0
+                    ],
+                    [
+                        1054.0,
+                        1136.0
+                    ],
+                    [
+                        1054.0,
+                        1293.0
+                    ],
+                    [
+                        68.0,
+                        1293.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9426183104515076,
+                "coordinate": [
+                    67,
+                    1315,
+                    1054,
+                    1472
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1315.0
+                    ],
+                    [
+                        1054.0,
+                        1315.0
+                    ],
+                    [
+                        1054.0,
+                        1472.0
+                    ],
+                    [
+                        67.0,
+                        1472.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8947998285293579,
+                "coordinate": [
+                    68,
+                    1493,
+                    1054,
+                    1575
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1493.0
+                    ],
+                    [
+                        1054.0,
+                        1493.0
+                    ],
+                    [
+                        1054.0,
+                        1575.0
+                    ],
+                    [
+                        68.0,
+                        1575.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5981404185295105,
+                "coordinate": [
+                    70,
+                    1614,
+                    116,
+                    1637
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1636.0
+                    ],
+                    [
+                        70.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.31826549768447876,
+                "coordinate": [
+                    796,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        796.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.37107089161872864,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.720455169677734,
+                        1644.00244140625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.000244140625
+                    ],
+                    [
+                        1118.3363037109375,
+                        1680.4609375
+                    ],
+                    [
+                        60.056640625,
+                        1688.463134765625
+                    ]
+                ]
+            }
+        ]
+    }
+}

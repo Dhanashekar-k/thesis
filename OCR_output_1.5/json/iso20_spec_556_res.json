@@ -1,0 +1,613 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 556,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.2.4 Minimum and maximum cost",
+            "block_bbox": [
+                136,
+                168,
+                521,
+                194
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    168.0
+                ],
+                [
+                    521.0,
+                    168.0
+                ],
+                [
+                    521.0,
+                    194.0
+                ],
+                [
+                    136.0,
+                    194.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "There will be times when you want to have limits on how much a driver will be charged. This example charges 1,000 CAD per hour, with a minimum of 2,000 CAD and a maximum of 20,000 CAD.",
+            "block_bbox": [
+                135,
+                217,
+                1118,
+                271
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    217.0
+                ],
+                [
+                    1118.0,
+                    217.0
+                ],
+                [
+                    1118.0,
+                    271.0
+                ],
+                [
+                    135.0,
+                    271.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<摧>",
+            "block_bbox": [
+                136,
+                295,
+                1104,
+                904
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    295.0
+                ],
+                [
+                    1104.0,
+                    295.0
+                ],
+                [
+                    1104.0,
+                    904.0
+                ],
+                [
+                    136.0,
+                    904.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.3 Less simple examples",
+            "block_bbox": [
+                136,
+                928,
+                455,
+                958
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    928.0
+                ],
+                [
+                    455.0,
+                    928.0
+                ],
+                [
+                    455.0,
+                    958.0
+                ],
+                [
+                    136.0,
+                    958.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "J.3.1 Different rates for different days",
+            "block_bbox": [
+                137,
+                979,
+                553,
+                1007
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    979.0
+                ],
+                [
+                    553.0,
+                    979.0
+                ],
+                [
+                    553.0,
+                    1007.0
+                ],
+                [
+                    137.0,
+                    1007.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This example shows how to have different rates for different days (e.g. weekdays vs. weekends). This example charges 0,15 CAD per kWh on the first day, and 0,11 CAD per kWh on the second day.",
+            "block_bbox": [
+                136,
+                1029,
+                1118,
+                1107
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1029.0
+                ],
+                [
+                    1118.0,
+                    1029.0
+                ],
+                [
+                    1118.0,
+                    1107.0
+                ],
+                [
+                    136.0,
+                    1107.0
+                ]
+            ]
+        },
+        {
+            "block_label": "algorithm",
+            "block_content": "<长期以来>",
+            "block_bbox": [
+                134,
+                1131,
+                1115,
+                1564
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    1131.0
+                ],
+                [
+                    1115.0,
+                    1131.0
+                ],
+                [
+                    1115.0,
+                    1564.0
+                ],
+                [
+                    134.0,
+                    1564.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1629,
+                1118,
+                1682
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1629.0
+                ],
+                [
+                    1118.0,
+                    1629.0
+                ],
+                [
+                    1118.0,
+                    1682.0
+                ],
+                [
+                    61.0,
+                    1682.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8947535753250122,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8446514010429382,
+                "coordinate": [
+                    136,
+                    168,
+                    521,
+                    194
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        136.0,
+                        168.0
+                    ],
+                    [
+                        521.0,
+                        168.0
+                    ],
+                    [
+                        521.0,
+                        194.0
+                    ],
+                    [
+                        136.0,
+                        194.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9095745086669922,
+                "coordinate": [
+                    135,
+                    217,
+                    1118,
+                    271
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.0,
+                        217.0
+                    ],
+                    [
+                        1118.0,
+                        217.0
+                    ],
+                    [
+                        1118.0,
+                        271.0
+                    ],
+                    [
+                        135.0,
+                        271.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.9763444662094116,
+                "coordinate": [
+                    136,
+                    295,
+                    1104,
+                    904
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        295.0
+                    ],
+                    [
+                        1104.0,
+                        295.0
+                    ],
+                    [
+                        1104.0,
+                        904.0
+                    ],
+                    [
+                        136.0,
+                        904.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.842378556728363,
+                "coordinate": [
+                    136,
+                    928,
+                    455,
+                    958
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        928.0
+                    ],
+                    [
+                        455.0,
+                        928.0
+                    ],
+                    [
+                        455.0,
+                        958.0
+                    ],
+                    [
+                        136.0,
+                        958.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8389381766319275,
+                "coordinate": [
+                    137,
+                    979,
+                    553,
+                    1007
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        979.0
+                    ],
+                    [
+                        553.0,
+                        979.0
+                    ],
+                    [
+                        553.0,
+                        1007.0
+                    ],
+                    [
+                        137.0,
+                        1007.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9278969764709473,
+                "coordinate": [
+                    136,
+                    1029,
+                    1118,
+                    1107
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1029.0
+                    ],
+                    [
+                        1118.0,
+                        1029.0
+                    ],
+                    [
+                        1118.0,
+                        1107.0
+                    ],
+                    [
+                        136.0,
+                        1107.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 1,
+                "label": "algorithm",
+                "score": 0.9580634236335754,
+                "coordinate": [
+                    134,
+                    1131,
+                    1115,
+                    1564
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        134.0,
+                        1131.0
+                    ],
+                    [
+                        1115.0,
+                        1131.0
+                    ],
+                    [
+                        1115.0,
+                        1564.0
+                    ],
+                    [
+                        134.0,
+                        1564.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3410271108150482,
+                "coordinate": [
+                    61,
+                    1629,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1629.0
+                    ],
+                    [
+                        1118.0,
+                        1629.0
+                    ],
+                    [
+                        1118.0,
+                        1682.0
+                    ],
+                    [
+                        61.0,
+                        1682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7541905641555786,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        1078,
+                        1624
+                    ],
+                    [
+                        1078,
+                        1644
+                    ],
+                    [
+                        1117,
+                        1644
+                    ],
+                    [
+                        1117,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

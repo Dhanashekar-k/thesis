@@ -1,0 +1,1331 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 68,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2398] A private SECC not supporting PnC can ignore the \"status_request\" extension, and continue as if the EVCC never sent that request. Refer IETF RFC 8446 for further details.",
+            "block_bbox": [
+                137,
+                168,
+                1120,
+                245
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    168.0
+                ],
+                [
+                    1120.0,
+                    168.0
+                ],
+                [
+                    1120.0,
+                    245.0
+                ],
+                [
+                    137.0,
+                    245.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 22 A private SECC not supporting PnC is allowed to function in an offline mode where it cannot provide OCSP response for its PE certificate chain.",
+            "block_bbox": [
+                136,
+                269,
+                1120,
+                318
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    269.0
+                ],
+                [
+                    1120.0,
+                    269.0
+                ],
+                [
+                    1120.0,
+                    318.0
+                ],
+                [
+                    136.0,
+                    318.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "A private SECC supporting PnC is required to provide OCSP response for its PE certificate chain.",
+            "block_bbox": [
+                136,
+                340,
+                1040,
+                368
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    340.0
+                ],
+                [
+                    1040.0,
+                    340.0
+                ],
+                [
+                    1040.0,
+                    368.0
+                ],
+                [
+                    136.0,
+                    368.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2399] If the public SECC cannot provide a certificate with a chain up to one of the roots, which the EVCC signaled as being present in the EVCC, the public SECC shall provide within the TLS handshake a valid certificate including a chain to a root certificate (the root certificate itself shall not be transmitted).",
+            "block_bbox": [
+                136,
+                389,
+                1121,
+                494
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    389.0
+                ],
+                [
+                    1121.0,
+                    389.0
+                ],
+                [
+                    1121.0,
+                    494.0
+                ],
+                [
+                    136.0,
+                    494.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2400] The SECC shall request EVCC to send the EVCC's certificate via \"CertificateRequest\" message.",
+            "block_bbox": [
+                137,
+                516,
+                1121,
+                570
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    516.0
+                ],
+                [
+                    1121.0,
+                    516.0
+                ],
+                [
+                    1121.0,
+                    570.0
+                ],
+                [
+                    137.0,
+                    570.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 23 This allows setting up a mutually authenticated TLS session where both the EVCC and SECC verify the authenticity of each other.",
+            "block_bbox": [
+                137,
+                592,
+                1120,
+                640
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    592.0
+                ],
+                [
+                    1120.0,
+                    592.0
+                ],
+                [
+                    1120.0,
+                    640.0
+                ],
+                [
+                    137.0,
+                    640.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2401] A public SECC shall send a list of all V2G root CA certificate(s) and/or OEM root CA certificate(s) it possesses via the \"certificate_authorities\" extension in the \"CertificateRequest\" message it sends to the EVCC.",
+            "block_bbox": [
+                137,
+                664,
+                1120,
+                741
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    664.0
+                ],
+                [
+                    1120.0,
+                    664.0
+                ],
+                [
+                    1120.0,
+                    741.0
+                ],
+                [
+                    137.0,
+                    741.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 24 Refer to IETF RFC 8446.",
+            "block_bbox": [
+                137,
+                763,
+                446,
+                790
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    763.0
+                ],
+                [
+                    446.0,
+                    763.0
+                ],
+                [
+                    446.0,
+                    790.0
+                ],
+                [
+                    137.0,
+                    790.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 25 The \"authorities\" element contains \"DistinguishedName\" of the V2G root CA certificate(s) and/or OEM root CA certificate(s) supported by the SECC.",
+            "block_bbox": [
+                136,
+                811,
+                1119,
+                862
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    811.0
+                ],
+                [
+                    1119.0,
+                    811.0
+                ],
+                [
+                    1119.0,
+                    862.0
+                ],
+                [
+                    136.0,
+                    862.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "V2G20-2402] A private SECC not in CPM4PE shall send a list of all V2G root CA certificate(s) and/or OEM root CA certificate(s) it possesses via the \"certificate_authorities\" extension in the \"CertificateRequest\" message it sends to the EVCC.",
+            "block_bbox": [
+                154,
+                882,
+                1119,
+                961
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    154.0,
+                    882.0
+                ],
+                [
+                    1119.0,
+                    882.0
+                ],
+                [
+                    1119.0,
+                    961.0
+                ],
+                [
+                    154.0,
+                    961.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 26 Refer to IETF RFC 8446.",
+            "block_bbox": [
+                137,
+                983,
+                445,
+                1010
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    983.0
+                ],
+                [
+                    445.0,
+                    983.0
+                ],
+                [
+                    445.0,
+                    1010.0
+                ],
+                [
+                    137.0,
+                    1010.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 27 The \"authorities\" element contains \"DistinguishedName\" of the V2G root CA certificate(s) and/or OEM root CA certificate(s) supported by the private SECC.",
+            "block_bbox": [
+                136,
+                1031,
+                1120,
+                1081
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1031.0
+                ],
+                [
+                    1120.0,
+                    1031.0
+                ],
+                [
+                    1120.0,
+                    1081.0
+                ],
+                [
+                    136.0,
+                    1081.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The \"DistinguishedName\" (DN) of the V2G root CA certificate(s) and/or OEM root CA certificate(s) provided by the public SECC or private SECC not in CPM4PE in the \"authorities\" element of \"certificate_authorities\" extension in the \"CertificateRequest\" message shall include the following relative distinguished name (RDN) fields in the order specified below for each V2G root CA certificate and OEM root CA certificate supported by the public SECC or private SECC not in CPM4PE and shall follow X501 and X509 for distinguished names:",
+            "block_bbox": [
+                321,
+                1104,
+                1122,
+                1282
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    321.0,
+                    1104.0
+                ],
+                [
+                    1122.0,
+                    1104.0
+                ],
+                [
+                    1122.0,
+                    1282.0
+                ],
+                [
+                    321.0,
+                    1282.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– \"Country\" sub-sub-field from \"Issuer\" sub-field from \"TBSCertificate\" field of the V2G root CA certificate or OEM root CA certificate;",
+            "block_bbox": [
+                351,
+                1285,
+                1122,
+                1334
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    351.0,
+                    1285.0
+                ],
+                [
+                    1122.0,
+                    1285.0
+                ],
+                [
+                    1122.0,
+                    1334.0
+                ],
+                [
+                    351.0,
+                    1334.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– \"Organization\" sub-sub-field from \"Issuer\" sub-field from \"TBSCertificate\" field of the V2G root CA certificate or OEM root CA certificate;",
+            "block_bbox": [
+                352,
+                1336,
+                1121,
+                1386
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    352.0,
+                    1336.0
+                ],
+                [
+                    1121.0,
+                    1336.0
+                ],
+                [
+                    1121.0,
+                    1386.0
+                ],
+                [
+                    352.0,
+                    1386.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– \"Organization Unit\" sub-sub-field from \"Issuer\" sub-field from \"TBSCertificate\" field of the V2G root CA certificate or OEM root CA certificate;",
+            "block_bbox": [
+                352,
+                1387,
+                1118,
+                1436
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    352.0,
+                    1387.0
+                ],
+                [
+                    1118.0,
+                    1387.0
+                ],
+                [
+                    1118.0,
+                    1436.0
+                ],
+                [
+                    352.0,
+                    1436.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– \"Common Name\" sub-sub-field from \"Issuer\" sub-field from \"TBSCertificate\" field of the V2G root CA certificate or OEM root CA certificate;",
+            "block_bbox": [
+                352,
+                1438,
+                1118,
+                1490
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    352.0,
+                    1438.0
+                ],
+                [
+                    1118.0,
+                    1438.0
+                ],
+                [
+                    1118.0,
+                    1490.0
+                ],
+                [
+                    352.0,
+                    1490.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– \"CertificateSerialNumber\" sub-field from \"TBSCertificate\" field of the V2G root CA certificate or OEM root CA certificate.",
+            "block_bbox": [
+                352,
+                1490,
+                1120,
+                1543
+            ],
+            "block_id": 18,
+            "block_order": 18,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    352.0,
+                    1490.0
+                ],
+                [
+                    1120.0,
+                    1490.0
+                ],
+                [
+                    1120.0,
+                    1543.0
+                ],
+                [
+                    352.0,
+                    1543.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "63",
+            "block_bbox": [
+                1091,
+                1625,
+                1119,
+                1645
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    1091.0,
+                    1625.0
+                ],
+                [
+                    1118.0,
+                    1625.0
+                ],
+                [
+                    1118.0,
+                    1644.0
+                ],
+                [
+                    1091.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1119,
+                1683
+            ],
+            "block_id": 20,
+            "block_order": null,
+            "group_id": 20,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1089,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1640
+                ],
+                [
+                    1083,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8816006183624268,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9078689217567444,
+                "coordinate": [
+                    137,
+                    168,
+                    1120,
+                    245
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        168.0
+                    ],
+                    [
+                        1120.0,
+                        245.0
+                    ],
+                    [
+                        137.0,
+                        245.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9160860180854797,
+                "coordinate": [
+                    136,
+                    269,
+                    1120,
+                    318
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        269.0
+                    ],
+                    [
+                        1120.0,
+                        269.0
+                    ],
+                    [
+                        1120.0,
+                        318.0
+                    ],
+                    [
+                        136.0,
+                        318.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8565585613250732,
+                "coordinate": [
+                    136,
+                    340,
+                    1040,
+                    368
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        340.0
+                    ],
+                    [
+                        1040.0,
+                        340.0
+                    ],
+                    [
+                        1040.0,
+                        368.0
+                    ],
+                    [
+                        136.0,
+                        368.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9340236186981201,
+                "coordinate": [
+                    136,
+                    389,
+                    1121,
+                    494
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        389.0
+                    ],
+                    [
+                        1121.0,
+                        389.0
+                    ],
+                    [
+                        1121.0,
+                        494.0
+                    ],
+                    [
+                        136.0,
+                        494.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8991260528564453,
+                "coordinate": [
+                    137,
+                    516,
+                    1121,
+                    570
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        516.0
+                    ],
+                    [
+                        1121.0,
+                        516.0
+                    ],
+                    [
+                        1121.0,
+                        570.0
+                    ],
+                    [
+                        137.0,
+                        570.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.913802444934845,
+                "coordinate": [
+                    137,
+                    592,
+                    1120,
+                    640
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        137.0,
+                        592.0
+                    ],
+                    [
+                        1120.0,
+                        592.0
+                    ],
+                    [
+                        1120.0,
+                        640.0
+                    ],
+                    [
+                        137.0,
+                        640.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9287698268890381,
+                "coordinate": [
+                    137,
+                    664,
+                    1120,
+                    741
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        137.0,
+                        664.0
+                    ],
+                    [
+                        1120.0,
+                        664.0
+                    ],
+                    [
+                        1120.0,
+                        741.0
+                    ],
+                    [
+                        137.0,
+                        741.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8345061540603638,
+                "coordinate": [
+                    137,
+                    763,
+                    446,
+                    790
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        763.0
+                    ],
+                    [
+                        446.0,
+                        763.0
+                    ],
+                    [
+                        446.0,
+                        790.0
+                    ],
+                    [
+                        137.0,
+                        790.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9010506868362427,
+                "coordinate": [
+                    136,
+                    811,
+                    1119,
+                    862
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        136.0,
+                        811.0
+                    ],
+                    [
+                        1119.0,
+                        811.0
+                    ],
+                    [
+                        1119.0,
+                        862.0
+                    ],
+                    [
+                        136.0,
+                        862.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.873792290687561,
+                "coordinate": [
+                    154,
+                    882,
+                    1119,
+                    961
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        154.0,
+                        882.0
+                    ],
+                    [
+                        1119.0,
+                        882.0
+                    ],
+                    [
+                        1119.0,
+                        961.0
+                    ],
+                    [
+                        154.0,
+                        961.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8366473913192749,
+                "coordinate": [
+                    137,
+                    983,
+                    445,
+                    1010
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        137.0,
+                        983.0
+                    ],
+                    [
+                        445.0,
+                        983.0
+                    ],
+                    [
+                        445.0,
+                        1010.0
+                    ],
+                    [
+                        137.0,
+                        1010.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9146105647087097,
+                "coordinate": [
+                    136,
+                    1031,
+                    1120,
+                    1081
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1031.0
+                    ],
+                    [
+                        1120.0,
+                        1031.0
+                    ],
+                    [
+                        1120.0,
+                        1081.0
+                    ],
+                    [
+                        136.0,
+                        1081.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9452968835830688,
+                "coordinate": [
+                    321,
+                    1104,
+                    1122,
+                    1282
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        321.0,
+                        1104.0
+                    ],
+                    [
+                        1122.0,
+                        1104.0
+                    ],
+                    [
+                        1122.0,
+                        1282.0
+                    ],
+                    [
+                        321.0,
+                        1282.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9201668500900269,
+                "coordinate": [
+                    351,
+                    1285,
+                    1122,
+                    1334
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        351.0,
+                        1285.0
+                    ],
+                    [
+                        1122.0,
+                        1285.0
+                    ],
+                    [
+                        1122.0,
+                        1334.0
+                    ],
+                    [
+                        351.0,
+                        1334.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9188632965087891,
+                "coordinate": [
+                    352,
+                    1336,
+                    1121,
+                    1386
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        352.0,
+                        1336.0
+                    ],
+                    [
+                        1121.0,
+                        1336.0
+                    ],
+                    [
+                        1121.0,
+                        1386.0
+                    ],
+                    [
+                        352.0,
+                        1386.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8367761373519897,
+                "coordinate": [
+                    352,
+                    1387,
+                    1118,
+                    1436
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        352.0,
+                        1387.0
+                    ],
+                    [
+                        1118.0,
+                        1387.0
+                    ],
+                    [
+                        1118.0,
+                        1436.0
+                    ],
+                    [
+                        352.0,
+                        1436.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7913506627082825,
+                "coordinate": [
+                    352,
+                    1438,
+                    1118,
+                    1490
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        352.0,
+                        1438.0
+                    ],
+                    [
+                        1118.0,
+                        1438.0
+                    ],
+                    [
+                        1118.0,
+                        1490.0
+                    ],
+                    [
+                        352.0,
+                        1490.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9034051299095154,
+                "coordinate": [
+                    352,
+                    1490,
+                    1120,
+                    1543
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        352.0,
+                        1490.0
+                    ],
+                    [
+                        1120.0,
+                        1490.0
+                    ],
+                    [
+                        1120.0,
+                        1543.0
+                    ],
+                    [
+                        352.0,
+                        1543.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7328287363052368,
+                "coordinate": [
+                    1091,
+                    1625,
+                    1119,
+                    1645
+                ],
+                "order": 19,
+                "polygon_points": [
+                    [
+                        1091.0,
+                        1625.0
+                    ],
+                    [
+                        1118.0,
+                        1625.0
+                    ],
+                    [
+                        1118.0,
+                        1644.0
+                    ],
+                    [
+                        1091.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8684601783752441,
+                "coordinate": [
+                    61,
+                    1631,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1089,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1640
+                    ],
+                    [
+                        1083,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

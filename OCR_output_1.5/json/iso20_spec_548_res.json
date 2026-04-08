@@ -1,0 +1,294 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 548,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td colspan=\"2\"></td><td colspan=\"3\">Relevant credentials</td></tr><tr><td>Security appliances</td><td>Comment</td><td>EVCC (EV)</td><td>SECC (EVSE) private SECC (for PE only)</td><td>Secondary actor</td></tr><tr><td>DC/AC charging with PnC - DC/AC charging with transport security - contracts based payment, with meter status receipt - individual / dynamic tariff tables for customer contract certificate installation via EVSE is not supported contract certificate validation by SA</td><td>- TLS authentication of SECC - TLS authentication of EVCC - Contract authentication on application layer - TLS based confidential data exchange between EV and EVSE (service discovery, power delivery, metering) - TLS based Integrity of data between EV and EVSE (service discovery, power delivery, metering) - meter receipt signing based on sontract key pair Appl.Layer: AES for data encryption, ECDH used for key exchange, ECC for digital signature for tariff signing TLS: AES used for stream/session encryption, ECDH used for key exchange</td><td>Vehicle leaf key pair (vehicle leaf private key and certificate for TLS) certified by a sub-CA which was certified by an OEM root CA or a V2G root CA all vehicle sub-CA certificates of the certificate chain above the vehicle certificate V2G root CA certificate(s) contract key pair (contract private key and certificate for contract based payment) certified by a CA which can be certified by a V2G root CA. All eMSP sub-CA certificates of the contract based payment) certified by a CA which can be certified by a V2G root CA. All eMSP sub-CA certificates of the certificate chain above the contract certificate</td><td>SECC leaf key pair (up to 10 generations depending on the aging V2G RootKey) (SECC leaf private key and certificate for TLS) certified by a sub-CA which was certified by a V2G root CA All CSO sub-CA certificates of the certificate chain above the SECC certificate OCSP response ticket(s) from the corresponding CSO-sub-CA and V2G root CA OEM root CA certificate(s) (if not below a V2G root. V2G root CA certificate(s) otherwise)</td><td>eMSP root CA certificate (if not below a V2G root. V2G root CA certificate(s) otherwise) All eMSP-sub-CA certificate of the certificate chain below the eMSP-sub-CA key pair issuing contract certificates eMSP sub-CA key pair (SA private key and certificate) for contract certificate signing</td></tr></table>",
+            "block_bbox": [
+                140,
+                163,
+                1117,
+                1068
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    1068.0
+                ],
+                [
+                    140.0,
+                    1068.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "543",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1645
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1644.0
+                ],
+                [
+                    1076.9998779296875,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1629,
+                1121,
+                1683
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    61,
+                    1637
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1079,
+                    1682
+                ],
+                [
+                    1120,
+                    1667
+                ],
+                [
+                    1120,
+                    1645
+                ],
+                [
+                    1085,
+                    1637
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.872626543045044,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9759111404418945,
+                "coordinate": [
+                    140,
+                    163,
+                    1117,
+                    1068
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        140.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        1068.0
+                    ],
+                    [
+                        140.0,
+                        1068.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7405246496200562,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1644.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8694477081298828,
+                "coordinate": [
+                    61,
+                    1629,
+                    1121,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1637
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1079,
+                        1682
+                    ],
+                    [
+                        1120,
+                        1667
+                    ],
+                    [
+                        1120,
+                        1645
+                    ],
+                    [
+                        1085,
+                        1637
+                    ]
+                ]
+            }
+        ]
+    }
+}

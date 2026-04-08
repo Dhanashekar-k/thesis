@@ -1,0 +1,843 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 224,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>SPCMaxOutputPowerLimit</td><td>complexTypeRationalNumberTyperefer to 8.3.5.3.8</td><td>Time varying maximum transmittable power of the supply power circuit given in Watt. The EVCC should not request more than this amount of power</td></tr><tr><td>SPCMinOutputPowerLimit</td><td>complexTypeRationalNumberTyperefer to 8.3.5.3.8</td><td>Time varying minimum transmittable power of the supply power circuit given in Watt. The EVCC should not request less than this amount of power, unless it will request 0 watts.</td></tr><tr><td>SPCChargeDiagnostics</td><td>simpleType:WPT_SPCChargeDiagnosticsTyperefer to Annex A for the type definition</td><td>Diagnostics information, can have the following values: - NoIssue - FODDetected - LOPDetected - SPCTempOverheatDetected - SPCPowerTransferAnomalyDetected - SPCAnomalyDetected</td></tr><tr><td>SPCOoperatingFrequency</td><td>complexTypeRationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:SPC actual MF-WPT operating frequency in Hz</td></tr><tr><td>SPCPowerControlParameter</td><td>simpleType:WPT_SPCPowerControlParameterTyperefer to Annex A for the type definition</td><td>Optional:Additional parameters for the applied wireless power transfer method:Primary device coil current information</td></tr><tr><td>ManufacturerSpecificDataContainer</td><td>simpleType:WPT_DataContainerTyperefer to Annex A for the type definition</td><td>Optional:Manufacturer specific parameters:additional field for proprietary manufacturer specific information during power transfer (vendor specific information)</td></tr></table>",
+            "block_bbox": [
+                132,
+                163,
+                1124,
+                1084
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    132.0,
+                    163.0
+                ],
+                [
+                    1124.0,
+                    163.0
+                ],
+                [
+                    1124.0,
+                    1084.0
+                ],
+                [
+                    132.0,
+                    1084.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.7 ACDP messages",
+            "block_bbox": [
+                219,
+                1105,
+                492,
+                1131
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    219.0,
+                    1105.0
+                ],
+                [
+                    492.0,
+                    1105.0
+                ],
+                [
+                    492.0,
+                    1131.0
+                ],
+                [
+                    219.0,
+                    1131.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.7.1 Introduction and scope",
+            "block_bbox": [
+                137,
+                1152,
+                493,
+                1178
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1152.0
+                ],
+                [
+                    493.0,
+                    1152.0
+                ],
+                [
+                    493.0,
+                    1178.0
+                ],
+                [
+                    137.0,
+                    1178.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The scope of the following subclause relates to ACDP for infrastructure mounted pantograph used for high power charging of electric busses or other commercial vehicles:",
+            "block_bbox": [
+                137,
+                1202,
+                1120,
+                1253
+            ],
+            "block_id": 4,
+            "block_order": 3,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1202.0
+                ],
+                [
+                    1120.0,
+                    1202.0
+                ],
+                [
+                    1120.0,
+                    1253.0
+                ],
+                [
+                    137.0,
+                    1253.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– ACDP with infrastructure mounted pantograph as specified in EN 50696:2021, A.2 and A.3;",
+            "block_bbox": [
+                170,
+                1259,
+                1071,
+                1284
+            ],
+            "block_id": 5,
+            "block_order": 4,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    170.0,
+                    1259.0
+                ],
+                [
+                    1071.0,
+                    1259.0
+                ],
+                [
+                    1071.0,
+                    1284.0
+                ],
+                [
+                    170.0,
+                    1284.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "- WLAN communication according to this document;",
+            "block_bbox": [
+                172,
+                1291,
+                697,
+                1316
+            ],
+            "block_id": 6,
+            "block_order": 5,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    172.0,
+                    1291.0
+                ],
+                [
+                    697.0,
+                    1291.0
+                ],
+                [
+                    697.0,
+                    1316.0
+                ],
+                [
+                    172.0,
+                    1316.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "- WLAN communication layer according to ISO 15118-8;",
+            "block_bbox": [
+                171,
+                1323,
+                731,
+                1349
+            ],
+            "block_id": 7,
+            "block_order": 6,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    171.0,
+                    1323.0
+                ],
+                [
+                    731.0,
+                    1323.0
+                ],
+                [
+                    731.0,
+                    1349.0
+                ],
+                [
+                    171.0,
+                    1349.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– Electrical safety according to IEC 61851-23-1.",
+            "block_bbox": [
+                171,
+                1354,
+                646,
+                1379
+            ],
+            "block_id": 8,
+            "block_order": 7,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    171.0,
+                    1354.0
+                ],
+                [
+                    646.0,
+                    1354.0
+                ],
+                [
+                    646.0,
+                    1379.0
+                ],
+                [
+                    171.0,
+                    1379.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.7.2 Overview",
+            "block_bbox": [
+                138,
+                1402,
+                350,
+                1426
+            ],
+            "block_id": 9,
+            "block_order": 8,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1402.0
+                ],
+                [
+                    350.0,
+                    1402.0
+                ],
+                [
+                    350.0,
+                    1426.0
+                ],
+                [
+                    138.0,
+                    1426.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The following clause describes the requirements for the WLAN based communication for an infrastructure mounted ACDP according to EN 50696:2021, Annex A using direct current.",
+            "block_bbox": [
+                136,
+                1450,
+                1121,
+                1504
+            ],
+            "block_id": 10,
+            "block_order": 9,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1450.0
+                ],
+                [
+                    1121.0,
+                    1450.0
+                ],
+                [
+                    1121.0,
+                    1504.0
+                ],
+                [
+                    136.0,
+                    1504.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "219",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1643.0
+                ],
+                [
+                    1076.9998779296875,
+                    1643.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 - All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1118,
+                1682
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1681
+                ],
+                [
+                    1094,
+                    1681
+                ],
+                [
+                    1117,
+                    1664
+                ],
+                [
+                    1117,
+                    1640
+                ],
+                [
+                    1070,
+                    1631
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8840063214302063,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9831127524375916,
+                "coordinate": [
+                    132,
+                    163,
+                    1124,
+                    1084
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        132.0,
+                        163.0
+                    ],
+                    [
+                        1124.0,
+                        163.0
+                    ],
+                    [
+                        1124.0,
+                        1084.0
+                    ],
+                    [
+                        132.0,
+                        1084.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.845569908618927,
+                "coordinate": [
+                    219,
+                    1105,
+                    492,
+                    1131
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        219.0,
+                        1105.0
+                    ],
+                    [
+                        492.0,
+                        1105.0
+                    ],
+                    [
+                        492.0,
+                        1131.0
+                    ],
+                    [
+                        219.0,
+                        1131.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.85102778673172,
+                "coordinate": [
+                    137,
+                    1152,
+                    493,
+                    1178
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1152.0
+                    ],
+                    [
+                        493.0,
+                        1152.0
+                    ],
+                    [
+                        493.0,
+                        1178.0
+                    ],
+                    [
+                        137.0,
+                        1178.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9252454042434692,
+                "coordinate": [
+                    137,
+                    1202,
+                    1120,
+                    1253
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1202.0
+                    ],
+                    [
+                        1120.0,
+                        1202.0
+                    ],
+                    [
+                        1120.0,
+                        1253.0
+                    ],
+                    [
+                        137.0,
+                        1253.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8580628633499146,
+                "coordinate": [
+                    170,
+                    1259,
+                    1071,
+                    1284
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        170.0,
+                        1259.0
+                    ],
+                    [
+                        1071.0,
+                        1259.0
+                    ],
+                    [
+                        1071.0,
+                        1284.0
+                    ],
+                    [
+                        170.0,
+                        1284.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8595777153968811,
+                "coordinate": [
+                    172,
+                    1291,
+                    697,
+                    1316
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        172.0,
+                        1291.0
+                    ],
+                    [
+                        697.0,
+                        1291.0
+                    ],
+                    [
+                        697.0,
+                        1316.0
+                    ],
+                    [
+                        172.0,
+                        1316.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8654534220695496,
+                "coordinate": [
+                    171,
+                    1323,
+                    731,
+                    1349
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        171.0,
+                        1323.0
+                    ],
+                    [
+                        731.0,
+                        1323.0
+                    ],
+                    [
+                        731.0,
+                        1349.0
+                    ],
+                    [
+                        171.0,
+                        1349.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8338736295700073,
+                "coordinate": [
+                    171,
+                    1354,
+                    646,
+                    1379
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        171.0,
+                        1354.0
+                    ],
+                    [
+                        646.0,
+                        1354.0
+                    ],
+                    [
+                        646.0,
+                        1379.0
+                    ],
+                    [
+                        171.0,
+                        1379.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8620738387107849,
+                "coordinate": [
+                    138,
+                    1402,
+                    350,
+                    1426
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1402.0
+                    ],
+                    [
+                        350.0,
+                        1402.0
+                    ],
+                    [
+                        350.0,
+                        1426.0
+                    ],
+                    [
+                        138.0,
+                        1426.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9188776016235352,
+                "coordinate": [
+                    136,
+                    1450,
+                    1121,
+                    1504
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1450.0
+                    ],
+                    [
+                        1121.0,
+                        1450.0
+                    ],
+                    [
+                        1121.0,
+                        1504.0
+                    ],
+                    [
+                        136.0,
+                        1504.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7980343699455261,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1643.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1643.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8811012506484985,
+                "coordinate": [
+                    61,
+                    1631,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1681
+                    ],
+                    [
+                        1094,
+                        1681
+                    ],
+                    [
+                        1117,
+                        1664
+                    ],
+                    [
+                        1117,
+                        1640
+                    ],
+                    [
+                        1070,
+                        1631
+                    ]
+                ]
+            }
+        ]
+    }
+}

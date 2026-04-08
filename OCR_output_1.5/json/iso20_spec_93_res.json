@@ -1,0 +1,583 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 93,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The efficient XML interchange (EXI) format allows to use and process XML-based messages on a binary level. Thus, the EXI format increases the processing speed of XML-based data as well as reduces the memory usage. Basically, EXI is a W3C recommendation. The EXI format uses a relatively simple grammar driven approach that achieves very efficient encodings for a broad range of use cases. It is not uncommon for EXI messages to be up to 100 times smaller than equivalent XML documents. The EXI specification describes in a predefined process how schema information should be transformed into EXI grammar. The reason for doing so is that EXI grammar is much simpler to process, compared to XML schema information. Nevertheless the parsing can be performed in the same accurate way as it is possible in XML.",
+            "block_bbox": [
+                67,
+                169,
+                1055,
+                378
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    169.0
+                ],
+                [
+                    1055.0,
+                    169.0
+                ],
+                [
+                    1055.0,
+                    378.0
+                ],
+                [
+                    67.0,
+                    378.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "There are different kinds of coding mechanism with EXI. To meet the demands of efficient processing, less resources usage, message size, and message extendibility schema-aware settings should be selected (see 7.9.1.3 for the requirement EXI settings for ISO 15118 communication).",
+            "block_bbox": [
+                67,
+                398,
+                1053,
+                479
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    398.0
+                ],
+                [
+                    1053.0,
+                    398.0
+                ],
+                [
+                    1053.0,
+                    479.0
+                ],
+                [
+                    67.0,
+                    479.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In general, EXI streams can be created in a very efficient way if all encoded information (elements/attributes) are defined by an underlying XML Schema (Schema-informed Grammars). Deviant information based on XML Schema knowledge is encoded in a more generic way. The EXI coder encodes the qualified names (namespace and element/attribute name) of such unknown information in a string-based manner. However, simple types of the schema deviations may be still encoded type-aware.",
+            "block_bbox": [
+                67,
+                500,
+                1054,
+                633
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    500.0
+                ],
+                [
+                    1054.0,
+                    500.0
+                ],
+                [
+                    1054.0,
+                    633.0
+                ],
+                [
+                    67.0,
+                    633.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "EXI decoders are able to decode the efficient EXI streams by using the same underlying XML Schema which was used for the encoding process. Schema deviations are recognized in the EXI stream. These deviations (unknown elements or attributes) can be either processed or skipped.",
+            "block_bbox": [
+                68,
+                653,
+                1053,
+                734
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    653.0
+                ],
+                [
+                    1053.0,
+                    653.0
+                ],
+                [
+                    1053.0,
+                    734.0
+                ],
+                [
+                    68.0,
+                    734.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Figure 12 summarizes the Efficient XML Interchange concept for the ISO 15118 communication. Due to the high limited resource restriction the EVCC may only be able to handle the XML-based data using a corresponding data structure representation. Such data structures can be used to serialize or deSERIALize ISO 15118 communication application messages. Meanwhile, the SECC may be able to handle the data as data structure and/or the more resource intensive document object model (DOM) or in a traditional plain-text XML variant.",
+            "block_bbox": [
+                67,
+                755,
+                1054,
+                913
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    755.0
+                ],
+                [
+                    1054.0,
+                    755.0
+                ],
+                [
+                    1054.0,
+                    913.0
+                ],
+                [
+                    67.0,
+                    913.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "88",
+            "block_bbox": [
+                70,
+                1614,
+                103,
+                1635
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1634.0
+                ],
+                [
+                    70.0,
+                    1634.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1639,
+                1119,
+                1681
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1639.0
+                ],
+                [
+                    1119.0,
+                    1639.0
+                ],
+                [
+                    1119.0,
+                    1681.0
+                ],
+                [
+                    60.0,
+                    1681.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8429790735244751,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9561505317687988,
+                "coordinate": [
+                    67,
+                    169,
+                    1055,
+                    378
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        67.0,
+                        169.0
+                    ],
+                    [
+                        1055.0,
+                        169.0
+                    ],
+                    [
+                        1055.0,
+                        378.0
+                    ],
+                    [
+                        67.0,
+                        378.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9294679164886475,
+                "coordinate": [
+                    67,
+                    398,
+                    1053,
+                    479
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        67.0,
+                        398.0
+                    ],
+                    [
+                        1053.0,
+                        398.0
+                    ],
+                    [
+                        1053.0,
+                        479.0
+                    ],
+                    [
+                        67.0,
+                        479.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9514140486717224,
+                "coordinate": [
+                    67,
+                    500,
+                    1054,
+                    633
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        67.0,
+                        500.0
+                    ],
+                    [
+                        1054.0,
+                        500.0
+                    ],
+                    [
+                        1054.0,
+                        633.0
+                    ],
+                    [
+                        67.0,
+                        633.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9293573498725891,
+                "coordinate": [
+                    68,
+                    653,
+                    1053,
+                    734
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        653.0
+                    ],
+                    [
+                        1053.0,
+                        653.0
+                    ],
+                    [
+                        1053.0,
+                        734.0
+                    ],
+                    [
+                        68.0,
+                        734.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9557473659515381,
+                "coordinate": [
+                    67,
+                    755,
+                    1054,
+                    913
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        67.0,
+                        755.0
+                    ],
+                    [
+                        1054.0,
+                        755.0
+                    ],
+                    [
+                        1054.0,
+                        913.0
+                    ],
+                    [
+                        67.0,
+                        913.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7551946043968201,
+                "coordinate": [
+                    70,
+                    1614,
+                    103,
+                    1635
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1634.0
+                    ],
+                    [
+                        70.0,
+                        1634.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6494227647781372,
+                "coordinate": [
+                    797,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5683642029762268,
+                "coordinate": [
+                    60,
+                    1639,
+                    1119,
+                    1681
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1639.0
+                    ],
+                    [
+                        1119.0,
+                        1639.0
+                    ],
+                    [
+                        1119.0,
+                        1681.0
+                    ],
+                    [
+                        60.0,
+                        1681.0
+                    ]
+                ]
+            }
+        ]
+    }
+}

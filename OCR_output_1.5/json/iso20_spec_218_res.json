@@ -1,0 +1,735 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 218,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>SDMaxGroundClearanceSupport</td><td>simpleType:xs:unsignedShort</td><td>Maximum value of supported secondary device ground clearance in mm</td></tr><tr><td>SDMinGroundClearanceSupport</td><td>simpleType:xs:unsignedShort</td><td>Minimum value of the secondary device ground clearance in mm</td></tr><tr><td>PDMinCoilCurrent</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Minimum current through the primary coil, which can be controlled by the primary device</td></tr><tr><td>PDMaxCoilCurrent</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Maximum current through the primary coil, which can be controlled by the primary device</td></tr><tr><td>SDManufacturerSpecificDataContainer</td><td>simpleType:WPT_DataContainerTyperefer to Annex A for the type definition</td><td>Optional:Manufacturer specific data container, containing, e.g. manufacturer ID and Model ID</td></tr></table>",
+            "block_bbox": [
+                137,
+                164,
+                1122,
+                669
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    164.0
+                ],
+                [
+                    1122.0,
+                    164.0
+                ],
+                [
+                    1122.0,
+                    669.0
+                ],
+                [
+                    137.0,
+                    669.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.6.6 WPT\\_AlignmentCheckReq/Res",
+            "block_bbox": [
+                137,
+                692,
+                565,
+                719
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    692.0
+                ],
+                [
+                    565.0,
+                    692.0
+                ],
+                [
+                    565.0,
+                    719.0
+                ],
+                [
+                    137.0,
+                    719.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The WPT\\_AlignmentCheckReq/Res messages are used to exchange information needed to perform the alignment check, with which the proper position of the EV device with the primary device is checked and confirmed (See IEC 61980-2).",
+            "block_bbox": [
+                137,
+                741,
+                1120,
+                821
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    741.0
+                ],
+                [
+                    1120.0,
+                    741.0
+                ],
+                [
+                    1120.0,
+                    821.0
+                ],
+                [
+                    137.0,
+                    821.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "8.3.4.6.6.1 WPT\\_AlignmentCheckReq/Res handling",
+            "block_bbox": [
+                192,
+                840,
+                752,
+                868
+            ],
+            "block_id": 4,
+            "block_order": 3,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    192.0,
+                    840.0
+                ],
+                [
+                    752.0,
+                    840.0
+                ],
+                [
+                    752.0,
+                    868.0
+                ],
+                [
+                    192.0,
+                    868.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "8.3.4.6.6.2 WPT\\_AlignmentCheckReq",
+            "block_bbox": [
+                193,
+                888,
+                609,
+                914
+            ],
+            "block_id": 5,
+            "block_order": 4,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    888.0
+                ],
+                [
+                    609.0,
+                    888.0
+                ],
+                [
+                    609.0,
+                    914.0
+                ],
+                [
+                    193.0,
+                    914.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5015] The EVCC and the SECC shall implement the message elements as defined in Figure 80 and Table 76.",
+            "block_bbox": [
+                137,
+                936,
+                1120,
+                987
+            ],
+            "block_id": 6,
+            "block_order": 5,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    936.0
+                ],
+                [
+                    1120.0,
+                    936.0
+                ],
+                [
+                    1120.0,
+                    987.0
+                ],
+                [
+                    137.0,
+                    987.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                265,
+                1015,
+                968,
+                1341
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    265.0,
+                    1015.0
+                ],
+                [
+                    968.0,
+                    1015.0
+                ],
+                [
+                    968.0,
+                    1341.0
+                ],
+                [
+                    265.0,
+                    1341.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 80 — Schema diagram - WPT\\_AlignmentCheckReq",
+            "block_bbox": [
+                335,
+                1378,
+                922,
+                1406
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    335.0,
+                    1378.0
+                ],
+                [
+                    922.0,
+                    1378.0
+                ],
+                [
+                    922.0,
+                    1406.0
+                ],
+                [
+                    335.0,
+                    1406.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 76.",
+            "block_bbox": [
+                137,
+                1416,
+                718,
+                1443
+            ],
+            "block_id": 9,
+            "block_order": 6,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1416.0
+                ],
+                [
+                    718.0,
+                    1416.0
+                ],
+                [
+                    718.0,
+                    1443.0
+                ],
+                [
+                    137.0,
+                    1443.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8807097673416138,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9774379730224609,
+                "coordinate": [
+                    137,
+                    164,
+                    1122,
+                    669
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        137.0,
+                        164.0
+                    ],
+                    [
+                        1122.0,
+                        164.0
+                    ],
+                    [
+                        1122.0,
+                        669.0
+                    ],
+                    [
+                        137.0,
+                        669.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8140784502029419,
+                "coordinate": [
+                    137,
+                    692,
+                    565,
+                    719
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        692.0
+                    ],
+                    [
+                        565.0,
+                        692.0
+                    ],
+                    [
+                        565.0,
+                        719.0
+                    ],
+                    [
+                        137.0,
+                        719.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9392391443252563,
+                "coordinate": [
+                    137,
+                    741,
+                    1120,
+                    821
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        741.0
+                    ],
+                    [
+                        1120.0,
+                        741.0
+                    ],
+                    [
+                        1120.0,
+                        821.0
+                    ],
+                    [
+                        137.0,
+                        821.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6743384003639221,
+                "coordinate": [
+                    192,
+                    840,
+                    752,
+                    868
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        192.0,
+                        840.0
+                    ],
+                    [
+                        752.0,
+                        840.0
+                    ],
+                    [
+                        752.0,
+                        868.0
+                    ],
+                    [
+                        192.0,
+                        868.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6626615524291992,
+                "coordinate": [
+                    193,
+                    888,
+                    609,
+                    914
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        193.0,
+                        888.0
+                    ],
+                    [
+                        609.0,
+                        888.0
+                    ],
+                    [
+                        609.0,
+                        914.0
+                    ],
+                    [
+                        193.0,
+                        914.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.880044162273407,
+                "coordinate": [
+                    137,
+                    936,
+                    1120,
+                    987
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        936.0
+                    ],
+                    [
+                        1120.0,
+                        936.0
+                    ],
+                    [
+                        1120.0,
+                        987.0
+                    ],
+                    [
+                        137.0,
+                        987.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9545889496803284,
+                "coordinate": [
+                    265,
+                    1015,
+                    968,
+                    1341
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        265.0,
+                        1015.0
+                    ],
+                    [
+                        968.0,
+                        1015.0
+                    ],
+                    [
+                        968.0,
+                        1341.0
+                    ],
+                    [
+                        265.0,
+                        1341.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8455229997634888,
+                "coordinate": [
+                    335,
+                    1378,
+                    922,
+                    1406
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        335.0,
+                        1378.0
+                    ],
+                    [
+                        922.0,
+                        1378.0
+                    ],
+                    [
+                        922.0,
+                        1406.0
+                    ],
+                    [
+                        335.0,
+                        1406.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5222194194793701,
+                "coordinate": [
+                    137,
+                    1416,
+                    718,
+                    1443
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1416.0
+                    ],
+                    [
+                        718.0,
+                        1416.0
+                    ],
+                    [
+                        718.0,
+                        1443.0
+                    ],
+                    [
+                        137.0,
+                        1443.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.844222903251648,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7668697237968445,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        1077,
+                        1624
+                    ],
+                    [
+                        1077,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

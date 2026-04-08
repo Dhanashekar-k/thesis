@@ -1,0 +1,1254 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 81,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1524] The firewall running on the SECC shall be configured to allow access to this (these) dedicated VAS port(s).",
+            "block_bbox": [
+                69,
+                167,
+                1052,
+                221
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    221.0
+                ],
+                [
+                    69.0,
+                    221.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1525] Either full-handshake TLS or resumed TLS can be used to open an additional communication channel for a VAS. The resumption shall be based on the TLS context (i.e. ticket) exchanged in the V2G session. TLS session resumption shall be performed using the mechanism described in 7.7.3.7.",
+            "block_bbox": [
+                69,
+                242,
+                1053,
+                348
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    242.0
+                ],
+                [
+                    1053.0,
+                    242.0
+                ],
+                [
+                    1053.0,
+                    348.0
+                ],
+                [
+                    69.0,
+                    348.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1527] If the SECC allows TLS resumption for VAS, the SECC shall issue the EVCC a separate TLS session ticket for each offered VAS.",
+            "block_bbox": [
+                69,
+                370,
+                1053,
+                423
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    370.0
+                ],
+                [
+                    1053.0,
+                    370.0
+                ],
+                [
+                    1053.0,
+                    423.0
+                ],
+                [
+                    69.0,
+                    423.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The SECC can provide TCP-level forwarding. This forwarding can be mapped to a fixed external URI or a Proxy server or localhost for local VAS. For an end-to-end secured communication via the proxy server, the proxy server should offer the HTTP CONNECT method as specified in IETF RFC 2817. If UDP based VAS are desired, the approach using session resumption can also be used in conjunction with OpenVPN. For end-to-end secured communication over fixed external URI, the EVCC and the target VAS server should negotiate a separate security association, e.g. a separate TLS session. The specific security for VAS is not in the scope of this document.",
+            "block_bbox": [
+                68,
+                446,
+                1054,
+                630
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    446.0
+                ],
+                [
+                    1054.0,
+                    446.0
+                ],
+                [
+                    1054.0,
+                    630.0
+                ],
+                [
+                    68.0,
+                    630.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 For detailed information on the realization, please refer to Annex G.",
+            "block_bbox": [
+                68,
+                650,
+                749,
+                676
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    650.0
+                ],
+                [
+                    749.0,
+                    650.0
+                ],
+                [
+                    749.0,
+                    676.0
+                ],
+                [
+                    68.0,
+                    676.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 IETF RFC 2817 has been updated by IETF RFC 7230 (which is updated by IETF RFC 8615) and IETF RFC 7231. These updates are considered to be included in this document.",
+            "block_bbox": [
+                68,
+                697,
+                1053,
+                747
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    697.0
+                ],
+                [
+                    1053.0,
+                    697.0
+                ],
+                [
+                    1053.0,
+                    747.0
+                ],
+                [
+                    68.0,
+                    747.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2470] If the SECC does not support TLS session resumption, the EVCC shall setup a distinct TLS session for each value added service supported/provided by the SECC.",
+            "block_bbox": [
+                70,
+                769,
+                1053,
+                823
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    769.0
+                ],
+                [
+                    1053.0,
+                    769.0
+                ],
+                [
+                    1053.0,
+                    823.0
+                ],
+                [
+                    70.0,
+                    823.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 For methods of associating a VAS session with a V2G session, see Annex G.",
+            "block_bbox": [
+                68,
+                844,
+                802,
+                870
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    844.0
+                ],
+                [
+                    802.0,
+                    844.0
+                ],
+                [
+                    802.0,
+                    870.0
+                ],
+                [
+                    68.0,
+                    870.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.7.3.7 TLS session resumption",
+            "block_bbox": [
+                151,
+                890,
+                506,
+                917
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    151.0,
+                    890.0
+                ],
+                [
+                    506.0,
+                    890.0
+                ],
+                [
+                    506.0,
+                    917.0
+                ],
+                [
+                    151.0,
+                    917.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "TLS session cannot be paused, but it can be closed (terminated). Refer to 7.7.3.8 for details of TLS session termination.",
+            "block_bbox": [
+                68,
+                939,
+                1053,
+                992
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    939.0
+                ],
+                [
+                    1053.0,
+                    939.0
+                ],
+                [
+                    1053.0,
+                    992.0
+                ],
+                [
+                    68.0,
+                    992.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "A closed TLS session can be restarted/resumed if the server (SECC) provided the client (EVCC) with the necessary information to resume the TLS session. The resumed TLS session, as described by IETF RFC 8446 is cryptographically bound to the initial TLS session without the need for re-authentication of the server/client certificates saving valuable time in time-critical applications.",
+            "block_bbox": [
+                68,
+                1015,
+                1054,
+                1120
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1015.0
+                ],
+                [
+                    1054.0,
+                    1015.0
+                ],
+                [
+                    1054.0,
+                    1120.0
+                ],
+                [
+                    68.0,
+                    1120.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "A TLS session resumption requires usage of \"Session Tickets\". The session ticket, in IETF RFC 8446, ensures that the client has access to the session credentials negotiated in the TLS handshake.",
+            "block_bbox": [
+                68,
+                1142,
+                1053,
+                1196
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1142.0
+                ],
+                [
+                    1053.0,
+                    1142.0
+                ],
+                [
+                    1053.0,
+                    1196.0
+                ],
+                [
+                    68.0,
+                    1196.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In the application of ISO 15118-20, TLS session resumption can be used to ensure that the value added service can be securely related to an already established V2G session. TLS session resumption cannot be used for V2G session resumption. Only full-handshake TLS can be used for V2G session resumption. Both TLS resumption and TLS full-handshake can be used for opening a VAS communication.",
+            "block_bbox": [
+                68,
+                1218,
+                1054,
+                1324
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1218.0
+                ],
+                [
+                    1054.0,
+                    1218.0
+                ],
+                [
+                    1054.0,
+                    1324.0
+                ],
+                [
+                    68.0,
+                    1324.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2021] 0-RTT shall not be used for TLS session resumption.",
+            "block_bbox": [
+                70,
+                1345,
+                753,
+                1373
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1345.0
+                ],
+                [
+                    753.0,
+                    1345.0
+                ],
+                [
+                    753.0,
+                    1373.0
+                ],
+                [
+                    70.0,
+                    1373.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 0-RTT can lead to replay attacks.",
+            "block_bbox": [
+                70,
+                1394,
+                452,
+                1419
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1394.0
+                ],
+                [
+                    452.0,
+                    1394.0
+                ],
+                [
+                    452.0,
+                    1419.0
+                ],
+                [
+                    70.0,
+                    1419.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "TLS session resumption in this document is performed via the \"PSK Handshake\" as defined in IETF RFC 8446 using \"pre_shared_key\" in the \"ClientHello\" and \"ServerHello\" messages. Refer to IETF RFC 8446 for further details.",
+            "block_bbox": [
+                68,
+                1442,
+                1054,
+                1520
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1442.0
+                ],
+                [
+                    1054.0,
+                    1442.0
+                ],
+                [
+                    1054.0,
+                    1520.0
+                ],
+                [
+                    68.0,
+                    1520.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "76",
+            "block_bbox": [
+                71,
+                1615,
+                103,
+                1636
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1615.0
+                ],
+                [
+                    102.0,
+                    1615.0
+                ],
+                [
+                    102.0,
+                    1635.0
+                ],
+                [
+                    71.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    60.71996307373047,
+                    1644.0020751953125
+                ],
+                [
+                    1118.0,
+                    1635.9998779296875
+                ],
+                [
+                    1118.332763671875,
+                    1679.9681396484375
+                ],
+                [
+                    61.052734375,
+                    1687.9703369140625
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8477058410644531,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8879103660583496,
+                "coordinate": [
+                    69,
+                    167,
+                    1052,
+                    221
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        69.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        221.0
+                    ],
+                    [
+                        69.0,
+                        221.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9352673292160034,
+                "coordinate": [
+                    69,
+                    242,
+                    1053,
+                    348
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        242.0
+                    ],
+                    [
+                        1053.0,
+                        242.0
+                    ],
+                    [
+                        1053.0,
+                        348.0
+                    ],
+                    [
+                        69.0,
+                        348.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8987129330635071,
+                "coordinate": [
+                    69,
+                    370,
+                    1053,
+                    423
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        370.0
+                    ],
+                    [
+                        1053.0,
+                        370.0
+                    ],
+                    [
+                        1053.0,
+                        423.0
+                    ],
+                    [
+                        69.0,
+                        423.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9593108296394348,
+                "coordinate": [
+                    68,
+                    446,
+                    1054,
+                    630
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        446.0
+                    ],
+                    [
+                        1054.0,
+                        446.0
+                    ],
+                    [
+                        1054.0,
+                        630.0
+                    ],
+                    [
+                        68.0,
+                        630.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8499595522880554,
+                "coordinate": [
+                    68,
+                    650,
+                    749,
+                    676
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        650.0
+                    ],
+                    [
+                        749.0,
+                        650.0
+                    ],
+                    [
+                        749.0,
+                        676.0
+                    ],
+                    [
+                        68.0,
+                        676.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9165458679199219,
+                "coordinate": [
+                    68,
+                    697,
+                    1053,
+                    747
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        697.0
+                    ],
+                    [
+                        1053.0,
+                        697.0
+                    ],
+                    [
+                        1053.0,
+                        747.0
+                    ],
+                    [
+                        68.0,
+                        747.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8889027237892151,
+                "coordinate": [
+                    70,
+                    769,
+                    1053,
+                    823
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        70.0,
+                        769.0
+                    ],
+                    [
+                        1053.0,
+                        769.0
+                    ],
+                    [
+                        1053.0,
+                        823.0
+                    ],
+                    [
+                        70.0,
+                        823.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8426088690757751,
+                "coordinate": [
+                    68,
+                    844,
+                    802,
+                    870
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        844.0
+                    ],
+                    [
+                        802.0,
+                        844.0
+                    ],
+                    [
+                        802.0,
+                        870.0
+                    ],
+                    [
+                        68.0,
+                        870.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.817284107208252,
+                "coordinate": [
+                    151,
+                    890,
+                    506,
+                    917
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        151.0,
+                        890.0
+                    ],
+                    [
+                        506.0,
+                        890.0
+                    ],
+                    [
+                        506.0,
+                        917.0
+                    ],
+                    [
+                        151.0,
+                        917.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9160289168357849,
+                "coordinate": [
+                    68,
+                    939,
+                    1053,
+                    992
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        939.0
+                    ],
+                    [
+                        1053.0,
+                        939.0
+                    ],
+                    [
+                        1053.0,
+                        992.0
+                    ],
+                    [
+                        68.0,
+                        992.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9519754648208618,
+                "coordinate": [
+                    68,
+                    1015,
+                    1054,
+                    1120
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1015.0
+                    ],
+                    [
+                        1054.0,
+                        1015.0
+                    ],
+                    [
+                        1054.0,
+                        1120.0
+                    ],
+                    [
+                        68.0,
+                        1120.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9315690398216248,
+                "coordinate": [
+                    68,
+                    1142,
+                    1053,
+                    1196
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1142.0
+                    ],
+                    [
+                        1053.0,
+                        1142.0
+                    ],
+                    [
+                        1053.0,
+                        1196.0
+                    ],
+                    [
+                        68.0,
+                        1196.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9565377831459045,
+                "coordinate": [
+                    68,
+                    1218,
+                    1054,
+                    1324
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1218.0
+                    ],
+                    [
+                        1054.0,
+                        1218.0
+                    ],
+                    [
+                        1054.0,
+                        1324.0
+                    ],
+                    [
+                        68.0,
+                        1324.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8342944383621216,
+                "coordinate": [
+                    70,
+                    1345,
+                    753,
+                    1373
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1345.0
+                    ],
+                    [
+                        753.0,
+                        1345.0
+                    ],
+                    [
+                        753.0,
+                        1373.0
+                    ],
+                    [
+                        70.0,
+                        1373.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.838789165019989,
+                "coordinate": [
+                    70,
+                    1394,
+                    452,
+                    1419
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1394.0
+                    ],
+                    [
+                        452.0,
+                        1394.0
+                    ],
+                    [
+                        452.0,
+                        1419.0
+                    ],
+                    [
+                        70.0,
+                        1419.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9403588175773621,
+                "coordinate": [
+                    68,
+                    1442,
+                    1054,
+                    1520
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1442.0
+                    ],
+                    [
+                        1054.0,
+                        1442.0
+                    ],
+                    [
+                        1054.0,
+                        1520.0
+                    ],
+                    [
+                        68.0,
+                        1520.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7128199934959412,
+                "coordinate": [
+                    71,
+                    1615,
+                    103,
+                    1636
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1615.0
+                    ],
+                    [
+                        102.0,
+                        1615.0
+                    ],
+                    [
+                        102.0,
+                        1635.0
+                    ],
+                    [
+                        71.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.499782532453537,
+                "coordinate": [
+                    797,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.40217897295951843,
+                "coordinate": [
+                    61,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.71996307373047,
+                        1644.0020751953125
+                    ],
+                    [
+                        1118.0,
+                        1635.9998779296875
+                    ],
+                    [
+                        1118.332763671875,
+                        1679.9681396484375
+                    ],
+                    [
+                        61.052734375,
+                        1687.9703369140625
+                    ]
+                ]
+            }
+        ]
+    }
+}

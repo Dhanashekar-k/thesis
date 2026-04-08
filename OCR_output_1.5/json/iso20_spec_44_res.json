@@ -1,0 +1,827 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 44,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "read by an attacker, the attacker could impersonate the original equipment. It is considered good security practice that each V2G entity and any PKI operator additionally protects all private keys and symmetric keys. This can range from simple security measures such as setting readout protection fuse bits in the microcontroller to more advanced protection via secure boot facilities, debug access protection, and embedded hardware security modules (HSM). The HSMs offer a high level of security including protection against physical attacks. A suitable HSM provides a secure environment for private key and symmetric key operations. It offers interfaces to use the private key and the symmetric keys but ensures that the keys cannot be read out or manipulated.",
+            "block_bbox": [
+                134,
+                169,
+                1123,
+                377
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    169.0
+                ],
+                [
+                    1123.0,
+                    169.0
+                ],
+                [
+                    1123.0,
+                    377.0
+                ],
+                [
+                    134.0,
+                    377.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The V2G entity or the PKI operator can use a trusted platform module (TPM) 2.0 to implement the HSM.",
+            "block_bbox": [
+                136,
+                398,
+                1117,
+                426
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    398.0
+                ],
+                [
+                    1117.0,
+                    398.0
+                ],
+                [
+                    1117.0,
+                    426.0
+                ],
+                [
+                    136.0,
+                    426.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The TPM 2.0 is representative of a HSM that is qualified for the automotive use cases according to AEC-Q100, has Common Criteria (CC) EAL4+ certification and can implement the desired security features. A TPM 2.0 can securely store sensitive data such as private keys, provides a secure execution environment for symmetric and asymmetric cryptographic operations (including secure random number generation) and enables additional security mechanisms such as the direct import of encrypted keys, credential protection, secured (measured) boot and a policy-based enhanced authorization mechanism. The TPM 2.0 library specification developed by the Trusted Computing Group (TCG) is adopted as open international standards ISO/IEC 11889-1:2015, ISO/IEC 11889-2:2015, ISO/IEC 11889-3:2015 and ISO/IEC 11889-4:2015.",
+            "block_bbox": [
+                136,
+                449,
+                1121,
+                682
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    449.0
+                ],
+                [
+                    1121.0,
+                    449.0
+                ],
+                [
+                    1121.0,
+                    682.0
+                ],
+                [
+                    136.0,
+                    682.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.3.6.1 Protection of the EVCC keys",
+            "block_bbox": [
+                218,
+                702,
+                613,
+                729
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    218.0,
+                    702.0
+                ],
+                [
+                    613.0,
+                    702.0
+                ],
+                [
+                    613.0,
+                    729.0
+                ],
+                [
+                    218.0,
+                    729.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In an EVCC environment, the private keys of the contract certificate, vehicle certificate and the OEM provisioning certificate are considered to be sensitive data. The EVCC can protect the private keys and symmetric keys (including session keys) by employing secure environments like HSM that offer interfaces to use the keys but ensures that the keys cannot be read out or manipulated, even from a program running on the EVCC. A customized HSM may even accept input of an encrypted contract certificate private key, so that the private key is never accessible outside of the HSM in plain, unencrypted form. Such a HSM can be integrated into the EVCC as a separate physical package or as an on-chip microcontroller extension.",
+            "block_bbox": [
+                133,
+                751,
+                1123,
+                961
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    133.0,
+                    751.0
+                ],
+                [
+                    1123.0,
+                    751.0
+                ],
+                [
+                    1123.0,
+                    961.0
+                ],
+                [
+                    133.0,
+                    961.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "It is advised that the EVCC keeps the keys secure under all conditions, including while they are in use. An easy way to achieve this is to utilize the HSM to store and use the keys including any cryptographic operations that use those keys.",
+            "block_bbox": [
+                134,
+                982,
+                1121,
+                1061
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    982.0
+                ],
+                [
+                    1121.0,
+                    982.0
+                ],
+                [
+                    1121.0,
+                    1061.0
+                ],
+                [
+                    134.0,
+                    1061.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In addition, the EVCC can also utilize the HSM to perform other cryptographic functions in a secure manner (e.g. encryption/decryption, signature calculation and verification, asymmetric key-pair generation, etc.).",
+            "block_bbox": [
+                134,
+                1084,
+                1123,
+                1163
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    1084.0
+                ],
+                [
+                    1123.0,
+                    1084.0
+                ],
+                [
+                    1123.0,
+                    1163.0
+                ],
+                [
+                    134.0,
+                    1163.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The EVCC can opt to use TPM to perform all (or some) of the functions mentioned above for the HSM. Refer to 7.3.6 for details of TPM.",
+            "block_bbox": [
+                136,
+                1184,
+                1120,
+                1237
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1184.0
+                ],
+                [
+                    1120.0,
+                    1184.0
+                ],
+                [
+                    1120.0,
+                    1237.0
+                ],
+                [
+                    136.0,
+                    1237.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.3.6.2 Protection of the keys in public SECC",
+            "block_bbox": [
+                218,
+                1257,
+                703,
+                1284
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    218.0,
+                    1257.0
+                ],
+                [
+                    703.0,
+                    1257.0
+                ],
+                [
+                    703.0,
+                    1284.0
+                ],
+                [
+                    218.0,
+                    1284.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "This subclause does not cover requirements for the private SECC. It only covers requirements for a public SECC. In some cases, though, a private SECC may be required to meet these requirements as well. Such cases will be specifically called out. In a public SECC environment, the private key of the SECC certificate is considered to be sensitive data. It is advised that the public SECC protects the private key and symmetric keys (including session keys) by employing secure environments like HSM that offer interfaces to use the keys but ensure that the keys cannot be read out or manipulated, even from a program running on the public SECC. Such a HSM can be integrated into the public SECC as a separate physical package or as an on-chip microcontroller extension.",
+            "block_bbox": [
+                134,
+                1308,
+                1123,
+                1517
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    1308.0
+                ],
+                [
+                    1123.0,
+                    1308.0
+                ],
+                [
+                    1123.0,
+                    1517.0
+                ],
+                [
+                    134.0,
+                    1517.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 - All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1631,
+                1118,
+                1682
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1631.0
+                ],
+                [
+                    1118.0,
+                    1631.0
+                ],
+                [
+                    1118.0,
+                    1682.0
+                ],
+                [
+                    60.0,
+                    1682.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "39",
+            "block_bbox": [
+                1091,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    1091,
+                    1624
+                ],
+                [
+                    1091,
+                    1643
+                ],
+                [
+                    1118,
+                    1643
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8752317428588867,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9600250720977783,
+                "coordinate": [
+                    134,
+                    169,
+                    1123,
+                    377
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        134.0,
+                        169.0
+                    ],
+                    [
+                        1123.0,
+                        169.0
+                    ],
+                    [
+                        1123.0,
+                        377.0
+                    ],
+                    [
+                        134.0,
+                        377.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6860354542732239,
+                "coordinate": [
+                    136,
+                    398,
+                    1117,
+                    426
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        136.0,
+                        398.0
+                    ],
+                    [
+                        1117.0,
+                        398.0
+                    ],
+                    [
+                        1117.0,
+                        426.0
+                    ],
+                    [
+                        136.0,
+                        426.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9573909640312195,
+                "coordinate": [
+                    136,
+                    449,
+                    1121,
+                    682
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        449.0
+                    ],
+                    [
+                        1121.0,
+                        449.0
+                    ],
+                    [
+                        1121.0,
+                        682.0
+                    ],
+                    [
+                        136.0,
+                        682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8547655344009399,
+                "coordinate": [
+                    218,
+                    702,
+                    613,
+                    729
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        218.0,
+                        702.0
+                    ],
+                    [
+                        613.0,
+                        702.0
+                    ],
+                    [
+                        613.0,
+                        729.0
+                    ],
+                    [
+                        218.0,
+                        729.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.95685213804245,
+                "coordinate": [
+                    133,
+                    751,
+                    1123,
+                    961
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        133.0,
+                        751.0
+                    ],
+                    [
+                        1123.0,
+                        751.0
+                    ],
+                    [
+                        1123.0,
+                        961.0
+                    ],
+                    [
+                        133.0,
+                        961.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9340707063674927,
+                "coordinate": [
+                    134,
+                    982,
+                    1121,
+                    1061
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        134.0,
+                        982.0
+                    ],
+                    [
+                        1121.0,
+                        982.0
+                    ],
+                    [
+                        1121.0,
+                        1061.0
+                    ],
+                    [
+                        134.0,
+                        1061.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9280065894126892,
+                "coordinate": [
+                    134,
+                    1084,
+                    1123,
+                    1163
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        134.0,
+                        1084.0
+                    ],
+                    [
+                        1123.0,
+                        1084.0
+                    ],
+                    [
+                        1123.0,
+                        1163.0
+                    ],
+                    [
+                        134.0,
+                        1163.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9043578505516052,
+                "coordinate": [
+                    136,
+                    1184,
+                    1120,
+                    1237
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1184.0
+                    ],
+                    [
+                        1120.0,
+                        1184.0
+                    ],
+                    [
+                        1120.0,
+                        1237.0
+                    ],
+                    [
+                        136.0,
+                        1237.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8560657501220703,
+                "coordinate": [
+                    218,
+                    1257,
+                    703,
+                    1284
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        218.0,
+                        1257.0
+                    ],
+                    [
+                        703.0,
+                        1257.0
+                    ],
+                    [
+                        703.0,
+                        1284.0
+                    ],
+                    [
+                        218.0,
+                        1284.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9647895693778992,
+                "coordinate": [
+                    134,
+                    1308,
+                    1123,
+                    1517
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        134.0,
+                        1308.0
+                    ],
+                    [
+                        1123.0,
+                        1308.0
+                    ],
+                    [
+                        1123.0,
+                        1517.0
+                    ],
+                    [
+                        134.0,
+                        1517.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7915613651275635,
+                "coordinate": [
+                    60,
+                    1631,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1631.0
+                    ],
+                    [
+                        1118.0,
+                        1631.0
+                    ],
+                    [
+                        1118.0,
+                        1682.0
+                    ],
+                    [
+                        60.0,
+                        1682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7589147686958313,
+                "coordinate": [
+                    1091,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        1091,
+                        1624
+                    ],
+                    [
+                        1091,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1643
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,782 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 520,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D1 Size of a single certificate: Because of demand R3a, certificate size is limited. According to [V2G20-1234] the size of a certificate in DER encoded form is not bigger than 1 600 Bytes. This can be reached by the issuing secondary actor if no irrelevant information is included in the certificate (e.g. no address of the issuer). Refer to ITU-T X.509 for details of DER encoding.",
+            "block_bbox": [
+                137,
+                167,
+                1122,
+                274
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    167.0
+                ],
+                [
+                    1122.0,
+                    167.0
+                ],
+                [
+                    1122.0,
+                    274.0
+                ],
+                [
+                    137.0,
+                    274.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D2 Length of certificate chains: Because of demand R3b complete certificates inclusive their chains should be small. Demand R5, however, demands long chains since they are easier to manage. As a compromise, [V2G20-1003] defines that the path length is limited to 3 (i.e. chains with 3 certificates below the root certificate). That means that there may exist 2 \"intermediate certificates\" between the root certificate and the leaf certificate. This compromise is realistic, because now each group (see R1) is able to create an arbitrary number of \"intermediate organizations\" (see Figure E.1) and sign the \"intermediate certificates\" with the (top level) root private key. Each \"intermediate organization\" can create \"company certificates\" for their secondary actors which may be used by the secondary actor itself to create leaf certificates (which represent for instance contract certificates that are distributed to the customers). As an exception, length of a certificate chain can have up to four certificates when the chain contains a cross-certificate (see [V2G20-1005]). See H.1.5 for detailed description about cross-certification.",
+            "block_bbox": [
+                140,
+                295,
+                1123,
+                608
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    295.0
+                ],
+                [
+                    1123.0,
+                    295.0
+                ],
+                [
+                    1123.0,
+                    608.0
+                ],
+                [
+                    140.0,
+                    608.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D3 Number of root certificates: All existing root certificates are stored in each EV. Because of demand R3c, a small number of root certificates is preferred. Demand R4, however, demands a large number of root certificates. As a compromise, at least two V2G root CA certificates are required.",
+            "block_bbox": [
+                137,
+                629,
+                1121,
+                709
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    629.0
+                ],
+                [
+                    1121.0,
+                    629.0
+                ],
+                [
+                    1121.0,
+                    709.0
+                ],
+                [
+                    137.0,
+                    709.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D4 Validity of root certificates: Because of demand R1 the (static) root certificates (installed already at EV production time) need to have an almost infinite validity. Respecting the lifetime of an EV, assumed to be 35 years, and in order to avoid the necessity to create root certificates very often (manageability of certificates, see R4 and R5), the validity period of a newly created root certificate should be 40 years.",
+            "block_bbox": [
+                137,
+                729,
+                1122,
+                862
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    729.0
+                ],
+                [
+                    1122.0,
+                    729.0
+                ],
+                [
+                    1122.0,
+                    862.0
+                ],
+                [
+                    137.0,
+                    862.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D5 Validity of OEM provisioning certificates: OEM provisioning certificates are static certificates as well. For the same reasons as discussed in D4, it is requested that new OEM provisioning certificates have a validity period of 30 years.",
+            "block_bbox": [
+                138,
+                883,
+                1121,
+                964
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    883.0
+                ],
+                [
+                    1121.0,
+                    883.0
+                ],
+                [
+                    1121.0,
+                    964.0
+                ],
+                [
+                    138.0,
+                    964.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D6 Installation of contract certificates: As described in R1, the best solution for the OEM would be to install all certificates at EV production. Because of R6, it is not possible to use the OEM provisioning certificate directly for (contract-based) charging since this would prevent offline EVSEs. The reason is that without communication to the backend system, it is not possible to verify whether a contract exists for an EV that only transmits a static OEM provisioning certificate (installed already at EV production independent of the existence of a charge contract).",
+            "block_bbox": [
+                137,
+                984,
+                1123,
+                1144
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    984.0
+                ],
+                [
+                    1123.0,
+                    984.0
+                ],
+                [
+                    1123.0,
+                    1144.0
+                ],
+                [
+                    137.0,
+                    1144.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "a. Therefore, contract certificates are installed into the EV and exchanged from time to time. To avoid costs for the customer, OEM, and secondary actor this happens automatically via the charge protocol. [V2G20-1265] and [V2G20-1266] request that the SECC supports the messages CertificateInstallationReq/Res. With these messages, installation of the first contract certificate resp. installation of further contract certificates becomes possible.",
+            "block_bbox": [
+                178,
+                1163,
+                1123,
+                1295
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    178.0,
+                    1163.0
+                ],
+                [
+                    1123.0,
+                    1163.0
+                ],
+                [
+                    1123.0,
+                    1295.0
+                ],
+                [
+                    178.0,
+                    1295.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "b. In all cases where it is not possible to perform certificate installation automatically, the effort for manual contract certificate installation should be minimized. As described in demand R2, this can be achieved by using a standardized file format when shipping a contract certificate as file to the customer.",
+            "block_bbox": [
+                178,
+                1316,
+                1122,
+                1422
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    178.0,
+                    1316.0
+                ],
+                [
+                    1122.0,
+                    1316.0
+                ],
+                [
+                    1122.0,
+                    1422.0
+                ],
+                [
+                    178.0,
+                    1422.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "D7 Validity of contract certificates: It is recommended not to exchange contract certificates too often in an EV in order to avoid unnecessary write cycles for the storage of the EVCC (see demand R3). For the case that the contract certificate is shipped to the customer and is installed manually in a garage (see demand R2 and decision D6b), a short lifetime could mean it is already expired by the time it is installed into the EV.",
+            "block_bbox": [
+                138,
+                1443,
+                1123,
+                1573
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1443.0
+                ],
+                [
+                    1123.0,
+                    1443.0
+                ],
+                [
+                    1123.0,
+                    1573.0
+                ],
+                [
+                    138.0,
+                    1573.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "515",
+            "block_bbox": [
+                1078,
+                1624,
+                1120,
+                1645
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    1077.9998779296875,
+                    1624.0
+                ],
+                [
+                    1118.9998779296875,
+                    1624.0
+                ],
+                [
+                    1118.9998779296875,
+                    1644.0
+                ],
+                [
+                    1077.9998779296875,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1682
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1681
+                ],
+                [
+                    1095,
+                    1681
+                ],
+                [
+                    1118,
+                    1664
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8791738152503967,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.944354236125946,
+                "coordinate": [
+                    137,
+                    167,
+                    1122,
+                    274
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        167.0
+                    ],
+                    [
+                        1122.0,
+                        167.0
+                    ],
+                    [
+                        1122.0,
+                        274.0
+                    ],
+                    [
+                        137.0,
+                        274.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9621943831443787,
+                "coordinate": [
+                    140,
+                    295,
+                    1123,
+                    608
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        140.0,
+                        295.0
+                    ],
+                    [
+                        1123.0,
+                        295.0
+                    ],
+                    [
+                        1123.0,
+                        608.0
+                    ],
+                    [
+                        140.0,
+                        608.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9346274733543396,
+                "coordinate": [
+                    137,
+                    629,
+                    1121,
+                    709
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        629.0
+                    ],
+                    [
+                        1121.0,
+                        629.0
+                    ],
+                    [
+                        1121.0,
+                        709.0
+                    ],
+                    [
+                        137.0,
+                        709.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9506935477256775,
+                "coordinate": [
+                    137,
+                    729,
+                    1122,
+                    862
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        729.0
+                    ],
+                    [
+                        1122.0,
+                        729.0
+                    ],
+                    [
+                        1122.0,
+                        862.0
+                    ],
+                    [
+                        137.0,
+                        862.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.930441677570343,
+                "coordinate": [
+                    138,
+                    883,
+                    1121,
+                    964
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        138.0,
+                        883.0
+                    ],
+                    [
+                        1121.0,
+                        883.0
+                    ],
+                    [
+                        1121.0,
+                        964.0
+                    ],
+                    [
+                        138.0,
+                        964.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9540306329727173,
+                "coordinate": [
+                    137,
+                    984,
+                    1123,
+                    1144
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        137.0,
+                        984.0
+                    ],
+                    [
+                        1123.0,
+                        984.0
+                    ],
+                    [
+                        1123.0,
+                        1144.0
+                    ],
+                    [
+                        137.0,
+                        1144.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9498199224472046,
+                "coordinate": [
+                    178,
+                    1163,
+                    1123,
+                    1295
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        178.0,
+                        1163.0
+                    ],
+                    [
+                        1123.0,
+                        1163.0
+                    ],
+                    [
+                        1123.0,
+                        1295.0
+                    ],
+                    [
+                        178.0,
+                        1295.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9503247737884521,
+                "coordinate": [
+                    178,
+                    1316,
+                    1122,
+                    1422
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        178.0,
+                        1316.0
+                    ],
+                    [
+                        1122.0,
+                        1316.0
+                    ],
+                    [
+                        1122.0,
+                        1422.0
+                    ],
+                    [
+                        178.0,
+                        1422.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9544546008110046,
+                "coordinate": [
+                    138,
+                    1443,
+                    1123,
+                    1573
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1443.0
+                    ],
+                    [
+                        1123.0,
+                        1443.0
+                    ],
+                    [
+                        1123.0,
+                        1573.0
+                    ],
+                    [
+                        138.0,
+                        1573.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7529919743537903,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1120,
+                    1645
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        1077.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1118.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1118.9998779296875,
+                        1644.0
+                    ],
+                    [
+                        1077.9998779296875,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.854030191898346,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1681
+                    ],
+                    [
+                        1095,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1664
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

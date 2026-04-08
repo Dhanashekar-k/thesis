@@ -1,0 +1,979 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 412,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1621] If the parameter EVSENotification in EVSEStatus is equal to MeteringConfirmation, the EVCC shall send a MeteringConfirmationReq using the multiplexed communication within the number of seconds provided in NotificationMaxDelay.",
+            "block_bbox": [
+                136,
+                167,
+                1120,
+                248
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    167.0
+                ],
+                [
+                    1120.0,
+                    167.0
+                ],
+                [
+                    1120.0,
+                    248.0
+                ],
+                [
+                    136.0,
+                    248.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1622] The parameter EVSENotification in EVSEStatus shall only use MeteringConfirmation after the exchange of the first ChargeLoop Messages.",
+            "block_bbox": [
+                137,
+                268,
+                1119,
+                326
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    268.0
+                ],
+                [
+                    1119.0,
+                    268.0
+                ],
+                [
+                    1119.0,
+                    326.0
+                ],
+                [
+                    137.0,
+                    326.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1850] In the case the SECC wants to initiate a pause, it shall trigger the EVCC via EVSEStatus Parameter EVSENotification set to \"Pause\" and NotificationMaxDelay set to 60s. The EVCC shall then either initiate a pause period according to [V2G20-1540] or enter a standby period according to [V2G20-1380], [V2G20-1381], and [V2G20-1394].",
+            "block_bbox": [
+                137,
+                344,
+                1122,
+                451
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    344.0
+                ],
+                [
+                    1122.0,
+                    344.0
+                ],
+                [
+                    1122.0,
+                    451.0
+                ],
+                [
+                    137.0,
+                    451.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1854] In the case the SECC wants to exit a standby period, it shall trigger the EVCC via EVSEStatus Parameter EVSENotification set to \"ExitStandby\". The EVCC shall then exit a standby period according to [V2G20-1393], [V2G20-1383] and [V2G20-1395].",
+            "block_bbox": [
+                137,
+                471,
+                1121,
+                553
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    471.0
+                ],
+                [
+                    1121.0,
+                    471.0
+                ],
+                [
+                    1121.0,
+                    553.0
+                ],
+                [
+                    137.0,
+                    553.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1959] The EVSE shall set EVSENotification to \"Terminate\" while decreasing the power at the same time, if it wants to stop charging in dynamic control mode.",
+            "block_bbox": [
+                138,
+                572,
+                1121,
+                630
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    572.0
+                ],
+                [
+                    1121.0,
+                    572.0
+                ],
+                [
+                    1121.0,
+                    630.0
+                ],
+                [
+                    138.0,
+                    630.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1960] If the parameter EVSENotification in EVSEStatus is equal to \"Terminate\", the EVC shall initiate a shutdown sequence and finally send a SessionStopReq with ChargingSession set to \"Terminate\".",
+            "block_bbox": [
+                138,
+                724,
+                1122,
+                805
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    724.0
+                ],
+                [
+                    1122.0,
+                    724.0
+                ],
+                [
+                    1122.0,
+                    805.0
+                ],
+                [
+                    138.0,
+                    805.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1698] In case the SECC wants to end the service session, the SECC shall notify the EVCC by setting EVSENotification in EVSEStatus to \"Terminate.\"",
+            "block_bbox": [
+                138,
+                648,
+                1120,
+                706
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    648.0
+                ],
+                [
+                    1120.0,
+                    648.0
+                ],
+                [
+                    1120.0,
+                    706.0
+                ],
+                [
+                    138.0,
+                    706.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2644] If the EVCC wishes to stop the session for a non-critical reason (e.g. user interaction, errors which are not emergency related) after having sent a SessionSetupReq message and before having sent a PowerDeliveryReq message with ChargeProgress = \"Start\", the EVCC shall send a SessionStopReq message with parameter \"ChargingSession\" set to \"Terminate\" and the optional EVTerminationCode within V2G_EVCC_Sequence_Performance_Timeout according to Table 215, if not otherwise specified within this document. It shall then wait for a SessionStopRes message and proceed according to [V2G20-1463], [V2G20-728] and [V2G20-025] afterwards.",
+            "block_bbox": [
+                137,
+                826,
+                1123,
+                1037
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    826.0
+                ],
+                [
+                    1123.0,
+                    826.0
+                ],
+                [
+                    1123.0,
+                    1037.0
+                ],
+                [
+                    137.0,
+                    1037.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2645] In case the SECC receives a SessionStopReq after having sent a SessionSetupRes message and before having received a PowerDeliveryReq message with ChargeProgress = \"Start\", the SECC shall proceed according to [V2G20-1632] and [V2G20-1633].",
+            "block_bbox": [
+                137,
+                1056,
+                1121,
+                1161
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1056.0
+                ],
+                [
+                    1121.0,
+                    1056.0
+                ],
+                [
+                    1121.0,
+                    1161.0
+                ],
+                [
+                    137.0,
+                    1161.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.6.4.2 AC requirements",
+            "block_bbox": [
+                218,
+                1181,
+                506,
+                1208
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    218.0,
+                    1181.0
+                ],
+                [
+                    506.0,
+                    1181.0
+                ],
+                [
+                    506.0,
+                    1208.0
+                ],
+                [
+                    218.0,
+                    1208.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1961] For AC charging with WiFi communication only WiFi communication will be used even when there is PLC available.",
+            "block_bbox": [
+                138,
+                1230,
+                1119,
+                1284
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1230.0
+                ],
+                [
+                    1119.0,
+                    1230.0
+                ],
+                [
+                    1119.0,
+                    1284.0
+                ],
+                [
+                    138.0,
+                    1284.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1964] If the first ServiceDiscoveryRes message of the service session had the parameter ServiceRenegotiationSupported set to \"True\" and if the parameter EVSENotification in EVSEStatus is equal to \"ServiceRenegotiation\" in AC_ChargeLoopRes, the EVCC shall initiate a ServiceRenegotiation as defined by [V2G20-1969] within the number of seconds provided in NotificationMaxDelay.",
+            "block_bbox": [
+                136,
+                1306,
+                1122,
+                1438
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1306.0
+                ],
+                [
+                    1122.0,
+                    1306.0
+                ],
+                [
+                    1122.0,
+                    1438.0
+                ],
+                [
+                    136.0,
+                    1438.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1965] If the first ServiceDiscoveryRes message of the service session had the parameter ServiceRenegotiationSupported set to \"False\" and if the parameter EVSENotification in EVSEStatus is equal to \"ServiceRenegotiation\" in AC_ChargeLoopRes, the EVC shall not initiate a ServiceRenegotiation.",
+            "block_bbox": [
+                137,
+                1458,
+                1122,
+                1564
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1458.0
+                ],
+                [
+                    1122.0,
+                    1458.0
+                ],
+                [
+                    1122.0,
+                    1564.0
+                ],
+                [
+                    137.0,
+                    1564.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1118,
+                1683
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8794080018997192,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9217149615287781,
+                "coordinate": [
+                    136,
+                    167,
+                    1120,
+                    248
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        136.0,
+                        167.0
+                    ],
+                    [
+                        1120.0,
+                        167.0
+                    ],
+                    [
+                        1120.0,
+                        248.0
+                    ],
+                    [
+                        136.0,
+                        248.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9055986404418945,
+                "coordinate": [
+                    137,
+                    268,
+                    1119,
+                    326
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        268.0
+                    ],
+                    [
+                        1119.0,
+                        268.0
+                    ],
+                    [
+                        1119.0,
+                        326.0
+                    ],
+                    [
+                        137.0,
+                        326.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9422159790992737,
+                "coordinate": [
+                    137,
+                    344,
+                    1122,
+                    451
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        344.0
+                    ],
+                    [
+                        1122.0,
+                        344.0
+                    ],
+                    [
+                        1122.0,
+                        451.0
+                    ],
+                    [
+                        137.0,
+                        451.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9255369901657104,
+                "coordinate": [
+                    137,
+                    471,
+                    1121,
+                    553
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        471.0
+                    ],
+                    [
+                        1121.0,
+                        471.0
+                    ],
+                    [
+                        1121.0,
+                        553.0
+                    ],
+                    [
+                        137.0,
+                        553.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9044420719146729,
+                "coordinate": [
+                    138,
+                    572,
+                    1121,
+                    630
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        138.0,
+                        572.0
+                    ],
+                    [
+                        1121.0,
+                        572.0
+                    ],
+                    [
+                        1121.0,
+                        630.0
+                    ],
+                    [
+                        138.0,
+                        630.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.918867826461792,
+                "coordinate": [
+                    138,
+                    724,
+                    1122,
+                    805
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        138.0,
+                        724.0
+                    ],
+                    [
+                        1122.0,
+                        724.0
+                    ],
+                    [
+                        1122.0,
+                        805.0
+                    ],
+                    [
+                        138.0,
+                        805.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9097742438316345,
+                "coordinate": [
+                    138,
+                    648,
+                    1120,
+                    706
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        138.0,
+                        648.0
+                    ],
+                    [
+                        1120.0,
+                        648.0
+                    ],
+                    [
+                        1120.0,
+                        706.0
+                    ],
+                    [
+                        138.0,
+                        706.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.957179069519043,
+                "coordinate": [
+                    137,
+                    826,
+                    1123,
+                    1037
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        826.0
+                    ],
+                    [
+                        1123.0,
+                        826.0
+                    ],
+                    [
+                        1123.0,
+                        1037.0
+                    ],
+                    [
+                        137.0,
+                        1037.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9321943521499634,
+                "coordinate": [
+                    137,
+                    1056,
+                    1121,
+                    1161
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1056.0
+                    ],
+                    [
+                        1121.0,
+                        1056.0
+                    ],
+                    [
+                        1121.0,
+                        1161.0
+                    ],
+                    [
+                        137.0,
+                        1161.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4431101679801941,
+                "coordinate": [
+                    218,
+                    1181,
+                    506,
+                    1208
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        218.0,
+                        1181.0
+                    ],
+                    [
+                        506.0,
+                        1181.0
+                    ],
+                    [
+                        506.0,
+                        1208.0
+                    ],
+                    [
+                        218.0,
+                        1208.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8892626166343689,
+                "coordinate": [
+                    138,
+                    1230,
+                    1119,
+                    1284
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1230.0
+                    ],
+                    [
+                        1119.0,
+                        1230.0
+                    ],
+                    [
+                        1119.0,
+                        1284.0
+                    ],
+                    [
+                        138.0,
+                        1284.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9491198658943176,
+                "coordinate": [
+                    136,
+                    1306,
+                    1122,
+                    1438
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1306.0
+                    ],
+                    [
+                        1122.0,
+                        1306.0
+                    ],
+                    [
+                        1122.0,
+                        1438.0
+                    ],
+                    [
+                        136.0,
+                        1438.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9278871417045593,
+                "coordinate": [
+                    137,
+                    1458,
+                    1122,
+                    1564
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1458.0
+                    ],
+                    [
+                        1122.0,
+                        1458.0
+                    ],
+                    [
+                        1122.0,
+                        1564.0
+                    ],
+                    [
+                        137.0,
+                        1564.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8058305978775024,
+                "coordinate": [
+                    61,
+                    1630,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7573490738868713,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1646
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        1078,
+                        1624
+                    ],
+                    [
+                        1078,
+                        1645
+                    ],
+                    [
+                        1118,
+                        1645
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

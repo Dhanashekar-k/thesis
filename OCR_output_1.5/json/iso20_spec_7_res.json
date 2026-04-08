@@ -1,0 +1,1628 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 7,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                69,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    69.0
+                ],
+                [
+                    323.0,
+                    69.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO 15118-2:2014, Road vehicles — Vehicle to grid communication interface — Part 2: Network and application protocol requirements",
+            "block_bbox": [
+                68,
+                168,
+                1054,
+                222
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    222.0
+                ],
+                [
+                    68.0,
+                    222.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO 15118-3:2015, Road Vehicles — Vehicle to grid communication interface — Part 3: Physical and data link layer requirements",
+            "block_bbox": [
+                69,
+                243,
+                1053,
+                296
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    243.0
+                ],
+                [
+                    1053.0,
+                    243.0
+                ],
+                [
+                    1053.0,
+                    296.0
+                ],
+                [
+                    69.0,
+                    296.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO 15118-8, Road Vehicles — Vehicle to grid communication interface — Part 8: Physical and data link layer requirements for wireless communication",
+            "block_bbox": [
+                69,
+                319,
+                1053,
+                372
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    319.0
+                ],
+                [
+                    1053.0,
+                    319.0
+                ],
+                [
+                    1053.0,
+                    372.0
+                ],
+                [
+                    69.0,
+                    372.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO 19363:2020, Electrically propelled vehicles—Magnetic field wireless power transfer—Safety and interoperability requirements",
+            "block_bbox": [
+                69,
+                395,
+                1054,
+                447
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    395.0
+                ],
+                [
+                    1054.0,
+                    395.0
+                ],
+                [
+                    1054.0,
+                    447.0
+                ],
+                [
+                    69.0,
+                    447.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "ISO/IEC 11889-1:2015, Information technology — Trusted platform module library — Part 1: Architecture",
+            "block_bbox": [
+                68,
+                470,
+                1053,
+                497
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    470.0
+                ],
+                [
+                    1053.0,
+                    470.0
+                ],
+                [
+                    1053.0,
+                    497.0
+                ],
+                [
+                    68.0,
+                    497.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IEC 61851-1:2017, Electric vehicle conductive charging system – Part 1: General requirements",
+            "block_bbox": [
+                68,
+                520,
+                948,
+                547
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    520.0
+                ],
+                [
+                    948.0,
+                    520.0
+                ],
+                [
+                    948.0,
+                    547.0
+                ],
+                [
+                    68.0,
+                    547.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IEC 61851-23-1:2014, Electric vehicle conductive charging system - Part 23-1: DC Charging with an automatic connection system",
+            "block_bbox": [
+                69,
+                570,
+                1053,
+                623
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    570.0
+                ],
+                [
+                    1053.0,
+                    570.0
+                ],
+                [
+                    1053.0,
+                    623.0
+                ],
+                [
+                    69.0,
+                    623.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IEC 61980-2, Electric vehicle wireless power transfer (WPT) systems - Part 2: Specific requirements for communication between electric road vehicle (EV) and infrastructure",
+            "block_bbox": [
+                68,
+                646,
+                1054,
+                697
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    646.0
+                ],
+                [
+                    1054.0,
+                    646.0
+                ],
+                [
+                    1054.0,
+                    697.0
+                ],
+                [
+                    68.0,
+                    697.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IEC 63119-2 $ ^{1} $, Information exchange for Electric Vehicle charging roaming service – Part 2: Use cases",
+            "block_bbox": [
+                68,
+                721,
+                1011,
+                747
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    721.0
+                ],
+                [
+                    1011.0,
+                    721.0
+                ],
+                [
+                    1011.0,
+                    747.0
+                ],
+                [
+                    68.0,
+                    747.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "EN 50696:2021, Contact interface for automated connection devices (ACD)",
+            "block_bbox": [
+                70,
+                771,
+                765,
+                797
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    771.0
+                ],
+                [
+                    765.0,
+                    771.0
+                ],
+                [
+                    765.0,
+                    797.0
+                ],
+                [
+                    70.0,
+                    797.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 768, User Datagram Protocol (August 1980)",
+            "block_bbox": [
+                69,
+                821,
+                579,
+                848
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    821.0
+                ],
+                [
+                    579.0,
+                    821.0
+                ],
+                [
+                    579.0,
+                    848.0
+                ],
+                [
+                    69.0,
+                    848.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 793, Transmission Control Protocol - DARPA Internet Program - Protocol Specification (September 1981)",
+            "block_bbox": [
+                68,
+                872,
+                1052,
+                923
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    872.0
+                ],
+                [
+                    1052.0,
+                    872.0
+                ],
+                [
+                    1052.0,
+                    923.0
+                ],
+                [
+                    68.0,
+                    923.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 2865, Remote Authentication Dial In User Service (RADIUS) (June 2000)",
+            "block_bbox": [
+                68,
+                947,
+                830,
+                972
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    947.0
+                ],
+                [
+                    830.0,
+                    947.0
+                ],
+                [
+                    830.0,
+                    972.0
+                ],
+                [
+                    68.0,
+                    972.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 2866, RADIUS Accounting (June 2000)",
+            "block_bbox": [
+                68,
+                996,
+                523,
+                1022
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    996.0
+                ],
+                [
+                    523.0,
+                    996.0
+                ],
+                [
+                    523.0,
+                    1022.0
+                ],
+                [
+                    68.0,
+                    1022.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 3122, Extensions to IPv6 Neighbor Discovery for Inverse Discovery Specification (June 2001)",
+            "block_bbox": [
+                68,
+                1046,
+                1012,
+                1073
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1046.0
+                ],
+                [
+                    1012.0,
+                    1046.0
+                ],
+                [
+                    1012.0,
+                    1073.0
+                ],
+                [
+                    68.0,
+                    1073.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 3579, RADIUS (Remote Authentication Dial In User Service) Support For Extensible Authentication Protocol (EAP) (September 2003)",
+            "block_bbox": [
+                68,
+                1096,
+                1054,
+                1147
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1096.0
+                ],
+                [
+                    1054.0,
+                    1096.0
+                ],
+                [
+                    1054.0,
+                    1147.0
+                ],
+                [
+                    68.0,
+                    1147.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 3748, Extensible Authentication Protocol (EAP) (June 2004)",
+            "block_bbox": [
+                68,
+                1171,
+                721,
+                1197
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1171.0
+                ],
+                [
+                    721.0,
+                    1171.0
+                ],
+                [
+                    721.0,
+                    1197.0
+                ],
+                [
+                    68.0,
+                    1197.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 3986, Uniform Resource Identifier (URI): Generic Syntax (January 2005)",
+            "block_bbox": [
+                69,
+                1221,
+                830,
+                1248
+            ],
+            "block_id": 18,
+            "block_order": 18,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1221.0
+                ],
+                [
+                    830.0,
+                    1221.0
+                ],
+                [
+                    830.0,
+                    1248.0
+                ],
+                [
+                    69.0,
+                    1248.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 4291, IP Version 6 Addressing Architecture (February 2006)",
+            "block_bbox": [
+                69,
+                1271,
+                725,
+                1297
+            ],
+            "block_id": 19,
+            "block_order": 19,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1271.0
+                ],
+                [
+                    725.0,
+                    1271.0
+                ],
+                [
+                    725.0,
+                    1297.0
+                ],
+                [
+                    69.0,
+                    1297.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 4429, Optimistic Duplicate Address Detection (DAD) for IPv6 (April 2006)",
+            "block_bbox": [
+                69,
+                1321,
+                846,
+                1348
+            ],
+            "block_id": 20,
+            "block_order": 20,
+            "group_id": 20,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1321.0
+                ],
+                [
+                    846.0,
+                    1321.0
+                ],
+                [
+                    846.0,
+                    1348.0
+                ],
+                [
+                    69.0,
+                    1348.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "IETF RFC 4443, Internet Control Message Protocol (ICMP v6) for the Internet Protocol version 6 (IPv6) specification (March 2006)",
+            "block_bbox": [
+                69,
+                1370,
+                1052,
+                1423
+            ],
+            "block_id": 21,
+            "block_order": 21,
+            "group_id": 21,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1370.0
+                ],
+                [
+                    1052.0,
+                    1370.0
+                ],
+                [
+                    1052.0,
+                    1423.0
+                ],
+                [
+                    69.0,
+                    1423.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": " $ ^{1} $ Under preparation. Stage at the time of publication: IEC/CCDV 63119-2:2022.",
+            "block_bbox": [
+                70,
+                1543,
+                686,
+                1569
+            ],
+            "block_id": 22,
+            "block_order": null,
+            "group_id": 22,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1543.0
+                ],
+                [
+                    686.0,
+                    1543.0
+                ],
+                [
+                    686.0,
+                    1569.0
+                ],
+                [
+                    70.0,
+                    1569.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "2",
+            "block_bbox": [
+                68,
+                1614,
+                90,
+                1637
+            ],
+            "block_id": 23,
+            "block_order": 22,
+            "group_id": 23,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1614.0
+                ],
+                [
+                    89.0,
+                    1614.0
+                ],
+                [
+                    89.0,
+                    1636.0
+                ],
+                [
+                    68.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1615,
+                1054,
+                1638
+            ],
+            "block_id": 24,
+            "block_order": null,
+            "group_id": 24,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1615.0
+                ],
+                [
+                    1054.0,
+                    1615.0
+                ],
+                [
+                    1054.0,
+                    1638.0
+                ],
+                [
+                    796.0,
+                    1638.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footnote",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1683
+            ],
+            "block_id": 25,
+            "block_order": null,
+            "group_id": 25,
+            "block_polygon_points": [
+                [
+                    60,
+                    1644
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1083,
+                    1682
+                ],
+                [
+                    1118,
+                    1667
+                ],
+                [
+                    1118,
+                    1636
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8554016947746277,
+                "coordinate": [
+                    70,
+                    69,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        69.0
+                    ],
+                    [
+                        323.0,
+                        69.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8784101605415344,
+                "coordinate": [
+                    68,
+                    168,
+                    1054,
+                    222
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        222.0
+                    ],
+                    [
+                        68.0,
+                        222.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9017204642295837,
+                "coordinate": [
+                    69,
+                    243,
+                    1053,
+                    296
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        243.0
+                    ],
+                    [
+                        1053.0,
+                        243.0
+                    ],
+                    [
+                        1053.0,
+                        296.0
+                    ],
+                    [
+                        69.0,
+                        296.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8978927731513977,
+                "coordinate": [
+                    69,
+                    319,
+                    1053,
+                    372
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        319.0
+                    ],
+                    [
+                        1053.0,
+                        319.0
+                    ],
+                    [
+                        1053.0,
+                        372.0
+                    ],
+                    [
+                        69.0,
+                        372.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9017438292503357,
+                "coordinate": [
+                    69,
+                    395,
+                    1054,
+                    447
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        395.0
+                    ],
+                    [
+                        1054.0,
+                        395.0
+                    ],
+                    [
+                        1054.0,
+                        447.0
+                    ],
+                    [
+                        69.0,
+                        447.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8353718519210815,
+                "coordinate": [
+                    68,
+                    470,
+                    1053,
+                    497
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        470.0
+                    ],
+                    [
+                        1053.0,
+                        470.0
+                    ],
+                    [
+                        1053.0,
+                        497.0
+                    ],
+                    [
+                        68.0,
+                        497.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8225573897361755,
+                "coordinate": [
+                    68,
+                    520,
+                    948,
+                    547
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        520.0
+                    ],
+                    [
+                        948.0,
+                        520.0
+                    ],
+                    [
+                        948.0,
+                        547.0
+                    ],
+                    [
+                        68.0,
+                        547.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9000973105430603,
+                "coordinate": [
+                    69,
+                    570,
+                    1053,
+                    623
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        69.0,
+                        570.0
+                    ],
+                    [
+                        1053.0,
+                        570.0
+                    ],
+                    [
+                        1053.0,
+                        623.0
+                    ],
+                    [
+                        69.0,
+                        623.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9007740616798401,
+                "coordinate": [
+                    68,
+                    646,
+                    1054,
+                    697
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        646.0
+                    ],
+                    [
+                        1054.0,
+                        646.0
+                    ],
+                    [
+                        1054.0,
+                        697.0
+                    ],
+                    [
+                        68.0,
+                        697.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8110781311988831,
+                "coordinate": [
+                    68,
+                    721,
+                    1011,
+                    747
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        721.0
+                    ],
+                    [
+                        1011.0,
+                        721.0
+                    ],
+                    [
+                        1011.0,
+                        747.0
+                    ],
+                    [
+                        68.0,
+                        747.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8251732587814331,
+                "coordinate": [
+                    70,
+                    771,
+                    765,
+                    797
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        771.0
+                    ],
+                    [
+                        765.0,
+                        771.0
+                    ],
+                    [
+                        765.0,
+                        797.0
+                    ],
+                    [
+                        70.0,
+                        797.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8226099610328674,
+                "coordinate": [
+                    69,
+                    821,
+                    579,
+                    848
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        69.0,
+                        821.0
+                    ],
+                    [
+                        579.0,
+                        821.0
+                    ],
+                    [
+                        579.0,
+                        848.0
+                    ],
+                    [
+                        69.0,
+                        848.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8928967714309692,
+                "coordinate": [
+                    68,
+                    872,
+                    1052,
+                    923
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        872.0
+                    ],
+                    [
+                        1052.0,
+                        872.0
+                    ],
+                    [
+                        1052.0,
+                        923.0
+                    ],
+                    [
+                        68.0,
+                        923.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8283711075782776,
+                "coordinate": [
+                    68,
+                    947,
+                    830,
+                    972
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        947.0
+                    ],
+                    [
+                        830.0,
+                        947.0
+                    ],
+                    [
+                        830.0,
+                        972.0
+                    ],
+                    [
+                        68.0,
+                        972.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8261790871620178,
+                "coordinate": [
+                    68,
+                    996,
+                    523,
+                    1022
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        68.0,
+                        996.0
+                    ],
+                    [
+                        523.0,
+                        996.0
+                    ],
+                    [
+                        523.0,
+                        1022.0
+                    ],
+                    [
+                        68.0,
+                        1022.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8370102643966675,
+                "coordinate": [
+                    68,
+                    1046,
+                    1012,
+                    1073
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1046.0
+                    ],
+                    [
+                        1012.0,
+                        1046.0
+                    ],
+                    [
+                        1012.0,
+                        1073.0
+                    ],
+                    [
+                        68.0,
+                        1073.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8932403922080994,
+                "coordinate": [
+                    68,
+                    1096,
+                    1054,
+                    1147
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1096.0
+                    ],
+                    [
+                        1054.0,
+                        1096.0
+                    ],
+                    [
+                        1054.0,
+                        1147.0
+                    ],
+                    [
+                        68.0,
+                        1147.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8355630040168762,
+                "coordinate": [
+                    68,
+                    1171,
+                    721,
+                    1197
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1171.0
+                    ],
+                    [
+                        721.0,
+                        1171.0
+                    ],
+                    [
+                        721.0,
+                        1197.0
+                    ],
+                    [
+                        68.0,
+                        1197.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8473804593086243,
+                "coordinate": [
+                    69,
+                    1221,
+                    830,
+                    1248
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1221.0
+                    ],
+                    [
+                        830.0,
+                        1221.0
+                    ],
+                    [
+                        830.0,
+                        1248.0
+                    ],
+                    [
+                        69.0,
+                        1248.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8380544185638428,
+                "coordinate": [
+                    69,
+                    1271,
+                    725,
+                    1297
+                ],
+                "order": 19,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1271.0
+                    ],
+                    [
+                        725.0,
+                        1271.0
+                    ],
+                    [
+                        725.0,
+                        1297.0
+                    ],
+                    [
+                        69.0,
+                        1297.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8384262323379517,
+                "coordinate": [
+                    69,
+                    1321,
+                    846,
+                    1348
+                ],
+                "order": 20,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1321.0
+                    ],
+                    [
+                        846.0,
+                        1321.0
+                    ],
+                    [
+                        846.0,
+                        1348.0
+                    ],
+                    [
+                        69.0,
+                        1348.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8993901014328003,
+                "coordinate": [
+                    69,
+                    1370,
+                    1052,
+                    1423
+                ],
+                "order": 21,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1370.0
+                    ],
+                    [
+                        1052.0,
+                        1370.0
+                    ],
+                    [
+                        1052.0,
+                        1423.0
+                    ],
+                    [
+                        69.0,
+                        1423.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.8891207575798035,
+                "coordinate": [
+                    70,
+                    1543,
+                    686,
+                    1569
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1543.0
+                    ],
+                    [
+                        686.0,
+                        1543.0
+                    ],
+                    [
+                        686.0,
+                        1569.0
+                    ],
+                    [
+                        70.0,
+                        1569.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.3091295659542084,
+                "coordinate": [
+                    68,
+                    1614,
+                    90,
+                    1637
+                ],
+                "order": 22,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1614.0
+                    ],
+                    [
+                        89.0,
+                        1614.0
+                    ],
+                    [
+                        89.0,
+                        1636.0
+                    ],
+                    [
+                        68.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.6897109746932983,
+                "coordinate": [
+                    796,
+                    1615,
+                    1054,
+                    1638
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1615.0
+                    ],
+                    [
+                        1054.0,
+                        1615.0
+                    ],
+                    [
+                        1054.0,
+                        1638.0
+                    ],
+                    [
+                        796.0,
+                        1638.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 10,
+                "label": "footnote",
+                "score": 0.8463587164878845,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1644
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1083,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1667
+                    ],
+                    [
+                        1118,
+                        1636
+                    ]
+                ]
+            }
+        ]
+    }
+}

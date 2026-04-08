@@ -1,0 +1,888 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 433,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1979] After receiving the AuthorizationReq with SelectedAuthorizationService set to \"PnC\", the SECC shall respond with an AuthorizationRes with EVSEProcessing set to \"Finished\" and ResponseCode set to \"OK\" within V2G_SECC_Msg_Performance_Time according to Table 215, when authorization has completed successfully and the received contractcertificate will expire in more than 14 days. The next allowed request shall be ServiceDiscoveryReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                66,
+                167,
+                1054,
+                351
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    66.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    351.0
+                ],
+                [
+                    66.0,
+                    351.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2234] After receiving the AuthorizationReq with SelectedAuthorizationService set to \"EIM\", the SECC shall respond with an AuthorizationRes with EVSEProcessing set to \"Finished\" and ResponseCode starting with \"OK\" within V2G_SECC_Msg_Performance_Time according to Table 215, when authorization has completed successfully. The next allowed request shall be ServiceDiscoveryReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                67,
+                371,
+                1054,
+                530
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    371.0
+                ],
+                [
+                    1054.0,
+                    371.0
+                ],
+                [
+                    1054.0,
+                    530.0
+                ],
+                [
+                    67.0,
+                    530.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1980] After receiving the ServiceDiscoveryReq, the SECC shall respond with a ServiceDiscoveryRes within V2G_SECC_Msg_Performance_Time according to Table 215, the allowed next request shall be ServiceDetailReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                67,
+                549,
+                1054,
+                658
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    549.0
+                ],
+                [
+                    1054.0,
+                    549.0
+                ],
+                [
+                    1054.0,
+                    658.0
+                ],
+                [
+                    67.0,
+                    658.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1957] If the first ServiceDiscoveryRes of the service session had the parameter ServiceRenegotiationSupported set to \"False\" and, after waking up from a Pause, if the SECC does not offer the same ServiceIDs and parameterSetIDs that were selected previously by the EV, then EVCC shall stop the session by sending the message SessionStopReq with parameter ChargingSession equal to \"Terminate\".",
+            "block_bbox": [
+                67,
+                676,
+                1055,
+                810
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    676.0
+                ],
+                [
+                    1055.0,
+                    676.0
+                ],
+                [
+                    1055.0,
+                    810.0
+                ],
+                [
+                    67.0,
+                    810.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1981] After receiving the ServiceDetailReq the SECC shall respond with a ServiceDetailRes within V2G_SECC_Msg_Performance_Time according to Table 215. The allowed next requests shall be either ServiceDetailReq or ServiceSelectionReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                68,
+                829,
+                1055,
+                937
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    829.0
+                ],
+                [
+                    1055.0,
+                    829.0
+                ],
+                [
+                    1055.0,
+                    937.0
+                ],
+                [
+                    68.0,
+                    937.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1983] After receiving the ServiceSelectionReq, the SECC shall respond with ServiceSelectionRes within V2G_SECC_Msg_Performance_Time according to Table 215.",
+            "block_bbox": [
+                69,
+                957,
+                1054,
+                1037
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    957.0
+                ],
+                [
+                    1054.0,
+                    957.0
+                ],
+                [
+                    1054.0,
+                    1037.0
+                ],
+                [
+                    69.0,
+                    1037.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1984] After sending the ServiceSelectionRes with ResponseCode = \"OK\", the SECC shall be ready to offer any of the value added services it may support, i.e. Internet_Service, ParkingStatus_Service, and/or ACDP_SystemStatus_Service as listed in Table 204.",
+            "block_bbox": [
+                68,
+                1058,
+                1054,
+                1140
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1058.0
+                ],
+                [
+                    1054.0,
+                    1058.0
+                ],
+                [
+                    1054.0,
+                    1140.0
+                ],
+                [
+                    68.0,
+                    1140.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1985] After receiving the ServiceSelectionReq, if there are already existing services, i.e. Internet_Service, ParkingStatus_Service, and/or ACDP_SystemStatus_Service as listed in Table 204 which have not been stopped earlier, these services shall be stopped.",
+            "block_bbox": [
+                68,
+                1160,
+                1054,
+                1266
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1160.0
+                ],
+                [
+                    1054.0,
+                    1160.0
+                ],
+                [
+                    1054.0,
+                    1266.0
+                ],
+                [
+                    68.0,
+                    1266.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1986] After receiving the ScheduleExchangeReq, the SECC shall respond with a ScheduleExchangeRes with EVSEProcessing set to \"Ongoing\" within V2G_SECC_Msg_Performance_Time according to Table 215, while the process is still ongoing. The next allowed request shall be ScheduleExchangeReq and the V2G_SECC_Sequence_Timeout is set according to Table 215.",
+            "block_bbox": [
+                68,
+                1287,
+                1054,
+                1420
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1287.0
+                ],
+                [
+                    1054.0,
+                    1287.0
+                ],
+                [
+                    1054.0,
+                    1420.0
+                ],
+                [
+                    68.0,
+                    1420.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1987] After receiving the ScheduleExchangeReq, the SECC shall respond with a ScheduleExchangeRes with EVSEProcessing set to \"Finished\" and ResponseCode starting with \"OK\" within V2G_SECC_Msg_Performance_Time according to Table 215, if all parameters are available.",
+            "block_bbox": [
+                68,
+                1441,
+                1054,
+                1545
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1441.0
+                ],
+                [
+                    1054.0,
+                    1441.0
+                ],
+                [
+                    1054.0,
+                    1545.0
+                ],
+                [
+                    68.0,
+                    1545.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "428",
+            "block_bbox": [
+                70,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                796,
+                1616,
+                1055,
+                1637
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    796.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1636.0
+                ],
+                [
+                    796.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1118,
+                1682
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    59.7198486328125,
+                    1644.0020751953125
+                ],
+                [
+                    1116.9998779296875,
+                    1635.9998779296875
+                ],
+                [
+                    1117.335693359375,
+                    1680.3692626953125
+                ],
+                [
+                    60.0556640625,
+                    1688.3714599609375
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8629814982414246,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.944370687007904,
+                "coordinate": [
+                    66,
+                    167,
+                    1054,
+                    351
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        66.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        351.0
+                    ],
+                    [
+                        66.0,
+                        351.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9384328126907349,
+                "coordinate": [
+                    67,
+                    371,
+                    1054,
+                    530
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        67.0,
+                        371.0
+                    ],
+                    [
+                        1054.0,
+                        371.0
+                    ],
+                    [
+                        1054.0,
+                        530.0
+                    ],
+                    [
+                        67.0,
+                        530.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9254001379013062,
+                "coordinate": [
+                    67,
+                    549,
+                    1054,
+                    658
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        67.0,
+                        549.0
+                    ],
+                    [
+                        1054.0,
+                        549.0
+                    ],
+                    [
+                        1054.0,
+                        658.0
+                    ],
+                    [
+                        67.0,
+                        658.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9400395154953003,
+                "coordinate": [
+                    67,
+                    676,
+                    1055,
+                    810
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        67.0,
+                        676.0
+                    ],
+                    [
+                        1055.0,
+                        676.0
+                    ],
+                    [
+                        1055.0,
+                        810.0
+                    ],
+                    [
+                        67.0,
+                        810.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9233715534210205,
+                "coordinate": [
+                    68,
+                    829,
+                    1055,
+                    937
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        829.0
+                    ],
+                    [
+                        1055.0,
+                        829.0
+                    ],
+                    [
+                        1055.0,
+                        937.0
+                    ],
+                    [
+                        68.0,
+                        937.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9101241827011108,
+                "coordinate": [
+                    69,
+                    957,
+                    1054,
+                    1037
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        69.0,
+                        957.0
+                    ],
+                    [
+                        1054.0,
+                        957.0
+                    ],
+                    [
+                        1054.0,
+                        1037.0
+                    ],
+                    [
+                        69.0,
+                        1037.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9145196676254272,
+                "coordinate": [
+                    68,
+                    1058,
+                    1054,
+                    1140
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1058.0
+                    ],
+                    [
+                        1054.0,
+                        1058.0
+                    ],
+                    [
+                        1054.0,
+                        1140.0
+                    ],
+                    [
+                        68.0,
+                        1140.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9302504658699036,
+                "coordinate": [
+                    68,
+                    1160,
+                    1054,
+                    1266
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1160.0
+                    ],
+                    [
+                        1054.0,
+                        1160.0
+                    ],
+                    [
+                        1054.0,
+                        1266.0
+                    ],
+                    [
+                        68.0,
+                        1266.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9489770531654358,
+                "coordinate": [
+                    68,
+                    1287,
+                    1054,
+                    1420
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1287.0
+                    ],
+                    [
+                        1054.0,
+                        1287.0
+                    ],
+                    [
+                        1054.0,
+                        1420.0
+                    ],
+                    [
+                        68.0,
+                        1420.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9263036847114563,
+                "coordinate": [
+                    68,
+                    1441,
+                    1054,
+                    1545
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1441.0
+                    ],
+                    [
+                        1054.0,
+                        1441.0
+                    ],
+                    [
+                        1054.0,
+                        1545.0
+                    ],
+                    [
+                        68.0,
+                        1545.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6926633715629578,
+                "coordinate": [
+                    70,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3382869362831116,
+                "coordinate": [
+                    796,
+                    1616,
+                    1055,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        796.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1636.0
+                    ],
+                    [
+                        796.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.4214212894439697,
+                "coordinate": [
+                    60,
+                    1636,
+                    1118,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.7198486328125,
+                        1644.0020751953125
+                    ],
+                    [
+                        1116.9998779296875,
+                        1635.9998779296875
+                    ],
+                    [
+                        1117.335693359375,
+                        1680.3692626953125
+                    ],
+                    [
+                        60.0556640625,
+                        1688.3714599609375
+                    ]
+                ]
+            }
+        ]
+    }
+}

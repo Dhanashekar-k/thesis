@@ -1,0 +1,1079 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 501,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td rowspan=\"2\" colspan=\"2\">ISO 15118-2 certificate profiles</td><td colspan=\"4\">Private SECC/private environment</td></tr><tr><td>PE private root CA Root</td><td>PE sub-CA1 Sub (optional)</td><td>PE sub-CA2 Sub (optional)</td><td>PE certification Leaf</td></tr><tr><td rowspan=\"3\">SignatureAlg orithm</td><td>AlgorithmIdentifier</td><td>✗</td><td>✗</td><td>✗</td><td>✗</td></tr><tr><td>algorithm</td><td>✗ id-Ed448</td><td>✗ id-Ed448</td><td>✗ id-Ed448</td><td>✗ id-Ed448</td></tr><tr><td>parameters</td><td>-</td><td>-</td><td>-</td><td>-</td></tr><tr><td colspan=\"2\">SignatureValue</td><td>(Raw BIT STRING)</td><td>(Raw BIT STRING)</td><td>(Raw BIT STRING)</td><td>(Raw BIT STRING)</td></tr></table>",
+            "block_bbox": [
+                56,
+                167,
+                1064,
+                357
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    56.0,
+                    167.0
+                ],
+                [
+                    1064.0,
+                    167.0
+                ],
+                [
+                    1064.0,
+                    357.0
+                ],
+                [
+                    56.0,
+                    357.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "B.10.3 Common requirements for private environment certificate profiles",
+            "block_bbox": [
+                70,
+                364,
+                819,
+                390
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    364.0
+                ],
+                [
+                    819.0,
+                    364.0
+                ],
+                [
+                    819.0,
+                    390.0
+                ],
+                [
+                    70.0,
+                    390.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "As mentioned in Table B.17 and Table B.18, it is optional to include the \"certificatePolicies\" extension in any of the PE certificates. If the \"certificatePolicies\" extension is included, it can be marked as non-critical so that the relying party can ignore this extension if it cannot process it. This is done to improve the interoperability.",
+            "block_bbox": [
+                68,
+                413,
+                1054,
+                518
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    413.0
+                ],
+                [
+                    1054.0,
+                    413.0
+                ],
+                [
+                    1054.0,
+                    518.0
+                ],
+                [
+                    68.0,
+                    518.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2697] PEID shall be an alpha-numeric string with maximum length of 255 bytes that can be used to uniquely identify a private SECC in a particular private environment.",
+            "block_bbox": [
+                68,
+                539,
+                1052,
+                594
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    539.0
+                ],
+                [
+                    1052.0,
+                    539.0
+                ],
+                [
+                    1052.0,
+                    594.0
+                ],
+                [
+                    68.0,
+                    594.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Uniqueness of PEID is only required between private SECCs in a single private environment. Uniqueness of PEID is not required between private SECCs in different/distinct private environments. Uniqueness of subject name is required between private SECCs in different/distinct private environments.",
+            "block_bbox": [
+                68,
+                614,
+                1054,
+                688
+            ],
+            "block_id": 5,
+            "block_order": 3,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    614.0
+                ],
+                [
+                    1054.0,
+                    614.0
+                ],
+                [
+                    1054.0,
+                    688.0
+                ],
+                [
+                    68.0,
+                    688.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2605] In case the private SECC supports only EIM, PE sub-CA1 certificate, PE sub-CA2 certificate and PE certificate may contain at least one or both of CRLDistributionPoints or/and AuthorityInfoAccess extensions.",
+            "block_bbox": [
+                76,
+                709,
+                1051,
+                788
+            ],
+            "block_id": 6,
+            "block_order": 4,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    76.0,
+                    709.0
+                ],
+                [
+                    1051.0,
+                    709.0
+                ],
+                [
+                    1051.0,
+                    788.0
+                ],
+                [
+                    76.0,
+                    788.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2715] In case the private SECC supports PnC, PE sub-CA1 certificate, PE sub-CA2 certificate and PE certificate shall contain at least one or both of CRLDistributionPoints or/and AuthorityInfoAccess extensions.",
+            "block_bbox": [
+                69,
+                811,
+                1052,
+                890
+            ],
+            "block_id": 7,
+            "block_order": 5,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    811.0
+                ],
+                [
+                    1052.0,
+                    811.0
+                ],
+                [
+                    1052.0,
+                    890.0
+                ],
+                [
+                    69.0,
+                    890.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 Table B.17 and Table B.18 specify that both CRLDistributionPoints and AuthorityInfoAccess extensions are optional but critical to indicate that either of them may be included or neither of them may be included. But if they are included, the relying party of these certificates processes them. [V2G20-2605] clarifies that if the issuer desires to include both of these, it is up to the relying party to decide which one to process.",
+            "block_bbox": [
+                67,
+                913,
+                1055,
+                1010
+            ],
+            "block_id": 8,
+            "block_order": 6,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    913.0
+                ],
+                [
+                    1055.0,
+                    913.0
+                ],
+                [
+                    1055.0,
+                    1010.0
+                ],
+                [
+                    67.0,
+                    1010.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 [V2G20-2605] does not specify which one of these extensions can be included. It is left up to the CA to decide which certificate revocation method works best for it. In some cases CRLs will work better as they allow the relying party to download the entire CRL once and have it available for local checking of revocation status of the next contract certificate without a need for a live connection to the CRL server while in other cases OCSP will provide better results as it provides current revocation status and requires less storage and searching on part of the relying party.",
+            "block_bbox": [
+                67,
+                1029,
+                1055,
+                1175
+            ],
+            "block_id": 9,
+            "block_order": 7,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1029.0
+                ],
+                [
+                    1055.0,
+                    1029.0
+                ],
+                [
+                    1055.0,
+                    1175.0
+                ],
+                [
+                    67.0,
+                    1175.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2606]\nIf PE sub-CA1 certificate or PE sub-CA2 certificate or PE certificate contains both CRLDistributionPoints and AuthorityInfoAccess extensions, the relying party may process just one or both as per the local policy of the relying party. The relying party, though, shall process at least one of these extensions.",
+            "block_bbox": [
+                71,
+                1195,
+                219,
+                1222
+            ],
+            "block_id": 10,
+            "block_order": 8,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    71.0,
+                    1195.0
+                ],
+                [
+                    219.0,
+                    1195.0
+                ],
+                [
+                    219.0,
+                    1222.0
+                ],
+                [
+                    71.0,
+                    1222.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "",
+            "block_bbox": [
+                255,
+                1195,
+                1053,
+                1302
+            ],
+            "block_id": 11,
+            "block_order": 9,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    255.0,
+                    1195.0
+                ],
+                [
+                    1053.0,
+                    1195.0
+                ],
+                [
+                    1053.0,
+                    1302.0
+                ],
+                [
+                    255.0,
+                    1302.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 Table B.17 and Table B.18 specify that both CRLDistributionPoints and AuthorityInfoAccess extensions are optional but critical to indicate that either of them may be included or neither of them may be included. But if they are included, the relying party of these certificates processes them. [V2G20-2606] clarifies that if the issuer desires to include both of these, it is up to the relying party to decide which one to process. However, the relying party processes at least one.",
+            "block_bbox": [
+                68,
+                1321,
+                1055,
+                1444
+            ],
+            "block_id": 12,
+            "block_order": 10,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1321.0
+                ],
+                [
+                    1055.0,
+                    1321.0
+                ],
+                [
+                    1055.0,
+                    1444.0
+                ],
+                [
+                    68.0,
+                    1444.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 Per ITU-T X.509 and IETF RFC 5280, if any of these extensions are present and critical, they are processed during certificate validation.",
+            "block_bbox": [
+                68,
+                1462,
+                1054,
+                1513
+            ],
+            "block_id": 13,
+            "block_order": 11,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1462.0
+                ],
+                [
+                    1054.0,
+                    1462.0
+                ],
+                [
+                    1054.0,
+                    1513.0
+                ],
+                [
+                    68.0,
+                    1513.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "496",
+            "block_bbox": [
+                70,
+                1614,
+                115,
+                1636
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1614.0
+                ],
+                [
+                    114.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1054,
+                1637
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1616.0
+                ],
+                [
+                    1053.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1682
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1681
+                ],
+                [
+                    994,
+                    1681
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8699678778648376,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9545764923095703,
+                "coordinate": [
+                    56,
+                    167,
+                    1064,
+                    357
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        56.0,
+                        167.0
+                    ],
+                    [
+                        1064.0,
+                        167.0
+                    ],
+                    [
+                        1064.0,
+                        357.0
+                    ],
+                    [
+                        56.0,
+                        357.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6132185459136963,
+                "coordinate": [
+                    70,
+                    364,
+                    819,
+                    390
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        364.0
+                    ],
+                    [
+                        819.0,
+                        364.0
+                    ],
+                    [
+                        819.0,
+                        390.0
+                    ],
+                    [
+                        70.0,
+                        390.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9432756900787354,
+                "coordinate": [
+                    68,
+                    413,
+                    1054,
+                    518
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        413.0
+                    ],
+                    [
+                        1054.0,
+                        413.0
+                    ],
+                    [
+                        1054.0,
+                        518.0
+                    ],
+                    [
+                        68.0,
+                        518.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8477908968925476,
+                "coordinate": [
+                    68,
+                    539,
+                    1052,
+                    594
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        539.0
+                    ],
+                    [
+                        1052.0,
+                        539.0
+                    ],
+                    [
+                        1052.0,
+                        594.0
+                    ],
+                    [
+                        68.0,
+                        594.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9372590184211731,
+                "coordinate": [
+                    68,
+                    614,
+                    1054,
+                    688
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        614.0
+                    ],
+                    [
+                        1054.0,
+                        614.0
+                    ],
+                    [
+                        1054.0,
+                        688.0
+                    ],
+                    [
+                        68.0,
+                        688.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8354040384292603,
+                "coordinate": [
+                    76,
+                    709,
+                    1051,
+                    788
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        76.0,
+                        709.0
+                    ],
+                    [
+                        1051.0,
+                        709.0
+                    ],
+                    [
+                        1051.0,
+                        788.0
+                    ],
+                    [
+                        76.0,
+                        788.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9187324643135071,
+                "coordinate": [
+                    69,
+                    811,
+                    1052,
+                    890
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        69.0,
+                        811.0
+                    ],
+                    [
+                        1052.0,
+                        811.0
+                    ],
+                    [
+                        1052.0,
+                        890.0
+                    ],
+                    [
+                        69.0,
+                        890.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9488281607627869,
+                "coordinate": [
+                    67,
+                    913,
+                    1055,
+                    1010
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        67.0,
+                        913.0
+                    ],
+                    [
+                        1055.0,
+                        913.0
+                    ],
+                    [
+                        1055.0,
+                        1010.0
+                    ],
+                    [
+                        67.0,
+                        1010.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9584222435951233,
+                "coordinate": [
+                    67,
+                    1029,
+                    1055,
+                    1175
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1029.0
+                    ],
+                    [
+                        1055.0,
+                        1029.0
+                    ],
+                    [
+                        1055.0,
+                        1175.0
+                    ],
+                    [
+                        67.0,
+                        1175.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.5542364120483398,
+                "coordinate": [
+                    71,
+                    1195,
+                    219,
+                    1222
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        71.0,
+                        1195.0
+                    ],
+                    [
+                        219.0,
+                        1195.0
+                    ],
+                    [
+                        219.0,
+                        1222.0
+                    ],
+                    [
+                        71.0,
+                        1222.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9502111077308655,
+                "coordinate": [
+                    255,
+                    1195,
+                    1053,
+                    1302
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        255.0,
+                        1195.0
+                    ],
+                    [
+                        1053.0,
+                        1195.0
+                    ],
+                    [
+                        1053.0,
+                        1302.0
+                    ],
+                    [
+                        255.0,
+                        1302.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9587802290916443,
+                "coordinate": [
+                    68,
+                    1321,
+                    1055,
+                    1444
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1321.0
+                    ],
+                    [
+                        1055.0,
+                        1321.0
+                    ],
+                    [
+                        1055.0,
+                        1444.0
+                    ],
+                    [
+                        68.0,
+                        1444.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.913229763507843,
+                "coordinate": [
+                    68,
+                    1462,
+                    1054,
+                    1513
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1462.0
+                    ],
+                    [
+                        1054.0,
+                        1462.0
+                    ],
+                    [
+                        1054.0,
+                        1513.0
+                    ],
+                    [
+                        68.0,
+                        1513.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6630121469497681,
+                "coordinate": [
+                    70,
+                    1614,
+                    115,
+                    1636
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1614.0
+                    ],
+                    [
+                        114.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.49342280626296997,
+                "coordinate": [
+                    797,
+                    1616,
+                    1054,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1616.0
+                    ],
+                    [
+                        1053.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.44639983773231506,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1681
+                    ],
+                    [
+                        994,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

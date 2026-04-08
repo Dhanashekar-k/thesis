@@ -1,0 +1,644 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 219,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                67,
+                323,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    67.0
+                ],
+                [
+                    323.0,
+                    96.0
+                ],
+                [
+                    70.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 76 — Semantics and type definition for WPT\\_AlignmentCheckReq",
+            "block_bbox": [
+                195,
+                168,
+                926,
+                196
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    195.0,
+                    168.0
+                ],
+                [
+                    926.0,
+                    168.0
+                ],
+                [
+                    926.0,
+                    196.0
+                ],
+                [
+                    195.0,
+                    196.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>Header</td><td>complexType: MessageHeaderType Refer to 8.3.3</td><td>Contains general information, used for all messages.</td></tr><tr><td>EVProcessing</td><td>simpleType: processingType enumeration refer to Annex A for the type definition</td><td>Parameter that indicates the stop of the alignment check process by the EV. When the EV stops the pairing process, the EVProcessing is set to &quot;Finished&quot;, while still running it is set to &quot;Ongoing&quot;.</td></tr><tr><td>TargetCoilCurrent</td><td>complexType RationalNumberType refer to 8.3.5.3.8</td><td>Optional: Used for Power check and LPE: - Current in amperes, the EVSE shall feed the primary coil with in order to enable the secondary device to perform the alignment check.</td></tr><tr><td>EVResultCode</td><td>simpleType: WPT_EVResultType refer to Annex A for the type definition</td><td>Parameter with which the EV can inform the SECC about the result of the alignment check: - EVResultUnknown, - EVResultSuccess, - EVResultFailed.</td></tr><tr><td>VendorSpecificDataContainer</td><td>simpleType: WPT_DataContainerType refer to Annex A for the type definition</td><td>Optional: Data container for additional vendor specific information. This element is used primarily when a proprietary alignment check method was selected with the FinePositioningSetup.</td></tr></table>",
+            "block_bbox": [
+                73,
+                205,
+                1051,
+                1040
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    73.0,
+                    205.0
+                ],
+                [
+                    1051.0,
+                    205.0
+                ],
+                [
+                    1051.0,
+                    1040.0
+                ],
+                [
+                    73.0,
+                    1040.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "[V2G20-5047] As long as the EVProcessing Element in WPT_AlignmentCheckReq is \"Ongoing\" the EVResultCode shall be set to \"EVResultUnknown\".",
+            "block_bbox": [
+                72,
+                1044,
+                1052,
+                1097
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1044.0
+                ],
+                [
+                    1052.0,
+                    1044.0
+                ],
+                [
+                    1052.0,
+                    1097.0
+                ],
+                [
+                    72.0,
+                    1097.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5048] If the EVProcessing element in WPT_AlignmentCheckReq is set to \"Finished\" the EVResultCode shall not be set to \"EVResultUnknown\".",
+            "block_bbox": [
+                70,
+                1119,
+                1052,
+                1175
+            ],
+            "block_id": 4,
+            "block_order": 1,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1119.0
+                ],
+                [
+                    1052.0,
+                    1119.0
+                ],
+                [
+                    1052.0,
+                    1175.0
+                ],
+                [
+                    70.0,
+                    1175.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "8.3.4.6.6.3 WPT\\_AlignmentCheckRes",
+            "block_bbox": [
+                124,
+                1193,
+                539,
+                1220
+            ],
+            "block_id": 5,
+            "block_order": 2,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    124.0,
+                    1193.0
+                ],
+                [
+                    539.0,
+                    1193.0
+                ],
+                [
+                    539.0,
+                    1220.0
+                ],
+                [
+                    124.0,
+                    1220.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5014] The EVCC and the SECC shall implement the message elements as defined in Figure 81 and Table 77.",
+            "block_bbox": [
+                70,
+                1242,
+                1052,
+                1293
+            ],
+            "block_id": 6,
+            "block_order": 3,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1242.0
+                ],
+                [
+                    1052.0,
+                    1242.0
+                ],
+                [
+                    1052.0,
+                    1293.0
+                ],
+                [
+                    70.0,
+                    1293.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "214",
+            "block_bbox": [
+                69,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    69.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1637,
+                1119,
+                1683
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    59.72045135498047,
+                    1645.002197265625
+                ],
+                [
+                    1118.0001220703125,
+                    1637.0
+                ],
+                [
+                    1118.3380126953125,
+                    1681.6875
+                ],
+                [
+                    60.058349609375,
+                    1689.689697265625
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.873256266117096,
+                "coordinate": [
+                    70,
+                    67,
+                    323,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        67.0
+                    ],
+                    [
+                        323.0,
+                        96.0
+                    ],
+                    [
+                        70.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.853186845779419,
+                "coordinate": [
+                    195,
+                    168,
+                    926,
+                    196
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        195.0,
+                        168.0
+                    ],
+                    [
+                        926.0,
+                        168.0
+                    ],
+                    [
+                        926.0,
+                        196.0
+                    ],
+                    [
+                        195.0,
+                        196.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9781137704849243,
+                "coordinate": [
+                    73,
+                    205,
+                    1051,
+                    1040
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        73.0,
+                        205.0
+                    ],
+                    [
+                        1051.0,
+                        205.0
+                    ],
+                    [
+                        1051.0,
+                        1040.0
+                    ],
+                    [
+                        73.0,
+                        1040.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.6600565314292908,
+                "coordinate": [
+                    72,
+                    1044,
+                    1052,
+                    1097
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1044.0
+                    ],
+                    [
+                        1052.0,
+                        1044.0
+                    ],
+                    [
+                        1052.0,
+                        1097.0
+                    ],
+                    [
+                        72.0,
+                        1097.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8647150993347168,
+                "coordinate": [
+                    70,
+                    1119,
+                    1052,
+                    1175
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1119.0
+                    ],
+                    [
+                        1052.0,
+                        1119.0
+                    ],
+                    [
+                        1052.0,
+                        1175.0
+                    ],
+                    [
+                        70.0,
+                        1175.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7980994582176208,
+                "coordinate": [
+                    124,
+                    1193,
+                    539,
+                    1220
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        124.0,
+                        1193.0
+                    ],
+                    [
+                        539.0,
+                        1193.0
+                    ],
+                    [
+                        539.0,
+                        1220.0
+                    ],
+                    [
+                        124.0,
+                        1220.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8649042844772339,
+                "coordinate": [
+                    70,
+                    1242,
+                    1052,
+                    1293
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1242.0
+                    ],
+                    [
+                        1052.0,
+                        1242.0
+                    ],
+                    [
+                        1052.0,
+                        1293.0
+                    ],
+                    [
+                        70.0,
+                        1293.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5546547770500183,
+                "coordinate": [
+                    69,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        69.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.5218344330787659,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3603579103946686,
+                "coordinate": [
+                    60,
+                    1637,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.72045135498047,
+                        1645.002197265625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1637.0
+                    ],
+                    [
+                        1118.3380126953125,
+                        1681.6875
+                    ],
+                    [
+                        60.058349609375,
+                        1689.689697265625
+                    ]
+                ]
+            }
+        ]
+    }
+}

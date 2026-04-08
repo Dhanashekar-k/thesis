@@ -1,0 +1,538 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 274,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>RemainingTimeToMinimumSOC</td><td>simpleType:xs:unsignedInt</td><td>Optional:This element is used to indicate the remaining time it takes to reach the minimum SOC.It is communicated as the offset in seconds from the point in time of sending this message, which is marked in the TimeStamp element of the common V2G message header.</td></tr><tr><td>RemainingTimeToTargetSOC</td><td>simpleType:xs:unsignedInt</td><td>Optional:This element is used to indicate the remaining time it takes to reach the TargetSOC.It is communicated as the offset in seconds from the point in time of sending this message, which is marked in the TimeStamp element of the common V2G message header.</td></tr><tr><td>RemainingTimeToMaximumSOC</td><td>simpleType:xs:unsignedInt</td><td>Optional:This element is used to indicate the remaining time it takes to reach the maximum SOC.It is communicated as the offset in seconds from the point in time of sending this message, which is marked in the TimeStamp element of the common V2G message header.</td></tr><tr><td>ChargingComplete</td><td>simpleType:xs:boolean</td><td>Optional:Indication if the charging is complete from EV point of view (value = 1).</td></tr><tr><td>BatteryEnergyCapacity</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:It is the calculated amount of electrical Energy in Wh stored in the battery when the displayed SOC equals 100 %.</td></tr><tr><td>InletHot</td><td>simpleType:xs:boolean</td><td>Optional:Inlet temperature too high to accept specific operating condition.</td></tr></table>",
+            "block_bbox": [
+                144,
+                164,
+                1113,
+                1228
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    144.0,
+                    164.0
+                ],
+                [
+                    1113.0,
+                    164.0
+                ],
+                [
+                    1113.0,
+                    1228.0
+                ],
+                [
+                    144.0,
+                    1228.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "[V2G20-1340] When EVCC selects the service parameter \"MobilityNeedsMode\" set to 2, ChargeLoopReq shall contain a DisplayParameter with PresentSOC, TargetSOC, and MinimumSOC.",
+            "block_bbox": [
+                139,
+                1233,
+                1119,
+                1310
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    1233.0
+                ],
+                [
+                    1119.0,
+                    1233.0
+                ],
+                [
+                    1119.0,
+                    1310.0
+                ],
+                [
+                    139.0,
+                    1310.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 For given TargetSOC, MinimumSOC and MaximumSOC values the EV in dynamic control mode will continuously estimate the amount of energy needed to reach those states. See the definition of EVTargetEnergyRequest, EVMinimumEnergyRequest, and EVMaximumEnergyRequest for more details.",
+            "block_bbox": [
+                135,
+                1333,
+                1121,
+                1408
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1333.0
+                ],
+                [
+                    1121.0,
+                    1333.0
+                ],
+                [
+                    1121.0,
+                    1408.0
+                ],
+                [
+                    135.0,
+                    1408.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.3.29 ServiceIDListType",
+            "block_bbox": [
+                137,
+                1426,
+                439,
+                1455
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1426.0
+                ],
+                [
+                    439.0,
+                    1426.0
+                ],
+                [
+                    439.0,
+                    1455.0
+                ],
+                [
+                    137.0,
+                    1455.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1575] The EVCC and the SECC shall implement this type as defined in Table 123 and Figure 126.",
+            "block_bbox": [
+                137,
+                1475,
+                1119,
+                1529
+            ],
+            "block_id": 5,
+            "block_order": 3,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1475.0
+                ],
+                [
+                    1119.0,
+                    1475.0
+                ],
+                [
+                    1119.0,
+                    1529.0
+                ],
+                [
+                    137.0,
+                    1529.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "269",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1643.0
+                ],
+                [
+                    1076.9998779296875,
+                    1643.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1101,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1071,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8701202869415283,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9784197807312012,
+                "coordinate": [
+                    144,
+                    164,
+                    1113,
+                    1228
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        144.0,
+                        164.0
+                    ],
+                    [
+                        1113.0,
+                        164.0
+                    ],
+                    [
+                        1113.0,
+                        1228.0
+                    ],
+                    [
+                        144.0,
+                        1228.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.6601340174674988,
+                "coordinate": [
+                    139,
+                    1233,
+                    1119,
+                    1310
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        1233.0
+                    ],
+                    [
+                        1119.0,
+                        1233.0
+                    ],
+                    [
+                        1119.0,
+                        1310.0
+                    ],
+                    [
+                        139.0,
+                        1310.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7748110294342041,
+                "coordinate": [
+                    135,
+                    1333,
+                    1121,
+                    1408
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1333.0
+                    ],
+                    [
+                        1121.0,
+                        1333.0
+                    ],
+                    [
+                        1121.0,
+                        1408.0
+                    ],
+                    [
+                        135.0,
+                        1408.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8534857630729675,
+                "coordinate": [
+                    137,
+                    1426,
+                    439,
+                    1455
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1426.0
+                    ],
+                    [
+                        439.0,
+                        1426.0
+                    ],
+                    [
+                        439.0,
+                        1455.0
+                    ],
+                    [
+                        137.0,
+                        1455.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8708924055099487,
+                "coordinate": [
+                    137,
+                    1475,
+                    1119,
+                    1529
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1475.0
+                    ],
+                    [
+                        1119.0,
+                        1475.0
+                    ],
+                    [
+                        1119.0,
+                        1529.0
+                    ],
+                    [
+                        137.0,
+                        1529.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7662075161933899,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1643.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1643.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8571067452430725,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1101,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1071,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}

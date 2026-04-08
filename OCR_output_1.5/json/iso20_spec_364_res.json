@@ -1,0 +1,973 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 364,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                865,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    865.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    865.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 200 — Semantics and type definition for WPT_LF_DataPackageListType",
+            "block_bbox": [
+                233,
+                168,
+                1024,
+                195
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    233.0,
+                    168.0
+                ],
+                [
+                    1024.0,
+                    168.0
+                ],
+                [
+                    1024.0,
+                    195.0
+                ],
+                [
+                    233.0,
+                    195.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>NumPackages</td><td>simpleType:xs:unsignedByte</td><td>Number of data packages</td></tr><tr><td>WPT_LF_DataPackage</td><td>complexType:WPT_LF_DataPackageTypeRefer to 8.3.5.6.4.15</td><td>Data packages</td></tr></table>",
+            "block_bbox": [
+                132,
+                203,
+                1123,
+                434
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    132.0,
+                    203.0
+                ],
+                [
+                    1123.0,
+                    203.0
+                ],
+                [
+                    1123.0,
+                    434.0
+                ],
+                [
+                    132.0,
+                    434.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "8.3.5.6.4.15 WPT_LF_DataPackageType",
+            "block_bbox": [
+                192,
+                458,
+                618,
+                485
+            ],
+            "block_id": 3,
+            "block_order": null,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    192.0,
+                    458.0
+                ],
+                [
+                    618.0,
+                    458.0
+                ],
+                [
+                    618.0,
+                    485.0
+                ],
+                [
+                    192.0,
+                    485.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-5120] The EVCC and the SECC shall implement this type as defined in Figure 210 and Table 201.",
+            "block_bbox": [
+                137,
+                506,
+                1119,
+                559
+            ],
+            "block_id": 4,
+            "block_order": 1,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    506.0
+                ],
+                [
+                    1119.0,
+                    506.0
+                ],
+                [
+                    1119.0,
+                    559.0
+                ],
+                [
+                    137.0,
+                    559.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                334,
+                582,
+                924,
+                725
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    334.0,
+                    582.0
+                ],
+                [
+                    924.0,
+                    582.0
+                ],
+                [
+                    924.0,
+                    725.0
+                ],
+                [
+                    334.0,
+                    725.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 210 — Schema diagram - WPT_LF_DataPackageType",
+            "block_bbox": [
+                323,
+                755,
+                933,
+                782
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    323.0,
+                    755.0
+                ],
+                [
+                    933.0,
+                    755.0
+                ],
+                [
+                    933.0,
+                    782.0
+                ],
+                [
+                    323.0,
+                    782.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 201.",
+            "block_bbox": [
+                134,
+                792,
+                731,
+                820
+            ],
+            "block_id": 7,
+            "block_order": 2,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    792.0
+                ],
+                [
+                    731.0,
+                    792.0
+                ],
+                [
+                    731.0,
+                    820.0
+                ],
+                [
+                    134.0,
+                    820.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 201 — Semantics and type definition for WPT_LF_DataPackageType",
+            "block_bbox": [
+                252,
+                841,
+                1005,
+                868
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    252.0,
+                    841.0
+                ],
+                [
+                    1005.0,
+                    841.0
+                ],
+                [
+                    1005.0,
+                    868.0
+                ],
+                [
+                    252.0,
+                    868.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>PackageIndex</td><td>simpleType:xs:unsignedByte</td><td>Index number of the signal package (consecutive numbered for each positioning process)</td></tr><tr><td>LF_TxData</td><td>complexType:WPT_LF_TxDataListTypeSee 8.3.5.6.4.8</td><td>Data package(s) containing information of transmitted data</td></tr><tr><td>LF_RxData</td><td>complexType:WPT_LF_RxDataListTypeSee 8.3.5.6.4.10</td><td>Data package(s) containing information of received data</td></tr></table>",
+            "block_bbox": [
+                132,
+                875,
+                1124,
+                1197
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    132.0,
+                    875.0
+                ],
+                [
+                    1124.0,
+                    875.0
+                ],
+                [
+                    1124.0,
+                    1197.0
+                ],
+                [
+                    132.0,
+                    1197.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "8.3.5.7 ACDP",
+            "block_bbox": [
+                218,
+                1220,
+                392,
+                1247
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    218.0,
+                    1220.0
+                ],
+                [
+                    392.0,
+                    1220.0
+                ],
+                [
+                    392.0,
+                    1247.0
+                ],
+                [
+                    218.0,
+                    1247.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.5.7.1 EVTechnicalStatusType",
+            "block_bbox": [
+                137,
+                1268,
+                492,
+                1295
+            ],
+            "block_id": 11,
+            "block_order": 3,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1268.0
+                ],
+                [
+                    492.0,
+                    1268.0
+                ],
+                [
+                    492.0,
+                    1295.0
+                ],
+                [
+                    137.0,
+                    1295.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-4011] The EVCC and the SECC shall implement the message elements as defined in Figure 211 and Table 202.",
+            "block_bbox": [
+                137,
+                1317,
+                1119,
+                1371
+            ],
+            "block_id": 12,
+            "block_order": 4,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1317.0
+                ],
+                [
+                    1119.0,
+                    1317.0
+                ],
+                [
+                    1119.0,
+                    1371.0
+                ],
+                [
+                    137.0,
+                    1371.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "359",
+            "block_bbox": [
+                1077,
+                1624,
+                1119,
+                1644
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    1076.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1624.0
+                ],
+                [
+                    1117.9998779296875,
+                    1643.0
+                ],
+                [
+                    1076.9998779296875,
+                    1643.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1631,
+                1118,
+                1683
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    61,
+                    1631
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1076,
+                    1682
+                ],
+                [
+                    1117,
+                    1665
+                ],
+                [
+                    1117,
+                    1640
+                ],
+                [
+                    1082,
+                    1631
+                ],
+                [
+                    1076,
+                    1640
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8820240497589111,
+                "coordinate": [
+                    865,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        865.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        865.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8475854396820068,
+                "coordinate": [
+                    233,
+                    168,
+                    1024,
+                    195
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        233.0,
+                        168.0
+                    ],
+                    [
+                        1024.0,
+                        168.0
+                    ],
+                    [
+                        1024.0,
+                        195.0
+                    ],
+                    [
+                        233.0,
+                        195.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9647354483604431,
+                "coordinate": [
+                    132,
+                    203,
+                    1123,
+                    434
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        132.0,
+                        203.0
+                    ],
+                    [
+                        1123.0,
+                        203.0
+                    ],
+                    [
+                        1123.0,
+                        434.0
+                    ],
+                    [
+                        132.0,
+                        434.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.6835460066795349,
+                "coordinate": [
+                    192,
+                    458,
+                    618,
+                    485
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        192.0,
+                        458.0
+                    ],
+                    [
+                        618.0,
+                        458.0
+                    ],
+                    [
+                        618.0,
+                        485.0
+                    ],
+                    [
+                        192.0,
+                        485.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8518283367156982,
+                "coordinate": [
+                    137,
+                    506,
+                    1119,
+                    559
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        506.0
+                    ],
+                    [
+                        1119.0,
+                        506.0
+                    ],
+                    [
+                        1119.0,
+                        559.0
+                    ],
+                    [
+                        137.0,
+                        559.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9492321014404297,
+                "coordinate": [
+                    334,
+                    582,
+                    924,
+                    725
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        334.0,
+                        582.0
+                    ],
+                    [
+                        924.0,
+                        582.0
+                    ],
+                    [
+                        924.0,
+                        725.0
+                    ],
+                    [
+                        334.0,
+                        725.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8146533966064453,
+                "coordinate": [
+                    323,
+                    755,
+                    933,
+                    782
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        323.0,
+                        755.0
+                    ],
+                    [
+                        933.0,
+                        755.0
+                    ],
+                    [
+                        933.0,
+                        782.0
+                    ],
+                    [
+                        323.0,
+                        782.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.43841031193733215,
+                "coordinate": [
+                    134,
+                    792,
+                    731,
+                    820
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        134.0,
+                        792.0
+                    ],
+                    [
+                        731.0,
+                        792.0
+                    ],
+                    [
+                        731.0,
+                        820.0
+                    ],
+                    [
+                        134.0,
+                        820.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8619666695594788,
+                "coordinate": [
+                    252,
+                    841,
+                    1005,
+                    868
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        252.0,
+                        841.0
+                    ],
+                    [
+                        1005.0,
+                        841.0
+                    ],
+                    [
+                        1005.0,
+                        868.0
+                    ],
+                    [
+                        252.0,
+                        868.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9686574935913086,
+                "coordinate": [
+                    132,
+                    875,
+                    1124,
+                    1197
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        132.0,
+                        875.0
+                    ],
+                    [
+                        1124.0,
+                        875.0
+                    ],
+                    [
+                        1124.0,
+                        1197.0
+                    ],
+                    [
+                        132.0,
+                        1197.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.41307246685028076,
+                "coordinate": [
+                    218,
+                    1220,
+                    392,
+                    1247
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        218.0,
+                        1220.0
+                    ],
+                    [
+                        392.0,
+                        1220.0
+                    ],
+                    [
+                        392.0,
+                        1247.0
+                    ],
+                    [
+                        218.0,
+                        1247.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8358647227287292,
+                "coordinate": [
+                    137,
+                    1268,
+                    492,
+                    1295
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1268.0
+                    ],
+                    [
+                        492.0,
+                        1268.0
+                    ],
+                    [
+                        492.0,
+                        1295.0
+                    ],
+                    [
+                        137.0,
+                        1295.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.891593873500824,
+                "coordinate": [
+                    137,
+                    1317,
+                    1119,
+                    1371
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1317.0
+                    ],
+                    [
+                        1119.0,
+                        1317.0
+                    ],
+                    [
+                        1119.0,
+                        1371.0
+                    ],
+                    [
+                        137.0,
+                        1371.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7389487028121948,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1119,
+                    1644
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        1076.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1624.0
+                    ],
+                    [
+                        1117.9998779296875,
+                        1643.0
+                    ],
+                    [
+                        1076.9998779296875,
+                        1643.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8623988628387451,
+                "coordinate": [
+                    61,
+                    1631,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1631
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1076,
+                        1682
+                    ],
+                    [
+                        1117,
+                        1665
+                    ],
+                    [
+                        1117,
+                        1640
+                    ],
+                    [
+                        1082,
+                        1631
+                    ],
+                    [
+                        1076,
+                        1640
+                    ]
+                ]
+            }
+        ]
+    }
+}

@@ -1,0 +1,1132 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 542,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Additionally, public CAs also provide certificate revocation services to revoke certificates in cases of compromise of private keys, entity no longer in service, etc. private CAs are not required to provide these services.",
+            "block_bbox": [
+                135,
+                168,
+                1123,
+                247
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    168.0
+                ],
+                [
+                    1123.0,
+                    168.0
+                ],
+                [
+                    1123.0,
+                    247.0
+                ],
+                [
+                    135.0,
+                    247.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "While in challenge 1 the OEM/PE EVSE manufacturer is installing the trust anchors and could potentially do some due diligence to ensure that those trust anchors are actually trust worthy and the certificate chains signed by those trust anchors are secure, in challenge 2 the user actually installs the trust anchors both in the EV and the PE EVSE. The user will likely neither be knowledgeable in PKI security nor be able to perform the necessary due diligence before installing the trust anchors.",
+            "block_bbox": [
+                134,
+                269,
+                1123,
+                402
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    269.0
+                ],
+                [
+                    1123.0,
+                    269.0
+                ],
+                [
+                    1123.0,
+                    402.0
+                ],
+                [
+                    134.0,
+                    402.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Hence, the use of private environment should be weighed against the security risks that it presents.",
+            "block_bbox": [
+                135,
+                422,
+                1075,
+                450
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    422.0
+                ],
+                [
+                    1075.0,
+                    422.0
+                ],
+                [
+                    1075.0,
+                    450.0
+                ],
+                [
+                    135.0,
+                    450.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "H.3 Solution for emergency and disaster situations",
+            "block_bbox": [
+                136,
+                475,
+                710,
+                504
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    475.0
+                ],
+                [
+                    710.0,
+                    475.0
+                ],
+                [
+                    710.0,
+                    504.0
+                ],
+                [
+                    136.0,
+                    504.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In case of big infrastructure failures (regional communication outage, etc.) or major natural disasters (tsunami, earth quake, flooding due to heavy rain, etc.) a functioning transport system is of big importance in order to resolve the crisis and to provide urgent relief.",
+            "block_bbox": [
+                136,
+                527,
+                1122,
+                607
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    527.0
+                ],
+                [
+                    1122.0,
+                    527.0
+                ],
+                [
+                    1122.0,
+                    607.0
+                ],
+                [
+                    136.0,
+                    607.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "With EVs another important service can be provided in the form of mobile energy delivery to critical places. This is commonly encapsulated in the categories of vehicle-to-grid (V2G), vehicle-to-home (V2H), vehicle-to-infrastructure (V2I) or vehicle-to-vehicle (V2V). The ISO 15118 series provides the technical foundation to solve those problems.",
+            "block_bbox": [
+                136,
+                627,
+                1121,
+                733
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    627.0
+                ],
+                [
+                    1121.0,
+                    627.0
+                ],
+                [
+                    1121.0,
+                    733.0
+                ],
+                [
+                    136.0,
+                    733.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Since in some disaster situations a reliable communication infrastructure cannot be guaranteed ISO 15118 has made the following key design decision:",
+            "block_bbox": [
+                136,
+                755,
+                1120,
+                808
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    755.0
+                ],
+                [
+                    1120.0,
+                    755.0
+                ],
+                [
+                    1120.0,
+                    808.0
+                ],
+                [
+                    136.0,
+                    808.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Certificates are validated on a peer-to-peer basis between the EVCC and the SECC.",
+            "block_bbox": [
+                136,
+                830,
+                911,
+                858
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    830.0
+                ],
+                [
+                    911.0,
+                    830.0
+                ],
+                [
+                    911.0,
+                    858.0
+                ],
+                [
+                    136.0,
+                    858.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Certificates are used to ensure trusted business relations in day to day life. In order to ensure the highest level of disaster resilience it is recommended that all equipment (EVSEs and EVs) have a documented switch or mode setting, which disables the certificate and business level of the protocol and falls back to only the safety related parts (e.g. voltage negotiation). If both sides of the charging cable signal, that they are willing to work with \"uncertified\" messages then this type of operation should be permitted.",
+            "block_bbox": [
+                134,
+                880,
+                1124,
+                1013
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    880.0
+                ],
+                [
+                    1124.0,
+                    880.0
+                ],
+                [
+                    1124.0,
+                    1013.0
+                ],
+                [
+                    134.0,
+                    1013.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Additionally, during such events it should be possible to bypass certificate revocations checks, etc.",
+            "block_bbox": [
+                136,
+                1033,
+                1063,
+                1061
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1033.0
+                ],
+                [
+                    1063.0,
+                    1033.0
+                ],
+                [
+                    1063.0,
+                    1061.0
+                ],
+                [
+                    136.0,
+                    1061.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For EVSEs this mode should only be accessible after physically opening the housing of the system and it should only be \"obvious\" to a trained technician how to enable it. However, it should not require highly sophisticated configuration tools, as those might not be at hand during those types of events, as disasters from the past have shown.",
+            "block_bbox": [
+                135,
+                1083,
+                1122,
+                1189
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1083.0
+                ],
+                [
+                    1122.0,
+                    1083.0
+                ],
+                [
+                    1122.0,
+                    1189.0
+                ],
+                [
+                    135.0,
+                    1189.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Any misuse of the emergency/disaster feature can easily be handled after the fact by the legal system. The rational here is that if someone has the will and the means to open an EVSE and gain physical access to the power cables he most likely has a valid reason for this type of action. It typically will only happen in emergency and disaster situations.",
+            "block_bbox": [
+                135,
+                1210,
+                1122,
+                1316
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1210.0
+                ],
+                [
+                    1122.0,
+                    1210.0
+                ],
+                [
+                    1122.0,
+                    1316.0
+                ],
+                [
+                    135.0,
+                    1316.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "H.4 Use of OEM provisioning certificates",
+            "block_bbox": [
+                136,
+                1340,
+                593,
+                1369
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1340.0
+                ],
+                [
+                    593.0,
+                    1340.0
+                ],
+                [
+                    593.0,
+                    1369.0
+                ],
+                [
+                    136.0,
+                    1369.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The difficulty with the handling of contract certificates (as defined in this document) for the OEM is to bring such a certificate into an EV. This becomes necessary in many situations as, for example, EV handover to customer, energy contract conclusion, changing the mobility provider, exchanging the component containing the contract certificate at EV repair, expired contract certificates, etc.",
+            "block_bbox": [
+                134,
+                1391,
+                1123,
+                1498
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    134.0,
+                    1391.0
+                ],
+                [
+                    1123.0,
+                    1391.0
+                ],
+                [
+                    1123.0,
+                    1498.0
+                ],
+                [
+                    134.0,
+                    1498.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Using a diagnosis tool to write a file containing a contract certificate (that the customer received from the mobility provider at contract conclusion) into the EV is impractical, since such a manual procedure in a",
+            "block_bbox": [
+                136,
+                1518,
+                1123,
+                1572
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1518.0
+                ],
+                [
+                    1123.0,
+                    1518.0
+                ],
+                [
+                    1123.0,
+                    1572.0
+                ],
+                [
+                    136.0,
+                    1572.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1630,
+                1118,
+                1683
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    60.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1630.0
+                ],
+                [
+                    1118.0,
+                    1683.0
+                ],
+                [
+                    60.0,
+                    1683.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "537",
+            "block_bbox": [
+                1078,
+                1624,
+                1119,
+                1645
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    1078,
+                    1624
+                ],
+                [
+                    1078,
+                    1644
+                ],
+                [
+                    1118,
+                    1644
+                ],
+                [
+                    1118,
+                    1624
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.882256805896759,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9360285401344299,
+                "coordinate": [
+                    135,
+                    168,
+                    1123,
+                    247
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        135.0,
+                        168.0
+                    ],
+                    [
+                        1123.0,
+                        168.0
+                    ],
+                    [
+                        1123.0,
+                        247.0
+                    ],
+                    [
+                        135.0,
+                        247.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9527661800384521,
+                "coordinate": [
+                    134,
+                    269,
+                    1123,
+                    402
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        134.0,
+                        269.0
+                    ],
+                    [
+                        1123.0,
+                        269.0
+                    ],
+                    [
+                        1123.0,
+                        402.0
+                    ],
+                    [
+                        134.0,
+                        402.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8500807881355286,
+                "coordinate": [
+                    135,
+                    422,
+                    1075,
+                    450
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        135.0,
+                        422.0
+                    ],
+                    [
+                        1075.0,
+                        422.0
+                    ],
+                    [
+                        1075.0,
+                        450.0
+                    ],
+                    [
+                        135.0,
+                        450.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8792261481285095,
+                "coordinate": [
+                    136,
+                    475,
+                    710,
+                    504
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        136.0,
+                        475.0
+                    ],
+                    [
+                        710.0,
+                        475.0
+                    ],
+                    [
+                        710.0,
+                        504.0
+                    ],
+                    [
+                        136.0,
+                        504.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9385968446731567,
+                "coordinate": [
+                    136,
+                    527,
+                    1122,
+                    607
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        136.0,
+                        527.0
+                    ],
+                    [
+                        1122.0,
+                        527.0
+                    ],
+                    [
+                        1122.0,
+                        607.0
+                    ],
+                    [
+                        136.0,
+                        607.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9515324234962463,
+                "coordinate": [
+                    136,
+                    627,
+                    1121,
+                    733
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        136.0,
+                        627.0
+                    ],
+                    [
+                        1121.0,
+                        627.0
+                    ],
+                    [
+                        1121.0,
+                        733.0
+                    ],
+                    [
+                        136.0,
+                        733.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9164820909500122,
+                "coordinate": [
+                    136,
+                    755,
+                    1120,
+                    808
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        136.0,
+                        755.0
+                    ],
+                    [
+                        1120.0,
+                        755.0
+                    ],
+                    [
+                        1120.0,
+                        808.0
+                    ],
+                    [
+                        136.0,
+                        808.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8540761470794678,
+                "coordinate": [
+                    136,
+                    830,
+                    911,
+                    858
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        136.0,
+                        830.0
+                    ],
+                    [
+                        911.0,
+                        830.0
+                    ],
+                    [
+                        911.0,
+                        858.0
+                    ],
+                    [
+                        136.0,
+                        858.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9555751085281372,
+                "coordinate": [
+                    134,
+                    880,
+                    1124,
+                    1013
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        134.0,
+                        880.0
+                    ],
+                    [
+                        1124.0,
+                        880.0
+                    ],
+                    [
+                        1124.0,
+                        1013.0
+                    ],
+                    [
+                        134.0,
+                        1013.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8627508878707886,
+                "coordinate": [
+                    136,
+                    1033,
+                    1063,
+                    1061
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1033.0
+                    ],
+                    [
+                        1063.0,
+                        1033.0
+                    ],
+                    [
+                        1063.0,
+                        1061.0
+                    ],
+                    [
+                        136.0,
+                        1061.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9521186351776123,
+                "coordinate": [
+                    135,
+                    1083,
+                    1122,
+                    1189
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1083.0
+                    ],
+                    [
+                        1122.0,
+                        1083.0
+                    ],
+                    [
+                        1122.0,
+                        1189.0
+                    ],
+                    [
+                        135.0,
+                        1189.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9511115550994873,
+                "coordinate": [
+                    135,
+                    1210,
+                    1122,
+                    1316
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1210.0
+                    ],
+                    [
+                        1122.0,
+                        1210.0
+                    ],
+                    [
+                        1122.0,
+                        1316.0
+                    ],
+                    [
+                        135.0,
+                        1316.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8760204315185547,
+                "coordinate": [
+                    136,
+                    1340,
+                    593,
+                    1369
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1340.0
+                    ],
+                    [
+                        593.0,
+                        1340.0
+                    ],
+                    [
+                        593.0,
+                        1369.0
+                    ],
+                    [
+                        136.0,
+                        1369.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9560329914093018,
+                "coordinate": [
+                    134,
+                    1391,
+                    1123,
+                    1498
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        134.0,
+                        1391.0
+                    ],
+                    [
+                        1123.0,
+                        1391.0
+                    ],
+                    [
+                        1123.0,
+                        1498.0
+                    ],
+                    [
+                        134.0,
+                        1498.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9270114302635193,
+                "coordinate": [
+                    136,
+                    1518,
+                    1123,
+                    1572
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1518.0
+                    ],
+                    [
+                        1123.0,
+                        1518.0
+                    ],
+                    [
+                        1123.0,
+                        1572.0
+                    ],
+                    [
+                        136.0,
+                        1572.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7975316047668457,
+                "coordinate": [
+                    60,
+                    1630,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1630.0
+                    ],
+                    [
+                        1118.0,
+                        1683.0
+                    ],
+                    [
+                        60.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7464385628700256,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1645
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        1078,
+                        1624
+                    ],
+                    [
+                        1078,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1644
+                    ],
+                    [
+                        1118,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

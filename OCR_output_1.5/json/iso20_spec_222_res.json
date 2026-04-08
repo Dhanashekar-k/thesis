@@ -1,0 +1,369 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 222,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    69.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>EVPCPowerOutput</td><td>complexTypeRationalNumberTyperefer to 8.3.5.3.8</td><td>Power measured at the output of the EVPC electronics in Watt</td></tr><tr><td>EVPCChargeDiagnostics</td><td>simpleType:WPT_ChargeDiagnosticsTyperefer to Annex A for the type definition</td><td>Diagnostics information, can have the following values: - EVPCNoIssue: no anomaly detected, Power Control is running normally; - EVPCTempOverheatDetected: EVPC has detected a temperature anomaly; - EVPCPowerTransferAnomalyDetected: EVPC has detected an unexpected behavior of the magnetic power transfer; - EVPCAnomalyDetected: EVPC has detected an unexpected system behavior.</td></tr><tr><td>EVPCOperatingFrequency</td><td>complexTypeRationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:EVPC measured MF-WPT operating frequency</td></tr><tr><td>EVPCPowerControlParameter</td><td>simpleType:WPT_EVPCPowerControlParameterTyperefer to Annex A for the type definition</td><td>Optional:additional parameters for the applied wireless power transfer method: - EVPC coil current request: EVPC wants the primary device to set a specific (preferred) coil current value.NOTE The EVPCPowerRequest is overriding the value given here in case of mismatch: - EVPC coil current information: information about secondary device coil current (AC); - EVPC current output information: information about DC current supplied to the EV; - EVPC voltage output information: information about DC bus or battery voltage.</td></tr><tr><td>ManufacturerSpecificDataContainer</td><td>simpleType:WPT_DataContainerTyperefer to Annex A for the type definition</td><td>Optional:Manufacturer specific parameters: additional field for proprietary manufacturer specific information during power transfer</td></tr></table>",
+            "block_bbox": [
+                127,
+                163,
+                1129,
+                1420
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    127.0,
+                    163.0
+                ],
+                [
+                    1129.0,
+                    163.0
+                ],
+                [
+                    1129.0,
+                    1420.0
+                ],
+                [
+                    127.0,
+                    1420.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.6.7.3 WPT_ChargeLoopRes",
+            "block_bbox": [
+                193,
+                1443,
+                562,
+                1470
+            ],
+            "block_id": 2,
+            "block_order": 1,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    193.0,
+                    1443.0
+                ],
+                [
+                    562.0,
+                    1443.0
+                ],
+                [
+                    562.0,
+                    1470.0
+                ],
+                [
+                    193.0,
+                    1470.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "After receiving the WPT_ChargeLoopReq from the EVCC the SECC sends the WPT_ChargeLoopRes informing the EV about the EVSE status.",
+            "block_bbox": [
+                137,
+                1492,
+                1121,
+                1547
+            ],
+            "block_id": 3,
+            "block_order": 2,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1492.0
+                ],
+                [
+                    1121.0,
+                    1492.0
+                ],
+                [
+                    1121.0,
+                    1547.0
+                ],
+                [
+                    137.0,
+                    1547.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 4,
+            "block_order": null,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    61.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1630.0
+                ],
+                [
+                    1119.0,
+                    1683.0
+                ],
+                [
+                    61.0,
+                    1683.0
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.872727632522583,
+                "coordinate": [
+                    866,
+                    69,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        69.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9820349216461182,
+                "coordinate": [
+                    127,
+                    163,
+                    1129,
+                    1420
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        127.0,
+                        163.0
+                    ],
+                    [
+                        1129.0,
+                        163.0
+                    ],
+                    [
+                        1129.0,
+                        1420.0
+                    ],
+                    [
+                        127.0,
+                        1420.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4536516070365906,
+                "coordinate": [
+                    193,
+                    1443,
+                    562,
+                    1470
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        193.0,
+                        1443.0
+                    ],
+                    [
+                        562.0,
+                        1443.0
+                    ],
+                    [
+                        562.0,
+                        1470.0
+                    ],
+                    [
+                        193.0,
+                        1470.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8921541571617126,
+                "coordinate": [
+                    137,
+                    1492,
+                    1121,
+                    1547
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1492.0
+                    ],
+                    [
+                        1121.0,
+                        1492.0
+                    ],
+                    [
+                        1121.0,
+                        1547.0
+                    ],
+                    [
+                        137.0,
+                        1547.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.7503949999809265,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1630.0
+                    ],
+                    [
+                        1119.0,
+                        1683.0
+                    ],
+                    [
+                        61.0,
+                        1683.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7449100613594055,
+                "coordinate": [
+                    1076,
+                    1624,
+                    1120,
+                    1646
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        1076,
+                        1624
+                    ],
+                    [
+                        1076,
+                        1645
+                    ],
+                    [
+                        1119,
+                        1645
+                    ],
+                    [
+                        1119,
+                        1624
+                    ]
+                ]
+            }
+        ]
+    }
+}

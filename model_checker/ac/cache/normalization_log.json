@@ -1,0 +1,275 @@
+{
+  "total_normalizations": 54,
+  "entries": [
+    {
+      "original": "V20G0-2645",
+      "normalized": "V2G20-2645",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2122",
+      "normalized": "V2G20-2122",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2009",
+      "normalized": "V2G20-2009",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2192",
+      "normalized": "V2G20-2192",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2012",
+      "normalized": "V2G20-2012",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2009",
+      "normalized": "V2G20-2009",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2192",
+      "normalized": "V2G20-2192",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V20G0-2012",
+      "normalized": "V2G20-2012",
+      "context": "fsm_transition"
+    },
+    {
+      "original": "V2G20-2402]",
+      "normalized": "[V2G20-2402]",
+      "context": "section_"
+    },
+    {
+      "original": "2G20-2428]",
+      "normalized": "[V2G20-2428]",
+      "context": "section_"
+    },
+    {
+      "original": "2G20-2428]",
+      "normalized": "[V2G20-2428]",
+      "context": "section_"
+    },
+    {
+      "original": "2G20-082]",
+      "normalized": "[V2G20-082]",
+      "context": "section_7.8.3"
+    },
+    {
+      "original": "2G20-082]",
+      "normalized": "[V2G20-082]",
+      "context": "section_7.8.3.1"
+    },
+    {
+      "original": "[V2G20-2674",
+      "normalized": "[V2G20-2674]",
+      "context": "section_7.9.2.5.1"
+    },
+    {
+      "original": "V2G20-2493]",
+      "normalized": "[V2G20-2493]",
+      "context": "section_"
+    },
+    {
+      "original": "V2G20-2493]",
+      "normalized": "[V2G20-2493]",
+      "context": "section_7.9.2.5.2.2"
+    },
+    {
+      "original": "V2G20-2493]",
+      "normalized": "[V2G20-2493]",
+      "context": "section_7.9.2.5.2.2.1"
+    },
+    {
+      "original": "V2G20-2493]",
+      "normalized": "[V2G20-2493]",
+      "context": "section_7.9.2.5.2.2.2"
+    },
+    {
+      "original": "2G20-2535]",
+      "normalized": "[V2G20-2535]",
+      "context": "section_7.9.2.5.4"
+    },
+    {
+      "original": "V2G20-822]",
+      "normalized": "[V2G20-822]",
+      "context": "section_7.9.2.5.4"
+    },
+    {
+      "original": "V2G20-1250]",
+      "normalized": "[V2G20-1250]",
+      "context": "section_8.3.4.3.5"
+    },
+    {
+      "original": "V2G20-1250]",
+      "normalized": "[V2G20-1250]",
+      "context": "section_8.3.4.3.5.1"
+    },
+    {
+      "original": "V2G20-1250]",
+      "normalized": "[V2G20-1250]",
+      "context": "section_"
+    },
+    {
+      "original": "V2G20-2123",
+      "normalized": "[V2G20-2123]",
+      "context": "section_8.3.4.3.7.3"
+    },
+    {
+      "original": "V2G20-2122",
+      "normalized": "[V2G20-2122]",
+      "context": "section_8.3.4.3.7.3"
+    },
+    {
+      "original": "V2G20-2123",
+      "normalized": "[V2G20-2123]",
+      "context": "section_8.3.4.3.8"
+    },
+    {
+      "original": "V2G20-2122",
+      "normalized": "[V2G20-2122]",
+      "context": "section_8.3.4.3.8"
+    },
+    {
+      "original": "V2G20-2123",
+      "normalized": "[V2G20-2123]",
+      "context": "section_8.3.4.3.8.1"
+    },
+    {
+      "original": "V2G20-2122",
+      "normalized": "[V2G20-2122]",
+      "context": "section_8.3.4.3.8.1"
+    },
+    {
+      "original": "G20-1265]",
+      "normalized": "[V2G20-1265]",
+      "context": "section_8.3.4.3.9.2"
+    },
+    {
+      "original": "G20-1206]",
+      "normalized": "[V2G20-1206]",
+      "context": "section_8.3.4.4.2.2"
+    },
+    {
+      "original": "G20-1206]",
+      "normalized": "[V2G20-1206]",
+      "context": "section_8.3.4.4.2.3"
+    },
+    {
+      "original": "G20-1782]",
+      "normalized": "[V2G20-1782]",
+      "context": "section_8.3.5.3.32"
+    },
+    {
+      "original": "G20-1782]",
+      "normalized": "[V2G20-1782]",
+      "context": "section_8.3.5.3.33"
+    },
+    {
+      "original": "G20-2171]",
+      "normalized": "[V2G20-2171]",
+      "context": "section_8.3.5.3.64"
+    },
+    {
+      "original": "2G20-1460]",
+      "normalized": "[V2G20-1460]",
+      "context": "section_8.4.1"
+    },
+    {
+      "original": "2G20-1460]",
+      "normalized": "[V2G20-1460]",
+      "context": "section_8.4.2"
+    },
+    {
+      "original": "2G20-1460]",
+      "normalized": "[V2G20-1460]",
+      "context": "section_8.4.2.1"
+    },
+    {
+      "original": "2G20-2214]",
+      "normalized": "[V2G20-2214]",
+      "context": "section_8.6.3.1"
+    },
+    {
+      "original": "V2G20-2224]",
+      "normalized": "[V2G20-2224]",
+      "context": "section_8.6.4.6.3.1"
+    },
+    {
+      "original": "G20-2599]",
+      "normalized": "[V2G20-2599]",
+      "context": "section_B.8.3"
+    },
+    {
+      "original": "G20-2599]",
+      "normalized": "[V2G20-2599]",
+      "context": "section_"
+    },
+    {
+      "original": "G20-2599]",
+      "normalized": "[V2G20-2599]",
+      "context": "section_B.9"
+    },
+    {
+      "original": "G20-2599]",
+      "normalized": "[V2G20-2599]",
+      "context": "section_B.9.1"
+    },
+    {
+      "original": "2G20-2602]",
+      "normalized": "[V2G20-2602]",
+      "context": "section_"
+    },
+    {
+      "original": "2G20-2602]",
+      "normalized": "[V2G20-2602]",
+      "context": "section_B.10"
+    },
+    {
+      "original": "V20G0-2645",
+      "normalized": "V2G20-2645",
+      "context": "trans_11_secc"
+    },
+    {
+      "original": "V20G0-2122",
+      "normalized": "V2G20-2122",
+      "context": "trans_18_secc"
+    },
+    {
+      "original": "V20G0-2009",
+      "normalized": "V2G20-2009",
+      "context": "trans_20_secc"
+    },
+    {
+      "original": "V20G0-2192",
+      "normalized": "V2G20-2192",
+      "context": "trans_20_secc"
+    },
+    {
+      "original": "V20G0-2012",
+      "normalized": "V2G20-2012",
+      "context": "trans_20_secc"
+    },
+    {
+      "original": "V20G0-2009",
+      "normalized": "V2G20-2009",
+      "context": "trans_21_secc"
+    },
+    {
+      "original": "V20G0-2192",
+      "normalized": "V2G20-2192",
+      "context": "trans_21_secc"
+    },
+    {
+      "original": "V20G0-2012",
+      "normalized": "V2G20-2012",
+      "context": "trans_21_secc"
+    }
+  ]
+}

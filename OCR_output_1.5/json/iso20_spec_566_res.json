@@ -1,0 +1,1186 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 566,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[91] IETF RFC 8954, Online Certificate Status Protocol (OCSP) Nonce Extension (November 2020)",
+            "block_bbox": [
+                139,
+                168,
+                1048,
+                196
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139,
+                    168
+                ],
+                [
+                    139,
+                    195
+                ],
+                [
+                    1047,
+                    195
+                ],
+                [
+                    1047,
+                    168
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[92] ITU-T X.680, Information technology — Abstract Syntax Notation One (ASN.1): Specification of basic notation (February 2021)",
+            "block_bbox": [
+                139,
+                218,
+                1119,
+                270
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    218.0
+                ],
+                [
+                    1119.0,
+                    218.0
+                ],
+                [
+                    1119.0,
+                    270.0
+                ],
+                [
+                    139.0,
+                    270.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[93] ITU-T X.690, Information technology - ASN.1 encoding rules: Specification of Basic Encoding Rules (BER), Canonical Encoding Rules (CER) and Distinguished Encoding Rules (DER) (February 2021)",
+            "block_bbox": [
+                139,
+                293,
+                1118,
+                347
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    293.0
+                ],
+                [
+                    1118.0,
+                    293.0
+                ],
+                [
+                    1118.0,
+                    347.0
+                ],
+                [
+                    139.0,
+                    347.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[94] IEEE 802.11-2020, IEEE Standard for Information Technology--Telecommunications and Information Exchange between Systems - Local and Metropolitan Area Networks--Specific Requirements - Part 11: Wireless LAN Medium Access Control (MAC) and Physical Layer (PHY) Specifications",
+            "block_bbox": [
+                139,
+                369,
+                1119,
+                472
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    369.0
+                ],
+                [
+                    1119.0,
+                    369.0
+                ],
+                [
+                    1119.0,
+                    472.0
+                ],
+                [
+                    139.0,
+                    472.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[95] IEEE 1547-2018, IEEE Standard for Interconnection and Interoperability of Distributed Energy Resources with Associated Electric Power Systems Interfaces (April 2018)",
+            "block_bbox": [
+                139,
+                496,
+                1119,
+                548
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    496.0
+                ],
+                [
+                    1119.0,
+                    496.0
+                ],
+                [
+                    1119.0,
+                    548.0
+                ],
+                [
+                    139.0,
+                    548.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[96] Altova XMLSpy Manual, Available from,\n<http://manual.altova.com/XMLSpy/spyprofessional/index.html?xseditingviews_schview_contmodview.htm>",
+            "block_bbox": [
+                140,
+                573,
+                1045,
+                622
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    573.0
+                ],
+                [
+                    1045.0,
+                    573.0
+                ],
+                [
+                    1045.0,
+                    622.0
+                ],
+                [
+                    140.0,
+                    622.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[97] BSI AIS 20/AIS 31: A proposal for: Functionality classes for random number generators (2011)",
+            "block_bbox": [
+                141,
+                644,
+                1064,
+                672
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    141.0,
+                    644.0
+                ],
+                [
+                    1064.0,
+                    644.0
+                ],
+                [
+                    1064.0,
+                    672.0
+                ],
+                [
+                    141.0,
+                    672.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[98] NIST SP 800-90 A, Recommendation for Random Number Generation Using Deterministic Random Bit Generators (January 2012)",
+            "block_bbox": [
+                139,
+                694,
+                1120,
+                746
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    694.0
+                ],
+                [
+                    1120.0,
+                    694.0
+                ],
+                [
+                    1120.0,
+                    746.0
+                ],
+                [
+                    139.0,
+                    746.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[99] Object Identifier (OID) Repository, Available from <http://www.oid-info.com/>",
+            "block_bbox": [
+                138,
+                771,
+                942,
+                798
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    771.0
+                ],
+                [
+                    942.0,
+                    771.0
+                ],
+                [
+                    942.0,
+                    798.0
+                ],
+                [
+                    138.0,
+                    798.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[100] W3C XML, Extensible Markup Language (XML) 1.0 (Fifth Edition) (November 2008)",
+            "block_bbox": [
+                139,
+                820,
+                982,
+                847
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    820.0
+                ],
+                [
+                    982.0,
+                    820.0
+                ],
+                [
+                    982.0,
+                    847.0
+                ],
+                [
+                    139.0,
+                    847.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[101] W3C XMLSchema 0, XML Schema Part 0: Primer Second Edition (October 2004)",
+            "block_bbox": [
+                139,
+                869,
+                946,
+                897
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    869.0
+                ],
+                [
+                    946.0,
+                    869.0
+                ],
+                [
+                    946.0,
+                    897.0
+                ],
+                [
+                    139.0,
+                    897.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[102] W3C XMLSchema 1, XML Schema Part 1: Structures Second Edition (October 2004)",
+            "block_bbox": [
+                140,
+                919,
+                976,
+                946
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    919.0
+                ],
+                [
+                    976.0,
+                    919.0
+                ],
+                [
+                    976.0,
+                    946.0
+                ],
+                [
+                    140.0,
+                    946.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[103] W3C XML Schema 2, XML Schema Part 2: Datatypes Second Edition (October 2004)",
+            "block_bbox": [
+                139,
+                969,
+                978,
+                997
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    969.0
+                ],
+                [
+                    978.0,
+                    969.0
+                ],
+                [
+                    978.0,
+                    997.0
+                ],
+                [
+                    139.0,
+                    997.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[104] W3C XML Signature Syntax and Processing Version 1.1, - W3C Recommendation (April 2013)",
+            "block_bbox": [
+                140,
+                1018,
+                1096,
+                1047
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    140.0,
+                    1018.0
+                ],
+                [
+                    1096.0,
+                    1018.0
+                ],
+                [
+                    1096.0,
+                    1047.0
+                ],
+                [
+                    140.0,
+                    1047.0
+                ]
+            ]
+        },
+        {
+            "block_label": "reference_content",
+            "block_content": "[105] W3C EXI Profile, Efficient XML Interchange (EXI) Profile, W3C Candidate Recommendation (July 2013)",
+            "block_bbox": [
+                138,
+                1069,
+                1119,
+                1121
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    1069.0
+                ],
+                [
+                    1119.0,
+                    1069.0
+                ],
+                [
+                    1119.0,
+                    1121.0
+                ],
+                [
+                    138.0,
+                    1121.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "561",
+            "block_bbox": [
+                1077,
+                1624,
+                1118,
+                1645
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    1077.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1077.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1071,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ],
+                [
+                    1077,
+                    1639
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8816221952438354,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 18,
+                "label": "reference",
+                "score": 0.9535889029502869,
+                "coordinate": [
+                    139,
+                    162,
+                    1122,
+                    1122
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        139.0,
+                        162.0
+                    ],
+                    [
+                        1122.0,
+                        162.0
+                    ],
+                    [
+                        1122.0,
+                        1122.0
+                    ],
+                    [
+                        139.0,
+                        1122.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9018107056617737,
+                "coordinate": [
+                    139,
+                    168,
+                    1048,
+                    196
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        139,
+                        168
+                    ],
+                    [
+                        139,
+                        195
+                    ],
+                    [
+                        1047,
+                        195
+                    ],
+                    [
+                        1047,
+                        168
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.934406578540802,
+                "coordinate": [
+                    139,
+                    218,
+                    1119,
+                    270
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        139.0,
+                        218.0
+                    ],
+                    [
+                        1119.0,
+                        218.0
+                    ],
+                    [
+                        1119.0,
+                        270.0
+                    ],
+                    [
+                        139.0,
+                        270.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9349575042724609,
+                "coordinate": [
+                    139,
+                    293,
+                    1118,
+                    347
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        139.0,
+                        293.0
+                    ],
+                    [
+                        1118.0,
+                        293.0
+                    ],
+                    [
+                        1118.0,
+                        347.0
+                    ],
+                    [
+                        139.0,
+                        347.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9542294144630432,
+                "coordinate": [
+                    139,
+                    369,
+                    1119,
+                    472
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        139.0,
+                        369.0
+                    ],
+                    [
+                        1119.0,
+                        369.0
+                    ],
+                    [
+                        1119.0,
+                        472.0
+                    ],
+                    [
+                        139.0,
+                        472.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9175112247467041,
+                "coordinate": [
+                    139,
+                    496,
+                    1119,
+                    548
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        139.0,
+                        496.0
+                    ],
+                    [
+                        1119.0,
+                        496.0
+                    ],
+                    [
+                        1119.0,
+                        548.0
+                    ],
+                    [
+                        139.0,
+                        548.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9129894971847534,
+                "coordinate": [
+                    140,
+                    573,
+                    1045,
+                    622
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        140.0,
+                        573.0
+                    ],
+                    [
+                        1045.0,
+                        573.0
+                    ],
+                    [
+                        1045.0,
+                        622.0
+                    ],
+                    [
+                        140.0,
+                        622.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9105212092399597,
+                "coordinate": [
+                    141,
+                    644,
+                    1064,
+                    672
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        141.0,
+                        644.0
+                    ],
+                    [
+                        1064.0,
+                        644.0
+                    ],
+                    [
+                        1064.0,
+                        672.0
+                    ],
+                    [
+                        141.0,
+                        672.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9419278502464294,
+                "coordinate": [
+                    139,
+                    694,
+                    1120,
+                    746
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        139.0,
+                        694.0
+                    ],
+                    [
+                        1120.0,
+                        694.0
+                    ],
+                    [
+                        1120.0,
+                        746.0
+                    ],
+                    [
+                        139.0,
+                        746.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9075702428817749,
+                "coordinate": [
+                    138,
+                    771,
+                    942,
+                    798
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        138.0,
+                        771.0
+                    ],
+                    [
+                        942.0,
+                        771.0
+                    ],
+                    [
+                        942.0,
+                        798.0
+                    ],
+                    [
+                        138.0,
+                        798.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9048603177070618,
+                "coordinate": [
+                    139,
+                    820,
+                    982,
+                    847
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        139.0,
+                        820.0
+                    ],
+                    [
+                        982.0,
+                        820.0
+                    ],
+                    [
+                        982.0,
+                        847.0
+                    ],
+                    [
+                        139.0,
+                        847.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9081661105155945,
+                "coordinate": [
+                    139,
+                    869,
+                    946,
+                    897
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        139.0,
+                        869.0
+                    ],
+                    [
+                        946.0,
+                        869.0
+                    ],
+                    [
+                        946.0,
+                        897.0
+                    ],
+                    [
+                        139.0,
+                        897.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9030359387397766,
+                "coordinate": [
+                    140,
+                    919,
+                    976,
+                    946
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        140.0,
+                        919.0
+                    ],
+                    [
+                        976.0,
+                        919.0
+                    ],
+                    [
+                        976.0,
+                        946.0
+                    ],
+                    [
+                        140.0,
+                        946.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.8837106823921204,
+                "coordinate": [
+                    139,
+                    969,
+                    978,
+                    997
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        139.0,
+                        969.0
+                    ],
+                    [
+                        978.0,
+                        969.0
+                    ],
+                    [
+                        978.0,
+                        997.0
+                    ],
+                    [
+                        139.0,
+                        997.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.8992722034454346,
+                "coordinate": [
+                    140,
+                    1018,
+                    1096,
+                    1047
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        140.0,
+                        1018.0
+                    ],
+                    [
+                        1096.0,
+                        1018.0
+                    ],
+                    [
+                        1096.0,
+                        1047.0
+                    ],
+                    [
+                        140.0,
+                        1047.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 19,
+                "label": "reference_content",
+                "score": 0.9244689345359802,
+                "coordinate": [
+                    138,
+                    1069,
+                    1119,
+                    1121
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        138.0,
+                        1069.0
+                    ],
+                    [
+                        1119.0,
+                        1069.0
+                    ],
+                    [
+                        1119.0,
+                        1121.0
+                    ],
+                    [
+                        138.0,
+                        1121.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7395779490470886,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        1077.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1077.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8885149359703064,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1071,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ],
+                    [
+                        1077,
+                        1639
+                    ]
+                ]
+            }
+        ]
+    }
+}

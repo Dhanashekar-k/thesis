@@ -1,0 +1,1270 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 506,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2084] The <SECCID> shall be interpreted as case-insensitive, i.e. \"DE-8AA-S-00003C4D557878675645330967543476-2\" is exactly the same ID as \"de-8aA-S-00003C4d557878675645330967543476-2\".",
+            "block_bbox": [
+                137,
+                167,
+                1118,
+                245
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    167.0
+                ],
+                [
+                    1118.0,
+                    167.0
+                ],
+                [
+                    1118.0,
+                    245.0
+                ],
+                [
+                    137.0,
+                    245.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The hyphen (\"-\") is simply used as a separator between the elements <Country Code>, <EVSE Operator ID>, <ID Type>, <ControllerID> and <Check Digit>.",
+            "block_bbox": [
+                137,
+                269,
+                1121,
+                323
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    269.0
+                ],
+                [
+                    1121.0,
+                    269.0
+                ],
+                [
+                    1121.0,
+                    323.0
+                ],
+                [
+                    137.0,
+                    323.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Country codes as defined in ISO 3166-1 typically map to one country. However, ISO 3166-1 does not provide well defined \"user-assigned\" country codes: AA, QM to QZ, XA to XZ, and ZZ.",
+            "block_bbox": [
+                136,
+                344,
+                1121,
+                399
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    344.0
+                ],
+                [
+                    1121.0,
+                    344.0
+                ],
+                [
+                    1121.0,
+                    399.0
+                ],
+                [
+                    136.0,
+                    399.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2085] Within 15118-20 the following country codes have a fixed meaning:\n- ZZ-0-... = Any <SECCID> starting with this prefix is reserved and shall be considered as zero or as \"undefined\".",
+            "block_bbox": [
+                137,
+                419,
+                1119,
+                506
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    419.0
+                ],
+                [
+                    1119.0,
+                    419.0
+                ],
+                [
+                    1119.0,
+                    506.0
+                ],
+                [
+                    137.0,
+                    506.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "C.4 Electric vehicle supply equipment ID (EVSEID)",
+            "block_bbox": [
+                137,
+                530,
+                703,
+                559
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    530.0
+                ],
+                [
+                    703.0,
+                    530.0
+                ],
+                [
+                    703.0,
+                    559.0
+                ],
+                [
+                    137.0,
+                    559.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2086] The CSO shall ensure that the EVSEID does not change during an ISO 15118-20 communication session.",
+            "block_bbox": [
+                137,
+                581,
+                1119,
+                635
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    581.0
+                ],
+                [
+                    1119.0,
+                    581.0
+                ],
+                [
+                    1119.0,
+                    635.0
+                ],
+                [
+                    137.0,
+                    635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "C.4.1 EVSEID syntax",
+            "block_bbox": [
+                137,
+                655,
+                355,
+                682
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    655.0
+                ],
+                [
+                    355.0,
+                    655.0
+                ],
+                [
+                    355.0,
+                    682.0
+                ],
+                [
+                    137.0,
+                    682.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2087] The EVSEID shall match the requirements as specified in IEC 63119-2.",
+            "block_bbox": [
+                137,
+                705,
+                989,
+                734
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    705.0
+                ],
+                [
+                    989.0,
+                    705.0
+                ],
+                [
+                    989.0,
+                    734.0
+                ],
+                [
+                    137.0,
+                    734.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2088] The maximum length of EVSEID shall be 255 characters.",
+            "block_bbox": [
+                137,
+                755,
+                858,
+                783
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    755.0
+                ],
+                [
+                    858.0,
+                    755.0
+                ],
+                [
+                    858.0,
+                    783.0
+                ],
+                [
+                    137.0,
+                    783.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "C.5 Electric vehicle communication controller ID (EVCCID)",
+            "block_bbox": [
+                137,
+                808,
+                793,
+                837
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    808.0
+                ],
+                [
+                    793.0,
+                    808.0
+                ],
+                [
+                    793.0,
+                    837.0
+                ],
+                [
+                    137.0,
+                    837.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2092] The OEM shall ensure that the EVCCID does not change during an ISO 15118-20 communication session.",
+            "block_bbox": [
+                137,
+                859,
+                1118,
+                913
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    859.0
+                ],
+                [
+                    1118.0,
+                    859.0
+                ],
+                [
+                    1118.0,
+                    913.0
+                ],
+                [
+                    137.0,
+                    913.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE Since EVCCID is included in the vehicle certificate, the only way to change the EVCCID is to update the vehicle certificate. An OEM could need to update the vehicle certificate in the EV with a new one. At its discretion, the OEM can choose to use a different EVCCID in this new vehicle certificate. Changing the certificate while it is in use can result in unforeseen issues.",
+            "block_bbox": [
+                136,
+                935,
+                1120,
+                1032
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    935.0
+                ],
+                [
+                    1120.0,
+                    935.0
+                ],
+                [
+                    1120.0,
+                    1032.0
+                ],
+                [
+                    136.0,
+                    1032.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "C.5.1 EVCCID syntax",
+            "block_bbox": [
+                137,
+                1051,
+                357,
+                1079
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1051.0
+                ],
+                [
+                    357.0,
+                    1051.0
+                ],
+                [
+                    357.0,
+                    1079.0
+                ],
+                [
+                    137.0,
+                    1079.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2089] EVCCID shall be an alphanumeric string with a length of minimum 20 and maximum 255 characters (i.e. A..Z, a..z, 0..9), including a check digit at the end.",
+            "block_bbox": [
+                136,
+                1102,
+                1119,
+                1158
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1102.0
+                ],
+                [
+                    1119.0,
+                    1102.0
+                ],
+                [
+                    1119.0,
+                    1158.0
+                ],
+                [
+                    136.0,
+                    1158.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2090] Characters restricted for usage in WMI by ISO 3780 shall not be used in EVCCID.",
+            "block_bbox": [
+                137,
+                1177,
+                1082,
+                1206
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1177.0
+                ],
+                [
+                    1082.0,
+                    1177.0
+                ],
+                [
+                    1082.0,
+                    1206.0
+                ],
+                [
+                    137.0,
+                    1206.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE This enhances the user readability of the EVCCID.",
+            "block_bbox": [
+                137,
+                1226,
+                661,
+                1253
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1226.0
+                ],
+                [
+                    661.0,
+                    1226.0
+                ],
+                [
+                    661.0,
+                    1253.0
+                ],
+                [
+                    137.0,
+                    1253.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2093] The EVCCID shall match the following structure (the notation corresponds to the augmented Backus-Naur Form (ABNF) as defined in IETF RFC 5234 and IETF RFC 7405):",
+            "block_bbox": [
+                137,
+                1275,
+                1121,
+                1353
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1275.0
+                ],
+                [
+                    1121.0,
+                    1275.0
+                ],
+                [
+                    1121.0,
+                    1353.0
+                ],
+                [
+                    137.0,
+                    1353.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "501",
+            "block_bbox": [
+                1077,
+                1624,
+                1118,
+                1645
+            ],
+            "block_id": 18,
+            "block_order": null,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    1077.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1077.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1629,
+                1118,
+                1683
+            ],
+            "block_id": 19,
+            "block_order": null,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    61,
+                    1637
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1082,
+                    1682
+                ],
+                [
+                    1117,
+                    1667
+                ],
+                [
+                    1117,
+                    1645
+                ],
+                [
+                    1082,
+                    1637
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8860412836074829,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9016274809837341,
+                "coordinate": [
+                    137,
+                    167,
+                    1118,
+                    245
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        167.0
+                    ],
+                    [
+                        1118.0,
+                        167.0
+                    ],
+                    [
+                        1118.0,
+                        245.0
+                    ],
+                    [
+                        137.0,
+                        245.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9161353707313538,
+                "coordinate": [
+                    137,
+                    269,
+                    1121,
+                    323
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        269.0
+                    ],
+                    [
+                        1121.0,
+                        269.0
+                    ],
+                    [
+                        1121.0,
+                        323.0
+                    ],
+                    [
+                        137.0,
+                        323.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9101012349128723,
+                "coordinate": [
+                    136,
+                    344,
+                    1121,
+                    399
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        136.0,
+                        344.0
+                    ],
+                    [
+                        1121.0,
+                        344.0
+                    ],
+                    [
+                        1121.0,
+                        399.0
+                    ],
+                    [
+                        136.0,
+                        399.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7460463643074036,
+                "coordinate": [
+                    137,
+                    419,
+                    1119,
+                    506
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        419.0
+                    ],
+                    [
+                        1119.0,
+                        419.0
+                    ],
+                    [
+                        1119.0,
+                        506.0
+                    ],
+                    [
+                        137.0,
+                        506.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8054525852203369,
+                "coordinate": [
+                    137,
+                    530,
+                    703,
+                    559
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        137.0,
+                        530.0
+                    ],
+                    [
+                        703.0,
+                        530.0
+                    ],
+                    [
+                        703.0,
+                        559.0
+                    ],
+                    [
+                        137.0,
+                        559.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.896614134311676,
+                "coordinate": [
+                    137,
+                    581,
+                    1119,
+                    635
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        137.0,
+                        581.0
+                    ],
+                    [
+                        1119.0,
+                        581.0
+                    ],
+                    [
+                        1119.0,
+                        635.0
+                    ],
+                    [
+                        137.0,
+                        635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8278347253799438,
+                "coordinate": [
+                    137,
+                    655,
+                    355,
+                    682
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        137.0,
+                        655.0
+                    ],
+                    [
+                        355.0,
+                        655.0
+                    ],
+                    [
+                        355.0,
+                        682.0
+                    ],
+                    [
+                        137.0,
+                        682.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8293567895889282,
+                "coordinate": [
+                    137,
+                    705,
+                    989,
+                    734
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        137.0,
+                        705.0
+                    ],
+                    [
+                        989.0,
+                        705.0
+                    ],
+                    [
+                        989.0,
+                        734.0
+                    ],
+                    [
+                        137.0,
+                        734.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8336806297302246,
+                "coordinate": [
+                    137,
+                    755,
+                    858,
+                    783
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        137.0,
+                        755.0
+                    ],
+                    [
+                        858.0,
+                        755.0
+                    ],
+                    [
+                        858.0,
+                        783.0
+                    ],
+                    [
+                        137.0,
+                        783.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8041501641273499,
+                "coordinate": [
+                    137,
+                    808,
+                    793,
+                    837
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        137.0,
+                        808.0
+                    ],
+                    [
+                        793.0,
+                        808.0
+                    ],
+                    [
+                        793.0,
+                        837.0
+                    ],
+                    [
+                        137.0,
+                        837.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8945592641830444,
+                "coordinate": [
+                    137,
+                    859,
+                    1118,
+                    913
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        137.0,
+                        859.0
+                    ],
+                    [
+                        1118.0,
+                        859.0
+                    ],
+                    [
+                        1118.0,
+                        913.0
+                    ],
+                    [
+                        137.0,
+                        913.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9389888644218445,
+                "coordinate": [
+                    136,
+                    935,
+                    1120,
+                    1032
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        136.0,
+                        935.0
+                    ],
+                    [
+                        1120.0,
+                        935.0
+                    ],
+                    [
+                        1120.0,
+                        1032.0
+                    ],
+                    [
+                        136.0,
+                        1032.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8522748351097107,
+                "coordinate": [
+                    137,
+                    1051,
+                    357,
+                    1079
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1051.0
+                    ],
+                    [
+                        357.0,
+                        1051.0
+                    ],
+                    [
+                        357.0,
+                        1079.0
+                    ],
+                    [
+                        137.0,
+                        1079.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9080548286437988,
+                "coordinate": [
+                    136,
+                    1102,
+                    1119,
+                    1158
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1102.0
+                    ],
+                    [
+                        1119.0,
+                        1102.0
+                    ],
+                    [
+                        1119.0,
+                        1158.0
+                    ],
+                    [
+                        136.0,
+                        1158.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8616356253623962,
+                "coordinate": [
+                    137,
+                    1177,
+                    1082,
+                    1206
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1177.0
+                    ],
+                    [
+                        1082.0,
+                        1177.0
+                    ],
+                    [
+                        1082.0,
+                        1206.0
+                    ],
+                    [
+                        137.0,
+                        1206.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8484703898429871,
+                "coordinate": [
+                    137,
+                    1226,
+                    661,
+                    1253
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1226.0
+                    ],
+                    [
+                        661.0,
+                        1226.0
+                    ],
+                    [
+                        661.0,
+                        1253.0
+                    ],
+                    [
+                        137.0,
+                        1253.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9209718108177185,
+                "coordinate": [
+                    137,
+                    1275,
+                    1121,
+                    1353
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1275.0
+                    ],
+                    [
+                        1121.0,
+                        1275.0
+                    ],
+                    [
+                        1121.0,
+                        1353.0
+                    ],
+                    [
+                        137.0,
+                        1353.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.7517103552818298,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        1077.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1077.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8858726620674133,
+                "coordinate": [
+                    61,
+                    1629,
+                    1118,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1637
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1082,
+                        1682
+                    ],
+                    [
+                        1117,
+                        1667
+                    ],
+                    [
+                        1117,
+                        1645
+                    ],
+                    [
+                        1082,
+                        1637
+                    ]
+                ]
+            }
+        ]
+    }
+}

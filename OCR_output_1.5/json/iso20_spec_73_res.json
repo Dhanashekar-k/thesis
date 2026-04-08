@@ -1,0 +1,1140 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 73,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2433] The private SECC shall validate, according to [V2G20-1001], [V2G20-2324] and [V2G20-2325], the certificate chain that was provided by the EVCC during the TLS handshake. During the vehicle certificate chain validation, a private SECC not supporting PnC is not mandated to check revocation status of the certificates in the EVCC's certificate chain.",
+            "block_bbox": [
+                67,
+                167,
+                1054,
+                296
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    167.0
+                ],
+                [
+                    1054.0,
+                    296.0
+                ],
+                [
+                    67.0,
+                    296.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2434] The private SECC shall validate, according to [V2G20-1001], [V2G20-2324] and [V2G20-2325], the certificate chain that was provided by the EVCC during the TLS handshake. During the vehicle certificate chain validation, a private SECC supporting PnC shall check revocation status of the certificates in the EVCC's certificate chain.",
+            "block_bbox": [
+                69,
+                320,
+                1054,
+                426
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    320.0
+                ],
+                [
+                    1054.0,
+                    320.0
+                ],
+                [
+                    1054.0,
+                    426.0
+                ],
+                [
+                    69.0,
+                    426.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2437] Depending on whether the OEM supports OCSP services or CRL or both for the certificates in vehicle certificate chain, the SECC is free to utilize either OCSP or CRL or both for vehicle certificate revocation check.",
+            "block_bbox": [
+                69,
+                447,
+                1053,
+                525
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    447.0
+                ],
+                [
+                    1053.0,
+                    447.0
+                ],
+                [
+                    1053.0,
+                    525.0
+                ],
+                [
+                    69.0,
+                    525.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 49 If the vehicle certificate chain contains AuthorityInfoAccess, the SECC can check the revocation status of the certificates in the EVCC's certificate chain via an OCSP response according to IETF RFC 8446. Refer to 7.7.3.3.1 for further details.",
+            "block_bbox": [
+                68,
+                549,
+                1054,
+                621
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    549.0
+                ],
+                [
+                    1054.0,
+                    549.0
+                ],
+                [
+                    1054.0,
+                    621.0
+                ],
+                [
+                    68.0,
+                    621.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 50 If the vehicle certificate chain contains CRLDistributionPoints, the SECC can check the revocation status of the certificates in the EVCC's certificate chain via a CRL according to IETF RFC 5280, as updated by IETF RFC 6818, IETF RFC 8398 and IETF RFC 8399. Refer to 7.7.3.3.2 for further details.",
+            "block_bbox": [
+                68,
+                644,
+                1056,
+                716
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    644.0
+                ],
+                [
+                    1056.0,
+                    644.0
+                ],
+                [
+                    1056.0,
+                    716.0
+                ],
+                [
+                    68.0,
+                    716.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 51 The SECC can receive the revocation status of the vehicle certificate chain from SA or can contact the referenced CRL distribution point/OCSP responder for this status. It is not in the scope of this document to specify the methodology for the SECC to contact the CRL distribution point/OCSP server directly or the SA.",
+            "block_bbox": [
+                68,
+                737,
+                1054,
+                811
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    737.0
+                ],
+                [
+                    1054.0,
+                    737.0
+                ],
+                [
+                    1054.0,
+                    811.0
+                ],
+                [
+                    68.0,
+                    811.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 52 It is not in the scope of this document to specify the methodology for the SECC to indicate to CRL distribution point/OCSP server/another SA of the named group and signature algorithm that the SECC would like to use. The named group and signature algorithm used for this purpose can be same as those selected for the TLS session (as per the configurable mechanism as defined by [V2G20-2320]).",
+            "block_bbox": [
+                68,
+                831,
+                1054,
+                929
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    831.0
+                ],
+                [
+                    1054.0,
+                    831.0
+                ],
+                [
+                    1054.0,
+                    929.0
+                ],
+                [
+                    68.0,
+                    929.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 53  It is not advisable to check both OCSP response and CRL for certificate revocation check. If the SECC does want to check both then the response of both can be \"good\" to consider the said certificate valid. If either of the responses does not indicate \"good\" then the said certificate can be considered invalid.",
+            "block_bbox": [
+                68,
+                949,
+                1054,
+                1023
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    949.0
+                ],
+                [
+                    1054.0,
+                    949.0
+                ],
+                [
+                    1054.0,
+                    1023.0
+                ],
+                [
+                    68.0,
+                    1023.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2438] If the certificate status of any certificate in vehicle certificate chain is not \"good\", the SECC shall consider that the received vehicle certificate chain has failed validation.",
+            "block_bbox": [
+                70,
+                1044,
+                1051,
+                1097
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1044.0
+                ],
+                [
+                    1051.0,
+                    1044.0
+                ],
+                [
+                    1051.0,
+                    1097.0
+                ],
+                [
+                    70.0,
+                    1097.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 54 Refer to IETF RFC 6960 (as updated by IETF RFC 8954) for further details of the certificate status as provided by OCSP server.",
+            "block_bbox": [
+                68,
+                1120,
+                1053,
+                1169
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1120.0
+                ],
+                [
+                    1053.0,
+                    1120.0
+                ],
+                [
+                    1053.0,
+                    1169.0
+                ],
+                [
+                    68.0,
+                    1169.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2439] If the revocation status of any certificate in vehicle certificate chain is not available or cannot be determined, the public SECC shall consider that the received vehicle certificate chain has failed validation.",
+            "block_bbox": [
+                70,
+                1191,
+                1053,
+                1270
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1191.0
+                ],
+                [
+                    1053.0,
+                    1191.0
+                ],
+                [
+                    1053.0,
+                    1270.0
+                ],
+                [
+                    70.0,
+                    1270.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2440] If the revocation status of any certificate in vehicle certificate chain is not available or cannot be determined, the private SECC supporting PnC shall consider that the received vehicle certificate chain has failed validation.",
+            "block_bbox": [
+                70,
+                1291,
+                1053,
+                1370
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1291.0
+                ],
+                [
+                    1053.0,
+                    1291.0
+                ],
+                [
+                    1053.0,
+                    1370.0
+                ],
+                [
+                    70.0,
+                    1370.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 55 This requirement does not apply to a private SECC that does not support PnC.",
+            "block_bbox": [
+                69,
+                1393,
+                832,
+                1419
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    1393.0
+                ],
+                [
+                    832.0,
+                    1393.0
+                ],
+                [
+                    832.0,
+                    1419.0
+                ],
+                [
+                    69.0,
+                    1419.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2441] If the revocation status of any certificate in vehicle certificate chain is not available or cannot be determined, per [V2G20-2433], the private SECC not supporting PnC can continue validation of the received vehicle certificate chain.",
+            "block_bbox": [
+                70,
+                1441,
+                1053,
+                1519
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1441.0
+                ],
+                [
+                    1053.0,
+                    1441.0
+                ],
+                [
+                    1053.0,
+                    1519.0
+                ],
+                [
+                    70.0,
+                    1519.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "68",
+            "block_bbox": [
+                70,
+                1614,
+                103,
+                1636
+            ],
+            "block_id": 15,
+            "block_order": null,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 16,
+            "block_order": null,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1682
+            ],
+            "block_id": 17,
+            "block_order": null,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1681
+                ],
+                [
+                    982,
+                    1681
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8685911297798157,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9400416016578674,
+                "coordinate": [
+                    67,
+                    167,
+                    1054,
+                    296
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        67.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        167.0
+                    ],
+                    [
+                        1054.0,
+                        296.0
+                    ],
+                    [
+                        67.0,
+                        296.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9368431568145752,
+                "coordinate": [
+                    69,
+                    320,
+                    1054,
+                    426
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        69.0,
+                        320.0
+                    ],
+                    [
+                        1054.0,
+                        320.0
+                    ],
+                    [
+                        1054.0,
+                        426.0
+                    ],
+                    [
+                        69.0,
+                        426.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9256461262702942,
+                "coordinate": [
+                    69,
+                    447,
+                    1053,
+                    525
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        447.0
+                    ],
+                    [
+                        1053.0,
+                        447.0
+                    ],
+                    [
+                        1053.0,
+                        525.0
+                    ],
+                    [
+                        69.0,
+                        525.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9343006610870361,
+                "coordinate": [
+                    68,
+                    549,
+                    1054,
+                    621
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        549.0
+                    ],
+                    [
+                        1054.0,
+                        549.0
+                    ],
+                    [
+                        1054.0,
+                        621.0
+                    ],
+                    [
+                        68.0,
+                        621.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9415772557258606,
+                "coordinate": [
+                    68,
+                    644,
+                    1056,
+                    716
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        644.0
+                    ],
+                    [
+                        1056.0,
+                        644.0
+                    ],
+                    [
+                        1056.0,
+                        716.0
+                    ],
+                    [
+                        68.0,
+                        716.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9359862208366394,
+                "coordinate": [
+                    68,
+                    737,
+                    1054,
+                    811
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        737.0
+                    ],
+                    [
+                        1054.0,
+                        737.0
+                    ],
+                    [
+                        1054.0,
+                        811.0
+                    ],
+                    [
+                        68.0,
+                        811.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9452629089355469,
+                "coordinate": [
+                    68,
+                    831,
+                    1054,
+                    929
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        831.0
+                    ],
+                    [
+                        1054.0,
+                        831.0
+                    ],
+                    [
+                        1054.0,
+                        929.0
+                    ],
+                    [
+                        68.0,
+                        929.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9407769441604614,
+                "coordinate": [
+                    68,
+                    949,
+                    1054,
+                    1023
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        949.0
+                    ],
+                    [
+                        1054.0,
+                        949.0
+                    ],
+                    [
+                        1054.0,
+                        1023.0
+                    ],
+                    [
+                        68.0,
+                        1023.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8976173996925354,
+                "coordinate": [
+                    70,
+                    1044,
+                    1051,
+                    1097
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1044.0
+                    ],
+                    [
+                        1051.0,
+                        1044.0
+                    ],
+                    [
+                        1051.0,
+                        1097.0
+                    ],
+                    [
+                        70.0,
+                        1097.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9149197340011597,
+                "coordinate": [
+                    68,
+                    1120,
+                    1053,
+                    1169
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1120.0
+                    ],
+                    [
+                        1053.0,
+                        1120.0
+                    ],
+                    [
+                        1053.0,
+                        1169.0
+                    ],
+                    [
+                        68.0,
+                        1169.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9313588738441467,
+                "coordinate": [
+                    70,
+                    1191,
+                    1053,
+                    1270
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1191.0
+                    ],
+                    [
+                        1053.0,
+                        1191.0
+                    ],
+                    [
+                        1053.0,
+                        1270.0
+                    ],
+                    [
+                        70.0,
+                        1270.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9364362359046936,
+                "coordinate": [
+                    70,
+                    1291,
+                    1053,
+                    1370
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1291.0
+                    ],
+                    [
+                        1053.0,
+                        1291.0
+                    ],
+                    [
+                        1053.0,
+                        1370.0
+                    ],
+                    [
+                        70.0,
+                        1370.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8665720224380493,
+                "coordinate": [
+                    69,
+                    1393,
+                    832,
+                    1419
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        69.0,
+                        1393.0
+                    ],
+                    [
+                        832.0,
+                        1393.0
+                    ],
+                    [
+                        832.0,
+                        1419.0
+                    ],
+                    [
+                        69.0,
+                        1419.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9234241247177124,
+                "coordinate": [
+                    70,
+                    1441,
+                    1053,
+                    1519
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1441.0
+                    ],
+                    [
+                        1053.0,
+                        1441.0
+                    ],
+                    [
+                        1053.0,
+                        1519.0
+                    ],
+                    [
+                        70.0,
+                        1519.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.5699634552001953,
+                "coordinate": [
+                    70,
+                    1614,
+                    103,
+                    1636
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3781031668186188,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.36990416049957275,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1681
+                    ],
+                    [
+                        982,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

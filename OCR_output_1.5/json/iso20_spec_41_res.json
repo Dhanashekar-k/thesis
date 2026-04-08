@@ -1,0 +1,1262 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 41,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "and as such may install the PE private root CA certificate for that particular PE in the EVCC of the EVs in that fleet but may choose not to install any PE private root CA certificate in EVCC in any other EVs it manufactures.",
+            "block_bbox": [
+                68,
+                168,
+                1055,
+                246
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    168.0
+                ],
+                [
+                    1055.0,
+                    246.0
+                ],
+                [
+                    68.0,
+                    246.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "If the communication should work, some root CA certificates are installed in each SECC and EVCC. Depending on the use case of the EV and/or EVSE, the OEMs/CSOs will need to figure out which root CA certificates they should install in their EVCC/SECC so as to enable that particular use case.",
+            "block_bbox": [
+                68,
+                269,
+                1054,
+                349
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    269.0
+                ],
+                [
+                    1054.0,
+                    269.0
+                ],
+                [
+                    1054.0,
+                    349.0
+                ],
+                [
+                    68.0,
+                    349.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1806] Each EVCC shall provide storage space for at least two V2G root CA certificates.",
+            "block_bbox": [
+                69,
+                371,
+                1004,
+                398
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    371.0
+                ],
+                [
+                    1004.0,
+                    371.0
+                ],
+                [
+                    1004.0,
+                    398.0
+                ],
+                [
+                    69.0,
+                    398.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Storing two V2G root CA certificates is required by [V2G20-1806] to be able to store the currently valid V2G root CA certificate of a specific V2G root CA and additionally the new V2G root CA certificate of that V2G root CA that will be valid after the previous V2G root CA certificate has expired.",
+            "block_bbox": [
+                68,
+                419,
+                1054,
+                492
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    419.0
+                ],
+                [
+                    1054.0,
+                    419.0
+                ],
+                [
+                    1054.0,
+                    492.0
+                ],
+                [
+                    68.0,
+                    492.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2352] Each SECC shall provide storage space for at least two V2G root CA certificates.",
+            "block_bbox": [
+                69,
+                515,
+                1001,
+                542
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    515.0
+                ],
+                [
+                    1001.0,
+                    515.0
+                ],
+                [
+                    1001.0,
+                    542.0
+                ],
+                [
+                    69.0,
+                    542.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 It is not mandatory for SECC to support any V2G root CA certificates. A CSO can decide to only offer ISO 15118-20 communications to those EVs whose vehicle certificate is signed (or cross-signed) by an OEM root CA certificate supported by the CSO's SECC.",
+            "block_bbox": [
+                68,
+                564,
+                1054,
+                637
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    564.0
+                ],
+                [
+                    1054.0,
+                    564.0
+                ],
+                [
+                    1054.0,
+                    637.0
+                ],
+                [
+                    68.0,
+                    637.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Storing two V2G root CA certificates is required by [V2G20-2352] to be able to store the currently valid V2G root CA certificate of a specific V2G root CA and additionally the new V2G root CA certificate of that V2G root CA that will be valid after the previous V2G root CA certificate has expired.",
+            "block_bbox": [
+                68,
+                658,
+                1054,
+                731
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    658.0
+                ],
+                [
+                    1054.0,
+                    658.0
+                ],
+                [
+                    1054.0,
+                    731.0
+                ],
+                [
+                    68.0,
+                    731.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 This requirement does not apply to a private SECC.",
+            "block_bbox": [
+                70,
+                752,
+                605,
+                778
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    752.0
+                ],
+                [
+                    605.0,
+                    752.0
+                ],
+                [
+                    605.0,
+                    778.0
+                ],
+                [
+                    70.0,
+                    778.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "There can be multiple V2G root CAs in a given market. [V2G20-1806] and [V2G20-2352] define the minimum number of V2G root CA certificates that need to be supported by EVCC and SECC respectively. Regulatory and market conditions may require EVCC and/or SECC to support more than the minimum number of V2G root CA certificates. For example, it is strongly advised, but not mandated, that the EVCC and SECC support all local/regional V2G root CA certificates. This will improve availability of ISO 15118-20 communications and allow the EV to utilize ISO 15118-20 based communications on any local/regional EVSE.",
+            "block_bbox": [
+                67,
+                801,
+                1054,
+                983
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    801.0
+                ],
+                [
+                    1054.0,
+                    801.0
+                ],
+                [
+                    1054.0,
+                    983.0
+                ],
+                [
+                    67.0,
+                    983.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "It is not in the scope of this document to define the maximum number of V2G root CA certificates to be supported by the EVCC and/or SECC. It is left up to the OEM to decide on the maximum number of V2G root CA certificates to be supported by the EVCC. Similarly, it is left up to the CSO to decide on the maximum number of V2G root CA certificates to be supported by the SECC.",
+            "block_bbox": [
+                67,
+                1006,
+                1054,
+                1111
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    1006.0
+                ],
+                [
+                    1054.0,
+                    1006.0
+                ],
+                [
+                    1054.0,
+                    1111.0
+                ],
+                [
+                    67.0,
+                    1111.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Additionally, if the EV drives to a different region, it would need V2G root CA certificates for that region. It is not in the scope of this document to define how the OEM manages that situation. But the OEM is advised to take that into account when designing the EVs.",
+            "block_bbox": [
+                68,
+                1132,
+                1054,
+                1211
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1132.0
+                ],
+                [
+                    1054.0,
+                    1132.0
+                ],
+                [
+                    1054.0,
+                    1211.0
+                ],
+                [
+                    68.0,
+                    1211.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2353] Each public SECC shall provide storage space for at least two OEM root CA certificates.",
+            "block_bbox": [
+                68,
+                1234,
+                1053,
+                1262
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1234.0
+                ],
+                [
+                    1053.0,
+                    1234.0
+                ],
+                [
+                    1053.0,
+                    1262.0
+                ],
+                [
+                    68.0,
+                    1262.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 It is not mandatory for a public SECC to support any OEM root CA certificates. A CSO can decide to only offer ISO 15118-20 communications to those EVs whose vehicle certificate is signed (or cross-signed) by a V2G root CA certificate supported by the CSO's SECC.",
+            "block_bbox": [
+                68,
+                1284,
+                1055,
+                1356
+            ],
+            "block_id": 13,
+            "block_order": 13,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1284.0
+                ],
+                [
+                    1055.0,
+                    1284.0
+                ],
+                [
+                    1055.0,
+                    1356.0
+                ],
+                [
+                    68.0,
+                    1356.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Storing two OEM root CA certificates is required by [V2G20-2353] to be able to store the currently valid OEM root CA certificate of a specific OEM and additionally the new OEM root CA certificate of that OEM that will be valid after the previous V2G root CA certificate has expired.",
+            "block_bbox": [
+                68,
+                1377,
+                1054,
+                1451
+            ],
+            "block_id": 14,
+            "block_order": 14,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1377.0
+                ],
+                [
+                    1054.0,
+                    1377.0
+                ],
+                [
+                    1054.0,
+                    1451.0
+                ],
+                [
+                    68.0,
+                    1451.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2354] Each private SECC shall provide storage space for at least one OEM root CA certificate or V2G root CA certificate.",
+            "block_bbox": [
+                70,
+                1472,
+                1053,
+                1523
+            ],
+            "block_id": 15,
+            "block_order": 15,
+            "group_id": 15,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1472.0
+                ],
+                [
+                    1053.0,
+                    1472.0
+                ],
+                [
+                    1053.0,
+                    1523.0
+                ],
+                [
+                    70.0,
+                    1523.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 A private SECC can contain more than one OEM root CA certificates and/or V2G root CA certificates.",
+            "block_bbox": [
+                70,
+                1547,
+                1020,
+                1573
+            ],
+            "block_id": 16,
+            "block_order": 16,
+            "group_id": 16,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1547.0
+                ],
+                [
+                    1020.0,
+                    1547.0
+                ],
+                [
+                    1020.0,
+                    1573.0
+                ],
+                [
+                    70.0,
+                    1573.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "36",
+            "block_bbox": [
+                70,
+                1615,
+                103,
+                1636
+            ],
+            "block_id": 17,
+            "block_order": 17,
+            "group_id": 17,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1615.0
+                ],
+                [
+                    102.0,
+                    1615.0
+                ],
+                [
+                    102.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1055,
+                1637
+            ],
+            "block_id": 18,
+            "block_order": 18,
+            "group_id": 18,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1616.0
+                ],
+                [
+                    1054.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1635,
+                1119,
+                1683
+            ],
+            "block_id": 19,
+            "block_order": 19,
+            "group_id": 19,
+            "block_polygon_points": [
+                [
+                    60,
+                    1643
+                ],
+                [
+                    60,
+                    1682
+                ],
+                [
+                    1077,
+                    1682
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8606363534927368,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9400152564048767,
+                "coordinate": [
+                    68,
+                    168,
+                    1055,
+                    246
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        168.0
+                    ],
+                    [
+                        1055.0,
+                        246.0
+                    ],
+                    [
+                        68.0,
+                        246.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9427108764648438,
+                "coordinate": [
+                    68,
+                    269,
+                    1054,
+                    349
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        269.0
+                    ],
+                    [
+                        1054.0,
+                        269.0
+                    ],
+                    [
+                        1054.0,
+                        349.0
+                    ],
+                    [
+                        68.0,
+                        349.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7723413705825806,
+                "coordinate": [
+                    69,
+                    371,
+                    1004,
+                    398
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        69.0,
+                        371.0
+                    ],
+                    [
+                        1004.0,
+                        371.0
+                    ],
+                    [
+                        1004.0,
+                        398.0
+                    ],
+                    [
+                        69.0,
+                        398.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.933462381362915,
+                "coordinate": [
+                    68,
+                    419,
+                    1054,
+                    492
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        419.0
+                    ],
+                    [
+                        1054.0,
+                        419.0
+                    ],
+                    [
+                        1054.0,
+                        492.0
+                    ],
+                    [
+                        68.0,
+                        492.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7760240435600281,
+                "coordinate": [
+                    69,
+                    515,
+                    1001,
+                    542
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        69.0,
+                        515.0
+                    ],
+                    [
+                        1001.0,
+                        515.0
+                    ],
+                    [
+                        1001.0,
+                        542.0
+                    ],
+                    [
+                        69.0,
+                        542.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9331783652305603,
+                "coordinate": [
+                    68,
+                    564,
+                    1054,
+                    637
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        564.0
+                    ],
+                    [
+                        1054.0,
+                        564.0
+                    ],
+                    [
+                        1054.0,
+                        637.0
+                    ],
+                    [
+                        68.0,
+                        637.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9372050762176514,
+                "coordinate": [
+                    68,
+                    658,
+                    1054,
+                    731
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        658.0
+                    ],
+                    [
+                        1054.0,
+                        658.0
+                    ],
+                    [
+                        1054.0,
+                        731.0
+                    ],
+                    [
+                        68.0,
+                        731.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6849841475486755,
+                "coordinate": [
+                    70,
+                    752,
+                    605,
+                    778
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        70.0,
+                        752.0
+                    ],
+                    [
+                        605.0,
+                        752.0
+                    ],
+                    [
+                        605.0,
+                        778.0
+                    ],
+                    [
+                        70.0,
+                        778.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9609065055847168,
+                "coordinate": [
+                    67,
+                    801,
+                    1054,
+                    983
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        67.0,
+                        801.0
+                    ],
+                    [
+                        1054.0,
+                        801.0
+                    ],
+                    [
+                        1054.0,
+                        983.0
+                    ],
+                    [
+                        67.0,
+                        983.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9527219533920288,
+                "coordinate": [
+                    67,
+                    1006,
+                    1054,
+                    1111
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        67.0,
+                        1006.0
+                    ],
+                    [
+                        1054.0,
+                        1006.0
+                    ],
+                    [
+                        1054.0,
+                        1111.0
+                    ],
+                    [
+                        67.0,
+                        1111.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9426321387290955,
+                "coordinate": [
+                    68,
+                    1132,
+                    1054,
+                    1211
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1132.0
+                    ],
+                    [
+                        1054.0,
+                        1132.0
+                    ],
+                    [
+                        1054.0,
+                        1211.0
+                    ],
+                    [
+                        68.0,
+                        1211.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7667548656463623,
+                "coordinate": [
+                    68,
+                    1234,
+                    1053,
+                    1262
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1234.0
+                    ],
+                    [
+                        1053.0,
+                        1234.0
+                    ],
+                    [
+                        1053.0,
+                        1262.0
+                    ],
+                    [
+                        68.0,
+                        1262.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9450179934501648,
+                "coordinate": [
+                    68,
+                    1284,
+                    1055,
+                    1356
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1284.0
+                    ],
+                    [
+                        1055.0,
+                        1284.0
+                    ],
+                    [
+                        1055.0,
+                        1356.0
+                    ],
+                    [
+                        68.0,
+                        1356.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9451568126678467,
+                "coordinate": [
+                    68,
+                    1377,
+                    1054,
+                    1451
+                ],
+                "order": 14,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1377.0
+                    ],
+                    [
+                        1054.0,
+                        1377.0
+                    ],
+                    [
+                        1054.0,
+                        1451.0
+                    ],
+                    [
+                        68.0,
+                        1451.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.7856450080871582,
+                "coordinate": [
+                    70,
+                    1472,
+                    1053,
+                    1523
+                ],
+                "order": 15,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1472.0
+                    ],
+                    [
+                        1053.0,
+                        1472.0
+                    ],
+                    [
+                        1053.0,
+                        1523.0
+                    ],
+                    [
+                        70.0,
+                        1523.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8446837067604065,
+                "coordinate": [
+                    70,
+                    1547,
+                    1020,
+                    1573
+                ],
+                "order": 16,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1547.0
+                    ],
+                    [
+                        1020.0,
+                        1547.0
+                    ],
+                    [
+                        1020.0,
+                        1573.0
+                    ],
+                    [
+                        70.0,
+                        1573.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.4829002618789673,
+                "coordinate": [
+                    70,
+                    1615,
+                    103,
+                    1636
+                ],
+                "order": 17,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1615.0
+                    ],
+                    [
+                        102.0,
+                        1615.0
+                    ],
+                    [
+                        102.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.37737560272216797,
+                "coordinate": [
+                    797,
+                    1616,
+                    1055,
+                    1637
+                ],
+                "order": 18,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1616.0
+                    ],
+                    [
+                        1054.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.6685704588890076,
+                "coordinate": [
+                    60,
+                    1635,
+                    1119,
+                    1683
+                ],
+                "order": 19,
+                "polygon_points": [
+                    [
+                        60,
+                        1643
+                    ],
+                    [
+                        60,
+                        1682
+                    ],
+                    [
+                        1077,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

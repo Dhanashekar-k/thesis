@@ -1,0 +1,957 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 115,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 8 The policy digest is part of the TPM key profile (see \"authPolicy\") and is created using the \"nameAlg\" algorithm of the key. In case of the default ECC algorithm as defined by [V2G20-2674], the EVCC's TPM policy digest uses SHA-512 and is 64 byte long (see Table 19).",
+            "block_bbox": [
+                68,
+                167,
+                1052,
+                241
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    167.0
+                ],
+                [
+                    1052.0,
+                    241.0
+                ],
+                [
+                    68.0,
+                    241.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 9 The actual content of the contract key sealing policy is up to the OEM.",
+            "block_bbox": [
+                68,
+                261,
+                763,
+                286
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    261.0
+                ],
+                [
+                    763.0,
+                    261.0
+                ],
+                [
+                    763.0,
+                    286.0
+                ],
+                [
+                    68.0,
+                    286.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.9.2.5.3.3 Contract certificate private key encryption mechanism for EVCC with TPM",
+            "block_bbox": [
+                125,
+                306,
+                1022,
+                334
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    125.0,
+                    306.0
+                ],
+                [
+                    1022.0,
+                    306.0
+                ],
+                [
+                    1022.0,
+                    334.0
+                ],
+                [
+                    125.0,
+                    334.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "2.0",
+            "block_bbox": [
+                127,
+                332,
+                167,
+                354
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    127,
+                    332
+                ],
+                [
+                    127,
+                    353
+                ],
+                [
+                    166,
+                    353
+                ],
+                [
+                    166,
+                    332
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2518] In order to enable a direct import of the encrypted contract certificate private key into the EVCC's TPM, the contract certificate private key shall be encrypted with the TPM storage key of the EVCC's TPM from the OEM provisioning certificate extension (in contrast to [V2G20-2529] and [V2G20-2530]). This encryption shall comply with ISO/IEC 11889-1:2015, 23.3.2 and only use the outer duplication wrapper. This encryption shall use the values from Table 19 for the default ECC algorithm (see [V2G20-2674]) or a separately defined TPM key profile for an alternative ECC algorithm (see [V2G20-2319]), whereby the contract certificate public key is inserted into the buffers of the contract key profile's \"unique\" field. If a policy digest is provided in the OEM provisioning certificate of this EVCC, the value of the policy digest shall be included in the encryption of the contract certificate private key via the \"authPolicy\" field of the contract key profile.",
+            "block_bbox": [
+                69,
+                379,
+                1054,
+                691
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    379.0
+                ],
+                [
+                    1054.0,
+                    379.0
+                ],
+                [
+                    1054.0,
+                    691.0
+                ],
+                [
+                    69.0,
+                    691.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 The high-level overview of the contract certificate private key encryption for direct import into the EVCC's TPM is shown in Figure 26.",
+            "block_bbox": [
+                68,
+                712,
+                1052,
+                762
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    712.0
+                ],
+                [
+                    1052.0,
+                    712.0
+                ],
+                [
+                    1052.0,
+                    762.0
+                ],
+                [
+                    68.0,
+                    762.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 2 The values from Table 19 are necessary to calculate the \"Name\" (see ISO/IEC 11889-1:2015, Clause 16) of the asymmetric contract key in TPM 2.0 or when parameter selection is based on the \"new parent\" (in this context the new parent would be the storage key). Table 19 also shows the values for the key profile in the case that the OEM chooses to not seal the contract key to a policy, i.e. for the case that the optional policyDigest field of the custom TPM certificate extension in the OEM provisioning certificate is omitted.",
+            "block_bbox": [
+                67,
+                783,
+                1054,
+                905
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    783.0
+                ],
+                [
+                    1054.0,
+                    783.0
+                ],
+                [
+                    1054.0,
+                    905.0
+                ],
+                [
+                    67.0,
+                    905.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2519] The encryption, as specified by [V2G20-2518], requires the generation of a new seed (session key). The seed shall be generated using the method defined in 7.9.2.5.3., with the \"TPM storage key\" from the OEM provisioning certificate extension used as static public key for calculation of the session key as defined by [V2G20-2535]. Also refer to ISO/IEC 11889-3:2015, B.5.1 for further details with respect to TPM 2.0.",
+            "block_bbox": [
+                67,
+                924,
+                1054,
+                1056
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    924.0
+                ],
+                [
+                    1054.0,
+                    924.0
+                ],
+                [
+                    1054.0,
+                    1056.0
+                ],
+                [
+                    67.0,
+                    1056.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 The seed is used to derive HMAC and encryption keys (see Figure 26).",
+            "block_bbox": [
+                68,
+                1077,
+                768,
+                1104
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1077.0
+                ],
+                [
+                    768.0,
+                    1077.0
+                ],
+                [
+                    768.0,
+                    1104.0
+                ],
+                [
+                    68.0,
+                    1104.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2520] The ephemeral public key of the eMSP (SA) shall be transmitted using the method defined in [V2G20-2489].",
+            "block_bbox": [
+                68,
+                1125,
+                1052,
+                1179
+            ],
+            "block_id": 10,
+            "block_order": 10,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1125.0
+                ],
+                [
+                    1052.0,
+                    1125.0
+                ],
+                [
+                    1052.0,
+                    1179.0
+                ],
+                [
+                    68.0,
+                    1179.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2521] The encrypted contract certificate private key shall be transmitted within TPM_EncryptedPrivateKey in the message CertificateInstallationRes if the private contract key was encrypted with the public storage key from the OEM provisioning certificate extension carrying TPM Information. The SA shall not add any padding to the encrypted key to increase its size to the maximum size of 206 bytes.",
+            "block_bbox": [
+                68,
+                1201,
+                1053,
+                1332
+            ],
+            "block_id": 11,
+            "block_order": 11,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1201.0
+                ],
+                [
+                    1053.0,
+                    1201.0
+                ],
+                [
+                    1053.0,
+                    1332.0
+                ],
+                [
+                    68.0,
+                    1332.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 At the time of CertificateInstallationReq, if the SA intends to provide multiple different contract certificates based on different curves as defined by [V2G20-2674] and [V2G20-2319], the SA will need to send multiple different SignedInstallationData containers to the SECC and the EVCC can, at its/user's discretion, utilize the looping mechanism for CertificateInstallationReq to get and install all different contract certificates.",
+            "block_bbox": [
+                68,
+                1353,
+                1054,
+                1451
+            ],
+            "block_id": 12,
+            "block_order": 12,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1353.0
+                ],
+                [
+                    1054.0,
+                    1353.0
+                ],
+                [
+                    1054.0,
+                    1451.0
+                ],
+                [
+                    68.0,
+                    1451.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1635,
+                1119,
+                1682
+            ],
+            "block_id": 14,
+            "block_order": 13,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    61,
+                    1643
+                ],
+                [
+                    61,
+                    1681
+                ],
+                [
+                    1041,
+                    1681
+                ],
+                [
+                    1118,
+                    1666
+                ],
+                [
+                    1118,
+                    1635
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8656436204910278,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9230707883834839,
+                "coordinate": [
+                    68,
+                    167,
+                    1052,
+                    241
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        167.0
+                    ],
+                    [
+                        1052.0,
+                        241.0
+                    ],
+                    [
+                        68.0,
+                        241.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8433744311332703,
+                "coordinate": [
+                    68,
+                    261,
+                    763,
+                    286
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        261.0
+                    ],
+                    [
+                        763.0,
+                        261.0
+                    ],
+                    [
+                        763.0,
+                        286.0
+                    ],
+                    [
+                        68.0,
+                        286.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.5376841425895691,
+                "coordinate": [
+                    125,
+                    306,
+                    1022,
+                    334
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        125.0,
+                        306.0
+                    ],
+                    [
+                        1022.0,
+                        306.0
+                    ],
+                    [
+                        1022.0,
+                        334.0
+                    ],
+                    [
+                        125.0,
+                        334.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.47727617621421814,
+                "coordinate": [
+                    127,
+                    332,
+                    167,
+                    354
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        127,
+                        332
+                    ],
+                    [
+                        127,
+                        353
+                    ],
+                    [
+                        166,
+                        353
+                    ],
+                    [
+                        166,
+                        332
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9589430093765259,
+                "coordinate": [
+                    69,
+                    379,
+                    1054,
+                    691
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        69.0,
+                        379.0
+                    ],
+                    [
+                        1054.0,
+                        379.0
+                    ],
+                    [
+                        1054.0,
+                        691.0
+                    ],
+                    [
+                        69.0,
+                        691.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8597673177719116,
+                "coordinate": [
+                    68,
+                    712,
+                    1052,
+                    762
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        68.0,
+                        712.0
+                    ],
+                    [
+                        1052.0,
+                        712.0
+                    ],
+                    [
+                        1052.0,
+                        762.0
+                    ],
+                    [
+                        68.0,
+                        762.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9506530165672302,
+                "coordinate": [
+                    67,
+                    783,
+                    1054,
+                    905
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        67.0,
+                        783.0
+                    ],
+                    [
+                        1054.0,
+                        783.0
+                    ],
+                    [
+                        1054.0,
+                        905.0
+                    ],
+                    [
+                        67.0,
+                        905.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9426088333129883,
+                "coordinate": [
+                    67,
+                    924,
+                    1054,
+                    1056
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        67.0,
+                        924.0
+                    ],
+                    [
+                        1054.0,
+                        924.0
+                    ],
+                    [
+                        1054.0,
+                        1056.0
+                    ],
+                    [
+                        67.0,
+                        1056.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8540909290313721,
+                "coordinate": [
+                    68,
+                    1077,
+                    768,
+                    1104
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1077.0
+                    ],
+                    [
+                        768.0,
+                        1077.0
+                    ],
+                    [
+                        768.0,
+                        1104.0
+                    ],
+                    [
+                        68.0,
+                        1104.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8908513188362122,
+                "coordinate": [
+                    68,
+                    1125,
+                    1052,
+                    1179
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1125.0
+                    ],
+                    [
+                        1052.0,
+                        1125.0
+                    ],
+                    [
+                        1052.0,
+                        1179.0
+                    ],
+                    [
+                        68.0,
+                        1179.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9495758414268494,
+                "coordinate": [
+                    68,
+                    1201,
+                    1053,
+                    1332
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1201.0
+                    ],
+                    [
+                        1053.0,
+                        1201.0
+                    ],
+                    [
+                        1053.0,
+                        1332.0
+                    ],
+                    [
+                        68.0,
+                        1332.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9473660588264465,
+                "coordinate": [
+                    68,
+                    1353,
+                    1054,
+                    1451
+                ],
+                "order": 12,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1353.0
+                    ],
+                    [
+                        1054.0,
+                        1353.0
+                    ],
+                    [
+                        1054.0,
+                        1451.0
+                    ],
+                    [
+                        68.0,
+                        1451.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.3656817376613617,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.33172833919525146,
+                "coordinate": [
+                    61,
+                    1635,
+                    1119,
+                    1682
+                ],
+                "order": 13,
+                "polygon_points": [
+                    [
+                        61,
+                        1643
+                    ],
+                    [
+                        61,
+                        1681
+                    ],
+                    [
+                        1041,
+                        1681
+                    ],
+                    [
+                        1118,
+                        1666
+                    ],
+                    [
+                        1118,
+                        1635
+                    ]
+                ]
+            }
+        ]
+    }
+}

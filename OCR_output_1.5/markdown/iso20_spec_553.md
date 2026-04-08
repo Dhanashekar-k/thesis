@@ -1,0 +1,1 @@
+be differences if a power value is derived from an energy measurement or if it is calculated based on voltage an related current measurements. In the case of asymmetric polyphase AC applications some electricity meter standards might not yet even define mandatory measurement tolerances.

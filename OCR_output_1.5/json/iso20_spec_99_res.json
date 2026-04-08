@@ -1,0 +1,949 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 99,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                323,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    68.0
+                ],
+                [
+                    323.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "For the application of XMLDisig, any element which should be signed is addressable. In this document, this is achieved by a URI referencing the ID attribute of such an element. Therefore, any message element that is signed carries an ID attribute. If a specific element is to be signed in all use cases, the ID attribute is marked mandatory in the XSD. Otherwise, if it is signed in only some use cases, the ID attribute is marked optional and can be omitted when not needed.",
+            "block_bbox": [
+                68,
+                169,
+                1054,
+                299
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    169.0
+                ],
+                [
+                    1054.0,
+                    169.0
+                ],
+                [
+                    1054.0,
+                    299.0
+                ],
+                [
+                    68.0,
+                    299.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 3 Presence of an ID attribute does not necessarily indicate that a signature is used, i.e. if no signature is used, an ID can be present nevertheless.",
+            "block_bbox": [
+                68,
+                321,
+                1053,
+                369
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    321.0
+                ],
+                [
+                    1053.0,
+                    321.0
+                ],
+                [
+                    1053.0,
+                    369.0
+                ],
+                [
+                    68.0,
+                    369.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 4 Refer IETF RFC 3986 as updated by IETF RFC 6874 and IETF RFC 7320 for details of URI.",
+            "block_bbox": [
+                68,
+                391,
+                930,
+                417
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    391.0
+                ],
+                [
+                    930.0,
+                    391.0
+                ],
+                [
+                    930.0,
+                    417.0
+                ],
+                [
+                    68.0,
+                    417.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.9.2.4.3 Application of security mechanisms to XML message",
+            "block_bbox": [
+                68,
+                437,
+                711,
+                464
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    437.0
+                ],
+                [
+                    711.0,
+                    437.0
+                ],
+                [
+                    711.0,
+                    464.0
+                ],
+                [
+                    68.0,
+                    464.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "In general, two pairs of security mechanisms are supported.",
+            "block_bbox": [
+                68,
+                486,
+                637,
+                513
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    486.0
+                ],
+                [
+                    637.0,
+                    486.0
+                ],
+                [
+                    637.0,
+                    513.0
+                ],
+                [
+                    68.0,
+                    513.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– Authenticity and integrity: signature generation → signature verification; XML based signature is applied. The entity creates the XML message and signs certain or all fields of an XML message. The receiver verifies the signature.",
+            "block_bbox": [
+                138,
+                518,
+                1053,
+                596
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    518.0
+                ],
+                [
+                    1053.0,
+                    518.0
+                ],
+                [
+                    1053.0,
+                    596.0
+                ],
+                [
+                    138.0,
+                    596.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "– Confidentiality: encryption → secretion; encryption is applied. The entity creates the message and encrypts a single binary field of the XML message. The receiver decrypts that binary field.",
+            "block_bbox": [
+                138,
+                602,
+                1054,
+                680
+            ],
+            "block_id": 7,
+            "block_order": 7,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    138.0,
+                    602.0
+                ],
+                [
+                    1054.0,
+                    602.0
+                ],
+                [
+                    1054.0,
+                    680.0
+                ],
+                [
+                    138.0,
+                    680.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Table 17 and Table 18 provide an overview of the applied security mechanisms.",
+            "block_bbox": [
+                68,
+                703,
+                826,
+                731
+            ],
+            "block_id": 8,
+            "block_order": 8,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    703.0
+                ],
+                [
+                    826.0,
+                    703.0
+                ],
+                [
+                    826.0,
+                    731.0
+                ],
+                [
+                    68.0,
+                    731.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The public/private key pair associated with the \"subjectPublicKeyInfo\" parameter of the appropriate certificate is used for the purposes of XML signatures.",
+            "block_bbox": [
+                68,
+                752,
+                1053,
+                806
+            ],
+            "block_id": 9,
+            "block_order": 9,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    752.0
+                ],
+                [
+                    1053.0,
+                    752.0
+                ],
+                [
+                    1053.0,
+                    806.0
+                ],
+                [
+                    68.0,
+                    806.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 17 — Overview of applied XML based signatures",
+            "block_bbox": [
+                281,
+                826,
+                839,
+                853
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    281.0,
+                    826.0
+                ],
+                [
+                    839.0,
+                    826.0
+                ],
+                [
+                    839.0,
+                    853.0
+                ],
+                [
+                    281.0,
+                    853.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>XML message</td><td>Protected fields</td><td>Signing entity (sender)</td><td>Verifying entity (receiver)</td></tr><tr><td>AuthorizationReq</td><td>PnC_AReqIdentificationMode</td><td>EVCC; signed with private key associated with the contract certificate provided within PnC_AReqIdentificationMode</td><td>SECC</td></tr><tr><td>CertificateInstallationReq</td><td>message body/all fields</td><td>EVCC; signed with private key associated with OEM provision certificate (transmitted in message body element)</td><td>secondary actor</td></tr><tr><td>CertificateInstallationRes</td><td>SignedInstallationData</td><td>secondary actor; signed with the private key associated with the leaf certificate of the certificate provisioning service</td><td>EVCC</td></tr><tr><td>MeteringConfirmationReq</td><td>message body / all fields</td><td>EVCC; signed with private key associated with the contract certificate (certificate is transmitted in AuthorizationReq message)</td><td>SECC</td></tr><tr><td>ChargeParameterDiscoveryRes</td><td>AbsolutePriceSchedule (if present, signature required for PnC)</td><td>secondary actor; signed with the private key associated with the eMSP sub-CA2 certificate</td><td>EVCC</td></tr></table>",
+            "block_bbox": [
+                72,
+                861,
+                1051,
+                1515
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    861.0
+                ],
+                [
+                    1051.0,
+                    861.0
+                ],
+                [
+                    1051.0,
+                    1515.0
+                ],
+                [
+                    72.0,
+                    1515.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 18 — Overview of applied encryption",
+            "block_bbox": [
+                337,
+                1528,
+                784,
+                1554
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    337.0,
+                    1528.0
+                ],
+                [
+                    784.0,
+                    1528.0
+                ],
+                [
+                    784.0,
+                    1554.0
+                ],
+                [
+                    337.0,
+                    1554.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "94",
+            "block_bbox": [
+                70,
+                1614,
+                103,
+                1636
+            ],
+            "block_id": 13,
+            "block_order": 10,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1614.0
+                ],
+                [
+                    102.0,
+                    1635.0
+                ],
+                [
+                    70.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1683
+            ],
+            "block_id": 14,
+            "block_order": 11,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    59.71287536621094,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0,
+                    1636.0003662109375
+                ],
+                [
+                    1118.34521484375,
+                    1681.6424560546875
+                ],
+                [
+                    60.05810546875,
+                    1689.6446533203125
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.875569760799408,
+                "coordinate": [
+                    70,
+                    68,
+                    323,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        68.0
+                    ],
+                    [
+                        323.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9525116086006165,
+                "coordinate": [
+                    68,
+                    169,
+                    1054,
+                    299
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        68.0,
+                        169.0
+                    ],
+                    [
+                        1054.0,
+                        169.0
+                    ],
+                    [
+                        1054.0,
+                        299.0
+                    ],
+                    [
+                        68.0,
+                        299.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9012648463249207,
+                "coordinate": [
+                    68,
+                    321,
+                    1053,
+                    369
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        321.0
+                    ],
+                    [
+                        1053.0,
+                        321.0
+                    ],
+                    [
+                        1053.0,
+                        369.0
+                    ],
+                    [
+                        68.0,
+                        369.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8391392827033997,
+                "coordinate": [
+                    68,
+                    391,
+                    930,
+                    417
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        68.0,
+                        391.0
+                    ],
+                    [
+                        930.0,
+                        391.0
+                    ],
+                    [
+                        930.0,
+                        417.0
+                    ],
+                    [
+                        68.0,
+                        417.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8548998236656189,
+                "coordinate": [
+                    68,
+                    437,
+                    711,
+                    464
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        437.0
+                    ],
+                    [
+                        711.0,
+                        437.0
+                    ],
+                    [
+                        711.0,
+                        464.0
+                    ],
+                    [
+                        68.0,
+                        464.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8400484323501587,
+                "coordinate": [
+                    68,
+                    486,
+                    637,
+                    513
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        68.0,
+                        486.0
+                    ],
+                    [
+                        637.0,
+                        486.0
+                    ],
+                    [
+                        637.0,
+                        513.0
+                    ],
+                    [
+                        68.0,
+                        513.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9345998764038086,
+                "coordinate": [
+                    138,
+                    518,
+                    1053,
+                    596
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        138.0,
+                        518.0
+                    ],
+                    [
+                        1053.0,
+                        518.0
+                    ],
+                    [
+                        1053.0,
+                        596.0
+                    ],
+                    [
+                        138.0,
+                        596.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9287512898445129,
+                "coordinate": [
+                    138,
+                    602,
+                    1054,
+                    680
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        138.0,
+                        602.0
+                    ],
+                    [
+                        1054.0,
+                        602.0
+                    ],
+                    [
+                        1054.0,
+                        680.0
+                    ],
+                    [
+                        138.0,
+                        680.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8505982756614685,
+                "coordinate": [
+                    68,
+                    703,
+                    826,
+                    731
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        68.0,
+                        703.0
+                    ],
+                    [
+                        826.0,
+                        703.0
+                    ],
+                    [
+                        826.0,
+                        731.0
+                    ],
+                    [
+                        68.0,
+                        731.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9134084582328796,
+                "coordinate": [
+                    68,
+                    752,
+                    1053,
+                    806
+                ],
+                "order": 9,
+                "polygon_points": [
+                    [
+                        68.0,
+                        752.0
+                    ],
+                    [
+                        1053.0,
+                        752.0
+                    ],
+                    [
+                        1053.0,
+                        806.0
+                    ],
+                    [
+                        68.0,
+                        806.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8586524724960327,
+                "coordinate": [
+                    281,
+                    826,
+                    839,
+                    853
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        281.0,
+                        826.0
+                    ],
+                    [
+                        839.0,
+                        826.0
+                    ],
+                    [
+                        839.0,
+                        853.0
+                    ],
+                    [
+                        281.0,
+                        853.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9803195595741272,
+                "coordinate": [
+                    72,
+                    861,
+                    1051,
+                    1515
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        72.0,
+                        861.0
+                    ],
+                    [
+                        1051.0,
+                        861.0
+                    ],
+                    [
+                        1051.0,
+                        1515.0
+                    ],
+                    [
+                        72.0,
+                        1515.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8549467325210571,
+                "coordinate": [
+                    337,
+                    1528,
+                    784,
+                    1554
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        337.0,
+                        1528.0
+                    ],
+                    [
+                        784.0,
+                        1528.0
+                    ],
+                    [
+                        784.0,
+                        1554.0
+                    ],
+                    [
+                        337.0,
+                        1554.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.44833749532699585,
+                "coordinate": [
+                    70,
+                    1614,
+                    103,
+                    1636
+                ],
+                "order": 10,
+                "polygon_points": [
+                    [
+                        70.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1614.0
+                    ],
+                    [
+                        102.0,
+                        1635.0
+                    ],
+                    [
+                        70.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.607459306716919,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1683
+                ],
+                "order": 11,
+                "polygon_points": [
+                    [
+                        59.71287536621094,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.34521484375,
+                        1681.6424560546875
+                    ],
+                    [
+                        60.05810546875,
+                        1689.6446533203125
+                    ]
+                ]
+            }
+        ]
+    }
+}

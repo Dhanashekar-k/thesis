@@ -1,0 +1,668 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 316,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                866,
+                69,
+                1118,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    866.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    69.0
+                ],
+                [
+                    1118.0,
+                    96.0
+                ],
+                [
+                    866.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element name</td><td>Type</td><td>Semantics</td></tr><tr><td>EVSETargetReactivePower_L3</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Target reactive power requested by the EVSE on phase L3 (as defined in 8.3.5.2.2)</td></tr><tr><td>EVSEPresentActivePower</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Active power as presently measured by the EVSE. This value is based on the actual voltage and not the EVSENominalVoltage.</td></tr><tr><td>EVSEPresentActivePower_L2</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Active power as presently measured by the EVSE on phase L2 (as defined in 8.3.5.2.2). This value is based on the actual voltage and not the EVSENominalVoltage.</td></tr><tr><td>EVSEPresentActivePower_L3</td><td>complexType:RationalNumberTyperefer to 8.3.5.3.8</td><td>Optional:Active power as presently measured by the EVSE on phase L3 (as defined in 8.3.5.2.2). This value is based on the actual voltage and not the EVSENominalVoltage.</td></tr></table>",
+            "block_bbox": [
+                139,
+                163,
+                1117,
+                777
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    163.0
+                ],
+                [
+                    1117.0,
+                    777.0
+                ],
+                [
+                    139.0,
+                    777.0
+                ]
+            ]
+        },
+        {
+            "block_label": "vision_footnote",
+            "block_content": "[V2G20-1366] The SECC shall only send MinimumSOC that is less than or equal to TargetSOC.",
+            "block_bbox": [
+                139,
+                780,
+                1066,
+                807
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    139.0,
+                    780.0
+                ],
+                [
+                    1066.0,
+                    780.0
+                ],
+                [
+                    1066.0,
+                    807.0
+                ],
+                [
+                    139.0,
+                    807.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1367] If the EVCC selected the service parameter \"MobilityNeedsMode\" set to 2 and the SECC received new values for departure time, target SOC or minimum SOC from a secondary actor, the SECC shall include those updated values in DepartureTime, TargetSOC or MinimumSOC, respectively. If TargetSOC or MinimumSOC are included, then the SECC shall also include AckMaxDelay.",
+            "block_bbox": [
+                137,
+                829,
+                1120,
+                960
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    829.0
+                ],
+                [
+                    1120.0,
+                    829.0
+                ],
+                [
+                    1120.0,
+                    960.0
+                ],
+                [
+                    137.0,
+                    960.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1368] If the EVCC selected the service parameter MobilityNeedsMode set to 2 and receives a AC_ChargeLoopRes message with DepartureTime, TargetSOC or MinimumSOC, and if the EVCC accepts this DepartureTime, TargetSOC or MinimumSOC, then the EVCC shall send updated values in a AC_ChargeLoopReq within the number of seconds stated in AckMaxDelay of AC_ChargeLoopRes.",
+            "block_bbox": [
+                135,
+                982,
+                1122,
+                1114
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    982.0
+                ],
+                [
+                    1122.0,
+                    982.0
+                ],
+                [
+                    1122.0,
+                    1114.0
+                ],
+                [
+                    135.0,
+                    1114.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1369] If the EVCC selected the service parameter MobilityNeedsMode set to 2 and EVCC receives a AC_ChargeLoopRes message with DepartureTime, TargetSOC or MinimumSOC, and if the EVCC cannot accept this DepartureTime, TargetSOC or MinimumSOC, e.g. for internal reasons, then the EVCC shall send different values in a AC_ChargeLoopReq than the values in AC_ChargeLoopRes within the number of seconds stated in AckMaxDelay of AC_ChargeLoopRes.",
+            "block_bbox": [
+                135,
+                1135,
+                1123,
+                1292
+            ],
+            "block_id": 5,
+            "block_order": 3,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    135.0,
+                    1135.0
+                ],
+                [
+                    1123.0,
+                    1135.0
+                ],
+                [
+                    1123.0,
+                    1292.0
+                ],
+                [
+                    135.0,
+                    1292.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "NOTE 1 In this case, the behavior of the SECC is not in the scope.",
+            "block_bbox": [
+                137,
+                1314,
+                717,
+                1340
+            ],
+            "block_id": 6,
+            "block_order": 4,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    1314.0
+                ],
+                [
+                    717.0,
+                    1314.0
+                ],
+                [
+                    717.0,
+                    1340.0
+                ],
+                [
+                    137.0,
+                    1340.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1210] If the charging session is subject to metering and an AbsolutePriceSchedule with power specific pricing rules has been selected, then the SECC shall provide the EVSEPresentActivePower[_L2,_L3] measurements during the charging process. The values shall reflect the same quantities which are used by the SECC to determine the pricing.",
+            "block_bbox": [
+                136,
+                1361,
+                1120,
+                1494
+            ],
+            "block_id": 7,
+            "block_order": 5,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    136.0,
+                    1361.0
+                ],
+                [
+                    1120.0,
+                    1361.0
+                ],
+                [
+                    1120.0,
+                    1494.0
+                ],
+                [
+                    136.0,
+                    1494.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "311",
+            "block_bbox": [
+                1077,
+                1624,
+                1118,
+                1645
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    1077.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1624.0
+                ],
+                [
+                    1117.0,
+                    1644.0
+                ],
+                [
+                    1077.0,
+                    1644.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 9,
+            "block_order": null,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1089,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ],
+                [
+                    1077,
+                    1639
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8762615919113159,
+                "coordinate": [
+                    866,
+                    69,
+                    1118,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        866.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        69.0
+                    ],
+                    [
+                        1118.0,
+                        96.0
+                    ],
+                    [
+                        866.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9729564785957336,
+                "coordinate": [
+                    139,
+                    163,
+                    1117,
+                    777
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        163.0
+                    ],
+                    [
+                        1117.0,
+                        777.0
+                    ],
+                    [
+                        139.0,
+                        777.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 24,
+                "label": "vision_footnote",
+                "score": 0.635033369064331,
+                "coordinate": [
+                    139,
+                    780,
+                    1066,
+                    807
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        139.0,
+                        780.0
+                    ],
+                    [
+                        1066.0,
+                        780.0
+                    ],
+                    [
+                        1066.0,
+                        807.0
+                    ],
+                    [
+                        139.0,
+                        807.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9204994440078735,
+                "coordinate": [
+                    137,
+                    829,
+                    1120,
+                    960
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        829.0
+                    ],
+                    [
+                        1120.0,
+                        829.0
+                    ],
+                    [
+                        1120.0,
+                        960.0
+                    ],
+                    [
+                        137.0,
+                        960.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9346254467964172,
+                "coordinate": [
+                    135,
+                    982,
+                    1122,
+                    1114
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        135.0,
+                        982.0
+                    ],
+                    [
+                        1122.0,
+                        982.0
+                    ],
+                    [
+                        1122.0,
+                        1114.0
+                    ],
+                    [
+                        135.0,
+                        1114.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9446262717247009,
+                "coordinate": [
+                    135,
+                    1135,
+                    1123,
+                    1292
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        135.0,
+                        1135.0
+                    ],
+                    [
+                        1123.0,
+                        1135.0
+                    ],
+                    [
+                        1123.0,
+                        1292.0
+                    ],
+                    [
+                        135.0,
+                        1292.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8348472714424133,
+                "coordinate": [
+                    137,
+                    1314,
+                    717,
+                    1340
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        137.0,
+                        1314.0
+                    ],
+                    [
+                        717.0,
+                        1314.0
+                    ],
+                    [
+                        717.0,
+                        1340.0
+                    ],
+                    [
+                        137.0,
+                        1340.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9316712021827698,
+                "coordinate": [
+                    136,
+                    1361,
+                    1120,
+                    1494
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        136.0,
+                        1361.0
+                    ],
+                    [
+                        1120.0,
+                        1361.0
+                    ],
+                    [
+                        1120.0,
+                        1494.0
+                    ],
+                    [
+                        136.0,
+                        1494.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.77046799659729,
+                "coordinate": [
+                    1077,
+                    1624,
+                    1118,
+                    1645
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        1077.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1624.0
+                    ],
+                    [
+                        1117.0,
+                        1644.0
+                    ],
+                    [
+                        1077.0,
+                        1644.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8661543726921082,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1089,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ],
+                    [
+                        1077,
+                        1639
+                    ]
+                ]
+            }
+        ]
+    }
+}

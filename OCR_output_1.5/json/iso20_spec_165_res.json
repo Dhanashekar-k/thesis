@@ -1,0 +1,949 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 165,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                70,
+                68,
+                322,
+                95
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    68.0
+                ],
+                [
+                    322.0,
+                    95.0
+                ],
+                [
+                    70.0,
+                    95.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "available energy may change once the energy transfer has started due to sudden lack of power source, or increase in demand of other consumptions (e.g. other EV arrival). A schedule renegotiation shall be allowed to cope with difficulties encountered, locally or regionally.",
+            "block_bbox": [
+                67,
+                168,
+                1054,
+                248
+            ],
+            "block_id": 1,
+            "block_order": 1,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    67.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    168.0
+                ],
+                [
+                    1054.0,
+                    248.0
+                ],
+                [
+                    67.0,
+                    248.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Such a schedule renegotiation is included within the communication protocol between EVSE and EV during the energy transfer period. Upper level systems, to be designed in the future, using this protocol, will manage to combine these functions in order to reach the optimum between satisfaction of user needs and other constraints.",
+            "block_bbox": [
+                68,
+                269,
+                1054,
+                374
+            ],
+            "block_id": 2,
+            "block_order": 2,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    269.0
+                ],
+                [
+                    1054.0,
+                    269.0
+                ],
+                [
+                    1054.0,
+                    374.0
+                ],
+                [
+                    68.0,
+                    374.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "8.3.4.3.7.2 ScheduleExchangeReq",
+            "block_bbox": [
+                125,
+                394,
+                506,
+                421
+            ],
+            "block_id": 3,
+            "block_order": 3,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    125.0,
+                    394.0
+                ],
+                [
+                    506.0,
+                    394.0
+                ],
+                [
+                    506.0,
+                    421.0
+                ],
+                [
+                    125.0,
+                    421.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "By sending the ScheduleExchangeReq message the EVCC provides its energy transfer parameters to the SECC. This message provides status information about the EV and additional energy transfer parameters, like estimated energy amounts for recharging the EV and the point in time the user intends to leave the EVSE.",
+            "block_bbox": [
+                68,
+                443,
+                1053,
+                548
+            ],
+            "block_id": 4,
+            "block_order": 4,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    443.0
+                ],
+                [
+                    1053.0,
+                    443.0
+                ],
+                [
+                    1053.0,
+                    548.0
+                ],
+                [
+                    68.0,
+                    548.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-1267] The EVCC and the SECC shall implement the message elements as defined in Table 44 and Figure 48.",
+            "block_bbox": [
+                69,
+                569,
+                1052,
+                622
+            ],
+            "block_id": 5,
+            "block_order": 5,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    69.0,
+                    569.0
+                ],
+                [
+                    1052.0,
+                    569.0
+                ],
+                [
+                    1052.0,
+                    622.0
+                ],
+                [
+                    69.0,
+                    622.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "[V2G20-2642] In case scheduled control mode was selected, if there is no DepartureTime information available, the EVCC shall not include this message element in the ScheduleExchangeReq message.",
+            "block_bbox": [
+                70,
+                645,
+                1053,
+                725
+            ],
+            "block_id": 6,
+            "block_order": 6,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    70.0,
+                    645.0
+                ],
+                [
+                    1053.0,
+                    645.0
+                ],
+                [
+                    1053.0,
+                    725.0
+                ],
+                [
+                    70.0,
+                    725.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                150,
+                749,
+                948,
+                1005
+            ],
+            "block_id": 7,
+            "block_order": null,
+            "group_id": 7,
+            "block_polygon_points": [
+                [
+                    150.0,
+                    749.0
+                ],
+                [
+                    948.0,
+                    749.0
+                ],
+                [
+                    948.0,
+                    1005.0
+                ],
+                [
+                    150.0,
+                    1005.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 48 — Schema diagram - ScheduleExchangeReq",
+            "block_bbox": [
+                285,
+                1042,
+                836,
+                1070
+            ],
+            "block_id": 8,
+            "block_order": null,
+            "group_id": 8,
+            "block_polygon_points": [
+                [
+                    285.0,
+                    1042.0
+                ],
+                [
+                    836.0,
+                    1042.0
+                ],
+                [
+                    836.0,
+                    1070.0
+                ],
+                [
+                    285.0,
+                    1070.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "The elements of this message are used according to Table 44.",
+            "block_bbox": [
+                68,
+                1089,
+                650,
+                1116
+            ],
+            "block_id": 9,
+            "block_order": 7,
+            "group_id": 9,
+            "block_polygon_points": [
+                [
+                    68.0,
+                    1089.0
+                ],
+                [
+                    650.0,
+                    1089.0
+                ],
+                [
+                    650.0,
+                    1116.0
+                ],
+                [
+                    68.0,
+                    1116.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Table 44 — Semantics and type definition for ScheduleExchangeReq",
+            "block_bbox": [
+                213,
+                1137,
+                907,
+                1165
+            ],
+            "block_id": 10,
+            "block_order": null,
+            "group_id": 10,
+            "block_polygon_points": [
+                [
+                    213.0,
+                    1137.0
+                ],
+                [
+                    907.0,
+                    1137.0
+                ],
+                [
+                    907.0,
+                    1165.0
+                ],
+                [
+                    213.0,
+                    1165.0
+                ]
+            ]
+        },
+        {
+            "block_label": "table",
+            "block_content": "<table><tr><td>Element Name</td><td>Type</td><td>Semantics</td></tr><tr><td>Header</td><td>complexType:MessageHeaderTypeRefer to 8.3.3</td><td>Contains general information, used for all messages.</td></tr><tr><td>MaximumSupportingPoints</td><td>simpleType:maxSupportingPointsScheduleTupleTyperefer to Annex A for the type definition</td><td>Indicates the maximal number of entries in the sub-elements of a ScheduleTuple, where it applies to all elements of PowerScheduleType and PriceRuleType.The SECC can transmit up to the maximum number of entries defined in this parameter.</td></tr></table>",
+            "block_bbox": [
+                50,
+                1171,
+                1070,
+                1519
+            ],
+            "block_id": 11,
+            "block_order": null,
+            "group_id": 11,
+            "block_polygon_points": [
+                [
+                    50.0,
+                    1171.0
+                ],
+                [
+                    1070.0,
+                    1171.0
+                ],
+                [
+                    1070.0,
+                    1519.0
+                ],
+                [
+                    50.0,
+                    1519.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "160",
+            "block_bbox": [
+                72,
+                1614,
+                116,
+                1636
+            ],
+            "block_id": 12,
+            "block_order": null,
+            "group_id": 12,
+            "block_polygon_points": [
+                [
+                    72.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1614.0
+                ],
+                [
+                    115.0,
+                    1635.0
+                ],
+                [
+                    72.0,
+                    1635.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved",
+            "block_bbox": [
+                797,
+                1616,
+                1053,
+                1637
+            ],
+            "block_id": 13,
+            "block_order": null,
+            "group_id": 13,
+            "block_polygon_points": [
+                [
+                    797.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1616.0
+                ],
+                [
+                    1052.0,
+                    1636.0
+                ],
+                [
+                    797.0,
+                    1636.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "Copied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program. Copying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                60,
+                1636,
+                1119,
+                1682
+            ],
+            "block_id": 14,
+            "block_order": null,
+            "group_id": 14,
+            "block_polygon_points": [
+                [
+                    59.7204704284668,
+                    1644.0025634765625
+                ],
+                [
+                    1118.0001220703125,
+                    1636.0003662109375
+                ],
+                [
+                    1118.3349609375,
+                    1680.2794189453125
+                ],
+                [
+                    60.0552978515625,
+                    1688.2816162109375
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8824542164802551,
+                "coordinate": [
+                    70,
+                    68,
+                    322,
+                    95
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        70.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        68.0
+                    ],
+                    [
+                        322.0,
+                        95.0
+                    ],
+                    [
+                        70.0,
+                        95.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9335984587669373,
+                "coordinate": [
+                    67,
+                    168,
+                    1054,
+                    248
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        67.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        168.0
+                    ],
+                    [
+                        1054.0,
+                        248.0
+                    ],
+                    [
+                        67.0,
+                        248.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9474152326583862,
+                "coordinate": [
+                    68,
+                    269,
+                    1054,
+                    374
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        68.0,
+                        269.0
+                    ],
+                    [
+                        1054.0,
+                        269.0
+                    ],
+                    [
+                        1054.0,
+                        374.0
+                    ],
+                    [
+                        68.0,
+                        374.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8598068952560425,
+                "coordinate": [
+                    125,
+                    394,
+                    506,
+                    421
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        125.0,
+                        394.0
+                    ],
+                    [
+                        506.0,
+                        394.0
+                    ],
+                    [
+                        506.0,
+                        421.0
+                    ],
+                    [
+                        125.0,
+                        421.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9434110522270203,
+                "coordinate": [
+                    68,
+                    443,
+                    1053,
+                    548
+                ],
+                "order": 4,
+                "polygon_points": [
+                    [
+                        68.0,
+                        443.0
+                    ],
+                    [
+                        1053.0,
+                        443.0
+                    ],
+                    [
+                        1053.0,
+                        548.0
+                    ],
+                    [
+                        68.0,
+                        548.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8938602805137634,
+                "coordinate": [
+                    69,
+                    569,
+                    1052,
+                    622
+                ],
+                "order": 5,
+                "polygon_points": [
+                    [
+                        69.0,
+                        569.0
+                    ],
+                    [
+                        1052.0,
+                        569.0
+                    ],
+                    [
+                        1052.0,
+                        622.0
+                    ],
+                    [
+                        69.0,
+                        622.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9270492196083069,
+                "coordinate": [
+                    70,
+                    645,
+                    1053,
+                    725
+                ],
+                "order": 6,
+                "polygon_points": [
+                    [
+                        70.0,
+                        645.0
+                    ],
+                    [
+                        1053.0,
+                        645.0
+                    ],
+                    [
+                        1053.0,
+                        725.0
+                    ],
+                    [
+                        70.0,
+                        725.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.9465427398681641,
+                "coordinate": [
+                    150,
+                    749,
+                    948,
+                    1005
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        150.0,
+                        749.0
+                    ],
+                    [
+                        948.0,
+                        749.0
+                    ],
+                    [
+                        948.0,
+                        1005.0
+                    ],
+                    [
+                        150.0,
+                        1005.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8587735295295715,
+                "coordinate": [
+                    285,
+                    1042,
+                    836,
+                    1070
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        285.0,
+                        1042.0
+                    ],
+                    [
+                        836.0,
+                        1042.0
+                    ],
+                    [
+                        836.0,
+                        1070.0
+                    ],
+                    [
+                        285.0,
+                        1070.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.8496413230895996,
+                "coordinate": [
+                    68,
+                    1089,
+                    650,
+                    1116
+                ],
+                "order": 7,
+                "polygon_points": [
+                    [
+                        68.0,
+                        1089.0
+                    ],
+                    [
+                        650.0,
+                        1089.0
+                    ],
+                    [
+                        650.0,
+                        1116.0
+                    ],
+                    [
+                        68.0,
+                        1116.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8623659014701843,
+                "coordinate": [
+                    213,
+                    1137,
+                    907,
+                    1165
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        213.0,
+                        1137.0
+                    ],
+                    [
+                        907.0,
+                        1137.0
+                    ],
+                    [
+                        907.0,
+                        1165.0
+                    ],
+                    [
+                        213.0,
+                        1165.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 21,
+                "label": "table",
+                "score": 0.9698396921157837,
+                "coordinate": [
+                    50,
+                    1171,
+                    1070,
+                    1519
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        50.0,
+                        1171.0
+                    ],
+                    [
+                        1070.0,
+                        1171.0
+                    ],
+                    [
+                        1070.0,
+                        1519.0
+                    ],
+                    [
+                        50.0,
+                        1519.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.6970959305763245,
+                "coordinate": [
+                    72,
+                    1614,
+                    116,
+                    1636
+                ],
+                "order": 8,
+                "polygon_points": [
+                    [
+                        72.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1614.0
+                    ],
+                    [
+                        115.0,
+                        1635.0
+                    ],
+                    [
+                        72.0,
+                        1635.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.6238919496536255,
+                "coordinate": [
+                    797,
+                    1616,
+                    1053,
+                    1637
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        797.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1616.0
+                    ],
+                    [
+                        1052.0,
+                        1636.0
+                    ],
+                    [
+                        797.0,
+                        1636.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.4500150978565216,
+                "coordinate": [
+                    60,
+                    1636,
+                    1119,
+                    1682
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        59.7204704284668,
+                        1644.0025634765625
+                    ],
+                    [
+                        1118.0001220703125,
+                        1636.0003662109375
+                    ],
+                    [
+                        1118.3349609375,
+                        1680.2794189453125
+                    ],
+                    [
+                        60.0552978515625,
+                        1688.2816162109375
+                    ]
+                ]
+            }
+        ]
+    }
+}

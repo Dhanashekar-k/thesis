@@ -1,0 +1,485 @@
+{
+    "input_path": "iso/iso20_spec.pdf",
+    "page_index": 122,
+    "page_count": 568,
+    "width": 1191,
+    "height": 1684,
+    "model_settings": {
+        "use_doc_preprocessor": false,
+        "use_layout_detection": true,
+        "use_chart_recognition": false,
+        "use_seal_recognition": false,
+        "use_ocr_for_image_block": false,
+        "format_block_content": false,
+        "merge_layout_blocks": true,
+        "markdown_ignore_labels": [
+            "number",
+            "footnote",
+            "header",
+            "header_image",
+            "footer",
+            "footer_image",
+            "aside_text"
+        ],
+        "return_layout_polygon_points": true
+    },
+    "parsing_res_list": [
+        {
+            "block_label": "header",
+            "block_content": "ISO 15118-20:2022(E)",
+            "block_bbox": [
+                865,
+                68,
+                1119,
+                96
+            ],
+            "block_id": 0,
+            "block_order": null,
+            "group_id": 0,
+            "block_polygon_points": [
+                [
+                    865.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    68.0
+                ],
+                [
+                    1119.0,
+                    96.0
+                ],
+                [
+                    865.0,
+                    96.0
+                ]
+            ]
+        },
+        {
+            "block_label": "image",
+            "block_content": "",
+            "block_bbox": [
+                175,
+                183,
+                1059,
+                771
+            ],
+            "block_id": 1,
+            "block_order": null,
+            "group_id": 1,
+            "block_polygon_points": [
+                [
+                    175.0,
+                    183.0
+                ],
+                [
+                    1059.0,
+                    183.0
+                ],
+                [
+                    1059.0,
+                    771.0
+                ],
+                [
+                    175.0,
+                    771.0
+                ]
+            ]
+        },
+        {
+            "block_label": "figure_title",
+            "block_content": "Figure 28 — Single SECC communication architecture",
+            "block_bbox": [
+                356,
+                798,
+                902,
+                827
+            ],
+            "block_id": 2,
+            "block_order": null,
+            "group_id": 2,
+            "block_polygon_points": [
+                [
+                    356.0,
+                    798.0
+                ],
+                [
+                    902.0,
+                    798.0
+                ],
+                [
+                    902.0,
+                    827.0
+                ],
+                [
+                    356.0,
+                    827.0
+                ]
+            ]
+        },
+        {
+            "block_label": "paragraph_title",
+            "block_content": "7.10.1.2.2 Multiple SECC communication architecture",
+            "block_bbox": [
+                137,
+                845,
+                687,
+                872
+            ],
+            "block_id": 3,
+            "block_order": 1,
+            "group_id": 3,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    845.0
+                ],
+                [
+                    687.0,
+                    845.0
+                ],
+                [
+                    687.0,
+                    872.0
+                ],
+                [
+                    137.0,
+                    872.0
+                ]
+            ]
+        },
+        {
+            "block_label": "text",
+            "block_content": "Within a multiple SECC communication architecture, every EVSE has its own SECC. All the SECCs share a common WLAN AP with an individual SSID. See Figure 29.",
+            "block_bbox": [
+                137,
+                895,
+                1120,
+                949
+            ],
+            "block_id": 4,
+            "block_order": 2,
+            "group_id": 4,
+            "block_polygon_points": [
+                [
+                    137.0,
+                    895.0
+                ],
+                [
+                    1120.0,
+                    895.0
+                ],
+                [
+                    1120.0,
+                    949.0
+                ],
+                [
+                    137.0,
+                    949.0
+                ]
+            ]
+        },
+        {
+            "block_label": "number",
+            "block_content": "117",
+            "block_bbox": [
+                1078,
+                1624,
+                1119,
+                1646
+            ],
+            "block_id": 5,
+            "block_order": null,
+            "group_id": 5,
+            "block_polygon_points": [
+                [
+                    1078.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1624.0
+                ],
+                [
+                    1118.0,
+                    1645.0
+                ],
+                [
+                    1078.0,
+                    1645.0
+                ]
+            ]
+        },
+        {
+            "block_label": "footer",
+            "block_content": "© ISO 2022 – All rights reserved.\nCopied with the permission of ANSI on behalf of ISO in connection with USDOT National Electric Vehicle Infrastructure (NEVI) Formula Program.\nCopying not permitted. ©ISO. All rights reserved.",
+            "block_bbox": [
+                61,
+                1630,
+                1119,
+                1683
+            ],
+            "block_id": 6,
+            "block_order": null,
+            "group_id": 6,
+            "block_polygon_points": [
+                [
+                    61,
+                    1630
+                ],
+                [
+                    61,
+                    1682
+                ],
+                [
+                    1077,
+                    1682
+                ],
+                [
+                    1118,
+                    1665
+                ],
+                [
+                    1118,
+                    1639
+                ],
+                [
+                    1083,
+                    1630
+                ],
+                [
+                    1071,
+                    1630
+                ]
+            ]
+        }
+    ],
+    "layout_det_res": {
+        "input_path": null,
+        "page_index": null,
+        "boxes": [
+            {
+                "cls_id": 12,
+                "label": "header",
+                "score": 0.8705129027366638,
+                "coordinate": [
+                    865,
+                    68,
+                    1119,
+                    96
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        865.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        68.0
+                    ],
+                    [
+                        1119.0,
+                        96.0
+                    ],
+                    [
+                        865.0,
+                        96.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 14,
+                "label": "image",
+                "score": 0.7990018725395203,
+                "coordinate": [
+                    175,
+                    183,
+                    1059,
+                    771
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        175.0,
+                        183.0
+                    ],
+                    [
+                        1059.0,
+                        183.0
+                    ],
+                    [
+                        1059.0,
+                        771.0
+                    ],
+                    [
+                        175.0,
+                        771.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 7,
+                "label": "figure_title",
+                "score": 0.8888963460922241,
+                "coordinate": [
+                    356,
+                    798,
+                    902,
+                    827
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        356.0,
+                        798.0
+                    ],
+                    [
+                        902.0,
+                        798.0
+                    ],
+                    [
+                        902.0,
+                        827.0
+                    ],
+                    [
+                        356.0,
+                        827.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 17,
+                "label": "paragraph_title",
+                "score": 0.8379208445549011,
+                "coordinate": [
+                    137,
+                    845,
+                    687,
+                    872
+                ],
+                "order": 1,
+                "polygon_points": [
+                    [
+                        137.0,
+                        845.0
+                    ],
+                    [
+                        687.0,
+                        845.0
+                    ],
+                    [
+                        687.0,
+                        872.0
+                    ],
+                    [
+                        137.0,
+                        872.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 22,
+                "label": "text",
+                "score": 0.9066900014877319,
+                "coordinate": [
+                    137,
+                    895,
+                    1120,
+                    949
+                ],
+                "order": 2,
+                "polygon_points": [
+                    [
+                        137.0,
+                        895.0
+                    ],
+                    [
+                        1120.0,
+                        895.0
+                    ],
+                    [
+                        1120.0,
+                        949.0
+                    ],
+                    [
+                        137.0,
+                        949.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 16,
+                "label": "number",
+                "score": 0.760945737361908,
+                "coordinate": [
+                    1078,
+                    1624,
+                    1119,
+                    1646
+                ],
+                "order": 3,
+                "polygon_points": [
+                    [
+                        1078.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1624.0
+                    ],
+                    [
+                        1118.0,
+                        1645.0
+                    ],
+                    [
+                        1078.0,
+                        1645.0
+                    ]
+                ]
+            },
+            {
+                "cls_id": 8,
+                "label": "footer",
+                "score": 0.8670798540115356,
+                "coordinate": [
+                    61,
+                    1630,
+                    1119,
+                    1683
+                ],
+                "order": null,
+                "polygon_points": [
+                    [
+                        61,
+                        1630
+                    ],
+                    [
+                        61,
+                        1682
+                    ],
+                    [
+                        1077,
+                        1682
+                    ],
+                    [
+                        1118,
+                        1665
+                    ],
+                    [
+                        1118,
+                        1639
+                    ],
+                    [
+                        1083,
+                        1630
+                    ],
+                    [
+                        1071,
+                        1630
+                    ]
+                ]
+            }
+        ]
+    }
+}
