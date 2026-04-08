@@ -1,4 +1,4 @@
-# LLM-Driven Security Attack Generation for ISO 15118-20
+# LLM-Driven Security Attack Generation for ISO 15118-20 protocol
 
 This project uses LLMs and formal methods to automatically generate security attacks against the ISO 15118-20 electric vehicle charging protocol. The pipeline has four main stages:
 
