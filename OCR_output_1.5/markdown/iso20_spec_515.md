@@ -1,3 +1,0 @@
-### F.2 Renegotiation after resuming a V2G communication session
-
-If one of EVCC or SECC wants to perform a schedule renegotiation after resuming a V2G communication session, they first goes through the V2G messaging on V2GTP payload type Part20MainstreamPayloadID until the charging loop message pair and apply the corresponding schedule renegotiation mechanism as described in this document and in the two examples provided above.
