@@ -8,7 +8,10 @@ __pycache__/
 
 # OCR output
 OCR_output_1.5/
-
+vector_db/phase_1/
+vector_db/phase_2/
+vector_db/phase_3/
+vector_db/phase_2_test/
 # Distribution / packaging
 .Python
 build/

@@ -117,9 +117,91 @@ Output artifacts (`.smv` model and property files) are written to `model_checker
 
 *TODO*
 
-## Stage 4: Vector DB for ISO Spec
+## Stage 4: Vector DB for ISO Spec (Multimodal Graph RAG Pipeline)
 
-*TODO*
+This stage builds a **hybrid multimodal Graph RAG system** over the ISO 15118-20 specification.  
+The goal is to convert a large, complex, multimodal PDF (text, tables, figures) into a **retrievable structured knowledge system**.
+
+The pipeline is divided into **4 phases**, each progressively adding structure, semantics, and retrieval capability.
+
+---
+
+## Phase 1: Document Canonicalization (Structure Graph)
+
+### Goal
+Convert raw OCR output into a **clean, structured, graph-based representation** of the document.
+
+### Input
+- OCR outputs (Markdown + JSON + images)
+- Extracted pages, blocks, figures, tables
+
+### What it does
+- Parses document into:
+  - sections
+  - pages
+  - text blocks
+  - figures
+  - tables
+- Builds structural relationships:
+  - section → page
+  - page → blocks
+  - block → next block
+  - block → figure/table references
+
+### Output
+- `sections.jsonl`
+- `pages.jsonl`
+- `blocks.jsonl`
+- `text_units.jsonl`
+- `figures.jsonl`
+- `tables.jsonl`
+- `edges.jsonl`
+- `knowledge_base.json`
+
+### Why this phase exists
+- Raw OCR is **unstructured and noisy**
+- This phase creates a **deterministic, navigable document graph**
+- No LLM usage -> reproducible and fast
+
+---
+
+## Phase 2: Semantic Enrichment (Evidence + Concept Graph)
+
+### Goal
+Convert raw document nodes into **semantic units and relationships**.
+
+### Input
+- Phase 1 outputs
+
+### What it does
+1. Creates **evidence units**:
+   - text evidence
+   - table evidence
+   - figure evidence
+
+2. Enriches each unit using LLM/VLM:
+   - proxy description
+   - classification
+   - keywords
+   - concepts
+   - relations
+
+3. Builds a **concept graph**:
+   - concept nodes
+   - semantic edges:
+     - evidence → concept
+     - concept → concept
+     - evidence → requirement
+
+### Output
+- `evidence_units.jsonl`
+- `concept_nodes.jsonl`
+- `semantic_edges.jsonl`
+- `manifest.json`
+
+### Command
+```bash
+python phase2.py --phase1-root /path/to/phase1 --output-root /path/to/phase2 --api-base http://127.0.0.1:8000/v1 --model Qwen/Qwen2.5-VL-72B-Instruct --concurrency 4
 
 ## Stage 5: Agentic Security Attack Generation
 
