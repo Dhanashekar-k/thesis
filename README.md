@@ -113,9 +113,57 @@ Output artifacts (`.smv` model and property files) are written to `model_checker
 
 ---
 
-## Stage 3: CVE Digest
+## Stage 3: CVE Digest (Threat Modeling)
 
-*TODO*
+### Goal
+Generate a **detailed threat model** from a given CVE ID.
+
+This stage transforms a single CVE into structured, actionable security knowledge that can be used for attack generation and protocol analysis.
+
+### Input
+- CVE ID (e.g., `CVE-2021-34527`)
+
+### What it does
+1. Retrieves CVE details (description, context, references)
+2. Expands the CVE into a **threat model** using LLM reasoning
+3. Extracts structured security insights such as:
+   - attack vector
+   - preconditions
+   - attacker capabilities
+   - exploitation steps
+   - affected components
+   - impact (confidentiality, integrity, availability)
+   - possible mitigations
+4. Refines the output into a consistent format for downstream usage
+
+### Why this stage is needed
+A CVE description is usually short and not directly usable for attack generation.
+
+This stage converts it into a **rich threat model**, which:
+- bridges raw vulnerability → attack reasoning
+- provides structured inputs for attack generation
+- enables grounding for security-focused queries
+- supports protocol-level vulnerability analysis (e.g., ISO 15118-20)
+
+### Output
+- Structured threat model (JSON)
+
+Example fields:
+```json
+{
+  "cve_id": "CVE-XXXX-XXXX",
+  "summary": "...",
+  "attack_vector": "...",
+  "preconditions": ["..."],
+  "attack_steps": ["..."],
+  "impact": {
+    "confidentiality": "...",
+    "integrity": "...",
+    "availability": "..."
+  },
+  "affected_components": ["..."],
+  "mitigations": ["..."]
+}
 
 ## Stage 4: Vector DB for ISO Spec (Multimodal Graph RAG Pipeline)
 
@@ -202,9 +250,149 @@ Convert raw document nodes into **semantic units and relationships**.
 ### Command
 ```bash
 python phase2.py --phase1-root /path/to/phase1 --output-root /path/to/phase2 --api-base http://127.0.0.1:8000/v1 --model Qwen/Qwen2.5-VL-72B-Instruct --concurrency 4
+```
 
-## Stage 5: Agentic Security Attack Generation
+---
 
-*TODO*
+## Phase 3: Retrieval Index (Vector DB + Hybrid Search)
 
-Output artifacts are written to `model_checker/ac/` including the `.smv` model and property files.
+### Goal
+Convert the semantic artifacts from Phase 2 into a **searchable retrieval layer** that supports dense retrieval, lexical retrieval, and graph-aware expansion.
+
+### Input
+- `evidence_units.jsonl`
+- `concept_nodes.jsonl`
+- `semantic_edges.jsonl`
+- optional section metadata from Phase 1
+
+### What it does
+1. Builds **retrieval documents** from the semantic outputs:
+   - evidence documents
+   - concept documents
+   - requirement documents
+   - section documents
+
+2. Normalizes each document into a retrieval-friendly representation:
+   - title
+   - document type
+   - semantic text body
+   - metadata payload
+
+3. Builds the **dense vector index**:
+   - embeds retrieval documents with the configured embedding model
+   - stores vectors in a persistent ChromaDB collection
+
+4. Builds the **lexical index**:
+   - creates a BM25 sidecar over the same retrieval documents
+
+5. Builds the **graph sidecar**:
+   - stores semantic adjacency derived from evidence, concept, requirement, and section links
+   - enables lightweight graph expansion during retrieval
+
+6. Writes a **manifest** describing the built index:
+   - backend
+   - embedding model
+   - collection name
+   - document statistics
+   - artifact paths
+
+### Output
+- `docstore.jsonl`
+- `bm25_index.json.gz`
+- `graph_index.json.gz`
+- `chroma/`
+- `manifest.json`
+
+### Command
+```bash
+python phase_3.py build --phase2-root /path/to/phase2 --index-root /path/to/phase3 --device cuda
+```
+
+### Why this phase exists
+- Phase 2 creates semantic units, but they are not yet optimized for retrieval.
+- This phase converts them into a persistent **hybrid retrieval index**.
+- The final retriever can later combine:
+  - dense retrieval from ChromaDB
+  - BM25 retrieval
+  - graph expansion over semantic links
+
+---
+
+## Phase 4: Reflection-Based Retrieval Agent (LangGraph)
+
+### Goal
+Use a **retrieve → reflect → rewrite → retrieve** loop so the system can iteratively improve retrieval quality before producing the final grounded context or answer.
+
+### Input
+- Phase 3 retrieval artifacts:
+  - `manifest.json`
+  - `docstore.jsonl`
+  - `bm25_index.json.gz`
+  - `graph_index.json.gz`
+  - `chroma/`
+- user query
+- optional query image(s)
+
+### What it does
+1. Loads the **Phase 3 retrieval artifacts directly**:
+   - reconstructs the retriever from the saved index files
+
+2. Runs the first **hybrid retrieval**:
+   - dense search from ChromaDB
+   - BM25 search
+   - reciprocal-rank fusion
+   - optional graph expansion
+
+3. Sends the retrieved context to a **reflection node**:
+   - checks whether the current results are sufficient
+   - identifies missing aspects
+   - rewrites the query if needed
+   - can suggest retrieval adjustments such as:
+     - document types
+     - graph hops
+     - dense/BM25 breadth
+     - final top-k
+
+4. Repeats retrieval for a limited number of rounds:
+   - retrieve
+   - reflect
+   - rewrite
+   - retrieve again
+
+5. Finalizes the run by producing:
+   - retrieval history
+   - reflection history
+   - final context bundle
+   - optional grounded answer
+
+6. Optionally exports the **LangGraph workflow diagram**:
+   - PNG
+   - JPG
+
+### Output
+- `phase_4_run.json`
+- optional workflow image:
+  - `workflow.png`
+  - `workflow.jpg`
+
+### Command
+```bash
+python phase_4.py run --index-root /path/to/phase3 --query "your query here" --api-base http://127.0.0.1:8000/v1 --api-key EMPTY --model Qwen/Qwen2.5-VL-72B-Instruct --max-reflections 2 --generate-answer --output-json /path/to/phase4/phase_4_run.json
+```
+
+### Example with workflow export
+```bash
+python phase_4.py run --index-root /path/to/phase3 --query "retrieve everything related to authentication in charging using wifi" --api-base http://127.0.0.1:8000/v1 --api-key EMPTY --model Qwen/Qwen2.5-VL-72B-Instruct --max-reflections 2 --generate-answer --graph-png /path/to/phase4/workflow.png --graph-jpg /path/to/phase4/workflow.jpg --output-json /path/to/phase4/phase_4_run.json
+```
+
+### Why this phase exists
+- A single retrieval pass is often not enough for a long technical specification.
+- The reflection loop lets the system:
+  - inspect the retrieved context
+  - sharpen or rewrite the query
+  - broaden or narrow retrieval settings
+  - stop once the context is good enough
+
+---
+
+## Agentic Security Attack Generation
