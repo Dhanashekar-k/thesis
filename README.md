@@ -3,7 +3,7 @@
 This project uses LLMs and formal methods to automatically generate security attacks against the ISO 15118-20 electric vehicle charging protocol. The pipeline has four main stages:
 
 1. **Model Checker** — Extract protocol semantics from the specification and generate a formal NuSMV model *(done)*
-2. **CVE Digest** — *(TODO)*
+2. **CVE Digest** —
 3. **Vector DB for ISO Spec** — *(TODO)*
 4. **Agentic Security Attack Generation** — *(TODO)*
 
